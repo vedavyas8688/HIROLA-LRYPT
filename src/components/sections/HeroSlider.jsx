@@ -23,7 +23,77 @@ export default function HeroSlider({ slides }) {
   }
 
   return (
-    <section className="hero slider">
+    <section className="hero slider hero-slider-scope">
+      <style>{`
+        /* ============================================================
+           HERO SLIDER — scoped styles (self-contained in this component)
+           ============================================================ */
+
+        .hero-slider-scope .hero__title{
+          font-family:"Roboto", system-ui, sans-serif;
+          font-weight:700;
+          text-transform:uppercase;
+          color:#fff;
+          letter-spacing:-.015em;
+          line-height:1.08;
+          margin:0;
+          font-size:clamp(1.9rem, 3.6vw, 3.4rem);
+          max-width:34ch; /* generous — sizing controls line count, not wrapping */
+        }
+
+        @media(min-width:1200px){
+          .hero-slider-scope .hero__title{
+            font-size:clamp(2.1rem, 3.2vw, 3.6rem);
+          }
+        }
+
+        @media(max-width:900px){
+          .hero-slider-scope .hero__title{
+            font-size:clamp(1.7rem, 5vw, 2.4rem);
+            max-width:26ch;
+          }
+        }
+
+        @media(max-width:560px){
+          .hero-slider-scope .hero__title{
+            font-size:clamp(1.5rem, 6.5vw, 2rem);
+            line-height:1.12;
+            max-width:22ch;
+          }
+        }
+
+        /* line reveal animation, scoped to the title only */
+        .hero-slider-scope .hero__title .line{
+          display:block;
+          overflow:hidden;
+        }
+        .hero-slider-scope .hero__title .line > span{
+          display:block;
+          transform:translateY(110%);
+        }
+        .hero-slider-scope .slide.is-active .hero__title .line > span{
+          transform:none;
+          transition:transform .9s cubic-bezier(.22,1,.36,1) .3s;
+        }
+        .hero-slider-scope .slide.is-active .hero__title .line:nth-child(1) > span{
+          transition-delay:.3s;
+        }
+        .hero-slider-scope .slide.is-active .hero__title .line:nth-child(2) > span{
+          transition-delay:.42s;
+        }
+        .hero-slider-scope .slide.is-active .hero__title .line:nth-child(3) > span{
+          transition-delay:.54s;
+        }
+
+        /* reduced motion: skip the slide-up reveal entirely */
+        @media (prefers-reduced-motion: reduce){
+          .hero-slider-scope .hero__title .line > span{
+            transform:none !important;
+            transition:none !important;
+          }
+        }
+      `}</style>
+
       {slides.map((s, idx) => (
         <div className={`slide${idx === i ? " is-active" : ""}`} key={idx}>
           <div className="hero__media">
@@ -39,7 +109,7 @@ export default function HeroSlider({ slides }) {
           </div>
           <div className="slide__in">
             <span className="label">{s.label}</span>
-            <h1>
+            <h1 className="hero__title">
               {s.lines.map((line, li) => (
                 <span className="line" key={li}>
                   <span>{line}</span>

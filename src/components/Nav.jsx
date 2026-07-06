@@ -6,8 +6,8 @@ export default function Nav() {
   const location = useLocation();
   const [stuck, setStuck] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [openGroup, setOpenGroup] = useState(null); // which drawer accordion is expanded
 
-  // sticky nav background on scroll
   useEffect(() => {
     const onScroll = () => setStuck(window.scrollY > 40);
     onScroll();
@@ -15,17 +15,15 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // lock body scroll while the mobile drawer is open
   useEffect(() => {
     document.body.classList.toggle("menu-open", menuOpen);
   }, [menuOpen]);
 
-  // close drawer on route change
   useEffect(() => {
     setMenuOpen(false);
+    setOpenGroup(null);
   }, [location.pathname]);
 
-  // close on Escape, and auto-close if resized past the mobile breakpoint
   useEffect(() => {
     const onKey = (e) => e.key === "Escape" && setMenuOpen(false);
     const onResize = () => window.innerWidth > 980 && setMenuOpen(false);
@@ -37,21 +35,10 @@ export default function Nav() {
     };
   }, []);
 
-  const seen = new Set();
-  const drawerLinks = [];
-  NAV.forEach((n) => {
-    if (n.href && !seen.has(n.href)) {
-      seen.add(n.href);
-      drawerLinks.push([n.label, n.href]);
-    }
-    if (n.drop)
-      n.drop.forEach(([t, h]) => {
-        if (!seen.has(h)) {
-          seen.add(h);
-          drawerLinks.push([t, h]);
-        }
-      });
-  });
+  const closeAll = () => {
+    setMenuOpen(false);
+    setOpenGroup(null);
+  };
 
   return (
     <>
@@ -105,13 +92,56 @@ export default function Nav() {
       </header>
 
       <div className="drawer" id="mobile-drawer" aria-hidden={!menuOpen}>
-        {drawerLinks.map(([t, h]) => (
-          <Link key={h} to={h} onClick={() => setMenuOpen(false)}>
-            {t}
+        <div className="drawer__head">
+          <Link className="drawer__logo" to="/" onClick={closeAll}>
+            <img className="logo__img" src="/assets/img/logo.png" alt="LRYPT Technologies" />
           </Link>
-        ))}
-        <Link to="/contact" onClick={() => setMenuOpen(false)}>
-          Get a quote &#8599;
+          <button className="drawer__close" aria-label="Close menu" onClick={closeAll}>
+            &#10005;
+          </button>
+        </div>
+
+        <nav className="drawer__nav">
+          {NAV.map((n) => {
+            const isOpen = openGroup === n.label;
+            return (
+              <div className={`drawer__group${isOpen ? " is-open" : ""}`} key={n.label}>
+                <div className="drawer__row">
+                  <Link
+                    className={`drawer__link${location.pathname === n.href ? " is-active" : ""}`}
+                    to={n.href}
+                    onClick={closeAll}
+                  >
+                    {n.label}
+                  </Link>
+                  {n.drop && (
+                    <button
+                      className="drawer__caret"
+                      aria-label={`${isOpen ? "Collapse" : "Expand"} ${n.label} submenu`}
+                      aria-expanded={isOpen}
+                      onClick={() => setOpenGroup(isOpen ? null : n.label)}
+                    >
+                      <i />
+                    </button>
+                  )}
+                </div>
+                {n.drop && (
+                  <div className="drawer__sub">
+                    {n.drop.map(([t, h]) => (
+                      <Link key={h} to={h} onClick={closeAll}>
+                        {t}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </nav>
+
+        <Link className="drawer__cta" to="/contact" onClick={closeAll}>
+          <span>Get a quote</span>
+          <span className="drawer__cta-ico">&#8599;</span>
         </Link>
       </div>
     </>

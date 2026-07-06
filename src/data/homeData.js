@@ -37,8 +37,9 @@ export const hero = {
       "imageAlt": "Unleash the potential of CAE through ANSYS simulation",
       "label": "Welcome to LRYPT Technologies",
       "lines": [
-        "Unleash the potential of CAE",
-        "through ANSYS simulation"
+        "Unleash the potential of  ",
+        " CAE through ANSYS  ",
+        "simulation",
       ],
       "sub": "Predict real-world performance before you build a single part.",
       "btnText": "Explore ANSYS",
