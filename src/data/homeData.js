@@ -37,8 +37,8 @@ export const hero = {
       "imageAlt": "Unleash the potential of CAE through ANSYS simulation",
       "label": "Welcome to LRYPT Technologies",
       "lines": [
-        "Unleash the potential of  ",
-        " CAE through ANSYS  ",
+        "Unleash the potential   ",
+        "of CAE through ANSYS  ",
         "simulation",
       ],
       "sub": "Predict real-world performance before you build a single part.",
@@ -50,8 +50,9 @@ export const hero = {
       "imageAlt": "Driving the future of additive manufacturing with Formlabs 3D printers",
       "label": "Welcome to LRYPT Technologies",
       "lines": [
-        "Driving the future of additive",
-        "manufacturing with Formlabs 3D printers"
+        "Driving the future of",
+        "additive manufacturing    " ,
+        "with Formlabs 3D printers"
       ],
       "sub": "Production-grade precision, speed, and possibility.",
       "btnText": "Explore Formlabs",

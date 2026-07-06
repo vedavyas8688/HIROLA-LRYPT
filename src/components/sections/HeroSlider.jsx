@@ -38,7 +38,7 @@ export default function HeroSlider({ slides }) {
           line-height:1.08;
           margin:0;
           font-size:clamp(1.9rem, 3.6vw, 3.4rem);
-          max-width:34ch; /* generous — sizing controls line count, not wrapping */
+          max-width:34ch;
         }
 
         @media(min-width:1200px){
@@ -70,6 +70,7 @@ export default function HeroSlider({ slides }) {
         .hero-slider-scope .hero__title .line > span{
           display:block;
           transform:translateY(110%);
+          transition:transform .5s ease; /* FIX: smooth exit, no instant snap-back */
         }
         .hero-slider-scope .slide.is-active .hero__title .line > span{
           transform:none;
@@ -84,12 +85,46 @@ export default function HeroSlider({ slides }) {
         .hero-slider-scope .slide.is-active .hero__title .line:nth-child(3) > span{
           transition-delay:.54s;
         }
+        /* FIX: keep the outgoing slide's title from being interactive/overlapping visually */
+        .hero-slider-scope .slide:not(.is-active) .hero__title{
+          pointer-events:none;
+        }
 
-        /* reduced motion: skip the slide-up reveal entirely */
         @media (prefers-reduced-motion: reduce){
           .hero-slider-scope .hero__title .line > span{
             transform:none !important;
             transition:none !important;
+          }
+        }
+
+        /* FIX: force prev/next arrows to show on mobile, regardless of global CSS */
+        @media (max-width:900px){
+          .hero-slider-scope .slider__nav{
+            display:flex !important;
+            gap:8px;
+          }
+          .hero-slider-scope .slider__prev,
+          .hero-slider-scope .slider__next{
+            display:flex !important;
+            align-items:center;
+            justify-content:center;
+            width:36px;
+            height:36px;
+            font-size:1.4rem;
+            opacity:1 !important;
+            visibility:visible !important;
+          }
+        }
+        @media (max-width:560px){
+          .hero-slider-scope .slider__nav{
+            bottom:14px;
+            right:14px;
+          }
+          .hero-slider-scope .slider__prev,
+          .hero-slider-scope .slider__next{
+            width:32px;
+            height:32px;
+            font-size:1.2rem;
           }
         }
       `}</style>
