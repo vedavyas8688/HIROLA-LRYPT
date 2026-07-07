@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <HeroSlider {...hero} />
       <IntroBlock {...intro} />
-      <CardGrid {...solutionsGrid} tightTop />
+      <CardGrid {...solutionsGrid} />
       <CardGrid {...servicesGrid} />
       <IconGrid {...whyChoose} />
       <FAQSection {...faq} />

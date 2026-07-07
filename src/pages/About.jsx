@@ -12,7 +12,7 @@ export default function About() {
     <>
       <PageHead {...pageHead} />
       <IntroBlock {...intro} />
-      <IconGrid {...whyChoose} tightTop />
+      <IconGrid {...whyChoose} />
       <MissionVision {...missionVision} />
       <CTABand {...cta} />
     </>

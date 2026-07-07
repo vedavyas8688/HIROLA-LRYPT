@@ -9,7 +9,7 @@ export default function Blog() {
   return (
     <>
       <PageHead {...pageHead} />
-      <CardGrid {...posts} tightTop />
+      <CardGrid {...posts} />
       <CTABand {...cta} />
     </>
   );

@@ -1,6 +1,6 @@
-export default function ProductGrid({ bg = "cream", heading, subheading, wide = false, items, tightTop = false }) {
+export default function ProductGrid({ bg = "cream", heading, subheading, wide = false, items }) {
   return (
-    <section className={`sec sec--${bg}`} style={tightTop ? { paddingTop: 0 } : undefined}>
+    <section className={`sec sec--${bg}`}>
       <div className="wrap">
         {(heading || subheading) && (
           <div className="proj-head">

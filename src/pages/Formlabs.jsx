@@ -14,7 +14,7 @@ export default function Formlabs() {
     <>
       <PageHead {...pageHead} />
       <IntroBlock {...intro} />
-      <ProductGrid {...slaProducts} tightTop />
+      <ProductGrid {...slaProducts} />
       <SplitFeature {...slaFeature} />
       <SplitFeature {...slsFeature} />
       <ProductGrid {...slsProducts} />

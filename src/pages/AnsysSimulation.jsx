@@ -12,7 +12,7 @@ export default function AnsysSimulation() {
     <>
       <PageHead {...pageHead} />
       <IntroBlock {...intro} />
-      <IconGrid {...capabilities} tightTop />
+      <IconGrid {...capabilities} />
       <FAQSection {...faq} />
       <CTABand {...cta} />
     </>

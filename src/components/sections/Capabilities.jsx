@@ -8,9 +8,9 @@ function Bullets({ bullets, style = "check", cols = 1 }) {
   );
 }
 
-export default function Capabilities({ bg = "cream", kicker, heading, items, tightTop = false }) {
+export default function Capabilities({ bg = "cream", kicker, heading, items }) {
   return (
-    <section className={`sec sec--${bg}`} style={tightTop ? { paddingTop: 0 } : undefined}>
+    <section className={`sec sec--${bg}`}>
       <div className="wrap">
         {(kicker || heading) && (
           <div className="headc">

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ArrowRight, Check } from "lucide-react";
 
 const initialForm = {
   firstName: "",
@@ -13,7 +14,7 @@ const initialForm = {
 
 export function ContactPanel({ label, heading, intro, info }) {
   return (
-    <section className="sec sec--cream" style={{ paddingTop: 0 }}>
+    <section className="sec sec--cream">
       <div className="wrap cgrid">
         <div data-stagger="">
           {label && (
@@ -117,7 +118,9 @@ export default function ContactForm() {
       <div className="cform__foot">
         <span className="cform__note">Your details are used only to respond to your enquiry.</span>
         <button className="btn" type="button" onClick={handleSend}>
-          <span className="btn__ico">&#8594;</span>
+          <span className="btn__ico">
+            {sent ? <Check size={18} /> : <ArrowRight size={18} />}
+          </span>
           <span className="btn__t">{sent ? "Thanks \u2014 we\u2019ll be in touch" : "Send message"}</span>
         </button>
       </div>

@@ -12,7 +12,7 @@ export default function UtilityNetwork() {
     <>
       <PageHead {...pageHead} />
       <IntroBlock {...intro} />
-      <Capabilities {...capabilities} tightTop />
+      <Capabilities {...capabilities} />
       <SoloCapability {...whyLrypt} />
       <Capabilities {...capabilities2} />
       <FAQSection {...faq} />

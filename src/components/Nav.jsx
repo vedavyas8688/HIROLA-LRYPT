@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { ChevronDown, X, ArrowRight } from "lucide-react";
 import { NAV } from "../navdata";
 
 export default function Nav() {
@@ -46,6 +47,53 @@ export default function Nav() {
         /* ============================================================
            NAVBAR + MOBILE DRAWER — scoped, self-contained
            ============================================================ */
+
+        /* ---------- desktop nav bar ---------- */
+        .nav-scope .nav{position:fixed;inset:0 0 auto 0;z-index:10000;transition:background .4s var(--ease);
+          background:var(--white);border-bottom:1px solid var(--line-cream)}
+        .nav-scope .nav.is-stuck{box-shadow:0 6px 30px -14px rgba(0,0,0,.25)}
+        .nav-scope .nav__bar{display:flex;align-items:center;justify-content:space-between;gap:24px;
+          max-width:var(--maxw);margin:0 auto;padding:16px var(--pad)}
+
+        .nav-scope .logo{display:inline-flex;align-items:center;flex:none}
+        .nav-scope .logo__img{height:52px;width:auto;display:block}
+
+        .nav-scope .nav__menu{display:flex;align-items:center;gap:34px}
+        .nav-scope .nav__item{position:relative}
+        .nav-scope .nav__link{display:inline-flex;align-items:center;gap:.45em;color:var(--on-cream);font-size:.92rem;
+          font-weight:600;text-transform:uppercase;letter-spacing:.03em;padding:8px 0}
+        .nav-scope .nav__link::after{content:"";position:absolute;left:0;right:100%;bottom:2px;height:1.5px;background:var(--black);transition:right .3s var(--ease)}
+        .nav-scope .nav__item:hover .nav__link::after,.nav-scope .nav__link.is-active::after{right:0}
+
+        /* Dropdown menu (desktop hover). The visible dropdown sits 14px
+           below its trigger link for spacing. .nav__item::before is an
+           invisible bridge that extends the hoverable area across that
+           gap AND sideways — the dropdown is centered under the link via
+           left:50%/translate(-50%), so on longer items (e.g. "Engineering
+           Design Services") the dropdown is wider than the link itself.
+           Without the sideways extension, moving the cursor diagonally
+           toward the wider dropdown could leave the hoverable region
+           while still inside the 14px gap, causing the menu to vanish
+           before the three options ever appeared. */
+        .nav-scope .nav__item::before{
+          content:"";position:absolute;top:100%;left:-80px;right:-80px;height:14px;
+        }
+        .nav-scope .dropdown{position:absolute;top:calc(100% + 14px);left:50%;transform:translate(-50%,8px);
+          width:max-content;min-width:220px;max-width:280px;
+          background:var(--white);border:1px solid var(--line-cream);padding:8px;opacity:0;visibility:hidden;
+          transition:.3s var(--ease);box-shadow:0 24px 50px -20px rgba(0,0,0,.3);z-index:10001;pointer-events:auto}
+        .nav-scope .nav__item:hover .dropdown{opacity:1;visibility:visible;transform:translate(-50%,0)}
+        .nav-scope .dropdown a{display:block;padding:11px 14px;font-size:.85rem;text-transform:uppercase;letter-spacing:.03em;
+          white-space:nowrap;color:var(--mute-cream);transition:.25s;pointer-events:auto}
+        .nav-scope .dropdown a:hover{color:var(--black);background:#0000000a;padding-left:18px}
+
+        .nav-scope .nav__cta{display:flex;align-items:center;gap:14px}
+        .nav-scope .nav__link .chev{width:14px;height:14px;transition:transform .3s var(--ease)}
+        .nav-scope .nav__item:hover .nav__link .chev{transform:rotate(180deg)}
+
+        @media(max-width:560px){
+          .nav-scope .logo__img{height:42px}
+        }
 
         /* ---------- burger button ---------- */
         .nav-scope .burger{
@@ -131,15 +179,12 @@ export default function Nav() {
           display:grid;place-items:center;
           cursor:pointer;
         }
-        .nav-scope .drawer__caret i{
-          width:9px;height:9px;
-          border-right:1.6px solid currentColor;
-          border-bottom:1.6px solid currentColor;
-          transform:rotate(45deg);
+        .nav-scope .drawer__caret svg{
+          width:18px;height:18px;
           transition:transform .35s cubic-bezier(.22,1,.36,1);
           display:block;
         }
-        .nav-scope .drawer__group.is-open .drawer__caret i{transform:rotate(225deg)}
+        .nav-scope .drawer__group.is-open .drawer__caret svg{transform:rotate(180deg)}
 
         .nav-scope .drawer__sub{
           max-height:0;overflow:hidden;
@@ -167,7 +212,6 @@ export default function Nav() {
           font-weight:700;text-transform:uppercase;
           font-size:.92rem;letter-spacing:.03em;
         }
-        .nav-scope .drawer__cta-ico{font-size:1.1rem}
 
         /* ---------- small phones ---------- */
         @media(max-width:360px){
@@ -196,7 +240,7 @@ export default function Nav() {
                   to={n.href}
                 >
                   {n.label}
-                  {n.drop && <i className="car" />}
+                  {n.drop && <ChevronDown className="chev" />}
                 </Link>
                 {n.drop && (
                   <div className="dropdown">
@@ -213,7 +257,9 @@ export default function Nav() {
 
           <div className="nav__cta">
             <Link className="btn" to="/contact">
-              <span className="btn__ico">&#8594;</span>
+              <span className="btn__ico">
+                <ArrowRight size={18} />
+              </span>
               <span className="btn__t">Get a quote</span>
             </Link>
             <button
@@ -237,7 +283,7 @@ export default function Nav() {
             <img className="logo__img" src="/assets/img/logo.png" alt="LRYPT Technologies" />
           </Link>
           <button className="drawer__close" aria-label="Close menu" onClick={closeAll}>
-            &#10005;
+            <X size={18} />
           </button>
         </div>
 
@@ -261,7 +307,7 @@ export default function Nav() {
                       aria-expanded={isOpen}
                       onClick={() => setOpenGroup(isOpen ? null : n.label)}
                     >
-                      <i />
+                      <ChevronDown />
                     </button>
                   )}
                 </div>
@@ -281,7 +327,7 @@ export default function Nav() {
 
         <Link className="drawer__cta" to="/contact" onClick={closeAll}>
           <span>Get a quote</span>
-          <span className="drawer__cta-ico">&#8599;</span>
+          <ArrowRight size={18} style={{ transform: "rotate(-45deg)" }} />
         </Link>
       </div>
     </div>

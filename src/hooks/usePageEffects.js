@@ -44,7 +44,7 @@ function initReveal() {
         el.classList.add("in");
         if (el.hasAttribute("data-stagger"))
           $$("[data-reveal]", el).forEach((c, i) =>
-            setTimeout(() => c.classList.add("in"), i * 90)
+            setTimeout(() => c.classList.add("in"), i * 45)
           );
         fc(el);
       }
@@ -183,23 +183,6 @@ function initSlider() {
   };
 }
 
-function initFAQ() {
-  const cleanups = [];
-  $$(".faq__item").forEach((it) => {
-    const q = $(".faq__q", it);
-    if (!q) return;
-    q.setAttribute("aria-expanded", "false");
-    const fn = () => {
-      const open = it.classList.contains("open");
-      it.classList.toggle("open");
-      q.setAttribute("aria-expanded", String(!open));
-    };
-    q.addEventListener("click", fn);
-    cleanups.push(() => q.removeEventListener("click", fn));
-  });
-  return () => cleanups.forEach((c) => c());
-}
-
 // Runs the page-level animation/interaction engine after each route change.
 export function usePageEffects(deps) {
   const location = useLocation();
@@ -212,7 +195,6 @@ export function usePageEffects(deps) {
       cleanups.push(initParallax());
       pheadIntro();
       cleanups.push(initSlider());
-      cleanups.push(initFAQ());
     });
     return () => {
       cancelAnimationFrame(id);

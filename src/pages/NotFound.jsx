@@ -1,4 +1,5 @@
  import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import usePageMeta from "../hooks/usePageMeta";
 
 export default function NotFound() {
@@ -50,11 +51,15 @@ export default function NotFound() {
         </p>
         <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
           <Link className="btn" to="/">
-            <span className="btn__ico">&#8594;</span>
+            <span className="btn__ico">
+              <ArrowRight size={18} />
+            </span>
             <span className="btn__t">Back to home</span>
           </Link>
           <Link className="btn btn--outline" to="/contact">
-            <span className="btn__ico">&#8594;</span>
+            <span className="btn__ico">
+              <ArrowRight size={18} />
+            </span>
             <span className="btn__t">Contact us</span>
           </Link>
         </div>

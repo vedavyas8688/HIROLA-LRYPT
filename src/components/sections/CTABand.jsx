@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 export default function CTABand({
   heading = "Need our expert help? We\u2019re here!",
@@ -7,6 +8,8 @@ export default function CTABand({
   btnHref = "/contact",
   image = "/assets/img/ph-about.webp",
 }) {
+  const headingParts = typeof heading === "string" ? heading.split("? ") : [heading];
+
   return (
     <section className="sec sec--dark">
       <div className="wrap partner">
@@ -15,14 +18,17 @@ export default function CTABand({
             Get a quote
           </span>
           <h2 data-reveal="" style={{ marginTop: 16 }}>
-            {heading}
+            <span style={{ display: "block", whiteSpace: "nowrap" }}>{headingParts[0]}</span>
+            <span style={{ display: "block" }}>{headingParts.slice(1).join("? ")}</span>
           </h2>
           <p className="partner__sub" data-reveal="" style={{ borderColor: "var(--line-dark)" }}>
             {sub}
           </p>
           <div data-reveal="">
             <Link className="btn btn--invert" to={btnHref}>
-              <span className="btn__ico">&#8594;</span>
+              <span className="btn__ico">
+                <ArrowRight size={18} />
+              </span>
               <span className="btn__t">{btnText}</span>
             </Link>
           </div>

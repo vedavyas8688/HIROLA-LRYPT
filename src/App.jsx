@@ -11,6 +11,7 @@ import UtilityNetwork from "./pages/UtilityNetwork";
 import EngineeringDesign from "./pages/EngineeringDesign";
 import Hrms from "./pages/Hrms";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import Faq from "./pages/Faq";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -31,6 +32,7 @@ function App() {
           <Route path="/engineering-design" element={<EngineeringDesign />} />
           <Route path="/hrms" element={<Hrms />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />

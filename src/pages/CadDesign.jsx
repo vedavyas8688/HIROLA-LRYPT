@@ -13,7 +13,7 @@ export default function CadDesign() {
     <>
       <PageHead {...pageHead} />
       <IntroBlock {...intro} />
-      <IconGrid {...capabilities} tightTop />
+      <IconGrid {...capabilities} />
       <TagList {...industries} />
       <FAQSection {...faq} />
       <CTABand {...cta} />

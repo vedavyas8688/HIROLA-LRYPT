@@ -10,10 +10,9 @@ export default function IconGrid({
   headingStyle = "proj-head", // "proj-head" | "headc" | "center" | "none"
   gap = "36px 46px",
   extraTags,
-  tightTop = false,
 }) {
   return (
-    <section className={`sec sec--${bg}`} style={tightTop ? { paddingTop: 0 } : undefined}>
+    <section className={`sec sec--${bg}`}>
       <div className="wrap">
         {headingStyle === "headc" && (heading || kicker) && (
           <div className="headc">

@@ -13,7 +13,7 @@ export default function EngineeringDesign() {
     <>
       <PageHead {...pageHead} />
       <IntroBlock {...intro} />
-      <Capabilities {...capabilities} tightTop />
+      <Capabilities {...capabilities} />
       <IconGrid {...npdLifecycle} headingStyle="center" />
       <FAQSection {...faq} />
       <CTABand {...cta} />

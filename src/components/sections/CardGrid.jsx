@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 
-export default function CardGrid({ bg = "cream", heading, subheading, items, tightTop = false }) {
+export default function CardGrid({ bg = "cream", heading, subheading, items }) {
   return (
-    <section className={`sec sec--${bg}`} style={tightTop ? { paddingTop: 0 } : undefined}>
-      <div className="wrap">
+    <section className={`sec sec--${bg}`}>      <div className="wrap">
         {(heading || subheading) && (
           <div className="proj-head">
             {heading && <h2 data-reveal="">{heading}</h2>}
@@ -22,11 +21,11 @@ export default function CardGrid({ bg = "cream", heading, subheading, items, tig
               </div>
               <div className="post__b">
                 <div className="post__meta">{item.meta}</div>
-                <h3>{item.title}</h3>
+                <h3 style={{ color: "#000" }}>{item.title}</h3>
                 <p className="mute" style={{ fontSize: ".95rem" }}>
                   {item.desc}
                 </p>
-                <span className="more">Learn more &#8594;</span>
+                <span className="more" style={{ color: "#000" }}>Learn more &#8594;</span>
               </div>
             </Link>
           ))}

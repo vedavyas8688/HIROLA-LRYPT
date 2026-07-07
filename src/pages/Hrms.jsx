@@ -12,7 +12,7 @@ export default function Hrms() {
     <>
       <PageHead {...pageHead} />
       <IntroBlock {...intro} />
-      <Capabilities {...capabilities} tightTop />
+      <Capabilities {...capabilities} />
       <FAQSection {...faq} />
       <CTABand {...cta} />
     </>
