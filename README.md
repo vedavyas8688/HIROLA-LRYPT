@@ -106,3 +106,5 @@ paths. A `public/_redirects` file is included for Netlify
 - Replace placeholder images (`assets/img/ph-*.webp`)
 - Confirm public email, office address, and social links
 - Wire the contact form (`/contact`) to a real backend endpoint
+
+# HIROLA-LRYPT
