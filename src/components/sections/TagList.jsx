@@ -16,7 +16,11 @@ export default function TagList({ bg = "dark", label, heading, tags, top, blocks
           </span>
         )}
         {sectionHeading && (
-          <h2 className="h2-xl" data-reveal="" style={{ margin: "14px 0 26px", maxWidth: "20ch" }}>
+          <h2
+            className="h2-xl"
+            data-reveal=""
+            style={{ margin: "14px 0 26px", maxWidth: "26ch", whiteSpace: "pre-line" }}
+          >
             {sectionHeading}
           </h2>
         )}

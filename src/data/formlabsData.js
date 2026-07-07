@@ -8,7 +8,7 @@ export const meta = {
 
 export const pageHead = {
   "variant": "img",
-  "image": "/assets/img/formlabs/fuse-blast-scene2.webp",
+  "image": "/assets/img/image29.jpg",
   "imageAlt": "Formlabs — LRYPT Technologies",
   "crumb": "Formlabs",
   "lines": [
@@ -18,290 +18,290 @@ export const pageHead = {
   "lead": null
 };
 
-export const intro = {
-  "bg": "cream",
-  "label": null,
-  "lede": "Professional 3D printing, made accessible.",
-  "lead": "Formlabs combines advanced stereolithography (SLA) and selective laser sintering (SLS) to deliver exceptional quality and reliability — without the steep cost of industrial machines or service bureaus. From rapid prototyping and manufacturing tools to end-use parts and high-resolution models, Formlabs adds value across the entire product lifecycle."
+ export const intro = {
+  bg: "cream",
+  label: null,
+  lede: "Accelerate Innovation with 3D Printing.",
+  lead:
+    "Unlock the power of advanced additive manufacturing with LRYPT Technologies. Our Formlabs 3D printing solutions enable engineers, designers, and manufacturers to create accurate prototypes, functional components, and production-ready parts with exceptional speed, precision, and consistency—reducing development time and bringing ideas to market faster."
 };
 
-export const slaProducts = {
-  "bg": "cream",
-  "heading": "The complete Formlabs ecosystem",
-  "subheading": "Print, wash, cure, sift and blast — a seamless end-to-end workflow.",
-  "wide": false,
-  "items": [
+ export const slaProducts = {
+  bg: "cream",
+  heading: "The Complete Formlabs Ecosystem",
+  subheading:
+    "A fully integrated 3D printing workflow—from printing and washing to curing, powder management, and finishing—for consistent, professional-quality results.",
+  wide: false,
+  items: [
     {
-      "img": "/assets/img/formlabs/f4-wash-cure.webp",
-      "alt": "Form 4 Wash & Cure",
-      "kicker": "Wash & Cure",
-      "title": "Form 4 Wash & Cure",
-      "desc": "Automated washing and post-curing for SLA parts — consistent, hands-off finishing for a clean, fully cured result.",
-      "white": false
+      img: "/assets/img/formlabs/f4-wash-cure.webp",
+      alt: "Form Wash & Form Cure",
+      kicker: "Post-Processing",
+      title: "Form Wash & Form Cure",
+      desc:
+        "Automate washing and curing to achieve clean, fully cured, and production-ready SLA parts with consistent quality and minimal manual effort.",
+      white: false
     },
     {
-      "img": "/assets/img/formlabs/form-cure.webp",
-      "alt": "Form Cure (2nd Gen)",
-      "kicker": "Post-curing",
-      "title": "Form Cure (2nd Gen)",
-      "desc": "Precise, uniform post-curing that brings resin parts to their optimal mechanical and material properties.",
-      "white": false
+      img: "/assets/img/formlabs/form-cure.webp",
+      alt: "Form Cure",
+      kicker: "Precision Curing",
+      title: "Form Cure",
+      desc:
+        "Deliver uniform heat and light exposure to maximize the strength, durability, and performance of every printed resin component.",
+      white: false
     },
     {
-      "img": "/assets/img/formlabs/fuse-sift.webp",
-      "alt": "Fuse Sift",
-      "kicker": "Powder management",
-      "title": "Fuse Sift",
-      "desc": "Compact powder management that integrates part extraction, powder recovery, storage, and mixing in one streamlined station.",
-      "white": false
+      img: "/assets/img/formlabs/fuse-sift.webp",
+      alt: "Fuse Sift",
+      kicker: "Powder Management",
+      title: "Fuse Sift",
+      desc:
+        "Efficiently recover, mix, and store SLS powder while simplifying part extraction and maintaining a clean, organized workflow.",
+      white: false
     },
     {
-      "img": "/assets/img/formlabs/fuse-blast.webp",
-      "alt": "Fuse Blast",
-      "kicker": "Cleaning & polishing",
-      "title": "Fuse Blast",
-      "desc": "Automated finishing for SLS parts — removes excess powder and delivers a smooth, semi-gloss surface ready for dyeing.",
-      "white": false
+      img: "/assets/img/formlabs/fuse-blast.webp",
+      alt: "Fuse Blast",
+      kicker: "Surface Finishing",
+      title: "Fuse Blast",
+      desc:
+        "Automatically remove excess powder and produce smooth, high-quality surface finishes, preparing SLS parts for final use or post-processing.",
+      white: false
     }
   ]
 };
 
-export const slaFeature = {
-  "bg": "cream",
-  "imgFirst": true,
-  "image": "/assets/img/formlabs/fuse-blast-scene.webp",
-  "imageAlt": "Fully automated part cleaning and polishing",
-  "label": "Fuse Blast",
-  "heading": "Fully automated part cleaning and polishing",
-  "paragraphs": [
-    "Fuse Blast is a sophisticated automated finishing solution designed for SLS parts. It efficiently removes excess powder and consistently produces professionally clean parts with a smooth, semi-gloss finish.",
-    "The Fuse Blast polishing system ensures your parts are ready for dyeing, delivering exceptional surface quality every time."
+ export const slaFeature = {
+  bg: "cream",
+  imgFirst: true,
+  image: "/assets/img/formlabs/fuse-blast-scene.webp",
+  imageAlt: "Automated SLS part finishing with Fuse Blast",
+  label: "Fuse Blast",
+  heading: "Automated & Surface Finishing",
+  paragraphs: [
+    "The Formlabs Fuse Blast streamlines post-processing by automatically removing excess powder from SLS parts while delivering a clean, smooth, and consistent surface finish. This advanced finishing system reduces manual effort and significantly improves workflow efficiency.",
+    "Designed for high-quality additive manufacturing, Fuse Blast prepares printed components for dyeing, assembly, or end-use applications, ensuring professional-grade results with exceptional speed, consistency, and reliability."
   ]
 };
 
-export const slsFeature = {
-  "bg": "cream",
-  "imgFirst": false,
-  "image": "/assets/img/formlabs/fuse-sift-scene.webp",
-  "imageAlt": "Convenient, compact powder management",
-  "label": "Fuse Sift",
-  "heading": "Convenient, compact powder management",
-  "paragraphs": [
-    "Our comprehensive powder management station, Fuse Sift, integrates part extraction, powder recovery, storage, and mixing into one streamlined device.",
-    "It automates the dispensing and blending of used and new powder, helping you minimise waste and maintain precise control over your powder supply."
+ export const slsFeature = {
+  bg: "cream",
+  imgFirst: false,
+  image: "/assets/img/formlabs/fuse-sift-scene.webp",
+  imageAlt: "Formlabs Fuse Sift powder management system",
+  label: "Fuse Sift",
+  heading: "Smart Powder Management",
+  paragraphs: [
+    "The Formlabs Fuse Sift simplifies SLS post-processing by combining part extraction, powder recovery, storage, and material mixing into a single, efficient workstation. It helps streamline your workflow while keeping your workspace clean and organized.",
+    "With automated powder dispensing and precise mixing of fresh and recycled material, Fuse Sift minimizes waste, improves material utilization, and ensures consistent print quality across every production cycle."
   ]
 };
 
 export const slsProducts = {
-  "bg": "dark",
-  "heading": "Complete solution packages",
-  "subheading": "Everything you need to print, in one package.",
-  "wide": true,
-  "items": [
+  bg: "dark",
+  heading: "Complete 3D Printing Packages",
+  subheading: "Everything you need to start printing with confidence.",
+  wide: true,
+  items: [
     {
-      "img": "/assets/img/formlabs/core-bundle.webp",
-      "alt": "Form 4 Core Package",
-      "kicker": "Package",
-      "title": "Form 4 Core Package",
-      "desc": "A complete SLA setup — printer, Form Wash, and Form Cure — for reliable, professional-grade printing out of the box.",
-      "white": true
+      img: "/assets/img/formlabs/core-bundle.webp",
+      alt: "Form 4 Professional Package",
+      kicker: "Professional Package",
+      title: "Form 4 Professional Package",
+      desc: "A complete SLA printing solution including the Form 4 printer, Form Wash, and Form Cure for fast, accurate, and reliable professional workflows.",
+      white: true
     },
     {
-      "img": "/assets/img/formlabs/dental-bundle.webp",
-      "alt": "Form 4 Dental Package",
-      "kicker": "Package",
-      "title": "Form 4 Dental Package",
-      "desc": "A dedicated dental solution combining printing, washing, and curing for accurate, biocompatible appliances.",
-      "white": true
+      img: "/assets/img/formlabs/dental-bundle.webp",
+      alt: "Form 4 Dental Package",
+      kicker: "Dental Package",
+      title: "Form 4 Dental Package",
+      desc: "An integrated dental 3D printing solution designed for producing highly accurate, biocompatible dental models, guides, and appliances.",
+      white: true
     }
   ]
 };
 
 export const printerLineup = {
-  "bg": "cream",
-  "kicker": "Formlabs printers",
-  "heading": "The printer line-up",
-  "subheading": "SLA and SLS platforms engineered for precision, speed, and production-grade output.",
-  "columns": 3,
-  "items": [
+  bg: "cream",
+  kicker: "Formlabs Printers",
+  heading: "Explore the Formlabs Printer Range",
+  subheading: "Professional SLA and SLS 3D printing systems designed for speed, precision, and production-ready performance.",
+  columns: 3,
+  items: [
     {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
           {
-            "tag": "rect",
-            "props": {
-              "x": "8",
-              "y": "6",
-              "width": "10",
-              "height": "28",
-              "rx": "2",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "8",
+              y: "6",
+              width: "10",
+              height: "28",
+              rx: "2",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            }
           },
           {
-            "tag": "rect",
-            "props": {
-              "x": "20",
-              "y": "14",
-              "width": "12",
-              "height": "20",
-              "rx": "2",
-              "fill": "currentColor"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "20",
+              y: "14",
+              width: "12",
+              height: "20",
+              rx: "2",
+              fill: "currentColor"
+            }
           }
         ]
       },
-      "title": "Form 4 & Form 4B",
-      "desc": "Next-gen MSLA — most prints in under 2 hours, with a biocompatible 4B option."
+      title: "Form 4 & Form 4B",
+      desc: "High-speed SLA printers delivering exceptional surface quality, precision, and biocompatible printing for engineering and healthcare applications."
     },
     {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
           {
-            "tag": "rect",
-            "props": {
-              "x": "6",
-              "y": "6",
-              "width": "15",
-              "height": "15",
-              "rx": "2",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "6",
+              y: "6",
+              width: "15",
+              height: "15",
+              rx: "2",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            }
           },
           {
-            "tag": "rect",
-            "props": {
-              "x": "19",
-              "y": "19",
-              "width": "15",
-              "height": "15",
-              "rx": "2",
-              "fill": "currentColor"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "19",
+              y: "19",
+              width: "15",
+              height: "15",
+              rx: "2",
+              fill: "currentColor"
+            }
           }
         ]
       },
-      "title": "Form 4L & Form 4BL",
-      "desc": "Large-format LFD — big parts in under 6 hours, 4.6× the Form 4 build volume."
+      title: "Form 4L & Form 4BL",
+      desc: "Large-format SLA printers engineered to produce bigger parts with exceptional accuracy, speed, and consistent print quality."
     },
     {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
           {
-            "tag": "rect",
-            "props": {
-              "x": "6",
-              "y": "6",
-              "width": "8",
-              "height": "8",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "6",
+              y: "6",
+              width: "8",
+              height: "8",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            }
           },
           {
-            "tag": "rect",
-            "props": {
-              "x": "6",
-              "y": "20",
-              "width": "8",
-              "height": "8",
-              "fill": "currentColor"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "6",
+              y: "20",
+              width: "8",
+              height: "8",
+              fill: "currentColor"
+            }
           },
           {
-            "tag": "rect",
-            "props": {
-              "x": "20",
-              "y": "14",
-              "width": "14",
-              "height": "14",
-              "rx": "2",
-              "fill": "currentColor"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "20",
+              y: "14",
+              width: "14",
+              height: "14",
+              rx: "2",
+              fill: "currentColor"
+            }
           }
         ]
       },
-      "title": "Fuse Series (SLS)",
-      "desc": "Industrial-strength selective laser sintering for functional production parts."
+      title: "Fuse Series (SLS)",
+      desc: "Industrial-grade SLS printers designed to produce durable functional parts, prototypes, tooling, and low-volume production components."
     }
   ],
-  "extraTags": [
+  extraTags: [
     {
-      "heading": "Materials library",
-      "tags": [
+      heading: "Available Materials",
+      tags: [
         "General Purpose",
         "Engineering",
+        "High Temp",
+        "Flexible",
         "Dental",
         "Medical",
         "Jewelry"
       ]
     },
     {
-      "heading": "Industries",
-      "tags": [
-        "Engineering",
+      heading: "Applications",
+      tags: [
+        "Rapid Prototyping",
+        "Product Development",
         "Manufacturing",
-        "Aerospace",
         "Automotive",
+        "Aerospace",
         "Healthcare",
         "Dental",
         "Education",
-        "Jewelry",
-        "Audio",
-        "Entertainment"
+        "Jewelry"
       ]
     }
   ]
 };
 
-export const faq = {
-  "items": [
+ export const faq = {
+  items: [
     {
-      "q": "What 3D printing technologies does Formlabs use?",
-      "a": "Formlabs printers use advanced stereolithography (SLA) and selective laser sintering (SLS) for high-quality, reliable parts without the cost of large industrial machines."
+      q: "What 3D printing solutions does LRYPT Technologies offer?",
+      a: "LRYPT Technologies provides Formlabs SLA and SLS 3D printing solutions, enabling businesses to create high-quality prototypes, functional parts, manufacturing tools, and end-use components with exceptional precision and reliability."
     },
     {
-      "q": "Which Formlabs printers do you offer?",
-      "a": "The SLA range includes Form 4, Form 4B, Form 4L, and Form 4BL, plus the Fuse Series SLS printers — from desktop prototyping to large-format and production parts."
+      q: "Which Formlabs 3D printers are available?",
+      a: "We offer the complete Formlabs portfolio, including Form 4, Form 4B, Form 4L, Form 4BL, and the Fuse Series SLS printers, providing solutions for rapid prototyping, product development, and production applications."
     },
     {
-      "q": "What is the Formlabs post-processing ecosystem?",
-      "a": "A complete workflow: Form Wash and the Form 4 Wash & Cure for cleaning and curing SLA parts, Fuse Sift for powder management, and Fuse Blast for automated cleaning and polishing of SLS parts."
+      q: "Do you provide complete 3D printing workflows?",
+      a: "Yes. Along with Formlabs printers, we provide integrated post-processing solutions including Form Wash, Form Cure, Fuse Sift, and Fuse Blast to ensure efficient workflows and professional-quality finished parts."
     },
     {
-      "q": "What does Fuse Blast do?",
-      "a": "Fuse Blast is an automated finishing solution for SLS parts. It removes excess powder and produces professionally clean parts with a smooth, semi-gloss finish, ready for dyeing."
+      q: "Which industries benefit from Formlabs 3D printing?",
+      a: "Our 3D printing solutions support industries including manufacturing, automotive, aerospace, healthcare, dental, engineering, education, product design, jewelry, and research & development."
     },
     {
-      "q": "What does Fuse Sift do?",
-      "a": "Fuse Sift is a compact powder-management station that integrates part extraction, powder recovery, storage, and mixing — automating the blending of used and new powder to minimise waste."
+      q: "What materials are supported?",
+      a: "Formlabs offers a wide range of materials, including General Purpose, Engineering, Tough, Flexible, High Temperature, Dental, Medical, Castable, and SLS Nylon powders to meet diverse application requirements."
     },
     {
-      "q": "What materials are available?",
-      "a": "The Formlabs Materials Library spans General Purpose, Engineering, Dental, Medical, and Jewelry resins and SLS powders."
+      q: "Why choose LRYPT Technologies for Formlabs solutions?",
+      a: "As a trusted technology partner, LRYPT Technologies provides expert consultation, product guidance, installation support, training, and after-sales assistance to help customers maximize the value of their Formlabs 3D printing investment."
     }
   ]
 };
 
-export const cta = {
-  "heading": "Need our expert help? We’re here!",
-  "sub": "Need our professional assistance? We are here to help you! Advanced telecom networking solutions, first-rate engineering services, and all-inclusive recruitment services are provided by LRYPT Technologies. In order to guarantee that your projects and workforce are always at the forefront of success, our devoted team is committed to providing creative, dependable, and efficient solutions tailored to your needs. Reach out to us right now!",
-  "btnText": "Get a quote",
-  "btnHref": "/contact",
-  "image": "/assets/img/ph-about.webp"
+ export const cta = {
+  heading: "Bring Your Ideas to Life",
+  sub: "Transform concepts into high-quality prototypes and production-ready parts with LRYPT Technologies' Formlabs 3D printing solutions. Our experts provide end-to-end guidance—from selecting the right printer and materials to installation, training, and ongoing technical support—helping you achieve faster innovation, exceptional precision, and reliable manufacturing results.",
+  btnText: "Get a Quote",
+  btnHref: "/contact",
+  image: "/assets/img/image29.jpeg"
 };

@@ -8,7 +8,7 @@ export const meta = {
 
 export const pageHead = {
   "variant": "img",
-  "image": "/assets/img/ph-gis.webp",
+  "image": "/assets/img/image20.jpeg",
   "imageAlt": "Utility Network Services — LRYPT Technologies",
   "crumb": "Utility Network Services",
   "lines": [
@@ -178,5 +178,5 @@ export const cta = {
   "sub": "Need our professional assistance? We are here to help you! Advanced telecom networking solutions, first-rate engineering services, and all-inclusive recruitment services are provided by LRYPT Technologies. In order to guarantee that your projects and workforce are always at the forefront of success, our devoted team is committed to providing creative, dependable, and efficient solutions tailored to your needs. Reach out to us right now!",
   "btnText": "Get a quote",
   "btnHref": "/contact",
-  "image": "/assets/img/ph-about.webp"
+  "image": "/assets/img/image19.jpeg"
 };

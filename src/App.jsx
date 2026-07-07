@@ -15,6 +15,8 @@ import BlogPost from "./pages/BlogPost";
 import Faq from "./pages/Faq";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Privacy from "./components/sections/Privacy";
+import Terms from "./components/sections/Terms";
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
           <Route path="/faq" element={<Faq />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
         </Route>
       </Routes>
     </BrowserRouter>

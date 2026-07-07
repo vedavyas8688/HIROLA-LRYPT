@@ -6,75 +6,81 @@ export const meta = {
   "description": "Power modern engineering with CAD design, ANSYS Simulation-Driven Product Development, and Formlabs SLA/SLS additive manufacturing."
 };
 
-export const pageHead = {
-  "variant": "img",
-  "image": "/assets/img/ph-ansys.webp",
-  "imageAlt": "Solutions — LRYPT Technologies",
-  "crumb": "Solutions",
-  "lines": [
+ export const pageHead = {
+  variant: "img",
+  image: "/assets/img/image9.jpeg",
+  imageAlt: "Solutions — LRYPT Technologies",
+  crumb: "Solutions",
+  lines: [
     "Software that powers",
     "modern engineering"
   ],
-  "lead": "From design and simulation to additive manufacturing, our solutions improve accuracy, efficiency, and productivity across every engineering discipline."
+  lead:
+    "Empowering businesses with reliable engineering, geospatial, and digital solutions."
 };
 
-export const solutionsGrid = {
-  "bg": "dark",
-  "heading": "Explore each solution",
-  "subheading": "",
-  "items": [
+ export const solutionsGrid = {
+  bg: "dark",
+  heading: "Explore Our Solutions",
+  subheading:
+    "Innovative engineering and technology solutions designed to help businesses build smarter, work faster, and grow confidently.",
+
+  items: [
     {
-      "href": "/cad-design",
-      "img": "/assets/img/ph-cad.webp",
-      "alt": "CAD Design",
-      "meta": "Design",
-      "title": "CAD Design",
-      "desc": "3D modelling, parametric design, assembly, drafting, simulation, and collaboration."
+      href: "/cad-design",
+      img: "/assets/img/image23.jpeg",
+      alt: "CAD Design",
+      meta: "Engineering",
+      title: "CAD Design",
+      desc:
+        "High-precision 2D drafting and 3D CAD modeling solutions for product development, manufacturing, and infrastructure projects."
     },
     {
-      "href": "/ansys-simulation",
-      "img": "/assets/img/ph-ansys.webp",
-      "alt": "ANSYS Simulation",
-      "meta": "Simulation",
-      "title": "ANSYS Simulation",
-      "desc": "Multiphysics CAE across structures, fluids, electronics, materials, and digital twins."
+      href: "/ansys-simulation",
+      img: "/assets/img/image25.jpeg",
+      alt: "Engineering Simulation",
+      meta: "Simulation",
+      title: "Engineering Simulation",
+      desc:
+        "Validate product performance, improve reliability, and reduce development time through advanced engineering simulations."
     },
     {
-      "href": "/formlabs",
-      "img": "/assets/img/formlabs/f4-wash-cure.webp",
-      "alt": "Formlabs 3D Printing",
-      "meta": "Additive",
-      "title": "Formlabs 3D Printing",
-      "desc": "SLA & SLS printers, a full wash-cure-sift-blast ecosystem, and a rich materials library."
+      href: "/formlabs",
+      img: "/assets/img/banner4.png",
+      alt: "3D Printing",
+      meta: "Additive Manufacturing",
+      title: "3D Printing",
+      desc:
+        "Accelerate innovation with industrial-grade rapid prototyping, functional testing, and custom manufacturing solutions."
     }
   ]
 };
 
-export const faq = {
-  "items": [
+ export const faq = {
+  items: [
     {
-      "q": "What engineering software solutions does LRYPT provide?",
-      "a": "Three core areas: CAD design for 3D modelling and product development, ANSYS simulation for multiphysics CAE, and Formlabs SLA/SLS 3D printers for additive manufacturing."
+      q: "What services does LRYPT Technologies provide?",
+      a: "LRYPT Technologies offers comprehensive engineering and technology solutions, including GIS services, CAD design, telecom engineering, ANSYS simulation, Formlabs 3D printing, recruitment, and technical workforce solutions tailored to diverse industries."
     },
     {
-      "q": "Can you help us choose the right tool?",
-      "a": "Yes. We assess your goals, constraints, and workflows, then recommend the right solution and support adoption with training and ongoing guidance."
+      q: "Which industries do you serve?",
+      a: "We work with organizations across infrastructure, telecommunications, manufacturing, construction, utilities, energy, automotive, healthcare, education, government, and other engineering-driven industries."
     },
     {
-      "q": "Do you provide training and support?",
-      "a": "Absolutely. Every solution comes with onboarding, training resources, and a partner who stays with you."
+      q: "Can LRYPT deliver customized engineering solutions?",
+      a: "Yes. We understand that every project has unique requirements. Our experts work closely with clients to develop customized engineering, geospatial, telecom, and digital solutions that align with their business objectives."
     },
     {
-      "q": "Which industries use your solutions?",
-      "a": "Aerospace, automotive, defence, energy, healthcare, manufacturing, dental, education, jewelry, and more."
+      q: "Why choose LRYPT Technologies?",
+      a: "Our experienced team combines technical expertise, innovative technologies, and a client-focused approach to deliver reliable, scalable, and cost-effective solutions. We are committed to quality, precision, and long-term customer success."
     }
   ]
 };
 
-export const cta = {
-  "heading": "Need our expert help? We’re here!",
-  "sub": "Need our professional assistance? We are here to help you! Advanced telecom networking solutions, first-rate engineering services, and all-inclusive recruitment services are provided by LRYPT Technologies. In order to guarantee that your projects and workforce are always at the forefront of success, our devoted team is committed to providing creative, dependable, and efficient solutions tailored to your needs. Reach out to us right now!",
-  "btnText": "Get a quote",
-  "btnHref": "/contact",
-  "image": "/assets/img/ph-about.webp"
+ export const cta = {
+  heading: "Need Expert Solutions?",
+  sub: "LRYPT Technologies delivers innovative engineering, GIS, telecom, CAD design, simulation, 3D printing, and workforce solutions that help businesses achieve their goals with confidence. Our experienced professionals combine technical expertise with advanced technologies to provide reliable, scalable, and cost-effective services tailored to your unique project requirements. From concept and design to implementation and ongoing support, we are committed to delivering quality, precision, and long-term value. Partner with LRYPT Technologies and let us help bring your next project to life.",
+  btnText: "Get a Quote",
+  btnHref: "/contact",
+  image: "/assets/img/image26.jpeg"
 };

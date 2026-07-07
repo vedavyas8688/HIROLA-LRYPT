@@ -21,265 +21,258 @@ export const pageHead = {
 export const intro = {
   "bg": "cream",
   "label": null,
-  "lede": "Designers and engineers deserve top-tier tools.",
-  "lead": "Our 3D CAD software brings ideas to life with powerful modelling and simulation — helping you craft high-quality products, launch successfully, and meet customer demand. These capabilities help teams create, iterate, validate, and bring quality products to market efficiently."
+  "lede":  "Engineering teams deserve reliable, high solutions.",
+  "lead": "Our CAD design services transform concepts into precise, production-ready models through advanced 2D drafting and 3D modeling. We help businesses design, visualize, validate, and optimize products with greater accuracy, efficiency, and confidence."
 };
 
-export const capabilities = {
-  "bg": "cream",
-  "kicker": null,
-  "heading": "Key capabilities",
-  "subheading": "",
-  "columns": 3,
-  "items": [
+ export const capabilities = {
+  bg: "cream",
+  kicker: null,
+  heading: "Key Capabilities",
+  subheading: "",
+  columns: 3,
+  items: [
     {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
           {
-            "tag": "rect",
-            "props": {
-              "x": "8",
-              "y": "6",
-              "width": "10",
-              "height": "28",
-              "rx": "2",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "8",
+              y: "6",
+              width: "10",
+              height: "28",
+              rx: "2",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            }
           },
           {
-            "tag": "rect",
-            "props": {
-              "x": "20",
-              "y": "14",
-              "width": "12",
-              "height": "20",
-              "rx": "2",
-              "fill": "currentColor"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "20",
+              y: "14",
+              width: "12",
+              height: "20",
+              rx: "2",
+              fill: "currentColor"
+            }
           }
         ]
       },
-      "title": "Advanced modelling",
-      "desc": "Precise 3D modelling of complex shapes and structures."
+      title: "2D & 3D CAD Design",
+      desc: "Create accurate 2D drawings and detailed 3D models for engineering and manufacturing projects."
     },
     {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
           {
-            "tag": "circle",
-            "props": {
-              "cx": "20",
-              "cy": "20",
-              "r": "13",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
+            tag: "circle",
+            props: {
+              cx: "20",
+              cy: "20",
+              r: "13",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            }
           },
           {
-            "tag": "circle",
-            "props": {
-              "cx": "20",
-              "cy": "20",
-              "r": "4",
-              "fill": "currentColor"
-            },
-            "text": null
+            tag: "circle",
+            props: {
+              cx: "20",
+              cy: "20",
+              r: "4",
+              fill: "currentColor"
+            }
           }
         ]
       },
-      "title": "Parametric design",
-      "desc": "Define and modify parameters for fast, iterative changes."
+      title: "Parametric Modeling",
+      desc: "Modify and optimize designs efficiently through intelligent, feature-based parametric modeling."
     },
     {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
           {
-            "tag": "rect",
-            "props": {
-              "x": "6",
-              "y": "6",
-              "width": "15",
-              "height": "15",
-              "rx": "2",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "6",
+              y: "6",
+              width: "15",
+              height: "15",
+              rx: "2",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            }
           },
           {
-            "tag": "rect",
-            "props": {
-              "x": "19",
-              "y": "19",
-              "width": "15",
-              "height": "15",
-              "rx": "2",
-              "fill": "currentColor"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "19",
+              y: "19",
+              width: "15",
+              height: "15",
+              rx: "2",
+              fill: "currentColor"
+            }
           }
         ]
       },
-      "title": "Assembly modelling",
-      "desc": "Build and manage assemblies of parts and components."
+      title: "Assembly Design",
+      desc: "Develop and manage complex assemblies while ensuring proper fit, function, and manufacturability."
     },
     {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
           {
-            "tag": "rect",
-            "props": {
-              "x": "6",
-              "y": "6",
-              "width": "8",
-              "height": "8",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "6",
+              y: "6",
+              width: "8",
+              height: "8",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            }
           },
           {
-            "tag": "rect",
-            "props": {
-              "x": "6",
-              "y": "20",
-              "width": "8",
-              "height": "8",
-              "fill": "currentColor"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "6",
+              y: "20",
+              width: "8",
+              height: "8",
+              fill: "currentColor"
+            }
           },
           {
-            "tag": "rect",
-            "props": {
-              "x": "20",
-              "y": "14",
-              "width": "14",
-              "height": "14",
-              "rx": "2",
-              "fill": "currentColor"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "20",
+              y: "14",
+              width: "14",
+              height: "14",
+              rx: "2",
+              fill: "currentColor"
+            }
           }
         ]
       },
-      "title": "Drafting & documentation",
-      "desc": "Detailed 2D drawings and technical documentation."
+      title: "Technical Documentation",
+      desc: "Produce detailed engineering drawings, manufacturing documentation, and industry-standard deliverables."
     },
     {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
           {
-            "tag": "circle",
-            "props": {
-              "cx": "15",
-              "cy": "17",
-              "r": "9",
-              "fill": "currentColor"
-            },
-            "text": null
+            tag: "circle",
+            props: {
+              cx: "15",
+              cy: "17",
+              r: "9",
+              fill: "currentColor"
+            }
           },
           {
-            "tag": "rect",
-            "props": {
-              "x": "20",
-              "y": "22",
-              "width": "14",
-              "height": "14",
-              "rx": "3",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
+            tag: "rect",
+            props: {
+              x: "20",
+              y: "22",
+              width: "14",
+              height: "14",
+              rx: "3",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            }
           }
         ]
       },
-      "title": "Simulation & analysis",
-      "desc": "Virtual testing for performance and durability."
+      title: "Design Validation",
+      desc: "Evaluate design performance through analysis and validation before production begins."
     },
     {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
           {
-            "tag": "path",
-            "props": {
-              "d": "M8 28L18 16l6 6 8-12",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
+            tag: "path",
+            props: {
+              d: "M8 28L18 16l6 6 8-12",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            }
           }
         ]
       },
-      "title": "Collaboration",
-      "desc": "Cloud-based teamwork, version control, and easy sharing."
+      title: "Project Collaboration",
+      desc: "Enable seamless collaboration with shared design data, revision control, and efficient workflows."
     }
   ],
-  "extraTags": []
+  extraTags: []
 };
 
-export const industries = {
-  "bg": "dark",
-  "top": {
-    "label": "Industries",
-    "heading": "Built for industries that demand precision"
+ export const industries = {
+  bg: "dark",
+  top: {
+    label: "Industries",
+    heading: "Serving Industries That\nDemand Excellence"
   },
-  "blocks": [
+  blocks: [
     {
-      "heading": null,
-      "tags": [
-        "Aerospace",
-        "Automotive",
-        "Defence",
+      heading: null,
+      tags: [
+        "Manufacturing",
+        "Construction",
+        "Infrastructure",
+        "Telecommunications",
+        "Utilities",
         "Energy",
+        "Oil & Gas",
+        "Automotive",
+        "Aerospace",
+        "Architecture",
         "Healthcare",
-        "Manufacturing"
+        "Government"
       ]
     }
   ]
 };
 
-export const faq = {
-  "items": [
+ export const faq = {
+  items: [
     {
-      "q": "What is CAD design used for?",
-      "a": "CAD lets engineers create precise 3D models, run simulations, produce technical drawings, and bring high-quality products to market faster."
+      q: "What CAD design services does LRYPT Technologies provide?",
+      a: "We provide professional 2D drafting, 3D CAD modeling, assembly design, reverse engineering, design optimization, and technical documentation for a wide range of engineering and manufacturing projects."
     },
     {
-      "q": "Which industries does your CAD solution support?",
-      "a": "Aerospace, automotive, defence, energy, healthcare, and manufacturing."
+      q: "Which industries benefit from your CAD design services?",
+      a: "Our CAD solutions support industries including manufacturing, automotive, aerospace, construction, infrastructure, telecommunications, energy, healthcare, and industrial engineering."
     },
     {
-      "q": "Does the CAD software include simulation?",
-      "a": "Yes. Our CAD tools integrate simulation and analysis so you can virtually test designs before manufacturing."
+      q: "Can you convert existing drawings into CAD models?",
+      a: "Yes. We convert hand sketches, PDFs, scanned drawings, and legacy CAD files into accurate 2D drawings and detailed 3D models while maintaining industry standards and design accuracy."
     },
     {
-      "q": "Can CAD files be shared across teams and tools?",
-      "a": "Yes. Cloud collaboration, version control, and broad import/export support make it easy to work across teams and systems."
+      q: "Why choose LRYPT Technologies for CAD design?",
+      a: "Our experienced design engineers deliver accurate, efficient, and cost-effective CAD solutions tailored to your project requirements. We focus on quality, timely delivery, and close collaboration to ensure every design meets your expectations."
     }
   ]
 };
-
-export const cta = {
-  "heading": "Need our expert help? We’re here!",
-  "sub": "Need our professional assistance? We are here to help you! Advanced telecom networking solutions, first-rate engineering services, and all-inclusive recruitment services are provided by LRYPT Technologies. In order to guarantee that your projects and workforce are always at the forefront of success, our devoted team is committed to providing creative, dependable, and efficient solutions tailored to your needs. Reach out to us right now!",
-  "btnText": "Get a quote",
-  "btnHref": "/contact",
-  "image": "/assets/img/ph-about.webp"
+ export const cta = {
+  heading: "Let's Design Smarter",
+  sub: "Partner with LRYPT Technologies for precision CAD design services that transform concepts into production-ready solutions. From 2D drafting and 3D modeling to assembly design and technical documentation, our experts deliver innovative, accurate, and efficient engineering solutions that support every stage of your product development journey.",
+  btnText: "Get a Quote",
+  btnHref: "/contact",
+  image: "/assets/img/image28.jpeg"
 };

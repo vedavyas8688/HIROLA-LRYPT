@@ -144,7 +144,7 @@ export default function Footer() {
                 rel="noreferrer"
               >
                 <MapPin size={17} />
-                <span>Vadarpalya, Hennur, Bangalore 560043</span>
+                <span>No. 23 l Symphony managed office space, Hormavu agara road,Vadarpalya, Hennur, Bangalore -560043</span>
               </a>
             </div>
 
@@ -166,8 +166,8 @@ export default function Footer() {
         <div className="foot__bot">
           <span>&copy; {year} LRYPT Technologies. All rights reserved.</span>
           <span style={{ display: "flex", gap: 24 }}>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
             <Link to="/faq">FAQ</Link>
           </span>
         </div>

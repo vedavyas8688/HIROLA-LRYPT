@@ -1,7 +1,4 @@
-// Content for the Blog page and individual blog post pages.
-// Edit copy, images, and items here — no component code needed.
-// Each post has a `slug` used for its URL (/blog/<slug>) and a `body`
-// array of paragraphs rendered on the post page.
+ 
 
 export const meta = {
   "title": "Blog & Insights | LRYPT Technologies",
@@ -23,7 +20,7 @@ export const pageHead = {
 export const postList = [
   {
     "slug": "simulation-driven-product-development",
-    "img": "/assets/img/ph-ansys.webp",
+    "img": "/assets/img/image2.jpeg",
     "alt": "Why simulation-driven product development wins",
     "meta": "Simulation · 6 min",
     "title": "Why simulation-driven product development wins",
@@ -37,7 +34,7 @@ export const postList = [
   },
   {
     "slug": "finishing-sls-parts",
-    "img": "/assets/img/formlabs/fuse-blast.webp",
+    "img": "/assets/img/image3.png",
     "alt": "Finishing SLS parts: from powder to polished",
     "meta": "Additive · 5 min",
     "title": "Finishing SLS parts: from powder to polished",
@@ -51,7 +48,7 @@ export const postList = [
   },
   {
     "slug": "utility-networks-that-scale",
-    "img": "/assets/img/ph-gis.webp",
+    "img": "/assets/img/image11.jpeg",
     "alt": "Designing utility networks that scale",
     "meta": "Infrastructure · 5 min",
     "title": "Designing utility networks that scale",
@@ -65,7 +62,7 @@ export const postList = [
   },
   {
     "slug": "hld-to-as-built-fttx",
-    "img": "/assets/img/ph-telecom.webp",
+    "img": "/assets/img/image27.jpeg",
     "alt": "HLD to as-built: an FTTx design walkthrough",
     "meta": "Telecom · 4 min",
     "title": "HLD to as-built: an FTTx design walkthrough",
@@ -79,7 +76,7 @@ export const postList = [
   },
   {
     "slug": "npd-lifecycle-end-to-end",
-    "img": "/assets/img/ph-engineering.webp",
+    "img": "/assets/img/image30.jpeg",
     "alt": "The NPD lifecycle, end to end",
     "meta": "Engineering · 5 min",
     "title": "The NPD lifecycle, end to end",
@@ -93,7 +90,7 @@ export const postList = [
   },
   {
     "slug": "payroll-and-compliance",
-    "img": "/assets/img/ph-recruitment.webp",
+    "img": "/assets/img/image31.jpeg",
     "alt": "Payroll and compliance without the headache",
     "meta": "Workforce · 6 min",
     "title": "Payroll and compliance without the headache",
@@ -130,5 +127,5 @@ export const cta = {
   "sub": "Need our professional assistance? We are here to help you! Advanced telecom networking solutions, first-rate engineering services, and all-inclusive recruitment services are provided by LRYPT Technologies. In order to guarantee that your projects and workforce are always at the forefront of success, our devoted team is committed to providing creative, dependable, and efficient solutions tailored to your needs. Reach out to us right now!",
   "btnText": "Get a quote",
   "btnHref": "/contact",
-  "image": "/assets/img/ph-about.webp"
+  "image": "/assets/img/banner4.png"
 };

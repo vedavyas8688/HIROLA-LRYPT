@@ -1,289 +1,291 @@
-// Content for the Services page.
-// Edit copy, images, and items here — no component code needed.
 
-export const meta = {
-  "title": "Services | Utility Network, Engineering Design & HRMS | LRYPT",
-  "description": "Specialist teams for utility network design (FTTx, electric, water, oil & gas), end-to-end engineering design, and full HR management (HRMS)."
+ export const meta = {
+  title: "Services | GIS, Telecom, Engineering & Recruitment | LRYPT Technologies",
+  description:
+    "Explore LRYPT Technologies' professional GIS, Telecom, Engineering, and Recruitment services designed to help businesses deliver projects with precision, efficiency, and confidence."
 };
 
-export const pageHead = {
-  "variant": "img",
-  "image": "/assets/img/ph-gis.webp",
-  "imageAlt": "Services — LRYPT Technologies",
-  "crumb": "Services",
-  "lines": [
-    "Expert teams that take",
-    "projects from plan to reality"
+ export const pageHead = {
+  variant: "img",
+  image: "/assets/img/image30.jpeg",
+  imageAlt: "Services - LRYPT Technologies",
+  crumb: "Services",
+  lines: [
+    "Professional services",
+    "built for modern industries"
   ],
-  "lead": "When you need delivery, not just software, our specialist teams step in — infrastructure, engineering design, and the people to power it all."
+  lead:
+    "LRYPT Technologies delivers expert GIS, Telecom, Engineering, and Recruitment services that help organizations improve productivity, accelerate project delivery, and achieve lasting success."
 };
 
-export const servicesGrid = {
-  "bg": "cream",
-  "heading": null,
-  "subheading": null,
-  "items": [
+ export const servicesGrid = {
+  bg: "cream",
+  heading: "Our Services",
+  subheading:
+    "Specialized solutions designed to support engineering, infrastructure, and workforce excellence.",
+  items: [
     {
-      "href": "/utility-network",
-      "img": "/assets/img/ph-gis.webp",
-      "alt": "Utility Network Services",
-      "meta": "Infrastructure",
-      "title": "Utility Network Services",
-      "desc": "FTTx/telecom, electric, water & wastewater, oil & gas, and smart-infrastructure engineering and design."
+      href: "/gis-services",
+      img: "/assets/img/image31.jpeg",
+      alt: "GIS Services",
+      meta: "Geospatial",
+      title: "GIS Services",
+      desc: "Comprehensive GIS mapping, spatial analysis, utility mapping, asset management, and geospatial solutions for smarter infrastructure planning."
     },
     {
-      "href": "/engineering-design",
-      "img": "/assets/img/ph-engineering.webp",
-      "alt": "Engineering Design Services",
-      "meta": "Engineering",
-      "title": "Engineering Design Services",
-      "desc": "Concept-to-production product development, mechanical/aerospace/civil design, simulation and prototyping."
+      href: "/telecom-services",
+      img: "/assets/img/image32.jpeg",
+      alt: "Telecom Services",
+      meta: "Telecommunications",
+      title: "Telecom Services",
+      desc: "End-to-end telecom network planning, fiber design, FTTx engineering, network documentation, and infrastructure deployment services."
     },
     {
-      "href": "/hrms",
-      "img": "/assets/img/ph-recruitment.webp",
-      "alt": "HR Management (HRMS)",
-      "meta": "Workforce",
-      "title": "HR Management (HRMS)",
-      "desc": "Talent acquisition, HR operations, payroll & benefits, statutory compliance, and development."
+      href: "/engineering-services",
+      img: "/assets/img/image33.jpeg",
+      alt: "Engineering Services",
+      meta: "Engineering",
+      title: "Engineering Services",
+      desc: "Professional engineering design, CAD drafting, product development, simulation, and technical consulting tailored to your business."
+    },
+    
+  ]
+};
+
+ export const whyChooseUs = {
+  bg: "dark",
+  kicker: null,
+  heading: "Why Choose LRYPT Technologies?",
+  subheading: "Reliable expertise, innovative solutions, and a commitment to your success.",
+  columns: 3,
+  items: [
+    {
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
+          {
+            tag: "circle",
+            props: {
+              cx: "20",
+              cy: "20",
+              r: "13",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            },
+            text: null
+          },
+          {
+            tag: "circle",
+            props: {
+              cx: "20",
+              cy: "20",
+              r: "4",
+              fill: "currentColor"
+            },
+            text: null
+          }
+        ]
+      },
+      title: "Industry Expertise",
+      desc: "Experienced professionals delivering trusted GIS, Telecom, Engineering, and Recruitment solutions across diverse industries."
+    },
+    {
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
+          {
+            tag: "circle",
+            props: {
+              cx: "15",
+              cy: "17",
+              r: "9",
+              fill: "currentColor"
+            },
+            text: null
+          },
+          {
+            tag: "rect",
+            props: {
+              x: "20",
+              y: "22",
+              width: "14",
+              height: "14",
+              rx: "3",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            },
+            text: null
+          }
+        ]
+      },
+      title: "End-to-End Services",
+      desc: "From planning and design to implementation and support, we deliver complete solutions under one roof."
+    },
+    {
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
+          {
+            tag: "rect",
+            props: {
+              x: "6",
+              y: "6",
+              width: "15",
+              height: "15",
+              rx: "2",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            },
+            text: null
+          },
+          {
+            tag: "rect",
+            props: {
+              x: "19",
+              y: "19",
+              width: "15",
+              height: "15",
+              rx: "2",
+              fill: "currentColor"
+            },
+            text: null
+          }
+        ]
+      },
+      title: "Customized Solutions",
+      desc: "Every solution is tailored to your project requirements, business objectives, and industry standards."
+    },
+    {
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
+          {
+            tag: "rect",
+            props: {
+              x: "6",
+              y: "6",
+              width: "8",
+              height: "8",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            },
+            text: null
+          },
+          {
+            tag: "rect",
+            props: {
+              x: "6",
+              y: "20",
+              width: "8",
+              height: "8",
+              fill: "currentColor"
+            },
+            text: null
+          },
+          {
+            tag: "rect",
+            props: {
+              x: "20",
+              y: "14",
+              width: "14",
+              height: "14",
+              rx: "2",
+              fill: "currentColor"
+            },
+            text: null
+          }
+        ]
+      },
+      title: "Quality Assurance",
+      desc: "We follow proven processes and quality standards to ensure accurate, reliable, and consistent project delivery."
+    },
+    {
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
+          {
+            tag: "path",
+            props: {
+              d: "M8 28L18 16l6 6 8-12",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            },
+            text: null
+          }
+        ]
+      },
+      title: "Customer-Focused Approach",
+      desc: "We work closely with every client, providing responsive support and building long-term partnerships based on trust."
+    },
+    {
+      icon: {
+        viewBox: "0 0 40 40",
+        shapes: [
+          {
+            tag: "rect",
+            props: {
+              x: "8",
+              y: "6",
+              width: "10",
+              height: "28",
+              rx: "2",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2.5"
+            },
+            text: null
+          },
+          {
+            tag: "rect",
+            props: {
+              x: "20",
+              y: "14",
+              width: "12",
+              height: "20",
+              rx: "2",
+              fill: "currentColor"
+            },
+            text: null
+          }
+        ]
+      },
+      title: "Innovation & Technology",
+      desc: "Leveraging modern technologies, industry best practices, and skilled professionals to deliver efficient, scalable, and future-ready solutions."
+    }
+  ],
+  extraTags: []
+};
+
+ export const faq = {
+  items: [
+    {
+      q: "What services does LRYPT Technologies provide?",
+      a: "We offer GIS Services, Telecom Services, Engineering Services, and Recruitment Services to support organizations across infrastructure, engineering, and technology sectors."
+    },
+    {
+      q: "Which industries do you serve?",
+      a: "Our services support utilities, telecommunications, construction, manufacturing, engineering, government organizations, infrastructure, and technology companies."
+    },
+    {
+      q: "Can LRYPT provide customized solutions?",
+      a: "Yes. Every project is tailored to your technical requirements, business objectives, and industry standards to ensure the best possible outcome."
+    },
+    {
+      q: "How do I get started with LRYPT Technologies?",
+      a: "Simply contact our team with your project requirements. We'll understand your needs, recommend the right solution, and provide a detailed proposal and quotation."
     }
   ]
 };
 
-export const whyChooseUs = {
-  "bg": "dark",
-  "kicker": null,
-  "heading": "Why choose us",
-  "subheading": "Multi-domain delivery you can rely on.",
-  "columns": 3,
-  "items": [
-    {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
-          {
-            "tag": "circle",
-            "props": {
-              "cx": "20",
-              "cy": "20",
-              "r": "13",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
-          },
-          {
-            "tag": "circle",
-            "props": {
-              "cx": "20",
-              "cy": "20",
-              "r": "4",
-              "fill": "currentColor"
-            },
-            "text": null
-          }
-        ]
-      },
-      "title": "Multi-domain expertise",
-      "desc": "Software, infrastructure, and workforce — all under one roof."
-    },
-    {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
-          {
-            "tag": "circle",
-            "props": {
-              "cx": "15",
-              "cy": "17",
-              "r": "9",
-              "fill": "currentColor"
-            },
-            "text": null
-          },
-          {
-            "tag": "rect",
-            "props": {
-              "x": "20",
-              "y": "22",
-              "width": "14",
-              "height": "14",
-              "rx": "3",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
-          }
-        ]
-      },
-      "title": "Experienced professionals",
-      "desc": "Specialists with genuine industry knowledge."
-    },
-    {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
-          {
-            "tag": "rect",
-            "props": {
-              "x": "6",
-              "y": "6",
-              "width": "15",
-              "height": "15",
-              "rx": "2",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
-          },
-          {
-            "tag": "rect",
-            "props": {
-              "x": "19",
-              "y": "19",
-              "width": "15",
-              "height": "15",
-              "rx": "2",
-              "fill": "currentColor"
-            },
-            "text": null
-          }
-        ]
-      },
-      "title": "Customized & scalable",
-      "desc": "Solutions tailored to you that scale as you grow."
-    },
-    {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
-          {
-            "tag": "rect",
-            "props": {
-              "x": "6",
-              "y": "6",
-              "width": "8",
-              "height": "8",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
-          },
-          {
-            "tag": "rect",
-            "props": {
-              "x": "6",
-              "y": "20",
-              "width": "8",
-              "height": "8",
-              "fill": "currentColor"
-            },
-            "text": null
-          },
-          {
-            "tag": "rect",
-            "props": {
-              "x": "20",
-              "y": "14",
-              "width": "14",
-              "height": "14",
-              "rx": "2",
-              "fill": "currentColor"
-            },
-            "text": null
-          }
-        ]
-      },
-      "title": "Quality-driven delivery",
-      "desc": "A rigorous, quality-first approach throughout."
-    },
-    {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
-          {
-            "tag": "path",
-            "props": {
-              "d": "M8 28L18 16l6 6 8-12",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
-          }
-        ]
-      },
-      "title": "Customer-centric model",
-      "desc": "An engagement built around your goals."
-    },
-    {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
-          {
-            "tag": "rect",
-            "props": {
-              "x": "8",
-              "y": "6",
-              "width": "10",
-              "height": "28",
-              "rx": "2",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2.5"
-            },
-            "text": null
-          },
-          {
-            "tag": "rect",
-            "props": {
-              "x": "20",
-              "y": "14",
-              "width": "12",
-              "height": "20",
-              "rx": "2",
-              "fill": "currentColor"
-            },
-            "text": null
-          }
-        ]
-      },
-      "title": "Technology-enabled & timely",
-      "desc": "Modern tools and a commitment to timely execution."
-    }
-  ],
-  "extraTags": []
-};
-
-export const faq = {
-  "items": [
-    {
-      "q": "What services does LRYPT offer?",
-      "a": "Three service lines: Utility Network Services (FTTx/telecom, electric, water & wastewater, oil & gas, smart infrastructure), Engineering Design Services (concept-to-production NPD), and HR Management Services (HRMS)."
-    },
-    {
-      "q": "Can you act as an outsourced delivery team?",
-      "a": "Yes. Our specialists work as an extension of your team, giving you the right experts and tools without building an in-house team."
-    },
-    {
-      "q": "Do you deliver to client specifications and standards?",
-      "a": "Yes. We deliver accurate, standards-compliant, client-ready outputs, including as-built utility records and compliance documentation."
-    },
-    {
-      "q": "How do we start a project?",
-      "a": "Reach out with your goal and scope. We'll consult, recommend an approach, and provide a clear plan and quote — usually within one business day."
-    }
-  ]
-};
-
-export const cta = {
-  "heading": "Need our expert help? We’re here!",
-  "sub": "Need our professional assistance? We are here to help you! Advanced telecom networking solutions, first-rate engineering services, and all-inclusive recruitment services are provided by LRYPT Technologies. In order to guarantee that your projects and workforce are always at the forefront of success, our devoted team is committed to providing creative, dependable, and efficient solutions tailored to your needs. Reach out to us right now!",
-  "btnText": "Get a quote",
-  "btnHref": "/contact",
-  "image": "/assets/img/ph-about.webp"
+ export const cta = {
+  heading: "Let's Build  Together",
+  sub: "Whether you need GIS expertise, telecom engineering, professional engineering services, or skilled technical talent, LRYPT Technologies is ready to support your business. Our experienced team delivers reliable, scalable, and innovative solutions that help organizations complete projects efficiently, reduce operational challenges, and achieve long-term success.",
+  btnText: "Get a Quote",
+  btnHref: "/contact",
+  image: "/assets/img/image28.jpeg"
 };
