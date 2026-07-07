@@ -8,7 +8,7 @@ export const meta = {
 
 export const pageHead = {
   "variant": "img",
-  "image": "/assets/img/ph-cad.webp",
+  "image": "/assets/img/image22.jpeg",
   "imageAlt": "CAD Design — LRYPT Technologies",
   "crumb": "CAD Design",
   "lines": [
