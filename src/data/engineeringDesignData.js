@@ -12,8 +12,8 @@ export const pageHead = {
   "imageAlt": "Engineering Design Services — LRYPT Technologies",
   "crumb": "Engineering Design Services",
   "lines": [
-    "Engineering innovation from",
-    "concept to production"
+    "Engineering innovation  ",
+    " from concept to production"
   ],
   "lead": null
 };

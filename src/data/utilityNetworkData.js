@@ -12,8 +12,8 @@ export const pageHead = {
   "imageAlt": "Utility Network Services — LRYPT Technologies",
   "crumb": "Utility Network Services",
   "lines": [
-    "Designing & supporting critical",
-    "utility infrastructure"
+    "Designing & supporting  ",
+    " critical utility infrastructure"
   ],
   "lead": null
 };
