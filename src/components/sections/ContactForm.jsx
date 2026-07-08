@@ -43,14 +43,18 @@ export function ContactPanel({ label, heading, intro, info }) {
                 lineHeight: 1.15,
                 margin: 0,
                 marginBottom: intro ? 12 : 24,
-                maxWidth: "24ch",
+                whiteSpace: "nowrap",
               }}
             >
-              {heading}
+              {heading.split("\n").map((line, i) => (
+                <span key={i} style={{ display: "block" }}>
+                  {line}
+                </span>
+              ))}
             </h2>
           )}
           {intro && (
-            <p className="mute" data-reveal="" style={{ margin: 0, marginBottom: 24, lineHeight: 1.5 }}>
+            <p className="mute" data-reveal="" style={{ margin: 0, marginBottom: 24, lineHeight: 1.5, maxWidth: "48ch" }}>
               {intro}
             </p>
           )}

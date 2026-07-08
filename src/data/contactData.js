@@ -18,9 +18,9 @@ export const pageHead = {
   "lead": null
 };
 
-export const contactPanel = {
+ export const contactPanel = {
   "label": "Get a quote",
-  "heading": "Tell us about your project and we'll respond within one business day.",
+   "heading": "Tell us about your project\nand we'll respond within\none business day." ,
   "intro": "Engineering software, utility networks, engineering design, and complete HR management — creative, dependable, efficient solutions tailored to you.",
   "info": [
     {

@@ -107,9 +107,9 @@ export default function PageHead({
       )}
       <div className="wrap">
         <div className="phead__content">
-          <div className="crumb">
+          {/* <div className="crumb">
             <b>LRYPT</b> / {crumb}
-          </div>
+          </div> */}
           <h1 style={{ maxWidth: `${headingWidth}ch` }}>
             {lines.map((line, i) => (
               <span className="line" key={i}>

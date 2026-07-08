@@ -1,8 +1,6 @@
 import LegalLayout from "./LegalLayout";
 
-/* Fill in the bracketed placeholders with your real details
-   before publishing. General template, not legal advice —
-   have counsel review before it goes live. */
+ 
 
 const SECTIONS = [
   {
