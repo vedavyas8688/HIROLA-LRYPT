@@ -26,7 +26,7 @@ export const pageHead = {
     "Unlock the power of advanced additive manufacturing with LRYPT Technologies. Our Formlabs 3D printing solutions enable engineers, designers, and manufacturers to create accurate prototypes, functional components, and production-ready parts with exceptional speed, precision, and consistency—reducing development time and bringing ideas to market faster."
 };
 
- // FeatureCTA — image + heading + copy + button (screenshot 1 layout)
+ // FeatureCTA — image + heading + copy + button 
 export const featureCta = {
   bg: "cream",
   imgFirst: true,
@@ -287,14 +287,14 @@ export const printerLineup = {
 };
 
  // TabbedProductGrid — SLA / SLS tabs, each with a Packages / Post
- // Processing sub-tab, feeding a card grid (screenshot 2 layout).
+ // Processing sub-tab, feeding a card grid  
  //
  // Any item can carry an optional `detail` object. If present,
  // clicking that card opens ProductDetailModal:
  //   - detail.variant: "gallery" → image carousel + specs +
- //     Key Features / Ideal For tabs (screenshot 2's "FORM 4L" look)
+ //     Key Features / Ideal For tabs  
  //   - detail.variant: "simple" → single image + heading +
- //     paragraph + CTA (screenshot 3's "FUSE SIFT X1" look)
+ //     paragraph + CTA 
  // Items without `detail` behave exactly as before (no click).
 export const ecosystemTabs = {
   bg: "cream",
@@ -399,7 +399,7 @@ export const ecosystemTabs = {
               alt: "Form 4",
               label: "Form 4",
               imageScale: 1,
-              // Example of the GALLERY variant (screenshot 2 style)
+              // Example of the GALLERY variant 
               detail: {
                 variant: "gallery",
                 title: "FORM 4",
@@ -888,8 +888,7 @@ export const ecosystemTabs = {
 };
 
  // StatBanner — big stat + download CTA over a background photo
- // (screenshot 3 layout)
-export const materialsBanner = {
+ export const materialsBanner = {
   stat: "50+",
   statLabel: "Materials",
   sub: "Download the complete Formlabs material library and explore every resin and powder engineered for your industry.",
