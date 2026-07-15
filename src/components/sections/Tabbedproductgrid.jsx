@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ProductDetailModal from "./ProductDetailModal";
+import ProductDetailModal from "./Productdetailmodal";
 
 /* ============================================================
    TabbedProductGrid — heading, a row of top-level tabs, an
