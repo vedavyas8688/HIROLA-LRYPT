@@ -13,7 +13,16 @@ import { meta, pageHead, intro, featureCta, slaProducts, ecosystemTabs, material
 export default function Formlabs() {
   usePageMeta(meta.title, meta.description);
   return (
-    <>
+    <main className="formlabs-page">
+      <style>{`
+        .formlabs-page .feacta__r h2,
+        .formlabs-page .tabgrid__h,
+        .formlabs-page .headc h2,
+        .formlabs-page .faq-heading,
+        .formlabs-page .partner h2{
+          font-size:clamp(1.8rem,2.6vw,2.5rem);
+        }
+      `}</style>
       <PageHead {...pageHead} />
       <IntroBlock {...intro} />
       <FeatureCTA {...featureCta} />
@@ -26,6 +35,6 @@ export default function Formlabs() {
       <IconGrid {...printerLineup} headingStyle="headc" />
       <FAQSection {...faq} />
       <CTABand {...cta} />
-    </>
+    </main>
   );
 }

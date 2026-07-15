@@ -71,7 +71,7 @@ import ProductDetailModal from "./Productdetailmodal";
 function TabGridStyles() {
   return (
     <style>{`
-      .tabgrid__h{max-width:26ch}
+      .tabgrid__h{max-width:26ch;font-size:clamp(1.8rem,2.6vw,2.5rem)}
       .tabgrid__h.center{margin-inline:auto;text-align:center;max-width:34ch}
 
       .tabgrid__tabs{display:flex;justify-content:center;flex-wrap:wrap;gap:clamp(20px,4vw,44px);
@@ -103,8 +103,9 @@ function TabGridStyles() {
       .sec--dark .tabgrid__card{border-color:var(--line-dark)}
       .tabgrid__card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -24px rgba(0,0,0,.28)}
       .tabgrid__card.is-clickable{cursor:pointer}
-      .tabgrid__imgwrap{aspect-ratio:1/1;display:grid;place-items:center;padding:22px;background:#faf9f6}
-      .tabgrid__imgwrap img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+      .tabgrid__imgwrap{aspect-ratio:1/1;display:grid;place-items:center;padding:22px;background:#faf9f6;overflow:hidden}
+      .tabgrid__imgwrap img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;
+        transform:scale(var(--tabgrid-image-scale, 1))}
       .tabgrid__lab{padding:16px 14px 20px;text-align:center;font-weight:700;text-transform:uppercase;
         letter-spacing:.03em;font-size:.82rem;border-top:1px solid var(--line-cream);color:#000}
       .sec--dark .tabgrid__lab{border-color:var(--line-dark);color:var(--on-dark)}
@@ -198,7 +199,7 @@ export default function TabbedProductGrid({ bg = "cream", heading, center = true
         <div className="tabgrid__grid" data-stagger="">
           {items.map((p, i) => (
             <div
-              className="tabgrid__card is-clickable"
+              className="tabgrid__card is-clickable in"
               style={{ cursor: "pointer" }}
               data-reveal=""
               key={i}
@@ -213,7 +214,10 @@ export default function TabbedProductGrid({ bg = "cream", heading, center = true
               tabIndex={0}
               aria-haspopup="dialog"
             >
-              <div className="tabgrid__imgwrap">
+              <div
+                className="tabgrid__imgwrap"
+                style={{ "--tabgrid-image-scale": p.imageScale || 1 }}
+              >
                 <img src={p.img} alt={p.alt || p.label} decoding="async" loading="lazy" />
               </div>
               {p.label && <div className="tabgrid__lab">{p.label}</div>}

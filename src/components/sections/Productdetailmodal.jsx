@@ -71,8 +71,9 @@ function PDMStyles() {
       .pdm__simple-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
       .pdm__simple-grid.img-first{grid-template-columns:1fr 1.1fr}
       .pdm__simple-img{aspect-ratio:1/1;background:#faf9f6;border:1px solid var(--line-cream);
-        display:grid;place-items:center;padding:20px}
+        display:grid;place-items:center;padding:20px;position:relative}
       .pdm__simple-img img{width:100%;height:100%;object-fit:contain}
+      .pdm__simple-media .pdm__thumbs{margin-top:12px}
       .pdm__simple-copy h3{font-size:1.15rem;margin:0 0 14px;color:#000}
 
       @media(max-width:760px){
@@ -154,6 +155,7 @@ export default function ProductDetailModal({ item, onClose }) {
 
         <div className="pdm__body">
           {detail.variant === "simple" ? (
+            <>
             <div className={`pdm__simple-grid${detail.imgFirst ? "" : " img-first"}`}>
               {!detail.imgFirst && (
                 <div className="pdm__simple-copy">
@@ -161,6 +163,16 @@ export default function ProductDetailModal({ item, onClose }) {
                   {(detail.paragraphs || []).map((p, i) => (
                     <p key={i}>{p}</p>
                   ))}
+                  {detail.specs?.length > 0 && (
+                    <div className="pdm__specs">
+                      {detail.specs.map((s, i) => (
+                        <div key={i}>
+                          <div className="pdm__spec-label">{s.label}</div>
+                          <div className="pdm__spec-value">{s.value}</div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                   {detail.btnText && (
                     <a className="pdm__cta" href={detail.btnHref || "#"}>
                       {detail.btnText}
@@ -168,8 +180,44 @@ export default function ProductDetailModal({ item, onClose }) {
                   )}
                 </div>
               )}
-              <div className="pdm__simple-img">
-                <img src={images[0]?.src} alt={images[0]?.alt} />
+              <div className="pdm__simple-media">
+                <div className="pdm__simple-img">
+                  {images.length > 1 && (
+                    <button
+                      type="button"
+                      className="pdm__nav pdm__nav--prev"
+                      onClick={() => setImgIdx((imgIdx - 1 + images.length) % images.length)}
+                      aria-label="Previous image"
+                    >
+                      &lsaquo;
+                    </button>
+                  )}
+                  <img src={images[imgIdx]?.src} alt={images[imgIdx]?.alt} />
+                  {images.length > 1 && (
+                    <button
+                      type="button"
+                      className="pdm__nav pdm__nav--next"
+                      onClick={() => setImgIdx((imgIdx + 1) % images.length)}
+                      aria-label="Next image"
+                    >
+                      &rsaquo;
+                    </button>
+                  )}
+                </div>
+                {images.length > 1 && (
+                  <div className="pdm__thumbs">
+                    {images.map((im, i) => (
+                      <button
+                        type="button"
+                        key={i}
+                        className={`pdm__thumb${i === imgIdx ? " is-active" : ""}`}
+                        onClick={() => setImgIdx(i)}
+                      >
+                        <img src={im.src} alt={im.alt} />
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
               {detail.imgFirst && (
                 <div className="pdm__simple-copy">
@@ -177,6 +225,16 @@ export default function ProductDetailModal({ item, onClose }) {
                   {(detail.paragraphs || []).map((p, i) => (
                     <p key={i}>{p}</p>
                   ))}
+                  {detail.specs?.length > 0 && (
+                    <div className="pdm__specs">
+                      {detail.specs.map((s, i) => (
+                        <div key={i}>
+                          <div className="pdm__spec-label">{s.label}</div>
+                          <div className="pdm__spec-value">{s.value}</div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                   {detail.btnText && (
                     <a className="pdm__cta" href={detail.btnHref || "#"}>
                       {detail.btnText}
@@ -185,6 +243,38 @@ export default function ProductDetailModal({ item, onClose }) {
                 </div>
               )}
             </div>
+            {showTabs && (
+              <div className="pdm__details-tabs">
+                <div className="pdm__tabs">
+                  {detail.keyFeatures?.length > 0 && (
+                    <button
+                      type="button"
+                      className={`pdm__tab${tab === "features" ? " is-active" : ""}`}
+                      onClick={() => setTab("features")}
+                    >
+                      Key Features
+                    </button>
+                  )}
+                  {detail.idealFor?.length > 0 && (
+                    <button
+                      type="button"
+                      className={`pdm__tab${tab === "idealFor" ? " is-active" : ""}`}
+                      onClick={() => setTab("idealFor")}
+                    >
+                      {detail.secondaryTabLabel || "Ideal For"}
+                    </button>
+                  )}
+                </div>
+                <ul className="pdm__tabpanel">
+                  {(tab === "features" ? detail.keyFeatures : detail.idealFor || []).map((f, i) => (
+                    <li key={i}>
+                      {typeof f === "string" ? f : <><b>{f.label}: </b>{f.text}</>}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            </>
           ) : (
             <>
               <div className="pdm__gallery-grid">
@@ -271,7 +361,7 @@ export default function ProductDetailModal({ item, onClose }) {
                         className={`pdm__tab${tab === "idealFor" ? " is-active" : ""}`}
                         onClick={() => setTab("idealFor")}
                       >
-                        Ideal For
+                        {detail.secondaryTabLabel || "Ideal For"}
                       </button>
                     )}
                   </div>
