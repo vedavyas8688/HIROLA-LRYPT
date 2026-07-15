@@ -26,6 +26,22 @@ export const pageHead = {
     "Unlock the power of advanced additive manufacturing with LRYPT Technologies. Our Formlabs 3D printing solutions enable engineers, designers, and manufacturers to create accurate prototypes, functional components, and production-ready parts with exceptional speed, precision, and consistency—reducing development time and bringing ideas to market faster."
 };
 
+ // FeatureCTA — image + heading + copy + button (screenshot 1 layout)
+export const featureCta = {
+  bg: "cream",
+  imgFirst: true,
+  image: "/assets/img/formlabs/form-cure-scene.webp",
+  imageAlt: "Formlabs SLA and SLS 3D printers in a professional workflow",
+  label: "Formlabs",
+  heading: "Precise and Versatile 3D Printing for Professionals Across Industries",
+  paragraphs: [
+    "Formlabs 3D printers are engineered to enhance your industry with advanced stereolithography (SLA) and selective laser sintering (SLS) technology, offering high performance at a fraction of the cost of traditional industrial 3D printers or service bureaus.",
+    "Whether you're in engineering, manufacturing, automotive, aerospace, dental, medical, education, entertainment, jewelry, or audio, LRYPT Technologies provides precise and versatile Formlabs solutions tailored to meet the needs of your sector."
+  ],
+  btnText: "Contact Us",
+  btnHref: "/contact"
+};
+
  export const slaProducts = {
   bg: "cream",
   heading: "The Complete Formlabs Ecosystem",
@@ -267,6 +283,161 @@ export const printerLineup = {
       ]
     }
   ]
+};
+
+ // TabbedProductGrid — SLA / SLS tabs, each with a Packages / Post
+ // Processing sub-tab, feeding a card grid (screenshot 2 layout).
+ //
+ // Any item can carry an optional `detail` object. If present,
+ // clicking that card opens ProductDetailModal:
+ //   - detail.variant: "gallery" → image carousel + specs +
+ //     Key Features / Ideal For tabs (screenshot 2's "FORM 4L" look)
+ //   - detail.variant: "simple" → single image + heading +
+ //     paragraph + CTA (screenshot 3's "FUSE SIFT X1" look)
+ // Items without `detail` behave exactly as before (no click).
+export const ecosystemTabs = {
+  bg: "cream",
+  heading: "Formlabs 3D Printing: Precision Ecosystems Built for Every Workflow",
+  center: true,
+  groups: [
+    {
+      id: "sla",
+      label: "SLA 3D Printing",
+      subgroups: [
+        {
+          id: "packages",
+          label: "Packages",
+          items: [
+            {
+              img: "/assets/img/formlabs/core-bundle.webp",
+              alt: "Form 4 Professional Package",
+              label: "Form 4 Professional Package",
+              // Example of the GALLERY variant (screenshot 2 style)
+              detail: {
+                variant: "gallery",
+                title: "FORM 4 PROFESSIONAL PACKAGE",
+                tagline: "Where Speed Meets Precision",
+                images: [
+                  { src: "/assets/img/formlabs/core-bundle.webp", alt: "Form 4 Professional Package — view 1" },
+                  { src: "/assets/img/formlabs/core-bundle.webp", alt: "Form 4 Professional Package — view 2" },
+                  { src: "/assets/img/formlabs/core-bundle.webp", alt: "Form 4 Professional Package — view 3" },
+                  { src: "/assets/img/formlabs/core-bundle.webp", alt: "Form 4 Professional Package — view 4" },
+                  { src: "/assets/img/formlabs/core-bundle.webp", alt: "Form 4 Professional Package — view 5" }
+                ],
+                paragraphs: [
+                  "The Form 4's incredible speed is powered by Formlabs' state-of-the-art Low Force Display Print Engine, an ingenious combination of ultra-high-power LEDs, precision collimating lenses, optical filters, and a durable liquid crystal display.",
+                  "This advanced system ensures rapid resin curing for every layer, regardless of the part's size or quantity, so every part aligns with your exact design specifications, every single time."
+                ],
+                specs: [
+                  { label: "Build Volume", value: "14.5 x 14.5 x 18.5 cm\n5.7 x 5.7 x 7.3 in" },
+                  { label: "Technology", value: "Low Force Display (LFD)" }
+                ],
+                keyFeatures: [
+                  { label: "Blazing Fast", text: "Prints in a fraction of the time of comparable printers." },
+                  { label: "User-Friendly", text: "Automatic resin dispensing and easy-to-use software." },
+                  { label: "Reliable", text: "Production-ready workflow you can depend on." }
+                ],
+                idealFor: [
+                  "Engineering teams that need accurate prototypes fast",
+                  "Production runs requiring consistent, repeatable quality",
+                  "Teams standardizing on a single SLA workflow"
+                ],
+                btnText: "Request a Quote",
+                btnHref: "/contact"
+              }
+            },
+            { img: "/assets/img/formlabs/dental-bundle.webp", alt: "Form 4 Dental Package", label: "Form 4 Dental Package" }
+          ]
+        },
+        {
+          id: "post-processing",
+          label: "Post Processing",
+          items: [
+            { img: "/assets/img/formlabs/f4-wash-cure.webp", alt: "Form Wash & Form Cure", label: "Form Wash & Form Cure" },
+            { img: "/assets/img/formlabs/f4-wash-cure-dental.webp", alt: "Form Wash & Form Cure — Dental", label: "Form Wash & Cure (Dental)" },
+            {
+              img: "/assets/img/formlabs/form-cure.webp",
+              alt: "Form Cure",
+              label: "Form Cure",
+              // Example of the SIMPLE variant (screenshot 3 style)
+              detail: {
+                variant: "simple",
+                title: "FORM CURE",
+                imgFirst: false,
+                heading: "Uniform Post-Cure For Maximum Part Strength",
+                paragraphs: [
+                  "Form Cure delivers uniform heat and light exposure to every printed part, maximizing the strength, durability, and performance of resin components. Adjustable time and temperature settings match the cure profile to each material for consistent, production-ready results."
+                ],
+                btnText: "Request a Quote",
+                btnHref: "/contact"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "sls",
+      label: "SLS 3D Printing",
+      subgroups: [
+        {
+          id: "packages",
+          label: "Packages",
+          items: [
+            {
+              img: "/assets/img/formlabs/fuse-package-1.webp",
+              alt: "Fuse 1+ 30W Workflow Package",
+              label: "Fuse 1+ 30W Workflow Package"
+              // Replace the image above and add a `detail` object
+              // here (gallery or simple variant) once you have
+              // copy/specs for this package.
+            },
+            {
+              img: "/assets/img/formlabs/fuse-package-2.webp",
+              alt: "Fuse Series Complete Workflow Package",
+              label: "Fuse Series Complete Workflow Package"
+            }
+          ]
+        },
+        {
+          id: "post-processing",
+          label: "Post Processing",
+          items: [
+            {
+              img: "/assets/img/formlabs/fuse-sift.webp",
+              alt: "Fuse Sift",
+              label: "Fuse Sift",
+              // Same SIMPLE variant as the "FUSE SIFT X1" reference
+              detail: {
+                variant: "simple",
+                title: "FUSE SIFT X1",
+                imgFirst: false,
+                heading: "Automated Large-Format Powder Recovery For Uninterrupted Production",
+                paragraphs: [
+                  "Fuse Sift X1 is a large format powder recovery station that turns post-print into a clean, hands-off workflow. An integrated powder transport system moves used powder from the Sift X1 to the Mix Kit automatically, and an integrated compressed air inlet and gun helps recover powder from parts in seconds, replacing slow manual brushing.",
+                  "The sealed glovebox keeps operators and the workspace clean at any build size, while a built-in parts hatch sends broken-out parts straight to a transfer bin to free up the bench. With capacity for 3 to 5 full builds of used powder, Fuse Sift X1 keeps high-volume operations moving without bottlenecking on cleanup."
+                ],
+                btnText: "Request a Quote",
+                btnHref: "/contact"
+              }
+            },
+            { img: "/assets/img/formlabs/fuse-blast.webp", alt: "Fuse Blast", label: "Fuse Blast" }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+ // StatBanner — big stat + download CTA over a background photo
+ // (screenshot 3 layout)
+export const materialsBanner = {
+  stat: "50+",
+  statLabel: "Materials",
+  sub: "Download the complete Formlabs material library and explore every resin and powder engineered for your industry.",
+  btnText: "Download",
+  btnHref: "/contact",
+  image: "/assets/img/formlabs/fuse-blast-scene2.webp"
 };
 
  export const faq = {
