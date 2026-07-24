@@ -2,7 +2,7 @@
 
 export const meta = {
   "title": "Blog & Insights | LRYPT Technologies",
-  "description": "Ideas and analysis on engineering simulation, CAD, 3D printing, utility networks, engineering design, and workforce management from LRYPT."
+  "description": "Ideas and analysis on engineering simulation, 3D printing, utility networks, engineering design, and smart manufacturing from LRYPT."
 };
 
 export const pageHead = {
@@ -78,7 +78,7 @@ export const postList = [
     "slug": "hld-to-as-built-fttx",
     "img": "/assets/img/image27.jpeg",
     "alt": "HLD to as-built: an FTTx design walkthrough",
-    "meta": "Telecom · 4 min",
+    "meta": "Network Infrastructure · 4 min",
     "title": "HLD to as-built: an FTTx design walkthrough",
     "desc": "The stages of a fiber rollout and where outsourcing adds value.",
     "body": [
@@ -97,7 +97,7 @@ export const postList = [
     "desc": "Taking a product from concept through simulation to production.",
     "body": [
       "New product development is a journey from a rough idea to a manufacturable, validated product — and each stage builds on the confidence established in the one before it.",
-      "It begins with concept development and product design, where requirements and constraints are translated into engineering intent. CAD modelling and technical documentation give that intent a precise, shareable form.",
+      "It begins with concept development and product design, where requirements and constraints are translated into engineering intent. Detailed 3D modelling and technical documentation give that intent a precise, shareable form.",
       "Simulation and validation come next: structural, thermal, and flow analysis confirm the design will perform in the real world, while digital twins let teams explore behaviour before committing to hardware.",
       "Finally, design for manufacturing, prototyping, and production readiness ensure the product can actually be built at quality and scale. LRYPT supports the full NPD lifecycle, so each handoff is smooth and every stage starts from solid ground."
     ]
@@ -122,7 +122,7 @@ export const posts = {
   "bg": "cream",
   "heading": null,
   "subheading": null,
-  "items": postList.map((p) => ({
+  "items": postList.filter((p) => p.slug !== "payroll-and-compliance").map((p) => ({
     "href": `/blog/${p.slug}`,
     "img": p.img,
     "alt": p.alt,

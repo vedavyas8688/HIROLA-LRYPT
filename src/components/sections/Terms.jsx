@@ -9,7 +9,7 @@ const SECTIONS = [
     id: "acceptance",
     heading: "Acceptance of Terms",
     body: [
-      `These Terms & Conditions ("Terms") govern your access to and use of the website and services provided by [Company Name] ("we", "our", "us"), including CAD design, ANSYS simulation, Formlabs 3D printing, utility network, engineering design, and HRMS solutions (the "Services"). By accessing our website or engaging our Services, you agree to be bound by these Terms.`,
+      `These Terms & Conditions ("Terms") govern your access to and use of the website and services provided by LRYPT Technologies ("we", "our", "us"), including Proteger, Cadence Simulation, Formlabs 3D printing, utility network, and engineering design solutions (the "Services"). By accessing our website or engaging our Services, you agree to be bound by these Terms.`,
     ],
   },
   {
@@ -23,21 +23,21 @@ const SECTIONS = [
     id: "services-and-quotes",
     heading: "Services & Quotes",
     body: [
-      `Descriptions of our Services on this website are for general informational purposes and do not constitute a binding offer. Any project engagement, quote, license, or scope of work will be governed by a separate written agreement or order form between you and [Company Name], which will take precedence over these Terms in the event of a conflict.`,
+      `Descriptions of our Services on this website are for general informational purposes and do not constitute a binding offer. Any project engagement, quote, license, or scope of work will be governed by a separate written agreement or order form between you and LRYPT Technologies, which will take precedence over these Terms in the event of a conflict.`,
     ],
   },
   {
     id: "third-party-software",
     heading: "Third-Party Software & Products",
     body: [
-      `Certain Services may involve third-party software or hardware, including but not limited to ANSYS simulation software and Formlabs 3D printing equipment. Your use of such third-party products is subject to the applicable third party's own license terms, and [Company Name] makes no warranties on their behalf.`,
+      `Certain Services may involve third-party software or hardware. Your use of such products is subject to the applicable third party's own license terms, and LRYPT Technologies makes no warranties on their behalf.`,
     ],
   },
   {
     id: "intellectual-property",
     heading: "Intellectual Property",
     body: [
-      `All content on this website, including text, graphics, logos, and software, is the property of [Company Name] or its licensors and is protected by intellectual property laws. Deliverables produced under a separate project agreement are governed by the ownership and licensing terms set out in that agreement.`,
+      `All content on this website, including text, graphics, logos, and software, is the property of LRYPT Technologies or its licensors and is protected by intellectual property laws. Deliverables produced under a separate project agreement are governed by the ownership and licensing terms set out in that agreement.`,
     ],
   },
   {
@@ -58,7 +58,7 @@ const SECTIONS = [
     id: "limitation-of-liability",
     heading: "Limitation of Liability",
     body: [
-      `To the maximum extent permitted by law, [Company Name] shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenue, arising from your use of our website or Services. Our total liability for any claim arising from a project shall not exceed the fees paid by you for the relevant Services, as further detailed in your project agreement.`,
+      `To the maximum extent permitted by law, LRYPT Technologies shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenue, arising from your use of our website or Services. Our total liability for any claim arising from a project shall not exceed the fees paid by you for the relevant Services, as further detailed in your project agreement.`,
     ],
   },
   {
@@ -79,7 +79,7 @@ const SECTIONS = [
     id: "governing-law",
     heading: "Governing Law",
     body: [
-      `These Terms are governed by the laws of [Jurisdiction, e.g. State/Country], without regard to conflict of law principles. Any disputes arising from these Terms or your use of our website shall be subject to the exclusive jurisdiction of the courts located in [City, Jurisdiction].`,
+      `These Terms are governed by the laws of India, without regard to conflict of law principles. Any disputes arising from these Terms or your use of our website shall be subject to the exclusive jurisdiction of the courts located in Bangalore, Karnataka.`,
     ],
   },
   {
@@ -94,7 +94,7 @@ const SECTIONS = [
     heading: "Contact Us",
     body: [
       `If you have questions about these Terms, contact us at:`,
-      `[Company Name]\n[Street Address, City, State, ZIP]\nEmail: [legal@yourcompany.com]\nPhone: [+1 (000) 000-0000]`,
+      `LRYPT Technologies\n4th Floor, Symphony Managed Office Space, Hormavu Agara Road, Vadarpalya, Hennur, Bangalore 560043\nEmail: enquiry@lrypt.com\nPhone: 9036354564`,
     ],
   },
 ];
@@ -107,7 +107,7 @@ export default function Terms() {
       subhead="The terms that govern use of our website and engagement of our engineering and software services."
       docNumber="TERMS-COND-01"
       revision="A"
-      effectiveDate="[Month Day, Year]"
+      effectiveDate="July 24, 2026"
       status="Active"
       sections={SECTIONS}
       crossLinkTo="/privacy"

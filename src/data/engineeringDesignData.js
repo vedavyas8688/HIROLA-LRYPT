@@ -33,11 +33,11 @@ export const capabilities = {
     {
       "label": null,
       "title": "Product Development",
-      "desc": "We turn ideas into market-ready products. From early concept development through detailed design, CAD modelling, and optimization, our engineers shape robust, manufacturable products — and can reverse-engineer existing parts to modernise or improve them.",
+      "desc": "We turn ideas into market-ready products. From early concept development through detailed 3D modelling and optimization, our engineers shape robust, manufacturable products and can reverse-engineer existing parts to modernise or improve them.",
       "bullets": [
         "Concept Development",
         "Product Design & Engineering",
-        "CAD Modeling & Technical Documentation",
+        "3D Modeling & Technical Documentation",
         "Reverse Engineering",
         "Design Optimization"
       ],
@@ -158,7 +158,7 @@ export const npdLifecycle = {
         ]
       },
       "title": "Design",
-      "desc": "CAD modelling and detailed engineering."
+      "desc": "3D modelling and detailed engineering."
     },
     {
       "icon": {
@@ -282,8 +282,8 @@ export const faq = {
       "a": "Yes. Rapid prototyping & 3D printing, design for manufacturing (DFM), engineering validation, and production readiness support."
     },
     {
-      "q": "Do you offer reverse engineering and CAD modelling?",
-      "a": "Yes. Concept development, product design & engineering, CAD modelling & technical documentation, reverse engineering, and design optimization."
+      "q": "Do you offer reverse engineering and 3D modelling?",
+      "a": "Yes. We provide concept development, product design and engineering, 3D modelling, technical documentation, reverse engineering, and design optimization."
     }
   ]
 };

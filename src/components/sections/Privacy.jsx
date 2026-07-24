@@ -7,7 +7,7 @@ const SECTIONS = [
     id: "introduction",
     heading: "Introduction",
     body: [
-      `[Company Name] ("we", "our", "us") provides CAD design, ANSYS simulation, Formlabs 3D printing, utility network, engineering design, and HRMS solutions and services (the "Services"). This Privacy Policy explains what information we collect through our website and Services, how we use it, and the choices you have.`,
+      `LRYPT Technologies ("we", "our", "us") provides Proteger, Cadence Simulation, Formlabs 3D printing, utility network, and engineering design solutions and services (the "Services"). This Privacy Policy explains what information we collect through our website and Services, how we use it, and the choices you have.`,
       `By using our website or Services, you agree to the collection and use of information as described in this policy. If you do not agree, please do not use our website or Services.`,
     ],
   },
@@ -17,7 +17,7 @@ const SECTIONS = [
     body: [
       `Information you provide directly: your name, email address, phone number, company name, and any other details you submit through our contact, quote, or newsletter forms, or when you engage us for a project.`,
       `Information collected automatically: IP address, browser type, device information, pages visited, referring URLs, and timestamps, collected through cookies and similar technologies.`,
-      `Information from third parties: where relevant, information shared by partners or vendors (for example, ANSYS or Formlabs) in connection with a project or licensing arrangement you have with us.`,
+      `Information from third parties: where relevant, information shared by technology partners or vendors in connection with a project or licensing arrangement you have with us.`,
     ],
   },
   {
@@ -39,7 +39,7 @@ const SECTIONS = [
     body: [`We do not sell your personal information. We may share it with:`],
     bullets: [
       "Service providers who help us operate our website, host data, or process payments, under confidentiality obligations",
-      "Software or hardware partners (e.g. ANSYS, Formlabs) where necessary to deliver a licensed product or project you have requested",
+      "Technology partners where necessary to deliver a licensed product or project you have requested",
       "Professional advisors, such as legal or accounting firms, where necessary",
       "Authorities, where required by law or to protect our rights, users, or the public",
       "A successor entity, in the event of a merger, acquisition, or sale of assets",
@@ -92,7 +92,7 @@ const SECTIONS = [
     heading: "Contact Us",
     body: [
       `If you have questions about this Privacy Policy or how we handle your information, contact us at:`,
-      `[Company Name]\n[Street Address, City, State, ZIP]\nEmail: [privacy@yourcompany.com]\nPhone: [+1 (000) 000-0000]`,
+      `LRYPT Technologies\n4th Floor, Symphony Managed Office Space, Hormavu Agara Road, Vadarpalya, Hennur, Bangalore 560043\nEmail: enquiry@lrypt.com\nPhone: 9036354564`,
     ],
   },
 ];
@@ -102,10 +102,10 @@ export default function Privacy() {
     <LegalLayout
       eyebrow="Legal · Documentation"
       title="Privacy Policy"
-      subhead="How we collect, use, and protect information across our CAD, simulation, and engineering services."
+      subhead="How we collect, use, and protect information across our technology and engineering services."
       docNumber="PRIVACY-POL-01"
       revision="A"
-      effectiveDate="[Month Day, Year]"
+      effectiveDate="July 24, 2026"
       status="Active"
       sections={SECTIONS}
       crossLinkTo="/terms"

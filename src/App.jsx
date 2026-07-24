@@ -31,8 +31,8 @@ function App() {
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/cad-design" element={<CadDesign />} />
           <Route path="/ansys-simulation" element={<AnsysSimulation />} />
-          <Route path="/simulation-software" element={<SimulationSoftware />} />
-          <Route path="/simulation-software/actran" element={<Actran />} />
+          <Route path="/cadence-simulation" element={<SimulationSoftware />} />
+          <Route path="/cadence-simulation/actran" element={<Actran />} />
           <Route path="/proteger" element={<Proteger />} />
           <Route path="/formlabs" element={<Formlabs />} />
           <Route path="/services" element={<Services />} />

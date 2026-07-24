@@ -6,8 +6,8 @@ const linkGroups = [
   {
     title: "Solutions",
     links: [
-      { label: "CAD Design", to: "/cad-design" },
-      { label: "ANSYS Simulation", to: "/ansys-simulation" },
+      { label: "Proteger", to: "/proteger" },
+      { label: "Cadence Simulation", to: "/cadence-simulation" },
       { label: "Formlabs 3D Printing", to: "/formlabs" },
     ],
   },
@@ -16,7 +16,6 @@ const linkGroups = [
     links: [
       { label: "Utility Network", to: "/utility-network" },
       { label: "Engineering Design", to: "/engineering-design" },
-      { label: "HR Management", to: "/hrms" },
     ],
   },
 ];

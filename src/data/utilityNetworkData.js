@@ -22,7 +22,7 @@ export const intro = {
   "bg": "cream",
   "label": null,
   "lede": "Reliable, efficient, sustainable infrastructure — across every sector.",
-  "lead": "We provide engineering and design solutions for utility networks that enable dependable infrastructure across telecom, power, water, and energy. From fiber routes to pipelines and smart grids, our teams plan, map, and document networks that perform today and scale for tomorrow."
+  "lead": "We provide engineering and design solutions for dependable infrastructure across FTTx, power, water, and energy. From fiber routes to pipelines and smart grids, our teams plan, map, and document networks that perform today and scale for tomorrow."
 };
 
 export const whyLrypt = {
@@ -49,8 +49,8 @@ export const capabilities2 = {
       "label": null,
       "title": "FTTx",
       "image": "/assets/img/ph-telecom.webp",
-      "imageAlt": "FTTx and telecom fiber network planning",
-      "desc": "We plan and document fiber networks from early architecture through deployment-ready detail and final as-built records. Our teams support scalable, accurate telecom infrastructure designed around coverage, capacity, constructability, and client standards.",
+      "imageAlt": "FTTx fiber network planning",
+      "desc": "We plan and document fiber networks from early architecture through deployment-ready detail and final as-built records. Our teams support scalable, accurate network infrastructure designed around coverage, capacity, constructability, and client standards.",
       "bullets": [
         "High-Level Design (HLD)",
         "Low-Level Design (LLD)",
@@ -131,7 +131,7 @@ export const faq = {
   "items": [
     {
       "q": "What are LRYPT's utility network services?",
-      "a": "Engineering and design solutions for utility networks across FTTx/telecom, electric utilities, water & wastewater, oil & gas, and smart infrastructure — enabling reliable, efficient, sustainable infrastructure."
+      "a": "Engineering and design solutions for utility networks across FTTx, electric utilities, water and wastewater, oil and gas, and smart infrastructure."
     },
     {
       "q": "Do you provide FTTH / FTTx network design?",
@@ -139,7 +139,7 @@ export const faq = {
     },
     {
       "q": "Which utility sectors do you support?",
-      "a": "Telecom/FTTx, electric transmission & distribution, water & wastewater, oil & gas pipelines, and smart infrastructure."
+      "a": "FTTx, electric transmission and distribution, water and wastewater, oil and gas pipelines, and smart infrastructure."
     },
     {
       "q": "Do you provide GIS mapping and as-built documentation?",

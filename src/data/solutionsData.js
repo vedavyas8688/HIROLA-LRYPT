@@ -36,7 +36,7 @@ export const meta = {
         "Innovative engineering technology solutions designed to improve performance, strengthen operations, and support digital transformation."
     },
     {
-      href: "/simulation-software",
+      href: "/cadence-simulation",
       img: "/assets/img/ph-hero-simulation.webp",
       alt: "Cadence simulation software for engineering analysis",
       meta: "Engineering Software",
@@ -60,15 +60,15 @@ export const meta = {
   items: [
     {
       q: "What services does LRYPT Technologies provide?",
-      a: "LRYPT Technologies offers comprehensive engineering and technology solutions, including GIS services, CAD design, telecom engineering, ANSYS simulation, Formlabs 3D printing, recruitment, and technical workforce solutions tailored to diverse industries."
+      a: "LRYPT Technologies offers Proteger technology, Cadence Simulation, Formlabs 3D printing, utility network services, GIS expertise, and engineering design solutions tailored to diverse industries."
     },
     {
       q: "Which industries do you serve?",
-      a: "We work with organizations across infrastructure, telecommunications, manufacturing, construction, utilities, energy, automotive, healthcare, education, government, and other engineering-driven industries."
+      a: "We work with organizations across infrastructure, manufacturing, construction, utilities, energy, automotive, healthcare, education, government, and other engineering-driven industries."
     },
     {
       q: "Can LRYPT deliver customized engineering solutions?",
-      a: "Yes. We understand that every project has unique requirements. Our experts work closely with clients to develop customized engineering, geospatial, telecom, and digital solutions that align with their business objectives."
+      a: "Yes. We understand that every project has unique requirements. Our experts work closely with clients to develop customized engineering, geospatial, network, and digital solutions that align with their business objectives."
     },
     {
       q: "Why choose LRYPT Technologies?",

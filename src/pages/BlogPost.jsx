@@ -61,7 +61,7 @@ export default function BlogPost() {
     heading: "More insights",
     subheading: null,
     items: postList
-      .filter((p) => p.slug !== post.slug)
+      .filter((p) => p.slug !== post.slug && p.slug !== "payroll-and-compliance")
       .slice(0, 3)
       .map((p) => ({
         href: `/blog/${p.slug}`,

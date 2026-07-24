@@ -4,7 +4,7 @@
 export const meta = {
   title: "LRYPT Technologies | Engineering Software, Simulation & Services",
   description:
-    "ANSYS simulation, CAD, Formlabs 3D printing, utility network design, engineering design and HRMS — LRYPT Technologies helps you design, build, and scale from Bangalore.",
+    "Proteger, Cadence Simulation, Formlabs 3D printing, utility network design, and engineering design solutions from LRYPT Technologies.",
 };
 
 export const hero = {
@@ -27,8 +27,8 @@ export const hero = {
         "with Cadence Simulation",
       ],
       sub: "High-fidelity CAE simulation for faster, smarter, lower-risk engineering decisions.",
-      btnText: "Explore Cadence Simulation",
-      btnHref: "/simulation-software",
+      btnText: "Explore Cadence",
+      btnHref: "/cadence-simulation",
     },
     {
       image: "/assets/img/banner4.png",
@@ -74,7 +74,7 @@ export const solutionsGrid = {
       desc: "Innovative engineering technology solutions that help organizations improve performance, strengthen operations, and accelerate digital transformation.",
     },
     {
-      href: "/simulation-software",
+      href: "/cadence-simulation",
       img: "/assets/img/image16.jpeg",
       alt: "Cadence engineering simulation",
       meta: "Simulation",
@@ -95,7 +95,7 @@ export const servicesGrid = {
   bg: "dark",
   heading: "Our Services",
   subheading:
-    "Delivering specialized engineering, geospatial, telecom, and workforce solutions that help organizations execute projects efficiently and drive sustainable growth.",
+    "Delivering specialized engineering, geospatial, utility network, and digital solutions that help organizations execute projects efficiently and drive sustainable growth.",
 
   items: [
     {
@@ -104,7 +104,7 @@ export const servicesGrid = {
       alt: "Utility Network Services",
       meta: "Geospatial",
       title: "Utility Network Services",
-      desc: "Comprehensive GIS, utility mapping, telecom, electric, water, and oil & gas network design solutions for smarter infrastructure planning and asset management.",
+      desc: "Comprehensive GIS, utility mapping, FTTx, electric, water, and oil & gas network design solutions for smarter infrastructure planning and asset management.",
     },
     {
       href: "/engineering-design",
@@ -112,7 +112,7 @@ export const servicesGrid = {
       alt: "Engineering Design Services",
       meta: "Engineering",
       title: "Engineering Design Services",
-      desc: "End-to-end engineering design, CAD drafting, product development, simulation, prototyping, and technical consulting for innovative, high-quality solutions.",
+      desc: "End-to-end engineering design, technical drafting, product development, simulation, prototyping, and consulting for innovative, high-quality solutions.",
     },
   ],
 };

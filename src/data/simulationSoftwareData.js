@@ -44,7 +44,7 @@ export const solutions = {
     {
       title: "Acoustic Simulation",
       desc: "Acoustic and vibroacoustic simulation to reduce noise, improve sound quality, and meet regulatory needs across industries.",
-      products: [{ label: "Actran", href: "/simulation-software/actran" }],
+      products: [{ label: "Actran", href: "/cadence-simulation/actran" }],
     },
     {
       title: "Vehicle Dynamics & ADAS",
@@ -229,8 +229,8 @@ export const faq = {
       a: "Yes. Multiphysics workflows can connect structural, thermal, fluid, electromagnetic, and system models when interactions between domains materially affect product behavior.",
     },
     {
-      q: "Can simulation software integrate with our CAD workflow?",
-      a: "Yes. Modern simulation workflows can import common CAD formats, maintain geometry associativity, automate design variations, and exchange parameters with product development systems.",
+      q: "Can simulation software integrate with our product design workflow?",
+      a: "Yes. Modern simulation workflows can import common geometry formats, maintain associativity, automate design variations, and exchange parameters with product development systems.",
     },
     {
       q: "Does LRYPT provide implementation and technical support?",

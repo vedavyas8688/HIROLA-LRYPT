@@ -1,8 +1,8 @@
 
  export const meta = {
-  title: "Services | GIS, Telecom, Engineering & Recruitment | LRYPT Technologies",
+  title: "Services | Utility Networks & Engineering Design | LRYPT Technologies",
   description:
-    "Explore LRYPT Technologies' professional GIS, Telecom, Engineering, and Recruitment services designed to help businesses deliver projects with precision, efficiency, and confidence."
+    "Explore LRYPT Technologies' utility network, GIS, and engineering design services for precise, efficient project delivery."
 };
 
  export const pageHead = {
@@ -15,7 +15,7 @@
     "built for modern industries"
   ],
   lead:
-    "LRYPT Technologies delivers expert GIS, Telecom, Engineering, and Recruitment services that help organizations improve productivity, accelerate project delivery, and achieve lasting success."
+    "LRYPT Technologies delivers expert GIS, utility network, and engineering design services that improve productivity, accelerate delivery, and support lasting success."
 };
 
  export const servicesGrid = {
@@ -25,7 +25,7 @@
     "Specialized solutions designed to support engineering, infrastructure, and workforce excellence.",
   items: [
     {
-      href: "/gis-services",
+      href: "/utility-network",
       img: "/assets/img/image31.jpeg",
       alt: "GIS Services",
       meta: "Geospatial",
@@ -33,20 +33,20 @@
       desc: "Comprehensive GIS mapping, spatial analysis, utility mapping, asset management, and geospatial solutions for smarter infrastructure planning."
     },
     {
-      href: "/telecom-services",
+      href: "/utility-network",
       img: "/assets/img/image32.jpeg",
-      alt: "Telecom Services",
-      meta: "Telecommunications",
-      title: "Telecom Services",
-      desc: "End-to-end telecom network planning, fiber design, FTTx engineering, network documentation, and infrastructure deployment services."
+      alt: "Utility Network Services",
+      meta: "Network Infrastructure",
+      title: "Utility Network Services",
+      desc: "End-to-end FTTx, electric, water, and energy network planning, GIS mapping, documentation, and infrastructure design services."
     },
     {
-      href: "/engineering-services",
+      href: "/engineering-design",
       img: "/assets/img/image33.jpeg",
       alt: "Engineering Services",
       meta: "Engineering",
       title: "Engineering Services",
-      desc: "Professional engineering design, CAD drafting, product development, simulation, and technical consulting tailored to your business."
+      desc: "Professional engineering design, technical drafting, product development, simulation, and consulting tailored to your business."
     },
     
   ]
@@ -88,7 +88,7 @@
         ]
       },
       title: "Industry Expertise",
-      desc: "Experienced professionals delivering trusted GIS, Telecom, Engineering, and Recruitment solutions across diverse industries."
+      desc: "Experienced professionals delivering trusted GIS, utility network, and engineering solutions across diverse industries."
     },
     {
       icon: {
@@ -265,11 +265,11 @@
   items: [
     {
       q: "What services does LRYPT Technologies provide?",
-      a: "We offer GIS Services, Telecom Services, Engineering Services, and Recruitment Services to support organizations across infrastructure, engineering, and technology sectors."
+      a: "We offer GIS, Utility Network, and Engineering Design services to support organizations across infrastructure, engineering, and technology-driven sectors."
     },
     {
       q: "Which industries do you serve?",
-      a: "Our services support utilities, telecommunications, construction, manufacturing, engineering, government organizations, infrastructure, and technology companies."
+      a: "Our services support utilities, construction, manufacturing, engineering, government organizations, infrastructure, and technology-driven companies."
     },
     {
       q: "Can LRYPT provide customized solutions?",

@@ -23,7 +23,7 @@ export const pageHead = {
   label: "About Us",
   lede: null,
   lead: [
-    "LRYPT Technologies is a trusted engineering and digital transformation company dedicated to helping businesses innovate, optimize, and grow through advanced technology solutions. We specialize in digital engineering, geospatial intelligence (GIS), CAD design, engineering simulation, network planning, additive manufacturing, and specialized consulting services.",
+    "LRYPT Technologies is a trusted engineering and digital transformation company dedicated to helping businesses innovate, optimize, and grow through advanced technology solutions. We specialize in digital engineering, geospatial intelligence (GIS), product design, engineering simulation, network planning, additive manufacturing, and specialized consulting services.",
     "By combining industry expertise with cutting-edge engineering software and digital technologies, we enable organizations to accelerate product development, improve operational efficiency, enhance project accuracy, and deliver complex projects with confidence. Our customer-centric approach, technical excellence, and commitment to innovation ensure scalable, reliable, and high-quality solutions that drive sustainable business success.",
   ],
   tagline: "LRYPT Technologies – Your trusted partner for Engineering Excellence, Digital Innovation, and Business Transformation"
@@ -65,7 +65,7 @@ export const pageHead = {
       },
       title: "Industry Expertise",
       desc:
-        "Our experienced team brings deep expertise in engineering, GIS, telecom, CAD design, simulation, and workforce solutions, delivering practical and innovative solutions for complex business challenges."
+        "Our experienced team brings deep expertise in engineering, GIS, utility networks, product design, and simulation, delivering practical and innovative solutions for complex business challenges."
     },
     {
       icon: {
