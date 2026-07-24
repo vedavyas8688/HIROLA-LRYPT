@@ -47,7 +47,7 @@ export const capabilities2 = {
   "items": [
     {
       "label": null,
-      "title": "FTTx / Telecom",
+      "title": "FTTx",
       "image": "/assets/img/ph-telecom.webp",
       "imageAlt": "FTTx and telecom fiber network planning",
       "desc": "We plan and document fiber networks from early architecture through deployment-ready detail and final as-built records. Our teams support scalable, accurate telecom infrastructure designed around coverage, capacity, constructability, and client standards.",
