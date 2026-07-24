@@ -7,6 +7,7 @@ export const NAV = [
     drop: [
       ["CAD Design", "/cad-design"],
       ["ANSYS Simulation", "/ansys-simulation"],
+      ["Simulation Software", "/simulation-software"],
       ["Formlabs 3D Printing", "/formlabs"],
     ],
   },

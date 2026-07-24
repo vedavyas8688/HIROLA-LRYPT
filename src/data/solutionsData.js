@@ -45,6 +45,15 @@ export const meta = {
         "Validate product performance, improve reliability, and reduce development time through advanced engineering simulations."
     },
     {
+      href: "/simulation-software",
+      img: "/assets/img/ph-hero-simulation.webp",
+      alt: "Simulation software for engineering analysis",
+      meta: "Engineering Software",
+      title: "Simulation Software",
+      desc:
+        "Explore connected software for structural, fluid, thermal, electromagnetic, optical, and multiphysics simulation."
+    },
+    {
       href: "/formlabs",
       img: "/assets/img/banner4.png",
       alt: "3D Printing",

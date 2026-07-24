@@ -8,84 +8,91 @@
     <image:image><image:loc>https://lrypt.com/assets/img/ph-hero-simulation.webp</image:loc><image:title>LRYPT Technologies — engineering software &amp; services</image:title></image:image>
   </url>
   <url>
-    <loc>https://lrypt.com/about.html</loc>
+    <loc>https://lrypt.com/about</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://lrypt.com/assets/img/ph-about.webp</image:loc><image:title>About LRYPT Technologies</image:title></image:image>
   </url>
   <url>
-    <loc>https://lrypt.com/solutions.html</loc>
+    <loc>https://lrypt.com/solutions</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image><image:loc>https://lrypt.com/assets/img/ph-ansys.webp</image:loc><image:title>Solutions — CAD, ANSYS &amp; Formlabs</image:title></image:image>
   </url>
   <url>
-    <loc>https://lrypt.com/cad-design.html</loc>
+    <loc>https://lrypt.com/cad-design</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://lrypt.com/assets/img/ph-cad.webp</image:loc><image:title>CAD Design</image:title></image:image>
   </url>
   <url>
-    <loc>https://lrypt.com/ansys-simulation.html</loc>
+    <loc>https://lrypt.com/ansys-simulation</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://lrypt.com/assets/img/ph-ansys.webp</image:loc><image:title>ANSYS Simulation</image:title></image:image>
   </url>
   <url>
-    <loc>https://lrypt.com/formlabs.html</loc>
+    <loc>https://lrypt.com/simulation-software</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://lrypt.com/assets/img/ph-hero-simulation.webp</image:loc><image:title>Engineering Simulation Software</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://lrypt.com/formlabs</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://lrypt.com/assets/img/formlabs/form-cure.webp</image:loc><image:title>Formlabs 3D Printing</image:title></image:image>
   </url>
   <url>
-    <loc>https://lrypt.com/services.html</loc>
+    <loc>https://lrypt.com/services</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image><image:loc>https://lrypt.com/assets/img/ph-gis.webp</image:loc><image:title>Services — Utility, Engineering Design &amp; HRMS</image:title></image:image>
   </url>
   <url>
-    <loc>https://lrypt.com/utility-network.html</loc>
+    <loc>https://lrypt.com/utility-network</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://lrypt.com/assets/img/ph-gis.webp</image:loc><image:title>Utility Network Services</image:title></image:image>
   </url>
   <url>
-    <loc>https://lrypt.com/engineering-design.html</loc>
+    <loc>https://lrypt.com/engineering-design</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://lrypt.com/assets/img/ph-engineering.webp</image:loc><image:title>Engineering Design Services</image:title></image:image>
   </url>
   <url>
-    <loc>https://lrypt.com/hrms.html</loc>
+    <loc>https://lrypt.com/hrms</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://lrypt.com/assets/img/ph-recruitment.webp</image:loc><image:title>HR Management (HRMS)</image:title></image:image>
   </url>
   <url>
-    <loc>https://lrypt.com/blog.html</loc>
+    <loc>https://lrypt.com/blog</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image><image:loc>https://lrypt.com/assets/img/ph-hero-simulation.webp</image:loc><image:title>Blog &amp; Insights</image:title></image:image>
   </url>
   <url>
-    <loc>https://lrypt.com/faq.html</loc>
+    <loc>https://lrypt.com/faq</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://lrypt.com/assets/img/ph-ansys.webp</image:loc><image:title>FAQ</image:title></image:image>
   </url>
   <url>
-    <loc>https://lrypt.com/contact.html</loc>
+    <loc>https://lrypt.com/contact</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

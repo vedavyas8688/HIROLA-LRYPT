@@ -139,10 +139,10 @@ function initSlider() {
     timer = null;
   const set = (n) => {
     slides[i].classList.remove("is-active");
-    dots[i] && dots[i].classList.remove("is-active");
+    if (dots[i]) dots[i].classList.remove("is-active");
     i = (n + slides.length) % slides.length;
     slides[i].classList.add("is-active");
-    dots[i] && dots[i].classList.add("is-active");
+    if (dots[i]) dots[i].classList.add("is-active");
   };
   const stop = () => {
     if (timer) clearInterval(timer);
@@ -152,7 +152,7 @@ function initSlider() {
     if (!reduce) timer = setInterval(() => set(i + 1), 6000);
   };
   slides[0].classList.add("is-active");
-  dots[0] && dots[0].classList.add("is-active");
+  if (dots[0]) dots[0].classList.add("is-active");
   const cleanups = [];
   dots.forEach((d, n) => {
     const fn = () => {
@@ -172,19 +172,19 @@ function initSlider() {
     set(i + 1);
     start();
   };
-  prev && prev.addEventListener("click", prevFn);
-  next && next.addEventListener("click", nextFn);
+  if (prev) prev.addEventListener("click", prevFn);
+  if (next) next.addEventListener("click", nextFn);
   start();
   return () => {
     stop();
     cleanups.forEach((c) => c());
-    prev && prev.removeEventListener("click", prevFn);
-    next && next.removeEventListener("click", nextFn);
+    if (prev) prev.removeEventListener("click", prevFn);
+    if (next) next.removeEventListener("click", nextFn);
   };
 }
 
 // Runs the page-level animation/interaction engine after each route change.
-export function usePageEffects(deps) {
+export function usePageEffects() {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);

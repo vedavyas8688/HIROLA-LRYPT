@@ -59,7 +59,6 @@ function PageHeadStyles() {
 }
 
 export default function PageHead({
-  crumb,
   lines,
   lead,
   variant = "cream",

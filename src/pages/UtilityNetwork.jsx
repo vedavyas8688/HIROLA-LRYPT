@@ -4,7 +4,7 @@ import Capabilities, { SoloCapability } from "../components/sections/Capabilitie
 import FAQSection from "../components/sections/FAQSection";
 import CTABand from "../components/sections/CTABand";
 import usePageMeta from "../hooks/usePageMeta";
-import { meta, pageHead, intro, capabilities, whyLrypt, capabilities2, faq, cta } from "../data/utilityNetworkData";
+import { meta, pageHead, intro, whyLrypt, capabilities2, faq, cta } from "../data/utilityNetworkData";
 
 export default function UtilityNetwork() {
   usePageMeta(meta.title, meta.description);
@@ -12,9 +12,8 @@ export default function UtilityNetwork() {
     <>
       <PageHead {...pageHead} />
       <IntroBlock {...intro} />
-      <Capabilities {...capabilities} />
-      <SoloCapability {...whyLrypt} />
       <Capabilities {...capabilities2} />
+      <SoloCapability {...whyLrypt} />
       <FAQSection {...faq} />
       <CTABand {...cta} />
     </>

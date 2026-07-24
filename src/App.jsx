@@ -5,6 +5,8 @@ import About from "./pages/About";
 import Solutions from "./pages/Solutions";
 import CadDesign from "./pages/CadDesign";
 import AnsysSimulation from "./pages/AnsysSimulation";
+import SimulationSoftware from "./pages/SimulationSoftware";
+import Actran from "./pages/Actran";
 import Formlabs from "./pages/Formlabs";
 import Services from "./pages/Services";
 import UtilityNetwork from "./pages/UtilityNetwork";
@@ -28,6 +30,8 @@ function App() {
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/cad-design" element={<CadDesign />} />
           <Route path="/ansys-simulation" element={<AnsysSimulation />} />
+          <Route path="/simulation-software" element={<SimulationSoftware />} />
+          <Route path="/simulation-software/actran" element={<Actran />} />
           <Route path="/formlabs" element={<Formlabs />} />
           <Route path="/services" element={<Services />} />
           <Route path="/utility-network" element={<UtilityNetwork />} />

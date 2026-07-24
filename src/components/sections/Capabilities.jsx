@@ -28,6 +28,7 @@ export default function Capabilities({ bg = "cream", kicker, heading, items }) {
         .caps-sec .cap__grid{display:grid;grid-template-columns:minmax(200px,.8fr) 1.2fr;gap:clamp(18px,4vw,56px);align-items:start}
         @media(max-width:820px){.caps-sec .cap__grid{grid-template-columns:1fr;gap:14px}}
         .caps-sec .cap h3{text-transform:none;font-size:clamp(1.35rem,2.1vw,1.8rem);letter-spacing:-.01em}
+        .caps-sec .cap__image{display:block;width:100%;max-width:360px;aspect-ratio:16/10;margin-top:24px;object-fit:cover}
         .caps-sec .cap__p{color:var(--mute-cream);margin-bottom:20px;max-width:62ch;line-height:1.72}
         .caps-sec.sec--dark .cap__p{color:var(--mute-dark)}
         .caps-sec .blist{display:grid;gap:11px;margin:0}
@@ -56,6 +57,7 @@ export default function Capabilities({ bg = "cream", kicker, heading, items }) {
                     </span>
                   )}
                   <h3>{cap.title}</h3>
+                  {cap.image && <img className="cap__image" src={cap.image} alt={cap.imageAlt || cap.title} loading="lazy" decoding="async" />}
                 </div>
                 <div>
                   <p className="cap__p">{cap.desc}</p>
@@ -70,7 +72,46 @@ export default function Capabilities({ bg = "cream", kicker, heading, items }) {
   );
 }
 
-export function SoloCapability({ bg = "dark", label, title, desc, bullets, bulletStyle = "check" }) {
+export function SoloCapability({ bg = "dark", label, title, desc, bullets, bulletStyle = "check", variant }) {
+  if (variant === "modern") {
+    return (
+      <section className={`sec sec--${bg} solo-modern`}>
+        <style>{`
+          .solo-modern{position:relative;overflow:hidden;padding-block:clamp(58px,6vw,84px)}
+          .solo-modern::before{content:"";position:absolute;right:-120px;top:-180px;width:480px;height:480px;border:1px solid var(--line-dark);border-radius:50%}
+          .solo-modern::after{content:"";position:absolute;right:-20px;top:-80px;width:280px;height:280px;border:1px solid var(--line-dark);border-radius:50%}
+          .solo-modern__inner{position:relative;z-index:1}
+          .solo-modern__head{display:grid;grid-template-columns:minmax(240px,.85fr) 1.15fr;gap:clamp(32px,7vw,100px);align-items:end;margin-bottom:36px}
+          .solo-modern .label{color:var(--mute-dark)}
+          .solo-modern h2{max-width:12ch;margin:14px 0 0;color:var(--on-dark);font-size:clamp(2.2rem,4vw,4rem);line-height:1.04;text-transform:none;letter-spacing:-.035em}
+          .solo-modern__desc{max-width:62ch;margin:0;color:var(--mute-dark);font-size:clamp(1rem,1.35vw,1.15rem);line-height:1.75}
+          .solo-modern__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+          .solo-modern__item{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;min-height:84px;padding:18px 17px;border:1px solid var(--line-dark);background:rgba(255,255,255,.035)}
+          .solo-modern__dot{width:10px;height:10px;margin-top:7px;border-radius:50%;background:var(--white);box-shadow:0 0 0 6px rgba(255,255,255,.08)}
+          .solo-modern__item span:last-child{color:var(--on-dark);font-size:.94rem;line-height:1.45}
+          @media(max-width:1000px){.solo-modern__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:760px){.solo-modern__head,.solo-modern__grid{grid-template-columns:1fr}.solo-modern__head{align-items:start}.solo-modern h2{max-width:16ch}.solo-modern__item{min-height:0}}
+        `}</style>
+        <div className="wrap solo-modern__inner">
+          <div className="solo-modern__head">
+            <div>
+              {label && <span className="label" data-reveal="">{label}</span>}
+              <h2 data-reveal="">{title}</h2>
+            </div>
+            <p className="solo-modern__desc" data-reveal="">{desc}</p>
+          </div>
+          <div className="solo-modern__grid" data-stagger="">
+            {bullets.map((bullet) => (
+              <div className="solo-modern__item" data-reveal="" key={bullet}>
+                <span className="solo-modern__dot" aria-hidden="true" />
+                <span>{bullet}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className={`sec sec--${bg}`}>
       <div className="wrap">
@@ -90,7 +131,9 @@ export function SoloCapability({ bg = "dark", label, title, desc, bullets, bulle
               <p className="cap__p" data-reveal="">
                 {desc}
               </p>
-              <Bullets bullets={bullets} style={bulletStyle} />
+              <div style={{ marginTop: 26 }}>
+                <Bullets bullets={bullets} style={bulletStyle} />
+              </div>
             </div>
           </div>
         </div>

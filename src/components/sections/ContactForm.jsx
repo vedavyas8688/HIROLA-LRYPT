@@ -88,31 +88,45 @@ export default function ContactForm() {
 
   const set = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }));
 
-  const handleSend = () => {
-    // Front-end only for now — wire this up to a real endpoint before publishing.
+  const handleSend = (event) => {
+    event.preventDefault();
+    const subject = `Website enquiry from ${form.firstName} ${form.lastName}`;
+    const body = [
+      `Name: ${form.firstName} ${form.lastName}`,
+      `Email: ${form.email}`,
+      `Mobile: ${form.mobile}`,
+      `Company: ${form.company || "Not provided"}`,
+      `Solution: ${form.solution || "Not selected"}`,
+      `Service: ${form.service || "Not selected"}`,
+      "",
+      "Project details:",
+      form.message,
+    ].join("\n");
+
     setSent(true);
+    window.location.href = `mailto:info@lrypt.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
-    <div className="cform" data-reveal="" style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+    <form className="cform" data-reveal="" onSubmit={handleSend} style={{ display: "flex", flexDirection: "column", gap: 16 }}>
       <div className="row2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
         <div className="f2">
           <label>First name</label>
-          <input type="text" placeholder="Jane" value={form.firstName} onChange={set("firstName")} />
+          <input type="text" placeholder="Jane" value={form.firstName} onChange={set("firstName")} required />
         </div>
         <div className="f2">
           <label>Last name</label>
-          <input type="text" placeholder="Cooper" value={form.lastName} onChange={set("lastName")} />
+          <input type="text" placeholder="Cooper" value={form.lastName} onChange={set("lastName")} required />
         </div>
       </div>
       <div className="row2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
         <div className="f2">
           <label>Email</label>
-          <input type="email" placeholder="jane@company.com" value={form.email} onChange={set("email")} />
+          <input type="email" placeholder="jane@company.com" value={form.email} onChange={set("email")} required />
         </div>
         <div className="f2">
           <label>Mobile</label>
-          <input type="tel" placeholder="+91 98765 43210" value={form.mobile} onChange={set("mobile")} />
+          <input type="tel" placeholder="+91 98765 43210" value={form.mobile} onChange={set("mobile")} required />
         </div>
       </div>
       <div className="f2">
@@ -147,6 +161,7 @@ export default function ContactForm() {
           placeholder="Tell us about your project, timeline, and goals..."
           value={form.message}
           onChange={set("message")}
+          required
         />
       </div>
       <div
@@ -156,11 +171,11 @@ export default function ContactForm() {
         <span className="cform__note" style={{ fontSize: 13, lineHeight: 1.4 }}>
           Your details are used only to respond to your enquiry.
         </span>
-        <button className="btn" type="button" onClick={handleSend}>
+        <button className="btn" type="submit">
           <span className="btn__ico">{sent ? <Check size={18} /> : <ArrowRight size={18} />}</span>
-          <span className="btn__t">{sent ? "Thanks \u2014 we\u2019ll be in touch" : "Send message"}</span>
+          <span className="btn__t">{sent ? "Complete sending in your email app" : "Send message"}</span>
         </button>
       </div>
-    </div>
+    </form>
   );
 }

@@ -25,54 +25,9 @@ export const intro = {
   "lead": "We provide engineering and design solutions for utility networks that enable dependable infrastructure across telecom, power, water, and energy. From fiber routes to pipelines and smart grids, our teams plan, map, and document networks that perform today and scale for tomorrow."
 };
 
-export const capabilities = {
-  "bg": "cream",
-  "kicker": "FTTx / Telecom",
-  "heading": "Empowering homes with high-speed fiber optic connectivity",
-  "items": [
-    {
-      "label": null,
-      "title": "High-Level Design (HLD)",
-      "desc": "High-Level Design in Fiber to the Home (FTTH) networks involves the overarching planning and conceptualization of the network architecture.",
-      "bullets": [
-        "Defines network topology and technology.",
-        "Specifies service offerings and capacity needs.",
-        "Determines coverage area and business model."
-      ],
-      "bulletStyle": "check",
-      "cols": 1
-    },
-    {
-      "label": null,
-      "title": "Low-Level Design (LLD)",
-      "desc": "Low-Level Design involves the detailed planning and specification of all components and systems required to deploy the network infrastructure.",
-      "bullets": [
-        "Fiber routes and cable layout.",
-        "Address validation.",
-        "Distribution network architecture.",
-        "Equipment specifications.",
-        "Documentation for deployment."
-      ],
-      "bulletStyle": "check",
-      "cols": 1
-    },
-    {
-      "label": null,
-      "title": "As-Built",
-      "desc": "As-built documentation is delivered according to the specifications of the end client — an accurate, deployment-ready record of the network as constructed.",
-      "bullets": [
-        "Field-verified as-built records.",
-        "Aligned to end-client standards and formats.",
-        "Ready for handover and operations."
-      ],
-      "bulletStyle": "check",
-      "cols": 1
-    }
-  ]
-};
-
 export const whyLrypt = {
   "bg": "dark",
+  "variant": "modern",
   "label": "Why LRYPT",
   "title": "What makes LRYPT stand out",
   "desc": "Outsourcing your project gives you access to a team skilled in the latest trends — without the effort of building an in-house team. Avoid the time-consuming process of recruiting, training, and integrating new hires. With our experienced specialists, you get diverse technical expertise and tailored solutions, using cutting-edge tools and resources to ensure optimal technology and design choices and the best outcomes for your projects.",
@@ -82,7 +37,7 @@ export const whyLrypt = {
     "Precision-driven outcomes with assured success.",
     "Cost-effectiveness."
   ],
-  "bulletStyle": "star"
+  "bulletStyle": "check"
 };
 
 export const capabilities2 = {
@@ -92,7 +47,25 @@ export const capabilities2 = {
   "items": [
     {
       "label": null,
+      "title": "FTTx / Telecom",
+      "image": "/assets/img/ph-telecom.webp",
+      "imageAlt": "FTTx and telecom fiber network planning",
+      "desc": "We plan and document fiber networks from early architecture through deployment-ready detail and final as-built records. Our teams support scalable, accurate telecom infrastructure designed around coverage, capacity, constructability, and client standards.",
+      "bullets": [
+        "High-Level Design (HLD)",
+        "Low-Level Design (LLD)",
+        "Fiber Route & Cable Layout",
+        "Address Validation",
+        "As-Built Documentation"
+      ],
+      "bulletStyle": "check",
+      "cols": 2
+    },
+    {
+      "label": null,
       "title": "Electric Utilities",
+      "image": "/assets/img/ph-engineering.webp",
+      "imageAlt": "Electric utility network engineering",
       "desc": "We design and document electric utility networks that keep power flowing safely and efficiently. From transmission and distribution planning to smart-grid support, our teams deliver accurate, standards-aligned designs and asset records for both underground and overhead systems.",
       "bullets": [
         "Transmission & Distribution Network Design",
@@ -107,6 +80,8 @@ export const capabilities2 = {
     {
       "label": null,
       "title": "Water & Wastewater",
+      "image": "/assets/img/ph-gis.webp",
+      "imageAlt": "Water and wastewater utility network mapping",
       "desc": "We help water utilities plan resilient distribution and drainage networks. Our engineers route pipelines, support hydraulic performance, and map assets in GIS — enabling reliable supply, effective wastewater management, and confident long-term planning.",
       "bullets": [
         "Water Distribution Network Design",
@@ -121,6 +96,8 @@ export const capabilities2 = {
     {
       "label": null,
       "title": "Oil & Gas",
+      "image": "/assets/img/image19.jpeg",
+      "imageAlt": "Oil and gas pipeline infrastructure",
       "desc": "We provide engineering and mapping support for oil & gas distribution networks. From pipeline routing and corridor planning to infrastructure mapping and asset documentation, we deliver the spatial accuracy and detail these high-stakes networks demand.",
       "bullets": [
         "Pipeline Engineering Support",
@@ -135,6 +112,8 @@ export const capabilities2 = {
     {
       "label": null,
       "title": "Smart Infrastructure",
+      "image": "/assets/img/image20.jpeg",
+      "imageAlt": "Smart infrastructure and digital utility mapping",
       "desc": "We bring utilities into the digital age with GIS-driven mapping and asset information management. Our digital engineering turns scattered records into a single, reliable source of truth — ready for analytics, planning, and smarter operations.",
       "bullets": [
         "Utility Mapping",
@@ -174,9 +153,11 @@ export const faq = {
 };
 
 export const cta = {
-  "heading": "Need our expert help? We’re here!",
-  "sub": "Need our professional assistance? We are here to help you! Advanced telecom networking solutions, first-rate engineering services, and all-inclusive recruitment services are provided by LRYPT Technologies. In order to guarantee that your projects and workforce are always at the forefront of success, our devoted team is committed to providing creative, dependable, and efficient solutions tailored to your needs. Reach out to us right now!",
-  "btnText": "Get a quote",
+  "heading": "Need Expert Engineering & Technology Solutions?",
+  "subheading": "We're here to help you succeed.",
+  "sub": "LRYPT Technologies delivers precision engineering services, advanced simulation and 3D printing technologies, and comprehensive recruitment solutions to support your business growth. Our experienced team is committed to providing reliable, innovative, and cost-effective services tailored to your unique requirements, ensuring every project is completed with excellence and efficiency. Connect with us today and discover how we can help drive your success.",
+  "btnText": "Contact Our Experts",
   "btnHref": "/contact",
-  "image": "/assets/img/image19.jpeg"
+  "image": "/assets/img/image19.jpeg",
+  "wide": true
 };

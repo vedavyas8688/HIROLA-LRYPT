@@ -343,7 +343,7 @@ export default function LegalLayout({
 
         <div className="lg-content">
           <div className="lg-index-mobile">
-            {sections.map((s, i) => (
+            {sections.map((s) => (
               <a
                 key={s.id}
                 href={`#${s.id}`}

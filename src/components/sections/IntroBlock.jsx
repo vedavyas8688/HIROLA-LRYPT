@@ -1,4 +1,6 @@
 export default function IntroBlock({ bg = "cream", label, lede, lead }) {
+  const leadParagraphs = Array.isArray(lead) ? lead : lead ? [lead] : [];
+
   return (
     <section className={`sec sec--${bg}`}>
       <div className="wrap opp">
@@ -13,15 +15,16 @@ export default function IntroBlock({ bg = "cream", label, lede, lead }) {
               {lede}
             </p>
           )}
-          {lead && (
+          {leadParagraphs.map((paragraph, index) => (
             <p
               className="lead"
               data-reveal=""
-              style={{ marginTop: label ? 22 : 20, maxWidth: label ? "72ch" : "70ch" }}
+              style={{ marginTop: index === 0 ? (label ? 22 : 20) : 18, maxWidth: label ? "72ch" : "70ch" }}
+              key={index}
             >
-              {lead}
+              {paragraph}
             </p>
-          )}
+          ))}
         </div>
       </div>
     </section>
