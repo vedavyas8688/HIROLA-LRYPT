@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
 
 export default function CardGrid({ bg = "cream", heading, subheading, items }) {
+  const twoCardLayout = items.length === 2;
+
   return (
-    <section className={`sec sec--${bg}`}>      <div className="wrap">
+    <section className={`sec sec--${bg}`}>
+      <style>{`
+        .posts.posts--two{grid-template-columns:repeat(2,minmax(0,1fr));max-width:900px;margin-inline:auto}
+        @media(max-width:600px){.posts.posts--two{grid-template-columns:1fr}}
+      `}</style>
+      <div className="wrap">
         {(heading || subheading) && (
           <div className="proj-head">
             {heading && <h2 data-reveal="">{heading}</h2>}
@@ -13,7 +20,7 @@ export default function CardGrid({ bg = "cream", heading, subheading, items }) {
             )}
           </div>
         )}
-        <div className="posts" data-stagger="">
+        <div className={`posts${twoCardLayout ? " posts--two" : ""}`} data-stagger="">
           {items.map((item, i) => (
             <Link className="post" data-reveal="" to={item.href} key={i}>
               <div className="post__img">

@@ -155,7 +155,7 @@ export const faq = {
 export const cta = {
   "heading": "Need Expert Engineering & Technology Solutions?",
   "subheading": "We're here to help you succeed.",
-  "sub": "LRYPT Technologies delivers precision engineering services, advanced simulation and 3D printing technologies, and comprehensive recruitment solutions to support your business growth. Our experienced team is committed to providing reliable, innovative, and cost-effective services tailored to your unique requirements, ensuring every project is completed with excellence and efficiency. Connect with us today and discover how we can help drive your success.",
+  "sub": "LRYPT Technologies delivers reliable utility network planning, mapping, design, and documentation across FTTx, electric, water, oil and gas, and smart infrastructure projects. Connect with our experts to discuss a solution tailored to your requirements.",
   "btnText": "Contact Our Experts",
   "btnHref": "/contact",
   "image": "/assets/img/image19.jpeg",

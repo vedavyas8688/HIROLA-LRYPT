@@ -355,9 +355,9 @@ export const faq = {
 };
 
 export const cta = {
-  "heading": "Need our expert help? We’re here!",
-  "sub": "Need our professional assistance? We are here to help you! Advanced telecom networking solutions, first-rate engineering services, and all-inclusive recruitment services are provided by LRYPT Technologies. In order to guarantee that your projects and workforce are always at the forefront of success, our devoted team is committed to providing creative, dependable, and efficient solutions tailored to your needs. Reach out to us right now!",
-  "btnText": "Get a quote",
+  "heading": "Ready to Improve Your Simulation Workflow?",
+  "sub": "Talk to our simulation experts about your engineering challenges, analysis requirements, and product-development goals.",
+  "btnText": "Contact Our Experts",
   "btnHref": "/contact",
   "image": "/assets/img/ph-about.webp"
 };

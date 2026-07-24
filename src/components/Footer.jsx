@@ -130,21 +130,21 @@ export default function Footer() {
           <div>
             <h5>Get in touch</h5>
             <div className="foot__contact">
-              <a href="tel:+917827488464">
+              <a href="tel:+919036354564">
                 <Phone size={17} />
-                <span>+91 78274 88464</span>
+                <span>9036354564</span>
               </a>
-              <a href="mailto:info@lrypt.com">
+              <a href="mailto:enquiry@lrypt.com">
                 <Mail size={17} />
-                <span>info@lrypt.com</span>
+                <span>enquiry@lrypt.com</span>
               </a>
               <a
-                href="https://maps.google.com/?q=Vadarpalya,+Hennur,+Bangalore+560043"
+                href="https://maps.google.com/?q=4th+Floor,+Symphony+Managed+Office+Space,+Hormavu+Agara+Road,+Vadarpalya,+Hennur,+Bangalore+560043"
                 target="_blank"
                 rel="noreferrer"
               >
                 <MapPin size={17} />
-                <span>No. 23 l Symphony managed office space, Hormavu agara road,Vadarpalya, Hennur, Bangalore -560043</span>
+                <span>4th Floor, Symphony Managed Office Space, Hormavu Agara Road, Vadarpalya, Hennur, Bangalore 560043</span>
               </a>
             </div>
 

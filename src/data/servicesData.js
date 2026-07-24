@@ -283,9 +283,9 @@
 };
 
  export const cta = {
-  heading: "Let's Build  Together",
-  sub: "Whether you need GIS expertise, telecom engineering, professional engineering services, or skilled technical talent, LRYPT Technologies is ready to support your business. Our experienced team delivers reliable, scalable, and innovative solutions that help organizations complete projects efficiently, reduce operational challenges, and achieve long-term success.",
-  btnText: "Get a Quote",
+  heading: "Let's Build Together",
+  sub: "Whether you need utility network expertise or professional engineering design support, LRYPT Technologies delivers reliable, scalable solutions that help projects progress efficiently and successfully.",
+  btnText: "Contact Our Experts",
   btnHref: "/contact",
   image: "/assets/img/image28.jpeg"
 };

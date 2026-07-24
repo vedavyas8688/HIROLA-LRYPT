@@ -7,6 +7,7 @@ import CadDesign from "./pages/CadDesign";
 import AnsysSimulation from "./pages/AnsysSimulation";
 import SimulationSoftware from "./pages/SimulationSoftware";
 import Actran from "./pages/Actran";
+import Proteger from "./pages/Proteger";
 import Formlabs from "./pages/Formlabs";
 import Services from "./pages/Services";
 import UtilityNetwork from "./pages/UtilityNetwork";
@@ -32,6 +33,7 @@ function App() {
           <Route path="/ansys-simulation" element={<AnsysSimulation />} />
           <Route path="/simulation-software" element={<SimulationSoftware />} />
           <Route path="/simulation-software/actran" element={<Actran />} />
+          <Route path="/proteger" element={<Proteger />} />
           <Route path="/formlabs" element={<Formlabs />} />
           <Route path="/services" element={<Services />} />
           <Route path="/utility-network" element={<UtilityNetwork />} />

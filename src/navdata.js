@@ -5,8 +5,8 @@ export const NAV = [
     label: "Solutions",
     href: "/solutions",
     drop: [
-      ["ANSYS Simulation", "/ansys-simulation"],
-      ["Simulation Software", "/simulation-software"],
+      ["Proteger", "/proteger"],
+      ["Cadence Simulation", "/simulation-software"],
       ["Formlabs 3D Printing", "/formlabs"],
     ],
   },

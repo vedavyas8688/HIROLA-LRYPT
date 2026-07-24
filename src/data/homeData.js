@@ -11,34 +11,24 @@ export const hero = {
   slides: [
     {
       image: "/assets/img/image11.jpeg",
-      imageAlt: "Empowering innovation, sparking creativity through CAD",
+      imageAlt: "Proteger technology solutions",
       label: "Welcome to LRYPT Technologies",
-      lines: ["Empowering innovation,", "sparking creativity through CAD"],
-      sub: "Design, visualise, and validate — from first sketch to finished product.",
-      btnText: "Explore CAD",
-      btnHref: "/cad-design",
-    },
-    {
-      image: "/assets/img/image9.jpeg",
-      imageAlt: "Unlock your success with top talent",
-      label: "Welcome to LRYPT Technologies",
-      lines: ["Unlock your success", "with top talent"],
-      sub: "Expert staffing services connecting you with skilled professionals.",
-      btnText: "Explore HRMS",
-      btnHref: "/hrms",
+      lines: ["Transform possibilities", "with Proteger"],
+      sub: "Reliable technology solutions designed to help businesses innovate, perform, and grow.",
+      btnText: "Explore Proteger",
+      btnHref: "/proteger",
     },
     {
       image: "/assets/img/image12.jpeg",
-      imageAlt: "Unleash the potential of CAE through ANSYS simulation",
+      imageAlt: "Cadence engineering simulation software",
       label: "Welcome to LRYPT Technologies",
       lines: [
-        "Unleash the potential   ",
-        "of CAE through ANSYS  ",
-        "simulation",
+        "Accelerate innovation",
+        "with Cadence Simulation",
       ],
-      sub: "Predict real-world performance before you build a single part.",
-      btnText: "Explore ANSYS",
-      btnHref: "/ansys-simulation",
+      sub: "High-fidelity CAE simulation for faster, smarter, lower-risk engineering decisions.",
+      btnText: "Explore Cadence Simulation",
+      btnHref: "/simulation-software",
     },
     {
       image: "/assets/img/banner4.png",
@@ -60,32 +50,36 @@ export const hero = {
 export const intro = {
   bg: "cream",
   label: "Welcome to LRYPT Technologies",
-  lede: null,
-  lead: "Empowering engineering, infrastructure, and technology-driven organizations with innovative solutions. At LRYPT Technologies, we combine advanced engineering software, geospatial intelligence, CAD services, digital engineering, and expert consulting under one roof to help businesses streamline operations, accelerate project delivery, and drive innovation. Whether you're designing, analyzing, mapping, or managing complex projects, we provide the expertise and technology to help you deliver with precision, efficiency, and confidence.",
+  lede: "Empowering Innovation Through Engineering & Digital Transformation",
+  lead: [
+    "At LRYPT Technologies, we empower engineering, infrastructure, manufacturing, and technology-driven organizations with innovative digital engineering solutions. By combining advanced engineering software, simulation technologies, geospatial intelligence, digital engineering, and specialized consulting, we help businesses accelerate product development, optimize operations, and deliver complex projects with confidence.",
+    "From product design and simulation to network planning, GIS mapping and digital transformation, our team delivers the expertise and technology needed to improve accuracy, enhance productivity, reduce time-to-market, and drive sustainable business growth.",
+  ],
+  tagline: "LRYPT Technologies – Your trusted partner for Engineering Excellence, Digital Innovation, and Business Transformation.",
 };
 
 export const solutionsGrid = {
   bg: "cream",
   heading: "Our Solutions",
   subheading:
-    "Delivering innovative engineering, geospatial, digital, and manufacturing solutions that help businesses design smarter, optimize operations, and accelerate project success.",
+    "Empowering businesses with cutting-edge engineering, simulation, digital engineering, and manufacturing solutions to drive innovation, solve complex challenges, and achieve faster, smarter, and more sustainable outcomes.",
 
   items: [
     {
-      href: "/cad-design",
+      href: "/proteger",
       img: "/assets/img/image15.jpeg",
-      alt: "CAD Design",
-      meta: "Engineering",
-      title: "CAD Design",
-      desc: "Comprehensive 2D drafting and 3D CAD modeling services that transform concepts into precise, production-ready engineering designs.",
+      alt: "Proteger engineering technology solutions",
+      meta: "Engineering Technology",
+      title: "Proteger",
+      desc: "Innovative engineering technology solutions that help organizations improve performance, strengthen operations, and accelerate digital transformation.",
     },
     {
-      href: "/ansys-simulation",
+      href: "/simulation-software",
       img: "/assets/img/image16.jpeg",
-      alt: "ANSYS Simulation",
+      alt: "Cadence engineering simulation",
       meta: "Simulation",
-      title: "ANSYS Simulation",
-      desc: "Advanced engineering simulations that analyze performance, improve reliability, reduce development costs, and accelerate product innovation.",
+      title: "Cadence Simulation",
+      desc: "High-fidelity CAE simulation technologies that help engineers predict performance, reduce development risk, and accelerate product innovation.",
     },
     {
       href: "/formlabs",
@@ -106,7 +100,7 @@ export const servicesGrid = {
   items: [
     {
       href: "/utility-network",
-      img: "/assets/img/image18.jpeg",
+      img: "/assets/img/utilityimage.jpeg",
       alt: "Utility Network Services",
       meta: "Geospatial",
       title: "Utility Network Services",
@@ -119,14 +113,6 @@ export const servicesGrid = {
       meta: "Engineering",
       title: "Engineering Design Services",
       desc: "End-to-end engineering design, CAD drafting, product development, simulation, prototyping, and technical consulting for innovative, high-quality solutions.",
-    },
-    {
-      href: "/hrms",
-      img: "/assets/img/image20.jpeg",
-      alt: "Recruitment & Staffing",
-      meta: "Workforce",
-      title: "Recruitment & Staffing",
-      desc: "Connecting businesses with experienced engineering, GIS, telecom, IT, and technical professionals through reliable recruitment and workforce solutions.",
     },
   ],
 };
@@ -344,23 +330,23 @@ export const faq = {
   items: [
     {
       q: "What does LRYPT Technologies do?",
-      a: "LRYPT Technologies is a Bangalore-based engineering technology company. We provide engineering software solutions — CAD design, ANSYS simulation, and Formlabs 3D printing — alongside expert services in utility network design, engineering design, and HR management (HRMS).",
+      a: "LRYPT Technologies provides Proteger engineering technology solutions, Cadence simulation software, and Formlabs 3D printing, alongside expert utility network and engineering design services.",
     },
     {
       q: "Which industries does LRYPT serve?",
-      a: "We work across aerospace, automotive, defence, energy, healthcare, manufacturing, utilities, telecom, water, oil & gas, and infrastructure — plus IT, finance, and more through our HR services.",
+      a: "We support engineering-driven organizations across aerospace, automotive, defence, energy, healthcare, manufacturing, utilities, water, oil and gas, and infrastructure.",
     },
     {
       q: "Do you offer both software and services?",
-      a: "Yes. We pair best-in-class engineering software (CAD, ANSYS, Formlabs) with hands-on delivery teams for utility networks, engineering design, and workforce management — a single partner across the lifecycle.",
+      a: "Yes. We combine Proteger, Cadence simulation, and Formlabs technologies with hands-on utility network and engineering design services, giving clients one partner from technology selection through project delivery.",
     },
     {
       q: "Where is LRYPT Technologies located?",
-      a: "Our office is in Hennur, Bangalore — No. 23, Symphony Managed Office Space, Hormavu Agara Road, Bangalore 560043. We serve clients across India and worldwide.",
+      a: "Our office is on the 4th Floor, Symphony Managed Office Space, Hormavu Agara Road, Vadarpalya, Hennur, Bangalore 560043. We serve clients across India and worldwide.",
     },
     {
       q: "How do I get a quote?",
-      a: "Call or WhatsApp +91 78274 88464, email info@lrypt.com, or use the Get a Free Quote form on our Contact page. We typically respond within one business day.",
+      a: "Call or WhatsApp 9036354564, email enquiry@lrypt.com, or use the Get a Free Quote form on our Contact page. We typically respond within one business day.",
     },
     {
       q: "Why choose LRYPT?",
@@ -370,9 +356,9 @@ export const faq = {
 };
 
 export const cta = {
-  heading: "Need our expert help? We’re here!",
-  sub: "At LRYPT Technologies, our team of experienced engineers, GIS specialists, telecom experts, and technical consultants works closely with clients to deliver innovative, reliable, and scalable solutions. From engineering design and digital transformation to geospatial intelligence and workforce solutions, we provide the expertise you need to turn ideas into successful projects.",
-  btnText: "Get a quote",
+  heading: "Ready to Move Your Next Project Forward?",
+  sub: "Connect with LRYPT Technologies for Proteger solutions, Cadence simulation, Formlabs 3D printing, utility network services, and engineering design expertise tailored to your goals.",
+  btnText: "Contact Our Experts",
   btnHref: "/contact",
   image: "/assets/img/image21.jpeg",
 };

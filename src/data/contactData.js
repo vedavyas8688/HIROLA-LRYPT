@@ -3,7 +3,7 @@
 
 export const meta = {
   "title": "Contact LRYPT Technologies | Get a Free Quote",
-  "description": "Talk to LRYPT Technologies in Bangalore. Call +91 78274 88464 or request a free quote for solutions and services tailored to you."
+  "description": "Talk to LRYPT Technologies in Bangalore. Call 9036354564 or request a free quote for solutions and services tailored to you."
 };
 
 export const pageHead = {
@@ -25,18 +25,18 @@ export const pageHead = {
   "info": [
     {
       "k": "Call / WhatsApp",
-      "v": "+91 78274 88464",
+      "v": "9036354564",
       "sub": "Mon–Fri, 9:00 AM – 6:30 PM IST"
     },
     {
       "k": "Email",
-      "v": "info@lrypt.com",
+      "v": "enquiry@lrypt.com",
       "sub": "We reply within a day"
     },
     {
       "k": "Office",
       "v": "Hennur, Bangalore",
-      "sub": "No. 23, Symphony Managed Office Space, Hormavu Agara Road, Vadarpalya, Hennur, Bangalore 560043"
+      "sub": "4th Floor, Symphony Managed Office Space, Hormavu Agara Road, Vadarpalya, Hennur, Bangalore 560043"
     }
   ]
 };
@@ -45,7 +45,7 @@ export const faq = {
   "items": [
     {
       "q": "How can I contact LRYPT Technologies?",
-      "a": "Call or WhatsApp +91 78274 88464, email info@lrypt.com, or use the Get a Free Quote form. Our office is in Hennur, Bangalore 560043."
+      "a": "Call or WhatsApp 9036354564, email enquiry@lrypt.com, or use the Get a Free Quote form. Our office is on the 4th Floor, Symphony Managed Office Space, Hormavu Agara Road, Vadarpalya, Hennur, Bangalore 560043."
     },
     {
       "q": "What are your business hours?",

@@ -1,4 +1,4 @@
-export default function IntroBlock({ bg = "cream", label, lede, lead }) {
+export default function IntroBlock({ bg = "cream", label, lede, lead, tagline }) {
   const leadParagraphs = Array.isArray(lead) ? lead : lead ? [lead] : [];
 
   return (
@@ -25,6 +25,11 @@ export default function IntroBlock({ bg = "cream", label, lede, lead }) {
               {paragraph}
             </p>
           ))}
+          {tagline && (
+            <p data-reveal="" style={{ marginTop: 24, maxWidth: "72ch", fontSize: "1.05rem", lineHeight: 1.6 }}>
+              <strong>{tagline}</strong>
+            </p>
+          )}
         </div>
       </div>
     </section>

@@ -26,16 +26,35 @@ const detailIcons = {
 
 function DetailIcon({ name }) {
   if (name === "support") {
-    return <span className="spd-combo-icon" aria-hidden="true"><PanelTop /><CircleHelp className="spd-combo-icon__badge" /></span>;
+    return (
+      <span className="spd-combo-icon" aria-hidden="true">
+        <PanelTop />
+        <CircleHelp className="spd-combo-icon__badge" />
+      </span>
+    );
   }
   if (name === "services") {
-    return <span className="spd-combo-icon" aria-hidden="true"><UserRound /><Briefcase className="spd-combo-icon__badge" /></span>;
+    return (
+      <span className="spd-combo-icon" aria-hidden="true">
+        <UserRound />
+        <Briefcase className="spd-combo-icon__badge" />
+      </span>
+    );
   }
   const Component = detailIcons[name];
-  return Component ? <Component size={42} strokeWidth={1.5} aria-hidden="true" /> : null;
+  return Component ? (
+    <Component size={42} strokeWidth={1.5} aria-hidden="true" />
+  ) : null;
 }
 
-export default function SimulationProductDetail({ hero, overview, benefits, features, nextSteps, resources }) {
+export default function SimulationProductDetail({
+  hero,
+  overview,
+  benefits,
+  features,
+  nextSteps,
+  resources,
+}) {
   return (
     <main className="spd">
       <style>{`
@@ -56,13 +75,149 @@ export default function SimulationProductDetail({ hero, overview, benefits, feat
       `}</style>
       <section className="spd-hero">
         <img className="spd-hero__bg" src={hero.image} alt={hero.imageAlt} />
-        <div className="spd-wrap spd-hero__content"><h1>{hero.title}</h1><p>{hero.subtitle}</p><Link className="spd-primary-btn" to={hero.btnHref}>{hero.btnText}<ArrowRight size={17} /></Link></div>
+        <div className="spd-wrap spd-hero__content">
+          <h1>{hero.title}</h1>
+          <p>{hero.subtitle}</p>
+          <Link className="spd-primary-btn" to={hero.btnHref}>
+            {hero.btnText}
+            <ArrowRight size={17} />
+          </Link>
+        </div>
       </section>
-      <section className="spd-section spd-overview"><div className="spd-wrap spd-overview__inner"><div className="spd-overview__copy"><span className="spd-kicker">{overview.kicker}</span><h2>{overview.heading}</h2><p>{overview.body}</p>{overview.more && <details><summary>Show more</summary><p>{overview.more}</p></details>}</div><svg className="spd-overview__signal" viewBox="0 0 250 250" aria-hidden="true"><defs><linearGradient id="simContour" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#16a9dd" /><stop offset=".52" stopColor="#6cc56c" /><stop offset="1" stopColor="#e1a437" /></linearGradient></defs><rect className="sim-panel" x="18" y="18" width="214" height="214" rx="24" /><path className="sim-mesh" d="M39 172 63 75 102 43 151 51 205 90 211 151 178 202 111 214 57 197 39 172Zm24-97 39 33 49-57m-49 57 48 39 55-57m-103 18-45 89m93-50 61 4m-61-4-39 67m39-67 28 55M63 75l-6 122m145-46-24 51M102 43v65m49-57-1 96M39 172l111-25 61 4M57 197l121 5" /><path className="sim-contour" stroke="url(#simContour)" d="M46 155c24-22 40-14 58-31 21-20 30-45 61-40 23 4 30 22 39 40M51 173c31-19 48-10 69-29 19-17 29-38 55-34 17 3 25 14 31 28M63 188c26-11 46-4 66-20 18-15 30-30 51-27 12 2 19 8 25 17" /><circle className="sim-node" cx="63" cy="75" r="4" /><circle className="sim-node" cx="102" cy="108" r="4" /><circle className="sim-node" cx="150" cy="147" r="4" /><circle className="sim-node" cx="178" cy="202" r="4" /><path className="sim-axis" d="M42 211v-28m0 28h28m-28 0 17-17" /><text className="sim-label" x="36" y="180">Y</text><text className="sim-label" x="72" y="216">X</text><text className="sim-label" x="61" y="191">Z</text></svg><img className="spd-overview__image" src={overview.image} alt={overview.imageAlt} /></div></section>
-      <section className="spd-section spd-benefits"><div className="spd-wrap"><span className="spd-kicker">{benefits.kicker}</span><h2>{benefits.heading}</h2><p>{benefits.subheading}</p><div className="spd-benefits__grid">{benefits.items.map((item) => <article className="spd-benefit" key={item.title}><DetailIcon name={item.icon} /><h3>{item.title}</h3><p>{item.desc}</p></article>)}</div></div></section>
-      <section className="spd-section spd-features"><div className="spd-wrap"><span className="spd-kicker">{features.kicker}</span><h2>{features.heading}</h2><p className="spd-features__intro">{features.intro}</p><table className="spd-table"><thead><tr><th>Feature Name</th><th>Description</th></tr></thead><tbody>{features.items.map((item) => <tr key={item.name}><td>{item.name}</td><td>{item.desc}</td></tr>)}</tbody></table></div></section>
-      <section className="spd-next"><img src={nextSteps.image} alt="" /><div className="spd-wrap spd-next__inner"><div><span className="spd-kicker">{nextSteps.kicker}</span><h2>{nextSteps.heading}</h2></div><Link className="spd-primary-btn" to={nextSteps.btnHref}>{nextSteps.btnText}<ArrowRight size={17} /></Link></div></section>
-      <section className="spd-section spd-resources"><div className="spd-wrap"><span className="spd-kicker">{resources.kicker}</span><h2>{resources.heading}</h2><div className="spd-resources__grid">{resources.items.map((item) => <article className="spd-resource" key={item.title}><DetailIcon name={item.icon} /><h3>{item.title}</h3><p>{item.desc}</p><Link className="spd-outline-btn" to={item.href}>Learn more <ArrowRight size={16} /></Link></article>)}</div></div></section>
+      <section className="spd-section spd-overview">
+        <div className="spd-wrap spd-overview__inner">
+          <div className="spd-overview__copy">
+            <span className="spd-kicker">{overview.kicker}</span>
+            <h2>{overview.heading}</h2>
+            <p>{overview.body}</p>
+            {overview.more && (
+              <details>
+                <summary>Show more</summary>
+                <p>{overview.more}</p>
+              </details>
+            )}
+          </div>
+          <svg
+            className="spd-overview__signal"
+            viewBox="0 0 250 250"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="simContour" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stopColor="#16a9dd" />
+                <stop offset=".52" stopColor="#6cc56c" />
+                <stop offset="1" stopColor="#e1a437" />
+              </linearGradient>
+            </defs>
+            <rect
+              className="sim-panel"
+              x="18"
+              y="18"
+              width="214"
+              height="214"
+              rx="24"
+            />
+            <path
+              className="sim-mesh"
+              d="M39 172 63 75 102 43 151 51 205 90 211 151 178 202 111 214 57 197 39 172Zm24-97 39 33 49-57m-49 57 48 39 55-57m-103 18-45 89m93-50 61 4m-61-4-39 67m39-67 28 55M63 75l-6 122m145-46-24 51M102 43v65m49-57-1 96M39 172l111-25 61 4M57 197l121 5"
+            />
+            <path
+              className="sim-contour"
+              stroke="url(#simContour)"
+              d="M46 155c24-22 40-14 58-31 21-20 30-45 61-40 23 4 30 22 39 40M51 173c31-19 48-10 69-29 19-17 29-38 55-34 17 3 25 14 31 28M63 188c26-11 46-4 66-20 18-15 30-30 51-27 12 2 19 8 25 17"
+            />
+            <circle className="sim-node" cx="63" cy="75" r="4" />
+            <circle className="sim-node" cx="102" cy="108" r="4" />
+            <circle className="sim-node" cx="150" cy="147" r="4" />
+            <circle className="sim-node" cx="178" cy="202" r="4" />
+            <path className="sim-axis" d="M42 211v-28m0 28h28m-28 0 17-17" />
+            <text className="sim-label" x="36" y="180">
+              Y
+            </text>
+            <text className="sim-label" x="72" y="216">
+              X
+            </text>
+            <text className="sim-label" x="61" y="191">
+              Z
+            </text>
+          </svg>
+          <img
+            className="spd-overview__image"
+            src={overview.image}
+            alt={overview.imageAlt}
+          />
+        </div>
+      </section>
+      <section className="spd-section spd-benefits">
+        <div className="spd-wrap">
+          <span className="spd-kicker">{benefits.kicker}</span>
+          <h2>{benefits.heading}</h2>
+          <p>{benefits.subheading}</p>
+          <div className="spd-benefits__grid">
+            {benefits.items.map((item) => (
+              <article className="spd-benefit" key={item.title}>
+                <DetailIcon name={item.icon} />
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="spd-section spd-features">
+        <div className="spd-wrap">
+          <span className="spd-kicker">{features.kicker}</span>
+          <h2>{features.heading}</h2>
+          <p className="spd-features__intro">{features.intro}</p>
+          <table className="spd-table">
+            <thead>
+              <tr>
+                <th>Feature Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {features.items.map((item) => (
+                <tr key={item.name}>
+                  <td>{item.name}</td>
+                  <td>{item.desc}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section className="spd-next">
+        <img src={nextSteps.image} alt="" />
+        <div className="spd-wrap spd-next__inner">
+          <div>
+            <span className="spd-kicker">{nextSteps.kicker}</span>
+            <h2>{nextSteps.heading}</h2>
+          </div>
+          <Link className="spd-primary-btn" to={nextSteps.btnHref}>
+            {nextSteps.btnText}
+            <ArrowRight size={17} />
+          </Link>
+        </div>
+      </section>
+      <section className="spd-section spd-resources">
+        <div className="spd-wrap">
+          <span className="spd-kicker">{resources.kicker}</span>
+          <h2>{resources.heading}</h2>
+          <div className="spd-resources__grid">
+            {resources.items.map((item) => (
+              <article className="spd-resource" key={item.title}>
+                <DetailIcon name={item.icon} />
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+                <Link className="spd-outline-btn" to={item.href}>
+                  Learn more <ArrowRight size={16} />
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

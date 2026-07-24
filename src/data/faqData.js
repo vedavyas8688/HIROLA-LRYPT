@@ -37,11 +37,11 @@ export const faqCategories = {
         },
         {
           "q": "Where is LRYPT Technologies located?",
-          "a": "Our office is in Hennur, Bangalore — No. 23, Symphony Managed Office Space, Hormavu Agara Road, Bangalore 560043. We serve clients across India and worldwide."
+          "a": "Our office is on the 4th Floor, Symphony Managed Office Space, Hormavu Agara Road, Vadarpalya, Hennur, Bangalore 560043. We serve clients across India and worldwide."
         },
         {
           "q": "How do I get a quote?",
-          "a": "Call or WhatsApp +91 78274 88464, email info@lrypt.com, or use the Get a Free Quote form on our Contact page. We typically respond within one business day."
+          "a": "Call or WhatsApp 9036354564, email enquiry@lrypt.com, or use the Get a Free Quote form on our Contact page. We typically respond within one business day."
         },
         {
           "q": "Why choose LRYPT?",
@@ -228,7 +228,7 @@ export const faqCategories = {
       "items": [
         {
           "q": "How can I contact LRYPT Technologies?",
-          "a": "Call or WhatsApp +91 78274 88464, email info@lrypt.com, or use the Get a Free Quote form. Our office is in Hennur, Bangalore 560043."
+          "a": "Call or WhatsApp 9036354564, email enquiry@lrypt.com, or use the Get a Free Quote form. Our office is on the 4th Floor, Symphony Managed Office Space, Hormavu Agara Road, Vadarpalya, Hennur, Bangalore 560043."
         },
         {
           "q": "What are your business hours?",
@@ -248,9 +248,9 @@ export const faqCategories = {
 };
 
 export const cta = {
-  "heading": "Need our expert help? We’re here!",
-  "sub": "Need our professional assistance? We are here to help you! Advanced telecom networking solutions, first-rate engineering services, and all-inclusive recruitment services are provided by LRYPT Technologies. In order to guarantee that your projects and workforce are always at the forefront of success, our devoted team is committed to providing creative, dependable, and efficient solutions tailored to your needs. Reach out to us right now!",
-  "btnText": "Get a quote",
+  "heading": "Still Have Questions?",
+  "sub": "Tell us what you need. Our team will help you understand the right solution, service, and next steps for your project.",
+  "btnText": "Contact Our Experts",
   "btnHref": "/contact",
   "image": "/assets/img/image28.jpeg"
 };

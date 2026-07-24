@@ -19,6 +19,20 @@ export const pageHead = {
 
 export const postList = [
   {
+    "slug": "proteger-reliable-operations",
+    "img": "/assets/img/image11.jpeg",
+    "alt": "Connected smart manufacturing operations powered by Proteger",
+    "meta": "Smart Manufacturing · 6 min",
+    "title": "Inside the Synergy: How Proteger Delivers Reliable Operations",
+    "desc": "How connected data, maintenance, quality, traceability, and analytics create dependable shopfloor operations.",
+    "body": [
+      "Reliable operations are not created by a single dashboard. They emerge when production data, maintenance activity, quality workflows, traceability, and performance insight work together as one connected system.",
+      "Proteger brings these operational layers together through modular applications for data collection, traceability, maintenance management, quality control, and analytics. Teams can start with the capabilities they need today and expand without disrupting established workflows.",
+      "Connected information helps operators respond faster, gives maintenance teams the context needed to prevent downtime, and enables quality teams to identify issues before they become expensive production problems.",
+      "The result is a more predictable shopfloor where decisions are based on current, trustworthy information and every team works from the same operational picture."
+    ]
+  },
+  {
     "slug": "simulation-driven-product-development",
     "img": "/assets/img/image2.jpeg",
     "alt": "Why simulation-driven product development wins",
@@ -123,9 +137,9 @@ export function getPost(slug) {
 }
 
 export const cta = {
-  "heading": "Need our expert help? We’re here!",
-  "sub": "Need our professional assistance? We are here to help you! Advanced telecom networking solutions, first-rate engineering services, and all-inclusive recruitment services are provided by LRYPT Technologies. In order to guarantee that your projects and workforce are always at the forefront of success, our devoted team is committed to providing creative, dependable, and efficient solutions tailored to your needs. Reach out to us right now!",
-  "btnText": "Get a quote",
+  "heading": "Have an Engineering Challenge to Solve?",
+  "sub": "Connect with our experts to discuss the right technology, simulation, manufacturing, utility, or engineering design approach for your project.",
+  "btnText": "Contact Our Experts",
   "btnHref": "/contact",
   "image": "/assets/img/banner4.png"
 };

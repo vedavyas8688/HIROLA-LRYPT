@@ -2,8 +2,8 @@
 // Edit copy, images, and items here — no component code needed.
 
 export const meta = {
-  "title": "Solutions | CAD, ANSYS Simulation & Formlabs 3D Printing | LRYPT",
-  "description": "Power modern engineering with CAD design, ANSYS Simulation-Driven Product Development, and Formlabs SLA/SLS additive manufacturing."
+  "title": "Solutions | Proteger, Cadence Simulation & Formlabs | LRYPT",
+  "description": "Power modern engineering with Proteger technology solutions, Cadence simulation software, and Formlabs additive manufacturing."
 };
 
  export const pageHead = {
@@ -27,20 +27,20 @@ export const meta = {
 
   items: [
     {
-      href: "/ansys-simulation",
+      href: "/proteger",
       img: "/assets/img/image25.jpeg",
-      alt: "Engineering Simulation",
-      meta: "Simulation",
-      title: "Engineering Simulation",
+      alt: "Proteger engineering technology solutions",
+      meta: "Engineering Technology",
+      title: "Proteger",
       desc:
-        "Validate product performance, improve reliability, and reduce development time through advanced engineering simulations."
+        "Innovative engineering technology solutions designed to improve performance, strengthen operations, and support digital transformation."
     },
     {
       href: "/simulation-software",
       img: "/assets/img/ph-hero-simulation.webp",
-      alt: "Simulation software for engineering analysis",
+      alt: "Cadence simulation software for engineering analysis",
       meta: "Engineering Software",
-      title: "Simulation Software",
+      title: "Cadence Simulation",
       desc:
         "Explore connected software for structural, fluid, thermal, electromagnetic, optical, and multiphysics simulation."
     },
@@ -79,8 +79,8 @@ export const meta = {
 
  export const cta = {
   heading: "Need Expert Solutions?",
-  sub: "LRYPT Technologies delivers innovative engineering, GIS, telecom, CAD design, simulation, 3D printing, and workforce solutions that help businesses achieve their goals with confidence. Our experienced professionals combine technical expertise with advanced technologies to provide reliable, scalable, and cost-effective services tailored to your unique project requirements. From concept and design to implementation and ongoing support, we are committed to delivering quality, precision, and long-term value. Partner with LRYPT Technologies and let us help bring your next project to life.",
-  btnText: "Get a Quote",
+  sub: "Explore Proteger, Cadence simulation, and Formlabs 3D printing solutions designed to help engineering teams innovate faster, improve performance, and reduce development risk.",
+  btnText: "Contact Our Experts",
   btnHref: "/contact",
   image: "/assets/img/image26.jpeg"
 };

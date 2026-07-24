@@ -104,7 +104,7 @@ export default function ContactForm() {
     ].join("\n");
 
     setSent(true);
-    window.location.href = `mailto:info@lrypt.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:enquiry@lrypt.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
@@ -140,8 +140,8 @@ export default function ContactForm() {
           <label>Solution of interest</label>
           <select value={form.solution} onChange={set("solution")}>
             <option value="">Select a solution&hellip;</option>
-            <option>CAD Design</option>
-            <option>ANSYS Simulation</option>
+            <option>Proteger</option>
+            <option>Cadence Simulation</option>
             <option>Formlabs 3D Printing</option>
           </select>
         </div>
@@ -151,7 +151,6 @@ export default function ContactForm() {
             <option value="">Select a service&hellip;</option>
             <option>Utility Network Services</option>
             <option>Engineering Design Services</option>
-            <option>HR Management (HRMS)</option>
           </select>
         </div>
       </div>

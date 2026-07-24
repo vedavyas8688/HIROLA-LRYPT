@@ -22,8 +22,11 @@ export const pageHead = {
   bg: "cream",
   label: "About Us",
   lede: null,
-  lead:
-    "LRYPT Technologies is a trusted engineering and technology solutions provider delivering innovative services across GIS, CAD design, telecom engineering, simulation, additive manufacturing, and technical workforce solutions. We help organizations streamline operations, accelerate project delivery, and achieve sustainable growth through advanced technologies, industry expertise, and customer-focused solutions. Driven by innovation, precision, and excellence, our experienced team is committed to delivering reliable, scalable, and high-quality services that empower businesses to succeed in an ever-evolving world."
+  lead: [
+    "LRYPT Technologies is a trusted engineering and digital transformation company dedicated to helping businesses innovate, optimize, and grow through advanced technology solutions. We specialize in digital engineering, geospatial intelligence (GIS), CAD design, engineering simulation, network planning, additive manufacturing, and specialized consulting services.",
+    "By combining industry expertise with cutting-edge engineering software and digital technologies, we enable organizations to accelerate product development, improve operational efficiency, enhance project accuracy, and deliver complex projects with confidence. Our customer-centric approach, technical excellence, and commitment to innovation ensure scalable, reliable, and high-quality solutions that drive sustainable business success.",
+  ],
+  tagline: "LRYPT Technologies – Your trusted partner for Engineering Excellence, Digital Innovation, and Business Transformation"
 };
 
  export const whyChoose = {
@@ -141,21 +144,22 @@ export const pageHead = {
       label: "Mission",
       title: "Our Mission",
       text:
-        "Our mission is to empower organizations with innovative engineering, geospatial, telecom, and digital solutions that drive efficiency, innovation, and sustainable growth. By combining advanced technologies with industry expertise, we deliver reliable, high-quality, and customer-focused services that help businesses overcome complex challenges and achieve long-term success."
+        "At LRYPT, our mission is to empower businesses and individuals by providing cutting-edge solutions and exceptional services that drive growth, efficiency, and success. We are dedicated to delivering tailored, innovative solutions that solve complex challenges and enhance productivity. We focus on leveraging technology, expertise, and creativity to offer a wide range of solutions and services that meet the evolving needs of our clients. Our solutions are designed to enable our clients to thrive in today's dynamic and competitive landscape while enhancing the well-being of people everywhere."
     },
     {
       label: "Vision",
       title: "Our Vision",
       text:
-        "Our vision is to become a globally trusted engineering and technology partner, recognized for delivering transformative solutions that shape the future of infrastructure, engineering, and digital innovation. We strive to build lasting client relationships, embrace emerging technologies, and create sustainable value through excellence, collaboration, and continuous improvement."
+        "At LRYPT, our vision is to be the leading solutions and service provider, empowering organizations worldwide to thrive in an ever-evolving digital landscape. We envision a future where technology enriches lives, enhances efficiency, and enables sustainable progress for all. We are committed to continuous improvement and growth. Our vision guides us to expand our capabilities, deepen our expertise, and broaden our global reach. Together with our clients and partners, we will shape a future where technology empowers businesses, drives innovation, and enhances the well-being of people everywhere."
     }
   ]
 };
 
   export const cta = {
-  heading: "Need Expert Solutions?",
-  sub: "At LRYPT Technologies, we are committed to delivering innovative engineering and technology solutions that help businesses overcome complex challenges with confidence. From GIS services, CAD design, telecom engineering, and ANSYS simulation to 3D printing and technical workforce solutions, our experienced professionals provide reliable, scalable, and cost-effective services tailored to your unique requirements. Whether you're launching a new project, optimizing existing operations, or seeking expert technical support, we work closely with you to ensure quality, precision, and long-term success. Partner with LRYPT Technologies and let us help transform your vision into reality.",
-  btnText: "Get a Quote",
+  heading: "Ready to Transform Your Ideas Into Impact?",
+  subheading: "Let's build the future together.",
+  sub: "Partner with LRYPT Technologies for engineering excellence, digital innovation, and business transformation. Our experts combine advanced technology, industry knowledge, and creative problem-solving to help you improve efficiency, accelerate innovation, and achieve sustainable growth.",
+  btnText: "Contact Our Experts",
   btnHref: "/contact",
   image: "/assets/img/image22.jpeg"
 };
