@@ -27,15 +27,6 @@ export const meta = {
 
   items: [
     {
-      href: "/cad-design",
-      img: "/assets/img/image23.jpeg",
-      alt: "CAD Design",
-      meta: "Engineering",
-      title: "CAD Design",
-      desc:
-        "High-precision 2D drafting and 3D CAD modeling solutions for product development, manufacturing, and infrastructure projects."
-    },
-    {
       href: "/ansys-simulation",
       img: "/assets/img/image25.jpeg",
       alt: "Engineering Simulation",
