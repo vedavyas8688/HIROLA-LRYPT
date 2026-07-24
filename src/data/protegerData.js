@@ -9,7 +9,7 @@ export const meta = {
 export const hero = {
   image: "/assets/img/image15.jpeg",
   imageAlt: "Engineer working with smart manufacturing technology",
-  lines: ["Building Tomorrow's", "Smart Factories"],
+  lines: ["Powering the Future", "Smart Manufacturing"],
 };
 
 export const intro = {

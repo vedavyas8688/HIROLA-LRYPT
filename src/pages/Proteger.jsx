@@ -18,9 +18,9 @@ export default function Proteger() {
       <ProtegerWhatWeDo />
       <ProtegerEdge />
       <ProtegerSolutions />
-      <ProtegerCompany />
+      {/* <ProtegerCompany /> */}
       <ProtegerWhyChoose />
-      <ProtegerBlogs />
+      {/* <ProtegerBlogs /> */}
       <ProtegerContact />
     </>
   );
