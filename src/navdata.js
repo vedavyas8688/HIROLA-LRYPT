@@ -5,9 +5,11 @@ export const NAV = [
     label: "Solutions",
     href: "/solutions",
     drop: [
-      ["Proteger", "/proteger"],
-      ["Cadence Simulation", "/cadence-simulation"],
       ["Formlabs 3D Printing", "/formlabs"],
+      ["Cadence Simulation", "/cadence-simulation"],
+      ["Proteger", "/proteger"],
+       
+      
     ],
   },
   {
