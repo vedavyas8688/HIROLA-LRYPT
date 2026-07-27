@@ -1,5 +1,11 @@
 // Content for the Simulation Software page.
 // Routing and navigation will be connected separately.
+import { getCadenceProductsByCategory } from "./cadenceProductsData";
+
+const productsFor = (category) => getCadenceProductsByCategory(category).map((entry) => ({
+  label: entry.label,
+  href: `/cadence-simulation/${entry.slug}`,
+}));
 
 const letterIcon = (label) => ({
   viewBox: "0 0 40 40",
@@ -44,67 +50,67 @@ export const solutions = {
     {
       title: "Acoustic Simulation",
       desc: "Acoustic and vibroacoustic simulation to reduce noise, improve sound quality, and meet regulatory needs across industries.",
-      products: [{ label: "Actran", href: "/cadence-simulation/actran" }],
+      products: productsFor("Acoustic Simulation"),
     },
     {
       title: "Vehicle Dynamics & ADAS",
       desc: "Scalable simulation platform for building, testing, and validating virtual environments for ADAS and autonomous systems.",
-      products: [],
+      products: productsFor("Vehicle Dynamics & ADAS"),
     },
     {
       title: "Fluid Dynamics (CFD)",
       desc: "CFD simulation software for engineers to model fluid flow, heat transfer, and multiphysics for product design optimization.",
-      products: [],
+      products: productsFor("Fluid Dynamics (CFD)"),
     },
     {
       title: "Material Modeling & Simulation",
       desc: "Advanced material modeling for lightweight, high-performance designs, driving innovation in engineering and product development.",
-      products: [],
+      products: productsFor("Material Modeling & Simulation"),
     },
     {
       title: "Multiphysics Simulation",
       desc: "Industry-leading multiphysics toolkit for high-accuracy structural, thermal, dynamic, and nonlinear simulations.",
-      products: [],
+      products: productsFor("Multiphysics Simulation"),
     },
     {
       title: "Structural Simulation & Analysis",
       desc: "Advanced nonlinear finite element analysis for manufacturing, material forming, and complex contact simulations across industries.",
-      products: [],
+      products: productsFor("Structural Simulation & Analysis"),
     },
     {
       title: "Drivetrain Design & Simulation",
       desc: "Multibody dynamics and drivetrain simulation for faster virtual prototyping, motion analysis, and full system development.",
-      products: [],
+      products: productsFor("Drivetrain Design & Simulation"),
     },
     {
       title: "Manufacturing Process Simulation",
       desc: "Enabling sustainable and efficient manufacturing with optimized processes, reduced waste, and improved productivity.",
-      products: [],
+      products: productsFor("Manufacturing Process Simulation"),
     },
     {
       title: "AI & ML",
       desc: "AI-powered engineering solutions that optimize processes, saving time and reducing costs.",
-      products: [],
+      products: productsFor("AI & ML"),
     },
     {
       title: "Multibody Dynamics & Motion Simulation",
       desc: "Physics-accurate shared insights into complex systems, empowering teams to make better engineering choices.",
-      products: [],
+      products: productsFor("Multibody Dynamics & Motion Simulation"),
     },
     {
       title: "High Performance Computing (HPC) & Cloud",
       desc: "Cloud-based simulation platform with flexible, secure, high-capacity compute for fast, efficient engineering workflows.",
-      products: [],
+      products: productsFor("High Performance Computing (HPC) & Cloud"),
     },
     {
       title: "Simulation Data Management",
       desc: "Streamline engineering data and workflows to boost collaboration, speed decisions, and ensure traceability.",
-      products: [],
+      products: productsFor("Simulation Data Management"),
     },
     {
       title: "Licensing",
       desc: "Flexible token-based access to CAE tools, giving engineers on-demand, cost-effective licensing.",
-      products: [],
+      products: productsFor("Licensing"),
     },
   ],
 };

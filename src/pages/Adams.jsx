@@ -2,9 +2,9 @@ import SimulationProductDetail from "../components/sections/SimulationProductDet
 import usePageMeta from "../hooks/usePageMeta";
 import { getCadenceProduct } from "../data/cadenceProductsData";
 
-const { meta, product } = getCadenceProduct("actran");
+const { meta, product } = getCadenceProduct("adams");
 
-export default function Actran() {
+export default function Adams() {
   usePageMeta(meta.title, meta.description);
   return <SimulationProductDetail {...product} />;
 }

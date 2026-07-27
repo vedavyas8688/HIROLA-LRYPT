@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
@@ -5,13 +6,32 @@ import {
   Briefcase,
   CircleHelp,
   Clock3,
+  ClipboardList,
   FilePenLine,
+  Gauge,
+  Crosshair,
+  Database,
+  Eye,
+  Feather,
+  FlaskConical,
+  Globe2,
   Microchip,
+  Network,
   PanelTop,
   RadioTower,
+  RefreshCw,
   Settings2,
   Smile,
   UserRound,
+  UsersRound,
+  Waves,
+  Maximize2,
+  Link2,
+  Lightbulb,
+  Leaf,
+  ListChecks,
+  ShieldCheck,
+  Zap,
 } from "lucide-react";
 
 const detailIcons = {
@@ -21,6 +41,32 @@ const detailIcons = {
   radio: RadioTower,
   material: Microchip,
   smile: Smile,
+  ecosystem: Globe2,
+  standards: ClipboardList,
+  sensing: Waves,
+  scalable: Maximize2,
+  continuous: RefreshCw,
+  rapid: Zap,
+  validate: ListChecks,
+  speed: Gauge,
+  coupled: Link2,
+  accelerate: Gauge,
+  physicalTesting: FlaskConical,
+  costs: ListChecks,
+  sustainability: Leaf,
+  lightweight: Feather,
+  reliability: ShieldCheck,
+  accuracy: Crosshair,
+  ai: Lightbulb,
+  centralized: Database,
+  integration: Network,
+  traceability: Eye,
+  enterprise: Maximize2,
+  collaboration: UsersRound,
+  multidisciplinary: Network,
+  provenAccuracy: Crosshair,
+  industryStandard: ListChecks,
+  comprehensive: Settings2,
   blog: FilePenLine,
 };
 
@@ -47,13 +93,40 @@ function DetailIcon({ name }) {
   ) : null;
 }
 
+function ProductSuite({ suite }) {
+  const [active, setActive] = useState(0);
+  const item = suite.items[active];
+  return (
+    <section className="spd-section spd-suite">
+      <div className="spd-wrap">
+        <span className="spd-kicker">{suite.kicker}</span>
+        <h2>{suite.heading}</h2>
+        <div className="spd-suite__body">
+          <div className="spd-suite__tabs" role="tablist" aria-label={suite.heading}>
+            {suite.items.map((entry, index) => (
+              <button className={index === active ? "is-active" : ""} type="button" role="tab" aria-selected={index === active} onClick={() => setActive(index)} key={entry.name}>{entry.name}</button>
+            ))}
+          </div>
+          <div className="spd-suite__panel" role="tabpanel" key={item.name}>
+            <h3>{item.title || item.name}</h3>
+            {item.image && <img className="spd-suite__image" src={item.image} alt={item.imageAlt || item.name} />}
+            <p>{item.desc}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function SimulationProductDetail({
   hero,
   overview,
   benefits,
+  highlights,
   features,
   nextSteps,
   resources,
+  productSuite,
 }) {
   return (
     <main className="spd">
@@ -65,13 +138,15 @@ export default function SimulationProductDetail({
         .spd-hero__content{position:relative;z-index:1;max-width:650px;padding-block:84px}.spd-hero h1{max-width:620px;margin:0;font-size:clamp(2.35rem,3.05vw,3rem);line-height:1.48;text-transform:none;letter-spacing:-.025em}.spd-hero p{font-size:1.08rem;margin:18px 0 14px}.spd-primary-btn{display:inline-flex;align-items:center;justify-content:center;min-width:229px;min-height:47px;padding:12px 28px;background:var(--spd-accent);color:var(--white);font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
         .spd-section{padding:clamp(70px,9vw,120px) 0}.spd-section h2{font-size:clamp(2rem,3vw,3rem);line-height:1.15;text-transform:none;letter-spacing:-.025em}.spd-overview{padding-bottom:40px}.spd-benefits{padding-top:40px}.spd-overview__inner{position:relative}.spd-overview__copy{max-width:820px}.spd-overview h2{max-width:760px}.spd-overview p{font-size:1.05rem;line-height:1.62;color:var(--mute-cream)}.spd-overview details{margin-top:20px;max-width:820px}.spd-overview summary{display:inline-flex;align-items:center;gap:14px;font-weight:700;cursor:pointer;list-style:none}.spd-overview summary::-webkit-details-marker{display:none}.spd-overview summary::after{content:"⌄";font-size:1.15rem;line-height:1;transform:translateY(-2px)}.spd-overview details[open] summary::after{transform:rotate(180deg)}.spd-overview__image{display:block;width:min(760px,72%);height:auto;margin-top:64px;max-height:430px;object-fit:cover}.spd-overview__signal{position:absolute;right:34px;top:0;width:250px;height:250px;color:#67aac9}.spd-overview__signal .sim-panel{fill:rgba(103,170,201,.035);stroke:currentColor;stroke-width:1}.spd-overview__signal .sim-mesh{fill:none;stroke:currentColor;stroke-width:.75;opacity:.48}.spd-overview__signal .sim-contour{fill:none;stroke-width:2;stroke-linecap:round}.spd-overview__signal .sim-node{fill:var(--cream);stroke:currentColor;stroke-width:1.3}.spd-overview__signal .sim-axis{fill:none;stroke:currentColor;stroke-width:1.2;stroke-linecap:round}.spd-overview__signal .sim-label{fill:currentColor;font-size:8px;font-weight:700;letter-spacing:.08em}
         .spd-overview__signal .sim-panel{stroke:none}
+        .spd-highlights{padding-top:35px;padding-bottom:35px}.spd-highlights__list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 70px;margin-top:34px;padding:0;list-style:none}.spd-highlights__list li{display:flex;gap:16px;align-items:flex-start;line-height:1.55}.spd-highlights__list svg{flex:0 0 auto;margin-top:2px;color:var(--spd-blue)}
         .spd-benefits__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:60px 70px;margin-top:58px}.spd-benefit svg{color:var(--spd-blue);margin-bottom:22px}.spd-benefit h3{font-size:1rem;text-transform:none;margin-bottom:12px}.spd-benefit p{color:var(--mute-cream);line-height:1.6}
         .spd-features{background:#fff}.spd-features__intro{max-width:850px;color:var(--mute-cream);line-height:1.65}.spd-table{width:100%;border-collapse:collapse;margin-top:28px}.spd-table th,.spd-table td{text-align:left;padding:20px 16px;border-bottom:1px solid var(--line-cream);vertical-align:top}.spd-table th:first-child,.spd-table td:first-child{width:25%;font-weight:600}
+        .spd-suite{background:var(--cream)}.spd-suite__body{display:grid;grid-template-columns:180px 1fr;gap:48px;margin-top:48px}.spd-suite__tabs{display:flex;flex-direction:column;border-left:1px solid var(--line-cream)}.spd-suite__tabs button{padding:11px 16px;border:0;border-left:2px solid transparent;background:transparent;text-align:left;font:inherit;font-size:.88rem;cursor:pointer}.spd-suite__tabs button.is-active{border-left-color:var(--black);font-weight:700}.spd-suite__panel{padding:8px 0;animation:spdFade .3s ease}.spd-suite__panel h3{margin:0 0 18px;font-size:1.55rem;text-transform:none}.spd-suite__panel p{max-width:760px;margin:0;color:var(--mute-cream);line-height:1.7}.spd-suite__image{display:block;width:min(760px,100%);max-height:390px;object-fit:cover;margin:0 0 24px}@keyframes spdFade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
         .spd-related{background:#f4f6f7}.spd-related__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:44px}.spd-related-card{display:flex;flex-direction:column;min-height:310px;padding:34px;border:1px solid #c9ced2;background:#fff}.spd-related-card::before{content:"";width:20px;height:5px;background:var(--spd-accent);margin-bottom:34px}.spd-related-card h3{font-size:1rem;text-transform:none}.spd-related-card p{color:var(--mute-cream);line-height:1.55}.spd-related-card a{margin-top:auto;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
         .spd-next{position:relative;padding:52px 0;color:#fff;background:#001c2d;overflow:hidden}.spd-next img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}.spd-next__inner{position:relative;display:flex;align-items:center;justify-content:space-between;gap:30px}.spd-next h2{font-size:clamp(1.7rem,3vw,2.6rem);text-transform:none}.spd-next .spd-kicker{color:#fff}
         .spd-resources .spd-wrap{width:min(1110px,calc(100% - 48px))}.spd-resources__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:72px;margin-top:76px}.spd-resource{display:flex;flex-direction:column;align-items:flex-start;min-height:360px}.spd-resource>svg,.spd-resource>.spd-combo-icon{margin-bottom:42px}.spd-resource h3{margin:0 0 18px;font-size:1.45rem;line-height:1.35;text-transform:none;letter-spacing:-.01em}.spd-resource p{max-width:31ch;margin:0;color:var(--mute-cream);font-size:1rem;line-height:1.65}.spd-combo-icon{position:relative;display:block;width:54px;height:48px}.spd-combo-icon>svg{position:absolute;left:0;top:0;width:38px;height:38px;stroke-width:1.5}.spd-combo-icon>.spd-combo-icon__badge{left:25px;top:19px;width:27px;height:27px;background:var(--cream);stroke-width:1.7}.spd-outline-btn{margin-top:auto;min-width:174px;padding:14px 25px;text-align:center;border:1px solid var(--ink);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
         .spd-section h2+p{margin-top:24px}.spd-benefit h3+p,.spd-related-card h3+p,.spd-resource h3+p{margin-top:14px}.spd-primary-btn,.spd-outline-btn,.spd-related-card a{gap:10px;transition:transform .22s ease,background .22s ease,color .22s ease,border-color .22s ease,box-shadow .22s ease}.spd-primary-btn svg,.spd-outline-btn svg,.spd-related-card a svg{transition:transform .22s ease}.spd-primary-btn:hover{background:var(--ink-2);transform:translateY(-2px);box-shadow:0 8px 20px rgba(11,11,11,.2)}.spd-outline-btn{display:inline-flex;align-items:center;justify-content:center}.spd-outline-btn:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}.spd-related-card a{display:inline-flex;align-items:center}.spd-related-card a:hover{color:var(--black)}.spd-primary-btn:hover svg,.spd-outline-btn:hover svg,.spd-related-card a:hover svg{transform:translateX(4px)}
-        @media(max-width:1100px){.spd-overview__signal{right:0;width:210px;height:210px}.spd-overview__copy{max-width:720px}}@media(max-width:800px){.spd .spd-wrap{width:min(100% - 40px,1290px)}.spd-benefits__grid,.spd-related__grid,.spd-resources__grid{grid-template-columns:1fr}.spd-next__inner{align-items:flex-start;flex-direction:column}.spd-table{display:block;overflow-x:auto}.spd-benefits__grid{gap:38px}.spd-hero{min-height:470px}.spd-hero h1{line-height:1.2}.spd-overview__signal{display:none}.spd-overview__image{width:100%;margin-top:42px}}
+        @media(max-width:1100px){.spd-overview__signal{right:0;width:210px;height:210px}.spd-overview__copy{max-width:720px}}@media(max-width:800px){.spd .spd-wrap{width:min(100% - 40px,1290px)}.spd-benefits__grid,.spd-related__grid,.spd-resources__grid,.spd-highlights__list{grid-template-columns:1fr}.spd-next__inner{align-items:flex-start;flex-direction:column}.spd-table{display:block;overflow-x:auto}.spd-benefits__grid{gap:38px}.spd-hero{min-height:470px}.spd-hero h1{line-height:1.2}.spd-overview__signal{display:none}.spd-overview__image{width:100%;margin-top:42px}.spd-suite__body{grid-template-columns:1fr;gap:24px}.spd-suite__tabs{overflow-x:auto;flex-direction:row;border-left:0;border-bottom:1px solid var(--line-cream)}.spd-suite__tabs button{white-space:nowrap;border-left:0;border-bottom:2px solid transparent}.spd-suite__tabs button.is-active{border-left:0;border-bottom-color:var(--black)}}
       `}</style>
       <section className="spd-hero">
         <img className="spd-hero__bg" src={hero.image} alt={hero.imageAlt} />
@@ -148,6 +223,19 @@ export default function SimulationProductDetail({
           />
         </div>
       </section>
+      {highlights && (
+        <section className="spd-section spd-highlights">
+          <div className="spd-wrap">
+            <span className="spd-kicker">{highlights.kicker}</span>
+            <h2>{highlights.heading}</h2>
+            <ul className="spd-highlights__list">
+              {highlights.items.map((item) => (
+                <li key={item}><BadgeCheck size={20} /><span>{item}</span></li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
       <section className="spd-section spd-benefits">
         <div className="spd-wrap">
           <span className="spd-kicker">{benefits.kicker}</span>
@@ -187,6 +275,7 @@ export default function SimulationProductDetail({
           </table>
         </div>
       </section>
+      {productSuite && <ProductSuite suite={productSuite} />}
       <section className="spd-next">
         <img src={nextSteps.image} alt="" />
         <div className="spd-wrap spd-next__inner">
