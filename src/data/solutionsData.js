@@ -28,7 +28,7 @@ export const meta = {
   items: [
     {
       href: "/proteger",
-      img: "/assets/img/image25.jpeg",
+      img: "/assets/img/protegerbanner.webp",
       alt: "Proteger engineering technology solutions",
       meta: "Engineering Technology",
       title: "Proteger",
@@ -37,7 +37,7 @@ export const meta = {
     },
     {
       href: "/cadence-simulation",
-      img: "/assets/img/ph-hero-simulation.webp",
+      img: "/assets/img/cadencebanner.webp",
       alt: "Cadence simulation software for engineering analysis",
       meta: "Engineering Software",
       title: "Cadence Simulation",
