@@ -1,8 +1,8 @@
 const reasons = [
-  { title: "Go Live Faster", image: "/assets/img/image11.jpeg" },
-  { title: "Designed for Shopfloors", image: "/assets/img/image15.jpeg" },
-  { title: "Compliance Built-In", image: "/assets/img/image12.jpeg" },
-  { title: "Cost Efficiency Unlocked", image: "/assets/img/image25.jpeg" },
+  { title: "Go Live Faster", image: "/assets/img/whychoose1.webp" },
+  { title: "Designed for Shopfloors", image: "/assets/img/whychoose2.webp" },
+  { title: "Compliance Built-In", image: "/assets/img/whychoose3.webp" },
+  { title: "Cost Efficiency Unlocked", image: "/assets/img/whychoose4.webp" },
 ];
 
 export default function ProtegerWhyChoose() {

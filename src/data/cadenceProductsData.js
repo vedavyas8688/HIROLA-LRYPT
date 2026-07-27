@@ -38,7 +38,7 @@ export const cadenceProducts = {
         subtitle: "CFD for thermal, fluid, and coupled physics challenges",
         btnText: "Talk to an expert",
         btnHref: "/contact",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/CradleCFD1.webp",
         imageAlt: "Cradle CFD engineering simulation visualization",
       },
       overview: {
@@ -46,7 +46,7 @@ export const cadenceProducts = {
         heading: "Simulate Fluid Dynamics and Thermal Performance with Precision",
         body: "Optimize thermal management and fluid performance with Cradle CFD's intuitive simulation environment. Analyze complex flow phenomena, heat transfer, and multiphysics interactions across electronics, automotive, and building systems. Accelerate design iterations with automated meshing and solver technology that delivers accurate results for everyday engineering challenges.",
         more: "Reduce development costs by predicting thermal and fluid behavior early in the design cycle. Evaluate multiple alternatives using streamlined workflows for electronics cooling, HVAC systems, aerodynamic optimization, and reliable multiphysics performance predictions.",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/CradleCFD2.webp",
         imageAlt: "Cradle CFD thermal and fluid performance analysis",
       },
       benefits: {
@@ -104,7 +104,7 @@ export const cadenceProducts = {
         subtitle: "Drive performance through materials simulations",
         btnText: "Talk to an expert",
         btnHref: "/contact",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/Digimat1.webp",
         imageAlt: "Digimat multiscale material simulation",
       },
       overview: {
@@ -112,7 +112,7 @@ export const cadenceProducts = {
         heading: "Unlock the Full Potential of Materials Through Simulation-Driven Innovation",
         body: "Material engineering is evolving from empirical experimentation to simulation-driven innovation. Digimat empowers engineers and designers to create accurate digital twins of materials, capturing complex behaviors and manufacturing effects with precision. By virtually replicating plastics, composites, metals, and elastomers, Digimat enables users to simulate, understand, predict, and optimize material behavior from microstructure to full-system performance.",
         more: "Connect material models with structural simulation, manufacturing processes, and virtual testing to make confident design decisions earlier and reduce reliance on physical prototypes.",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/Digimat2.webp",
         imageAlt: "Material behavior and structural performance simulation",
       },
       benefits: {
@@ -189,7 +189,7 @@ export const cadenceProducts = {
         subtitle: "From test data to simulation-ready materials",
         btnText: "Talk to an expert",
         btnHref: "/contact",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/Materialcenter.webp",
         imageAlt: "MaterialCenter materials lifecycle management platform",
       },
       overview: {
@@ -197,7 +197,7 @@ export const cadenceProducts = {
         heading: "Manage Materials and Processes with Enterprise Scalability",
         body: "MaterialCenter is an enterprise-scalable materials lifecycle management system designed to centralize and streamline how engineering organizations manage material data. From physical test data to multiscale modeling, MaterialCenter provides a single source of truth for materials information, enhancing productivity, reducing development time, and accelerating innovation.",
         more: "With full traceability throughout the product lifecycle, MaterialCenter helps organizations connect validated material information with engineering simulation and make smarter decisions faster.",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/Materialcenter2.webp",
         imageAlt: "Centralized materials information and simulation workflow",
       },
       benefits: {
@@ -274,7 +274,7 @@ export const cadenceProducts = {
         subtitle: "Analyze structural, thermal, and dynamic simulations across linear and nonlinear domains",
         btnText: "Talk to an expert",
         btnHref: "/contact",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/Nastran1.webp",
         imageAlt: "Finite element analysis of an automotive structure",
       },
       overview: {
@@ -282,7 +282,7 @@ export const cadenceProducts = {
         heading: "Trusted by Engineers Worldwide for Accurate Structural Analysis",
         body: "Perform structural, thermal, dynamic, and nonlinear simulations using a widely trusted finite element solver. Accelerate product development with proven accuracy and extensive analysis capabilities across aerospace, automotive, manufacturing, and other demanding industries.",
         more: "Use one validated solver environment to evaluate complex assemblies, optimize structural performance, and make confident engineering decisions before physical testing.",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/Nastran2.webp",
         imageAlt: "Structural analysis results displayed on an engineering workstation",
       },
       benefits: {
@@ -341,7 +341,7 @@ export const cadenceProducts = {
         subtitle: "Increase accuracy and precision by combining multiphysics phenomena",
         btnText: "Talk to an expert",
         btnHref: "/contact",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/CoSim1.webp",
         imageAlt: "Automotive multiphysics simulation visualization",
       },
       overview: {
@@ -349,7 +349,7 @@ export const cadenceProducts = {
         heading: "Increase Your Product Stability and Usability",
         body: "Co-simulation gives engineers a more complete and holistic view of product performance by coupling multiple simulation disciplines. Acoustics, multibody dynamics, computational fluid dynamics, structural analysis, and explicit crash dynamics can be connected with MSC CoSim.",
         more: "Coordinate solver data exchange through one multiphysics framework to evaluate interacting physical behavior and improve system-level engineering decisions.",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/CoSim2.webp",
         imageAlt: "Coupled pressure and acoustic simulation around a vehicle",
       },
       benefits: {
@@ -404,7 +404,7 @@ export const cadenceProducts = {
         subtitle: "A complete FEA modeling solution",
         btnText: "Talk to an expert",
         btnHref: "/contact",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/Patran1.webp",
         imageAlt: "Finite element mesh applied to a mechanical assembly",
       },
       overview: {
@@ -412,7 +412,7 @@ export const cadenceProducts = {
         heading: "Complete Pre-/Post-Processing Software for Finite Element Analysis",
         body: "Patran is a widely used pre- and post-processing environment for finite element analysis, providing solid modeling, meshing, analysis setup, and results review for multiple solvers. Its integrated tools streamline the creation of analysis-ready models for linear, nonlinear, explicit dynamics, thermal, and other finite element solutions.",
         more: "Build loads, boundary conditions, material definitions, and meshes in one graphical workflow, then visualize and report results across a broad range of engineering disciplines.",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/Patran2.webp",
         imageAlt: "Automotive finite element model prepared for structural analysis",
       },
       benefits: {
@@ -467,7 +467,7 @@ export const cadenceProducts = {
         subtitle: "Simulate products with highly nonlinear behavior",
         btnText: "Talk to an expert",
         btnHref: "/contact",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/Marc1.webp",
         imageAlt: "Nonlinear finite element analysis of a structural component",
       },
       overview: {
@@ -475,7 +475,7 @@ export const cadenceProducts = {
         heading: "Ensure Performance of Products with Complex Material Behaviors",
         body: "Solve demanding nonlinear simulation problems with advanced finite element analysis capabilities. Analyze complex material behavior, large deformation, and intricate contact conditions with proven accuracy. Model manufacturing processes including metal forming, welding, and heat treatment using specialized material models.",
         more: "Marc handles extreme nonlinearity and is well suited to demanding designs involving plastics, rubber, composites, metals, and coupled physical behavior.",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/Marc2.webp",
         imageAlt: "Nonlinear simulation model of a spring and damper assembly",
       },
       benefits: {
@@ -535,7 +535,7 @@ export const cadenceProducts = {
         subtitle: "FEA solution for crash, impact, and FSI studies",
         btnText: "Talk to an expert",
         btnHref: "/contact",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/Dytran1.webp",
         imageAlt: "Engineering simulation of an impact-resistant turbine assembly",
       },
       overview: {
@@ -543,7 +543,7 @@ export const cadenceProducts = {
         heading: "Assess the Precision and Structural Integrity of Designs",
         body: "Dytran is an explicit finite element analysis solution for simulating short-duration events such as impact and crash. It analyzes the complex nonlinear behavior structures undergo during these events and is particularly suited to transient dynamics involving large deformation, strong nonlinearity, and fluid-structure interaction.",
         more: "Evaluate demanding real-world loading events before physical testing and understand how structures, materials, and fluids interact under extreme conditions.",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/Dytran2.webp",
         imageAlt: "Explicit finite element analysis of a rotating turbine component",
       },
       benefits: {
@@ -598,7 +598,7 @@ export const cadenceProducts = {
         subtitle: "FE-based fatigue, durability, and random response analysis",
         btnText: "Talk to an expert",
         btnHref: "/contact",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/CAEfatigue1.webp",
         imageAlt: "Automotive fatigue analysis in a manufacturing environment",
       },
       overview: {
@@ -606,7 +606,7 @@ export const cadenceProducts = {
         heading: "Streamlining and Simplifying Fatigue Analysis",
         body: "CAEfatigue is a random response and vibration fatigue solver for frequency and time domains. It works with mixed random and deterministic loading or standard time-domain loading to provide fatigue-life, damage, and response-statistics predictions. It is fast, accessible, and capable of handling very large models.",
         more: "Combine response statistics and fatigue results in one workflow to reduce analysis effort while maintaining accurate durability insight under complex loading.",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/CAEfatigue2.webp",
         imageAlt: "Fatigue and random response analysis software dashboard",
       },
       benefits: {
@@ -662,7 +662,7 @@ export const cadenceProducts = {
         subtitle: "Streamline your CAE workflow from modeling to results",
         btnText: "Talk to an expert",
         btnHref: "/contact",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/Apex1.webp",
         imageAlt: "Meshed aircraft structure in a unified CAE environment",
       },
       overview: {
@@ -670,7 +670,7 @@ export const cadenceProducts = {
         heading: "A Unified CAE Environment that Streamlines Modeling, Meshing, and Structural Analysis",
         body: "Build, validate, and solve structural analysis models efficiently using intuitive tools for rapid geometry creation, automated meshing, and seamless solver integration. MSC Apex brings direct modeling, preprocessing, analysis, and results exploration into one connected environment.",
         more: "Reduce tool switching and training time while maintaining model quality through built-in validation and integrated structural simulation workflows.",
-        image: "/assets/img/image25.jpeg",
+        image: "/assets/img/Apex2.webp",
         imageAlt: "Structural aircraft model prepared for finite element analysis",
       },
       benefits: {
@@ -719,11 +719,11 @@ export const cadenceProducts = {
     label: "MSC Apex GD",
     meta: { title: "MSC Apex Generative Design | LRYPT", description: "Create lightweight, manufacturable structures through automated topology optimization and CAD-ready export." },
     product: {
-      hero: { title: "MSC Apex Generative Design: Highly Automated Optimization", subtitle: "Accelerate innovation through advanced part optimization", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/image25.jpeg", imageAlt: "Generatively designed optimized mechanical components" },
+      hero: { title: "MSC Apex Generative Design: Highly Automated Optimization", subtitle: "Accelerate innovation through advanced part optimization", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/Apex3.webp", imageAlt: "Generatively designed optimized mechanical components" },
       overview: {
         kicker: "Overview", heading: "Design the Perfect Balance Between Strength and Efficiency",
         body: "MSC Apex Generative Design enables engineers to create lightweight, manufacturable structures optimized for performance automatically. Generative geometry and process automation reduce design time from weeks to hours while allowing teams to explore multiple concepts early in development.",
-        more: "Topology optimization, simulation automation, and manufacturing readiness come together in one workflow for designing, validating, and exporting high-quality printable parts.", image: "/assets/img/image25.jpeg", imageAlt: "Topology-optimized lightweight mechanical component",
+        more: "Topology optimization, simulation automation, and manufacturing readiness come together in one workflow for designing, validating, and exporting high-quality printable parts.", image: "/assets/img/Apex4.webp", imageAlt: "Topology-optimized lightweight mechanical component",
       },
       highlights: { kicker: "Highlights", heading: "Streamline Product Development with Automated Design Generation", items: ["Automatic mesh generation", "Stress-oriented topology optimization", "Intelligent smoothing for printable surfaces", "Mesh-to-CAD conversion for NURBS workflows", "Direct integration within the MSC Apex platform", "Manufacturable, validated design results"] },
       benefits: {
@@ -763,11 +763,11 @@ export const cadenceProducts = {
     label: "Romax",
     meta: { title: "Romax | Drivetrain and Transmission Simulation | LRYPT", description: "Design and optimize gears, bearings, transmissions, electric powertrains, and electromechanical drive systems with Romax." },
     product: {
-      hero: { title: "Romax", subtitle: "A complete simulation platform for engineering next-generation electromechanical drive systems", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/image25.jpeg", imageAlt: "Romax electromechanical drivetrain simulation platform" },
+      hero: { title: "Romax", subtitle: "A complete simulation platform for engineering next-generation electromechanical drive systems", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/Romax1.webp", imageAlt: "Romax electromechanical drivetrain simulation platform" },
       overview: {
         kicker: "Overview", heading: "Advanced Drivetrain Simulation and Transmission Design Software",
         body: "Romax supports end-to-end drivetrain development with solutions tailored to multiple stages of the design cycle. Rapid and intuitive modeling, structural analysis, component rating, and system optimization support powertrain durability and performance engineering.",
-        more: "The toolset supports electric machine structural design, early-stage concept investigation, detailed gear and bearing analysis, NVH assessment, transmission efficiency, and full powertrain optimization.", image: "/assets/img/image25.jpeg", imageAlt: "Integrated drivetrain analysis and optimization workflow",
+        more: "The toolset supports electric machine structural design, early-stage concept investigation, detailed gear and bearing analysis, NVH assessment, transmission efficiency, and full powertrain optimization.", image: "/assets/img/Romax2.webp", imageAlt: "Integrated drivetrain analysis and optimization workflow",
       },
       benefits: {
         kicker: "Key benefits", heading: "Safer Designs with Predictable Performance", subheading: "Accelerate drivetrain development while improving efficiency, durability, NVH, and reliability.",
@@ -813,11 +813,11 @@ export const cadenceProducts = {
     label: "Simufact Additive",
     meta: { title: "Simufact Additive | Metal AM Process Simulation | LRYPT", description: "Predict distortion, residual stress, defects, support behavior, postprocessing, and scan-based compensation for metal additive manufacturing." },
     product: {
-      hero: { title: "Simufact Additive: Metal AM Process Simulation", subtitle: "Accurately simulate metal additive manufacturing processes", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/image25.jpeg", imageAlt: "Optimized metal additive manufacturing component" },
+      hero: { title: "Simufact Additive: Metal AM Process Simulation", subtitle: "Accurately simulate metal additive manufacturing processes", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/SimufactAdditive1.webp", imageAlt: "Optimized metal additive manufacturing component" },
       overview: {
         kicker: "Overview", heading: "Virtualize Metal Additive Manufacturing for Predictable, First-Time-Right Results",
         body: "Simufact Additive is a scalable process-simulation solution for metal additive manufacturing focused on laser powder bed fusion and metal binder jetting. It predicts distortion, residual stress, thermal effects, heat treatment, HIP, and subsequent machining to reduce trial and error.",
-        more: "Automatically compensate geometry, investigate process defects, optimize supports and orientation, and validate results against scanned parts for more repeatable production.", image: "/assets/img/image25.jpeg", imageAlt: "Predicted deformation and residual stress in a printed metal component",
+        more: "Automatically compensate geometry, investigate process defects, optimize supports and orientation, and validate results against scanned parts for more repeatable production.", image: "/assets/img/SimufactAdditive2.webp", imageAlt: "Predicted deformation and residual stress in a printed metal component",
       },
       benefits: {
         kicker: "Key benefits", heading: "Reduce Risk, Save Time, and Improve Yield Across Metal AM Workflows", subheading: "Predict manufacturing outcomes, compensate distortion, and validate parts before committing to production.",
@@ -856,11 +856,11 @@ export const cadenceProducts = {
     label: "Simufact Forming",
     meta: { title: "Simufact Forming | Metal Forming Simulation | LRYPT", description: "Model and optimize cold forming, hot forging, sheet metal forming, heat treatment, and joining processes through intuitive simulation workflows." },
     product: {
-      hero: { title: "Simufact Forming: Metal Manufacturing Process Simulation", subtitle: "Accurately simulate metal forming processes", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/image25.jpeg", imageAlt: "Metal forming process simulation results" },
+      hero: { title: "Simufact Forming: Metal Manufacturing Process Simulation", subtitle: "Accurately simulate metal forming processes", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/SimufactForming1.webp", imageAlt: "Metal forming process simulation results" },
       overview: {
         kicker: "Overview", heading: "Model and Optimize All Types of Metal Forming with Standardized Template-Based Workflows",
         body: "Metal forming processes can be difficult to predict accurately, while physical process iterations are expensive and time-consuming. Simufact Forming focuses on virtual verification of metal manufacturing processes to identify and resolve potential defects and production concerns before tooling and trials.",
-        more: "Standardized workflows help teams optimize process stages, material usage, tooling life, forming windows, and final part quality across multiple metal forming applications.", image: "/assets/img/image25.jpeg", imageAlt: "Simulated temperature and deformation during a metal forming operation",
+        more: "Standardized workflows help teams optimize process stages, material usage, tooling life, forming windows, and final part quality across multiple metal forming applications.", image: "/assets/img/SimufactForming2.webp", imageAlt: "Simulated temperature and deformation during a metal forming operation",
       },
       benefits: {
         kicker: "Key benefits", heading: "Improve Material Usage and Eliminate the Need for Experimental Trials or Major Recuts", subheading: "Optimize forming processes virtually before committing to tooling and physical production.",
@@ -893,11 +893,11 @@ export const cadenceProducts = {
     label: "Simufact Welding",
     meta: { title: "Simufact Welding | Welding Process Simulation | LRYPT", description: "Simulate welding sequences, fixtures, thermal distortion, residual stress, material transformations, and assembly processes virtually." },
     product: {
-      hero: { title: "Simufact Welding: Welding Process Simulation", subtitle: "Accurately simulate thermal joining processes", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/image25.jpeg", imageAlt: "Thermal distortion simulation of welded automotive structures" },
+      hero: { title: "Simufact Welding: Welding Process Simulation", subtitle: "Accurately simulate thermal joining processes", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/SimufactWelding1.webp", imageAlt: "Thermal distortion simulation of welded automotive structures" },
       overview: {
         kicker: "Overview", heading: "Determine Distortions and Residual Stresses from Welding Sequences and Fixtures",
         body: "Simulate complex multistation fixturing and assembly processes involving large structures and many joints. Conduct virtual tryouts to optimize welding sequences, process parameters, clamping strategies, and fixture behavior before assembling physical parts.",
-        more: "Predict thermal distortion, residual stress, material phase transformation, and final assembly quality across a range of welding and joining technologies.", image: "/assets/img/image25.jpeg", imageAlt: "Predicted welding distortion across an automotive body structure",
+        more: "Predict thermal distortion, residual stress, material phase transformation, and final assembly quality across a range of welding and joining technologies.", image: "/assets/img/SimufactWelding2.webp", imageAlt: "Predicted welding distortion across an automotive body structure",
       },
       benefits: {
         kicker: "Key benefits", heading: "Improve Processes and Parameters to Minimize Thermal Distortion and Residual Stress", subheading: "Achieve desired product quality while reducing physical trials and costly fixture changes.",
@@ -929,11 +929,11 @@ export const cadenceProducts = {
     label: "Virtual Fixture",
     meta: { title: "Virtual Fixture | Virtual Check Fixture Simulation | LRYPT", description: "Replace costly physical check fixtures with flexible software workflows for dimensional verification, morphing, gravity compensation, and virtual clamping." },
     product: {
-      hero: { title: "Virtual Fixture", subtitle: "Reduce or eliminate the need for part-specific check fixtures", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/image25.jpeg", imageAlt: "Virtual dimensional checking workflow on a digital interface" },
+      hero: { title: "Virtual Fixture", subtitle: "Reduce or eliminate the need for part-specific check fixtures", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/VirtualFixture1.webp", imageAlt: "Virtual dimensional checking workflow on a digital interface" },
       overview: {
         kicker: "Overview", heading: "Verify Check Fixtures Virtually",
         body: "Single-part and multipart check fixtures are costly to design, build, store, and calibrate, and their results can be affected by operator handling. Virtual Fixture replaces complex physical processes with flexible software-based workflows for dimensional checking across automotive, aerospace, electronics, and other industries.",
-        more: "Use scan or simulation data to inspect parts in repeatable virtual orientations, compensate gravity, model clamping, and automate reporting without maintaining dedicated physical fixtures.", image: "/assets/img/image25.jpeg", imageAlt: "Physical automotive check fixture compared with virtual deformation results",
+        more: "Use scan or simulation data to inspect parts in repeatable virtual orientations, compensate gravity, model clamping, and automate reporting without maintaining dedicated physical fixtures.", image: "/assets/img/VirtualFixture2.webp", imageAlt: "Physical automotive check fixture compared with virtual deformation results",
       },
       benefits: {
         kicker: "Key benefits", heading: "Reduce or Eliminate Part-Specific Check Fixtures for Single and Multiple Parts", subheading: "Improve dimensional verification using repeatable, automated virtual workflows.",
@@ -968,11 +968,11 @@ export const cadenceProducts = {
     label: "FTI FormingSuite",
     meta: { title: "FTI FormingSuite | Sheet Metal Cost and Formability | LRYPT", description: "Optimize sheet metal design, formability, material utilization, tooling cost, process planning, blank development, and springback." },
     product: {
-      hero: { title: "FTI FormingSuite", subtitle: "Optimize sheet metal component design, feasibility, material utilization, and cost", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/image25.jpeg", imageAlt: "Sheet metal forming process and cost engineering workflow" },
+      hero: { title: "FTI FormingSuite", subtitle: "Optimize sheet metal component design, feasibility, material utilization, and cost", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/FormingSuite1.webp", imageAlt: "Sheet metal forming process and cost engineering workflow" },
       overview: {
         kicker: "Overview", heading: "Design Quality Products and Optimize Material and Tooling Costs",
         body: "FTI FormingSuite provides focused tools for identifying sheet metal costs, material utilization opportunities, and forming-related concerns early in development. Teams can address feasibility, blank development, springback, tooling requirements, and process planning proactively.",
-        more: "Use repeatable physics-based methods to create quotations, validate manufacturability, improve component design, and standardize process documentation across engineering teams.", image: "/assets/img/image25.jpeg", imageAlt: "Sheet metal formability, blank shape, costing, and reporting results",
+        more: "Use repeatable physics-based methods to create quotations, validate manufacturability, improve component design, and standardize process documentation across engineering teams.", image: "/assets/img/FormingSuite2.webp", imageAlt: "Sheet metal formability, blank shape, costing, and reporting results",
       },
       benefits: {
         kicker: "Key benefits", heading: "Establish Costs, Reduce Risk, Save Time, and Improve Material Utilization for Metal Stamping", subheading: "Bring costing, manufacturability, product requirements, and guided workflows into early sheet metal development.",
@@ -1021,11 +1021,11 @@ export const cadenceProducts = {
     label: "ODYSSEE",
     meta: { title: "ODYSSEE | AI and Machine Learning for Engineering | LRYPT", description: "Accelerate engineering design, simulation, prediction, optimization, data preparation, and visual inspection with AI and reduced-order modeling." },
     product: {
-      hero: { title: "ODYSSEE: AI for Enhanced Engineering", subtitle: "AI-powered simulation and production insight", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/image25.jpeg", imageAlt: "AI-enhanced aircraft and engineering simulation workflow" },
+      hero: { title: "ODYSSEE: AI for Enhanced Engineering", subtitle: "AI-powered simulation and production insight", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/ODYSSEE.webp", imageAlt: "AI-enhanced aircraft and engineering simulation workflow" },
       overview: {
         kicker: "Overview", heading: "AI Accelerates Design Insight with Fast, Unified Simulation Tools",
         body: "ODYSSEE is an AI-powered engineering platform that accelerates model creation, prediction, and optimization using reduced-order models and machine learning. It helps teams explore complex multiphysics behavior rapidly and make faster, high-accuracy design decisions.",
-        more: "Integration across solvers and disciplines streamlines simulation workflows, reduces compute cost, and enables visualization, comparison, automation, and deeper system understanding throughout product development.", image: "/assets/img/image25.jpeg", imageAlt: "AI-powered engineering prediction and optimization environment",
+        more: "Integration across solvers and disciplines streamlines simulation workflows, reduces compute cost, and enables visualization, comparison, automation, and deeper system understanding throughout product development.", image: "/assets/img/ODYSSEE.webp", imageAlt: "AI-powered engineering prediction and optimization environment",
       },
       benefits: {
         kicker: "Key benefits", heading: "ODYSSEE Gives You AI and ML Tools to Identify Data Trends Faster", subheading: "Turn simulation, test, image, and CAD data into faster engineering predictions and decisions.",
@@ -1070,11 +1070,11 @@ export const cadenceProducts = {
     label: "Adams",
     meta: { title: "Adams | Multibody Dynamics and Motion Simulation | LRYPT", description: "Validate complex mechanical systems virtually using multibody dynamics, vehicle simulation, durability, NVH, controls, and real-time analysis." },
     product: {
-      hero: { title: "Adams", subtitle: "A trusted platform for multibody dynamics simulation", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/image25.jpeg", imageAlt: "Vehicle multibody dynamics test and simulation" },
+      hero: { title: "Adams", subtitle: "A trusted platform for multibody dynamics simulation", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/Adams1.webp", imageAlt: "Vehicle multibody dynamics test and simulation" },
       overview: {
         kicker: "Overview", heading: "Validate Your Design Without Physical Prototypes",
         body: "Adams improves engineering efficiency and reduces product development cost through early system-level design validation. Evaluate interactions between motion, structures, actuation, and controls to optimize products for performance, safety, reliability, and comfort.",
-        more: "Integrate mechanical components, pneumatics, hydraulics, electronics, and control-system technology with optional modules to build virtual prototypes that accurately represent interactions between subsystems.", image: "/assets/img/image25.jpeg", imageAlt: "Automotive system mounted on a multibody dynamics test platform",
+        more: "Integrate mechanical components, pneumatics, hydraulics, electronics, and control-system technology with optional modules to build virtual prototypes that accurately represent interactions between subsystems.", image: "/assets/img/Adams2.webp", imageAlt: "Automotive system mounted on a multibody dynamics test platform",
       },
       benefits: {
         kicker: "Key benefits", heading: "Accelerate System-Level Validation to Optimize Performance, Safety, and Cost", subheading: "Study complete mechanical systems early and make confident design decisions before physical testing.",
@@ -1112,11 +1112,11 @@ export const cadenceProducts = {
     label: "Cloud Simulation Solutions",
     meta: { title: "Cloud Simulation Solutions | HPC Engineering | LRYPT", description: "Connect simulation technology, engineering data, global teams, and high-performance computing through secure cloud workflows." },
     product: {
-      hero: { title: "Cloud Solutions for Accelerated Product Development", subtitle: "Connect technologies and data to accelerate design and engineering workflows", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/image25.jpeg", imageAlt: "Cloud engineering simulation across automotive, aerospace, and multiphysics applications" },
+      hero: { title: "Cloud Solutions for Accelerated Product Development", subtitle: "Connect technologies and data to accelerate design and engineering workflows", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/CloudSolutions1.webp", imageAlt: "Cloud engineering simulation across automotive, aerospace, and multiphysics applications" },
       overview: {
         kicker: "Overview", heading: "Fast-Track Your Product to Success with HPC in the Cloud",
         body: "Cloud simulation increases the efficiency and speed of CAE, multiphysics, multibody dynamics, and material-modeling workloads. Connect global engineering teams, combine multiple tools in a single workflow, and access scalable computing resources without maintaining dedicated infrastructure.",
-        more: "Bring software, compute, engineering data, and collaboration together in a secure digital environment that supports faster product-development decisions.", image: "/assets/img/image25.jpeg", imageAlt: "Cloud-based aircraft engine and structural simulation workflow",
+        more: "Bring software, compute, engineering data, and collaboration together in a secure digital environment that supports faster product-development decisions.", image: "/assets/img/CloudSolutions2.webp", imageAlt: "Cloud-based aircraft engine and structural simulation workflow",
       },
       benefits: {
         kicker: "Key benefits", heading: "An Open Digital Reality Platform for Design Engineers", subheading: "Connect teams, simplify workflows, and protect engineering data in a scalable cloud environment.",
@@ -1157,11 +1157,11 @@ export const cadenceProducts = {
     label: "SimManager",
     meta: { title: "SimManager | Simulation Process and Data Management | LRYPT", description: "Centralize CAE data, automate simulation workflows, orchestrate HPC jobs, improve collaboration, maintain traceability, and generate reports." },
     product: {
-      hero: { title: "SimManager: Unlock Product Innovation", subtitle: "A comprehensive solution for streamlined simulation operations", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/image25.jpeg", imageAlt: "Simulation process and data management across engineering disciplines" },
+      hero: { title: "SimManager: Unlock Product Innovation", subtitle: "A comprehensive solution for streamlined simulation operations", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/SimManager.webp", imageAlt: "Simulation process and data management across engineering disciplines" },
       overview: {
         kicker: "Overview", heading: "A Complete Solution that Brings Together People, Process, and Technology",
         body: "SimManager is a web-based simulation process and data management system that manages the specialized information and processing needs of CAE simulation teams. It connects engineering people, structured processes, simulation tools, and trusted data in one environment.",
-        more: "From project initiation through final reporting, SimManager improves productivity and efficiency while reducing the time and cost required to deliver higher-quality products.", image: "/assets/img/image25.jpeg", imageAlt: "Unified simulation data, process, and collaboration environment",
+        more: "From project initiation through final reporting, SimManager improves productivity and efficiency while reducing the time and cost required to deliver higher-quality products.", image: "/assets/img/SimManager.webp", imageAlt: "Unified simulation data, process, and collaboration environment",
       },
       benefits: {
         kicker: "Key benefits", heading: "Simulate, Analyze, and Optimize with Seamless Data Management", subheading: "Centralize simulation information, automate processes, and connect globally distributed engineering teams.",
@@ -1200,11 +1200,11 @@ export const cadenceProducts = {
     label: "MSCOne",
     meta: { title: "MSCOne | Flexible Token-Based CAE Licensing | LRYPT", description: "Allocate shared CAE software tokens across engineering teams, sites, projects, and simulation disciplines using flexible subscription licensing." },
     product: {
-      hero: { title: "MSCOne: A Flexible CAE Solution Platform", subtitle: "Advanced simulation software through a token-based subscription system", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/image25.jpeg", imageAlt: "Flexible token-based access to multidisciplinary CAE simulation software" },
+      hero: { title: "MSCOne: A Flexible CAE Solution Platform", subtitle: "Advanced simulation software through a token-based subscription system", btnText: "Talk to an expert", btnHref: "/contact", image: "/assets/img/MSCone.webp", imageAlt: "Flexible token-based access to multidisciplinary CAE simulation software" },
       overview: {
         kicker: "Overview", heading: "Allocate Simulation Resources to Any Team or Site with a Token-Based System",
         body: "MSCOne provides on-demand access to a broad portfolio of CAE tools through a token-based subscription platform. Engineering teams can scale simulation capabilities to project demand, switch between disciplines, and avoid traditional fixed-license constraints.",
-        more: "Use a shared token pool across teams and sites, adapt access as engineering priorities change, reduce idle licenses, and access specialized solvers when projects require them.", image: "/assets/img/image25.jpeg", imageAlt: "Shared token allocation across engineering teams and simulation disciplines",
+        more: "Use a shared token pool across teams and sites, adapt access as engineering priorities change, reduce idle licenses, and access specialized solvers when projects require them.", image: "/assets/img/MSCone.webp", imageAlt: "Shared token allocation across engineering teams and simulation disciplines",
       },
       benefits: {
         kicker: "Key benefits", heading: "Accelerate Innovation", subheading: "Expand engineering capability with flexible access to simulation technology.",

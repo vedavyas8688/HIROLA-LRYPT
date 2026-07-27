@@ -10,7 +10,7 @@ export const meta = {
 export const hero = {
   slides: [
     {
-      image: "/assets/img/image11.jpeg",
+      image: "/assets/img/protegerbanner.webp",
       imageAlt: "Proteger technology solutions",
       label: "Welcome to LRYPT Technologies",
       lines: ["Transform possibilities", "with Proteger"],
@@ -19,13 +19,10 @@ export const hero = {
       btnHref: "/proteger",
     },
     {
-      image: "/assets/img/image12.jpeg",
+      image: "/assets/img/MSCone.webp",
       imageAlt: "Cadence engineering simulation software",
       label: "Welcome to LRYPT Technologies",
-      lines: [
-        "Accelerate innovation",
-        "with Cadence Simulation",
-      ],
+      lines: ["Accelerate innovation", "with Cadence Simulation"],
       sub: "High-fidelity CAE simulation for faster, smarter, lower-risk engineering decisions.",
       btnText: "Explore Cadence",
       btnHref: "/cadence-simulation",
@@ -55,7 +52,8 @@ export const intro = {
     "At LRYPT Technologies, we empower engineering, infrastructure, manufacturing, and technology-driven organizations with innovative digital engineering solutions. By combining advanced engineering software, simulation technologies, geospatial intelligence, digital engineering, and specialized consulting, we help businesses accelerate product development, optimize operations, and deliver complex projects with confidence.",
     "From product design and simulation to network planning, GIS mapping and digital transformation, our team delivers the expertise and technology needed to improve accuracy, enhance productivity, reduce time-to-market, and drive sustainable business growth.",
   ],
-  tagline: "LRYPT Technologies – Your trusted partner for Engineering Excellence, Digital Innovation, and Business Transformation.",
+  tagline:
+    "LRYPT Technologies – Your trusted partner for Engineering Excellence, Digital Innovation, and Business Transformation.",
 };
 
 export const solutionsGrid = {
@@ -356,7 +354,7 @@ export const faq = {
 };
 
 export const cta = {
-  heading: "Ready to Move Your Next Project Forward?",
+  heading: "Let's Resolve Your Problem Together?",
   sub: "Connect with LRYPT Technologies for Proteger solutions, Cadence simulation, Formlabs 3D printing, utility network services, and engineering design expertise tailored to your goals.",
   btnText: "Contact Our Experts",
   btnHref: "/contact",

@@ -7,7 +7,7 @@ export const meta = {
 };
 
 export const hero = {
-  image: "/assets/img/image15.jpeg",
+  image: "/assets/img/protegerbanner.webp",
   imageAlt: "Engineer working with smart manufacturing technology",
   lines: ["Powering the Future", "Smart Manufacturing"],
 };

@@ -23,7 +23,7 @@ export const meta = {
 
 export const pageHead = {
   variant: "img",
-  image: "/assets/img/image25.jpeg",
+  image: "/assets/img/cadencebanner.webp",
   imageAlt: "Cadence engineering simulation visualization",
   crumb: "Solutions / Cadence Simulation",
   lines: ["Cadence Simulation", "for confident engineering"],
@@ -146,22 +146,6 @@ export const simulationDisciplines = {
       cols: 2,
     },
     {
-      label: "Electromagnetics",
-      title: "Electromagnetic simulation",
-      desc:
-        "Design and validate motors, antennas, sensors, power electronics, high-frequency systems, and connected devices.",
-      bullets: ["Low- and high-frequency analysis", "Signal and power integrity", "Electric machines", "Antenna performance", "EMI and EMC studies"],
-      cols: 2,
-    },
-    {
-      label: "Optics",
-      title: "Optical simulation",
-      desc:
-        "Model light from source to system to develop imaging, illumination, photonic, and optical communication products.",
-      bullets: ["Optical system design", "Illumination analysis", "Stray-light assessment", "Photonic component simulation", "Human-vision evaluation"],
-      cols: 2,
-    },
-    {
       label: "Multiphysics",
       title: "Multiphysics and system simulation",
       desc:
@@ -175,7 +159,7 @@ export const simulationDisciplines = {
 export const softwareCapabilities = {
   bg: "dark",
   kicker: "Connected capabilities",
-  heading: "From individual analysis to an enterprise simulation workflow",
+  heading: "From Individual Simulations to Enterprise-Scale Workflows",
   subheading:
     "Build repeatable processes that help more engineers use simulation accurately and efficiently.",
   columns: 3,
@@ -192,7 +176,7 @@ export const softwareCapabilities = {
 
 export const industries = {
   bg: "cream",
-  heading: "Built for engineering-intensive industries",
+  heading: "Built for engineering intensive industries",
   subheading:
     "Adaptable simulation workflows support product development, operations, certification, and research across diverse sectors.",
   columns: 3,
@@ -255,5 +239,5 @@ export const cta = {
     "Tell us about your products, engineering challenges, and current workflow. LRYPT will help you identify a practical simulation software approach aligned with your technical goals, team, and development process.",
   btnText: "Talk to a simulation expert",
   btnHref: "/contact",
-  image: "/assets/img/ph-hero-simulation.webp",
+  image: "/assets/img/cadencefaq.webp",
 };

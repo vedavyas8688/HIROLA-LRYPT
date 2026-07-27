@@ -172,7 +172,7 @@ export default function SimulationProductDetail({
               </details>
             )}
           </div>
-          <svg
+          {/* <svg
             className="spd-overview__signal"
             viewBox="0 0 250 250"
             aria-hidden="true"
@@ -215,7 +215,7 @@ export default function SimulationProductDetail({
             <text className="sim-label" x="61" y="191">
               Z
             </text>
-          </svg>
+          </svg> */}
           <img
             className="spd-overview__image"
             src={overview.image}

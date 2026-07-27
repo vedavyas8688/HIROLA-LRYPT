@@ -9,7 +9,7 @@ export const product = {
     subtitle: "Scalable cloud-based ADAS environment simulation software",
     btnText: "Talk to an expert",
     btnHref: "/contact",
-    image: "/assets/img/image12.jpeg",
+    image: "/assets/img/VirtualTestDrive3.webp",
     imageAlt: "Cloud-based autonomous vehicle simulation environment",
   },
   overview: {
@@ -17,7 +17,7 @@ export const product = {
     heading: "Test Scenarios and Train ADAS and Autonomous Vehicle System Environments in the Cloud",
     body: "VTDx is scalable cloud-based environment simulation software for creating, configuring, and representing virtual environments and scenarios to test, train, and continuously validate ADAS features and autonomous vehicle systems as part of the ADAS software workflow.",
     more: "Cloud-native orchestration enables development teams to execute repeatable scenario campaigns at scale and connect simulation results with existing engineering and analytics workflows.",
-    image: "/assets/img/image12.jpeg",
+    image: "/assets/img/VirtualTestDrive4.webp",
     imageAlt: "VTDx cloud simulation scenario for autonomous vehicle testing",
   },
   benefits: {

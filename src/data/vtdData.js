@@ -9,7 +9,7 @@ export const product = {
     subtitle: "Seamlessly accelerates the development of ADAS",
     btnText: "Talk to an expert",
     btnHref: "/contact",
-    image: "/assets/img/image12.jpeg",
+    image: "/assets/img/VirtualTestDrive1.webp",
     imageAlt: "Virtual vehicle development and simulation environment",
   },
   overview: {
@@ -17,7 +17,7 @@ export const product = {
     heading: "Create, Configure and Evaluate ADAS Functionalities in a Virtual Environment",
     body: "VTD is a 3D environment simulation platform for creating, configuring, and evaluating ADAS and autonomous vehicle functionalities. It is ideal for software-in-the-loop (SIL), hardware-in-the-loop (HIL), and vehicle-in-the-loop (VIL) applications.",
     more: "Build repeatable road, traffic, sensor, weather, and vehicle scenarios for scalable virtual testing across the complete development lifecycle.",
-    image: "/assets/img/image12.jpeg",
+    image: "/assets/img/VirtualTestDrive2.webp",
     imageAlt: "Virtual Test Drive engineering simulation workflow",
   },
   benefits: {
