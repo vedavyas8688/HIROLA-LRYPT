@@ -27,7 +27,7 @@ export default function CardGrid({ bg = "cream", heading, subheading, items }) {
                 <img src={item.img} alt={item.alt} decoding="async" loading="lazy" />
               </div>
               <div className="post__b">
-                <div className="post__meta">{item.meta}</div>
+                {item.meta && <div className="post__meta">{item.meta}</div>}
                 <h3 style={{ color: "#000" }}>{item.title}</h3>
                 <p className="mute" style={{ fontSize: ".95rem" }}>
                   {item.desc}

@@ -24,7 +24,7 @@ export const hero = {
       btnHref: "/formlabs",
     },
     {
-      image: "/assets/img/MSCone.webp",
+      image: "/assets/img/cadencesolutions.webp",
       imageAlt: "Cadence engineering simulation software",
       label: "Welcome to LRYPT Technologies",
       lines: ["Accelerate innovation", "with Cadence Simulation"],
@@ -76,7 +76,7 @@ export const solutionsGrid = {
 
     {
       href: "/cadence-simulation",
-      img: "/assets/img/image16.jpeg",
+      img: "/assets/img/cadencesolutions.webp",
       alt: "Cadence engineering simulation",
       meta: "Simulation",
       title: "Cadence Simulation",
@@ -86,7 +86,7 @@ export const solutionsGrid = {
 
     {
       href: "/proteger",
-      img: "/assets/img/image15.jpeg",
+      img: "/assets/img/image15.webp",
       alt: "Proteger engineering technology solutions",
       meta: "Engineering Technology",
       title: "Proteger",
@@ -105,19 +105,19 @@ export const servicesGrid = {
   items: [
     {
       href: "/utility-network",
-      img: "/assets/img/utilityimage.jpeg",
-      alt: "Utility Network Services",
-      meta: "Geospatial",
-      title: "Utility Network Services",
-      desc: "Comprehensive GIS, utility mapping, FTTx, electric, water, and oil & gas network design solutions for smarter infrastructure planning and asset management.",
+      img: "/assets/img/utilitynetwork.webp",
+      alt: "Utility Network",
+      meta: "",
+      title: "Utility Network",
+      desc: "Create accurate, scalable network plans with clear mapping, reliable documentation, and data-driven workflows for smarter infrastructure management.",
     },
     {
       href: "/engineering-design",
-      img: "/assets/img/image19.jpeg",
-      alt: "Engineering Design Services",
-      meta: "Engineering",
-      title: "Engineering Design Services",
-      desc: "End-to-end engineering design, technical drafting, product development, simulation, prototyping, and consulting for innovative, high-quality solutions.",
+      img: "/assets/img/engineeringservices.webp",
+      alt: "Engineering Design",
+      meta: "",
+      title: "Engineering Design",
+      desc: "Move ideas from concept to production with CAD modeling, drafting, product development, prototyping, simulation support, and practical engineering guidance.",
     },
   ],
 };

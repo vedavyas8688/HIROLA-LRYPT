@@ -81,9 +81,9 @@ export function SoloCapability({ bg = "dark", label, title, desc, bullets, bulle
           .solo-modern::before{content:"";position:absolute;right:-120px;top:-180px;width:480px;height:480px;border:1px solid var(--line-dark);border-radius:50%}
           .solo-modern::after{content:"";position:absolute;right:-20px;top:-80px;width:280px;height:280px;border:1px solid var(--line-dark);border-radius:50%}
           .solo-modern__inner{position:relative;z-index:1}
-          .solo-modern__head{display:grid;grid-template-columns:minmax(240px,.85fr) 1.15fr;gap:clamp(32px,7vw,100px);align-items:end;margin-bottom:36px}
+          .solo-modern__head{display:grid;grid-template-columns:minmax(360px,1fr) 1.15fr;gap:clamp(32px,6vw,84px);align-items:end;margin-bottom:36px}
           .solo-modern .label{color:var(--mute-dark)}
-          .solo-modern h2{max-width:12ch;margin:14px 0 0;color:var(--on-dark);font-size:clamp(2.2rem,4vw,4rem);line-height:1.04;text-transform:none;letter-spacing:-.035em}
+          .solo-modern h2{max-width:19ch;margin:14px 0 0;color:var(--on-dark);font-size:clamp(2.1rem,3.25vw,3.35rem);line-height:1.08;text-transform:none;letter-spacing:-.025em}
           .solo-modern__desc{max-width:62ch;margin:0;color:var(--mute-dark);font-size:clamp(1rem,1.35vw,1.15rem);line-height:1.75}
           .solo-modern__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
           .solo-modern__item{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;min-height:84px;padding:18px 17px;border:1px solid var(--line-dark);background:rgba(255,255,255,.035)}

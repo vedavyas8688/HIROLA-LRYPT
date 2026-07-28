@@ -16,8 +16,8 @@ export const NAV = [
     label: "Services",
     href: "/services",
     drop: [
-      ["Utility Network Services", "/utility-network"],
-      ["Engineering Design Services", "/engineering-design"],
+      ["Utility Network", "/utility-network"],
+      ["Engineering Design", "/engineering-design"],
     ],
   },
   { label: "Blog", href: "/blog" },

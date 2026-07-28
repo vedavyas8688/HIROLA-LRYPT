@@ -9,7 +9,7 @@ export const meta = {
 
 export const pageHead = {
   variant: "img",
-  image: "/assets/img/MSCone.webp",
+  image: "/assets/img/cadencesolutions.webp",
   imageAlt: "Cadence engineering simulation software",
   crumb: "Solutions",
   lines: ["Technology solutions", "for modern engineering"],
@@ -35,7 +35,7 @@ export const solutionsGrid = {
     },
     {
       href: "/cadence-simulation",
-      img: "/assets/img/MSCone.webp",
+      img: "/assets/img/cadencesolutions.webp",
       alt: "Cadence engineering simulation",
       meta: "CAE Simulation",
       title: "Cadence Simulation",

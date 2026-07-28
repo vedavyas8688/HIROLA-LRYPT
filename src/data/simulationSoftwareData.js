@@ -23,7 +23,7 @@ export const meta = {
 
 export const pageHead = {
   variant: "img",
-  image: "/assets/img/cadencebanner.webp",
+  image: "/assets/img/cadencesolutions.webp",
   imageAlt: "Cadence engineering simulation visualization",
   crumb: "Solutions / Cadence Simulation",
   lines: ["Cadence Simulation", "for confident engineering"],
