@@ -4,17 +4,19 @@ function PageHeadStyles() {
   return (
     <style>{`
       .phead-scope{padding:clamp(140px,18vh,230px) 0 80px;position:relative;overflow:hidden;background:var(--black);color:#fff}
-      .phead-scope.phead--img{min-height:62vh;display:flex;align-items:flex-start}
+      .phead-scope.phead--img{min-height:62vh;display:flex;align-items:flex-start;color:#fff}
       .phead-scope.phead--cream{background:var(--cream);color:var(--on-cream)}
       .phead-scope .phead__media{position:absolute;inset:0;z-index:0}
       .phead-scope .phead__media img{width:100%;height:100%;object-fit:cover}
-      .phead-scope .phead__media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,9,.6),rgba(8,8,9,.85))}
+      .phead-scope .phead__media::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.08)}
       .phead-scope .wrap{position:relative;z-index:1}
 
       .phead-scope .phead__content{display:flex;flex-direction:column;align-items:flex-start;text-align:left}
       .phead-scope .crumb{font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.78rem;opacity:.9;margin-bottom:18px}
       .phead-scope h1{margin:0}
       .phead-scope .lead{margin-top:24px;max-width:52ch}
+      .phead-scope.phead--img h1,.phead-scope.phead--img .lead{text-shadow:0 2px 18px rgba(0,0,0,.38)}
+      .phead-scope.phead--img .lead{color:#fff;font-weight:700}
 
       @media(max-width:900px){
         .phead-scope .crumb{margin-bottom:12px}
@@ -64,6 +66,7 @@ export default function PageHead({
   variant = "cream",
   image,
   imageAlt,
+  tone = "dark",
   headingWidth = 44, // in "ch" units — controls how the heading wraps
 }) {
   const sectionRef = useRef(null);
@@ -88,7 +91,7 @@ export default function PageHead({
   return (
     <section
       ref={sectionRef}
-      className={`phead phead--${variant === "img" ? "img" : "cream"} phead-scope${inView ? " in-view" : ""}`}
+      className={`phead phead--${variant === "img" ? "img" : "cream"}${variant === "img" && tone === "light" ? " phead--light" : ""} phead-scope${inView ? " in-view" : ""}`}
     >
       <PageHeadStyles />
       {variant === "img" && image && (

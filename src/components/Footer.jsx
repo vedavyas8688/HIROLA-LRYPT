@@ -1,14 +1,19 @@
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaXTwitter, FaFacebookF, FaInstagram } from "react-icons/fa6";
+import {
+  FaLinkedin,
+  FaXTwitter,
+  FaFacebookF,
+  FaInstagram,
+} from "react-icons/fa6";
 import { Phone, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
 
 const linkGroups = [
   {
     title: "Solutions",
     links: [
-      { label: "Proteger", to: "/proteger" },
-      { label: "Cadence Simulation", to: "/cadence-simulation" },
       { label: "Formlabs 3D Printing", to: "/formlabs" },
+      { label: "Cadence Simulation", to: "/cadence-simulation" },
+      { label: "Proteger", to: "/proteger" },
     ],
   },
   {
@@ -86,7 +91,9 @@ export default function Footer() {
               Let&rsquo;s build
             </span>
             <h2 data-reveal style={{ marginTop: 16 }}>
-              <span style={{ display: "inline-block", whiteSpace: "nowrap" }}>Let&rsquo;s build something</span>
+              <span style={{ display: "inline-block", whiteSpace: "nowrap" }}>
+                Let&rsquo;s build something
+              </span>
               <span style={{ display: "block" }}>great together</span>
             </h2>
           </div>
@@ -101,9 +108,16 @@ export default function Footer() {
         <div className="foot__grid">
           <div className="foot__about">
             <Link className="logo foot__logo" to="/">
-              <img className="logo__img" src="/assets/img/logo.png" alt="LRYPT Technologies" />
+              <img
+                className="logo__img"
+                src="/assets/img/logo.png"
+                alt="LRYPT Technologies"
+              />
             </Link>
-            <p>Empowering the future through cutting-edge technology solutions and services.</p>
+            <p>
+              Empowering the future through cutting-edge technology solutions
+              and services.
+            </p>
             <div className="foot__social">
               {socials.map(({ icon: Icon, label, href }) => (
                 <a key={label} href={href} aria-label={label}>
@@ -143,7 +157,10 @@ export default function Footer() {
                 rel="noreferrer"
               >
                 <MapPin size={17} />
-                <span>4th Floor, Symphony Managed Office Space, Hormavu Agara Road, Vadarpalya, Hennur, Bangalore 560043</span>
+                <span>
+                  4th Floor, Symphony Managed Office Space, Hormavu Agara Road,
+                  Vadarpalya, Hennur, Bangalore 560043
+                </span>
               </a>
             </div>
 
@@ -155,7 +172,9 @@ export default function Footer() {
               {hours.map((h) => (
                 <div className="foot__hours-row" key={h.day}>
                   <span className="d">{h.day}</span>
-                  <span className={`t${h.time === "Closed" ? " closed" : ""}`}>{h.time}</span>
+                  <span className={`t${h.time === "Closed" ? " closed" : ""}`}>
+                    {h.time}
+                  </span>
                 </div>
               ))}
             </div>

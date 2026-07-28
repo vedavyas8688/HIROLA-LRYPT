@@ -1,86 +1,93 @@
 // Content for the Solutions page.
-// Edit copy, images, and items here — no component code needed.
+// Edit copy, images, and items here - no component code needed.
 
 export const meta = {
-  "title": "Solutions | Proteger, Cadence Simulation & Formlabs | LRYPT",
-  "description": "Power modern engineering with Proteger technology solutions, Cadence simulation software, and Formlabs additive manufacturing."
+  title: "Solutions | Formlabs, Cadence Simulation & Proteger | LRYPT",
+  description:
+    "Explore LRYPT solutions for Formlabs SLA and SLS 3D printing, Cadence CAE simulation, and Proteger smart manufacturing technology.",
 };
 
- export const pageHead = {
+export const pageHead = {
   variant: "img",
-  image: "/assets/img/image9.jpeg",
-  imageAlt: "Solutions — LRYPT Technologies",
+  image: "/assets/img/MSCone.webp",
+  imageAlt: "Cadence engineering simulation software",
   crumb: "Solutions",
-  lines: [
-    "Software that powers",
-    "modern engineering"
-  ],
+  lines: ["Technology solutions", "for modern engineering"],
   lead:
-    "Empowering businesses with reliable engineering, geospatial, and digital solutions."
+    "From product development and virtual validation to additive manufacturing and connected operations, LRYPT helps teams choose and implement the right technology for faster, more confident execution.",
 };
 
- export const solutionsGrid = {
+export const solutionsGrid = {
   bg: "dark",
   heading: "Explore Our Solutions",
   subheading:
-    "Innovative engineering and technology solutions designed to help businesses build smarter, work faster, and grow confidently.",
+    "A focused portfolio built around the way engineering and manufacturing teams work: create accurate prototypes, validate designs digitally, and connect operations with smarter systems.",
 
   items: [
     {
-      href: "/proteger",
-      img: "/assets/img/protegerbanner.webp",
-      alt: "Proteger engineering technology solutions",
-      meta: "Engineering Technology",
-      title: "Proteger",
+      href: "/formlabs",
+      img: "/assets/img/image17.jpeg",
+      alt: "Formlabs 3D Printing",
+      meta: "Additive Manufacturing",
+      title: "Formlabs 3D Printing",
       desc:
-        "Innovative engineering technology solutions designed to improve performance, strengthen operations, and support digital transformation."
+        "Professional SLA and SLS 3D printing systems for rapid prototyping, functional testing, tooling, end-use parts, and production-ready workflows with Form Wash, Form Cure, Fuse Sift, and Fuse Blast.",
     },
     {
       href: "/cadence-simulation",
-      img: "/assets/img/cadencebanner.webp",
-      alt: "Cadence simulation software for engineering analysis",
-      meta: "Engineering Software",
+      img: "/assets/img/MSCone.webp",
+      alt: "Cadence engineering simulation",
+      meta: "CAE Simulation",
       title: "Cadence Simulation",
       desc:
-        "Explore connected software for structural, fluid, thermal, electromagnetic, optical, and multiphysics simulation."
+        "High-fidelity simulation software for structural, fluid, thermal, acoustic, material, multiphysics, ADAS, cloud, and AI-enabled engineering workflows that reduce prototype risk and speed up design decisions.",
     },
     {
-      href: "/formlabs",
-      img: "/assets/img/banner4.png",
-      alt: "3D Printing",
-      meta: "Additive Manufacturing",
-      title: "3D Printing",
+      href: "/proteger",
+      img: "/assets/img/protegerbanner.webp",
+      alt: "Proteger smart manufacturing technology",
+      meta: "Smart Manufacturing",
+      title: "Proteger",
       desc:
-        "Accelerate innovation with industrial-grade rapid prototyping, functional testing, and custom manufacturing solutions."
-    }
-  ]
+        "Smart manufacturing technology for connected operations, live monitoring, traceability, maintenance, quality workflows, analytics, and digital transformation across production environments.",
+    },
+  ],
 };
 
- export const faq = {
+export const faq = {
   items: [
     {
-      q: "What services does LRYPT Technologies provide?",
-      a: "LRYPT Technologies offers Proteger technology, Cadence Simulation, Formlabs 3D printing, utility network services, GIS expertise, and engineering design solutions tailored to diverse industries."
+      q: "Which solutions does LRYPT Technologies offer?",
+      a: "LRYPT offers Formlabs 3D printing systems, Cadence engineering simulation software, and Proteger smart manufacturing technology, supported by expert consultation, implementation, training, and technical guidance.",
     },
     {
-      q: "Which industries do you serve?",
-      a: "We work with organizations across infrastructure, manufacturing, construction, utilities, energy, automotive, healthcare, education, government, and other engineering-driven industries."
+      q: "How does Formlabs help product development teams?",
+      a: "Formlabs SLA and SLS printers help teams create accurate prototypes, functional parts, production tools, and low-volume components. The ecosystem also includes washing, curing, powder recovery, and finishing systems for complete additive manufacturing workflows.",
     },
     {
-      q: "Can LRYPT deliver customized engineering solutions?",
-      a: "Yes. We understand that every project has unique requirements. Our experts work closely with clients to develop customized engineering, geospatial, network, and digital solutions that align with their business objectives."
+      q: "What can Cadence Simulation be used for?",
+      a: "Cadence simulation solutions help engineers predict real-world product performance across structural, acoustic, fluid, thermal, material, motion, ADAS, multiphysics, cloud, and AI-driven workflows before committing to physical prototypes.",
     },
     {
-      q: "Why choose LRYPT Technologies?",
-      a: "Our experienced team combines technical expertise, innovative technologies, and a client-focused approach to deliver reliable, scalable, and cost-effective solutions. We are committed to quality, precision, and long-term customer success."
-    }
-  ]
+      q: "What does Proteger support?",
+      a: "Proteger supports smart manufacturing and connected operations through digitized workflows, live monitoring, traceability, maintenance management, quality control, analytics, and practical Industry 4.0 adoption.",
+    },
+    {
+      q: "Can LRYPT help choose the right solution?",
+      a: "Yes. LRYPT helps teams map business goals, technical requirements, current workflows, and budget constraints to the right software, hardware, or digital manufacturing solution.",
+    },
+    {
+      q: "Do you provide support after implementation?",
+      a: "Yes. Our team can support product selection, deployment planning, user training, workflow setup, and ongoing technical enablement so teams get practical value from the technology.",
+    },
+  ],
 };
 
- export const cta = {
-  heading: "Need Expert Solutions?",
-  sub: "Explore Proteger, Cadence simulation, and Formlabs 3D printing solutions designed to help engineering teams innovate faster, improve performance, and reduce development risk.",
+export const cta = {
+  heading: "Find the Right Technology for Your Next Project",
+  sub:
+    "Talk to LRYPT about your design, manufacturing, simulation, or digital operations goals. We will help you identify the right Formlabs, Cadence, or Proteger solution for your workflow.",
   btnText: "Contact Our Experts",
   btnHref: "/contact",
-  image: "/assets/img/image26.jpeg"
+  image: "/assets/img/image26.jpeg",
 };

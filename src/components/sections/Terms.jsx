@@ -1,4 +1,5 @@
 import LegalLayout from "./LegalLayout";
+import usePageMeta from "../../hooks/usePageMeta";
 
 /* Fill in the bracketed placeholders with your real details
    before publishing. General template, not legal advice —
@@ -100,6 +101,11 @@ const SECTIONS = [
 ];
 
 export default function Terms() {
+  usePageMeta(
+    "Terms & Conditions | LRYPT Technologies",
+    "Review the terms and conditions that govern use of the LRYPT Technologies website, solutions, products, and engineering services."
+  );
+
   return (
     <LegalLayout
       eyebrow="Legal · Documentation"

@@ -1,4 +1,5 @@
 import LegalLayout from "./LegalLayout";
+import usePageMeta from "../../hooks/usePageMeta";
 
  
 
@@ -98,6 +99,11 @@ const SECTIONS = [
 ];
 
 export default function Privacy() {
+  usePageMeta(
+    "Privacy Policy | LRYPT Technologies",
+    "Learn how LRYPT Technologies collects, uses, protects, and manages information across its website, technology solutions, and engineering services."
+  );
+
   return (
     <LegalLayout
       eyebrow="Legal · Documentation"

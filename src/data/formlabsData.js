@@ -15,7 +15,7 @@ export const pageHead = {
     "Precision, speed,",
     "and possibility"
   ],
-  "lead": null
+  "lead": "Professional SLA and SLS 3D printing systems for accurate prototypes, functional parts, tooling, and production-ready additive manufacturing workflows."
 };
 
  export const intro = {

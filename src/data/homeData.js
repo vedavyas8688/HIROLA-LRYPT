@@ -10,24 +10,6 @@ export const meta = {
 export const hero = {
   slides: [
     {
-      image: "/assets/img/protegerbanner.webp",
-      imageAlt: "Proteger technology solutions",
-      label: "Welcome to LRYPT Technologies",
-      lines: ["Transform possibilities", "with Proteger"],
-      sub: "Reliable technology solutions designed to help businesses innovate, perform, and grow.",
-      btnText: "Explore Proteger",
-      btnHref: "/proteger",
-    },
-    {
-      image: "/assets/img/MSCone.webp",
-      imageAlt: "Cadence engineering simulation software",
-      label: "Welcome to LRYPT Technologies",
-      lines: ["Accelerate innovation", "with Cadence Simulation"],
-      sub: "High-fidelity CAE simulation for faster, smarter, lower-risk engineering decisions.",
-      btnText: "Explore Cadence",
-      btnHref: "/cadence-simulation",
-    },
-    {
       image: "/assets/img/banner4.png",
       imageAlt:
         "Driving the future of additive manufacturing with Formlabs 3D printers",
@@ -40,6 +22,25 @@ export const hero = {
       sub: "Production-grade precision, speed, and possibility.",
       btnText: "Explore Formlabs",
       btnHref: "/formlabs",
+    },
+    {
+      image: "/assets/img/MSCone.webp",
+      imageAlt: "Cadence engineering simulation software",
+      label: "Welcome to LRYPT Technologies",
+      lines: ["Accelerate innovation", "with Cadence Simulation"],
+      sub: "High-fidelity CAE simulation for faster, smarter, lower-risk engineering decisions.",
+      btnText: "Explore Cadence",
+      btnHref: "/cadence-simulation",
+    },
+
+    {
+      image: "/assets/img/protegerbanner.webp",
+      imageAlt: "Proteger technology solutions",
+      label: "Welcome to LRYPT Technologies",
+      lines: ["Transform possibilities", "with Proteger"],
+      sub: "Reliable technology solutions designed to help businesses innovate, perform, and grow.",
+      btnText: "Explore Proteger",
+      btnHref: "/proteger",
     },
   ],
 };
@@ -63,14 +64,16 @@ export const solutionsGrid = {
     "Empowering businesses with cutting-edge engineering, simulation, digital engineering, and manufacturing solutions to drive innovation, solve complex challenges, and achieve faster, smarter, and more sustainable outcomes.",
 
   items: [
-    {
-      href: "/proteger",
-      img: "/assets/img/image15.jpeg",
-      alt: "Proteger engineering technology solutions",
-      meta: "Engineering Technology",
-      title: "Proteger",
-      desc: "Innovative engineering technology solutions that help organizations improve performance, strengthen operations, and accelerate digital transformation.",
+
+     {
+      href: "/formlabs",
+      img: "/assets/img/image17.jpeg",
+      alt: "Formlabs 3D Printing",
+      meta: "Additive Manufacturing",
+      title: "Formlabs 3D Printing",
+      desc: "Industrial-grade SLA and SLS 3D printing solutions for rapid prototyping, functional testing, product validation, and custom manufacturing.",
     },
+
     {
       href: "/cadence-simulation",
       img: "/assets/img/image16.jpeg",
@@ -79,14 +82,18 @@ export const solutionsGrid = {
       title: "Cadence Simulation",
       desc: "High-fidelity CAE simulation technologies that help engineers predict performance, reduce development risk, and accelerate product innovation.",
     },
+
+
     {
-      href: "/formlabs",
-      img: "/assets/img/image17.jpeg",
-      alt: "Formlabs 3D Printing",
-      meta: "Additive Manufacturing",
-      title: "Formlabs 3D Printing",
-      desc: "Industrial-grade SLA and SLS 3D printing solutions for rapid prototyping, functional testing, product validation, and custom manufacturing.",
+      href: "/proteger",
+      img: "/assets/img/image15.jpeg",
+      alt: "Proteger engineering technology solutions",
+      meta: "Engineering Technology",
+      title: "Proteger",
+      desc: "Innovative engineering technology solutions that help organizations improve performance, strengthen operations, and accelerate digital transformation.",
     },
+     
+     
   ],
 };
 export const servicesGrid = {

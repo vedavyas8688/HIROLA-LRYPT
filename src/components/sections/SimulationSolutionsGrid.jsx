@@ -7,7 +7,11 @@ function ProductSelector({ products, onOpen }) {
   const hasProducts = products.length > 0;
 
   return (
-    <div className={`sim-product-select${open ? " is-open" : ""}`}>
+    <div
+      className={`sim-product-select${open ? " is-open" : ""}`}
+      onMouseEnter={() => hasProducts && setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
       <button type="button" aria-expanded={open} disabled={!hasProducts} onClick={() => setOpen((value) => !value)}>
         <span>{hasProducts ? "Select Product" : "Products coming soon"}</span>
         <ChevronDown size={19} />
@@ -41,7 +45,7 @@ export default function SimulationSolutionsGrid({ kicker, heading, subheading, i
         .sim-solution-card{display:flex;flex-direction:column;min-height:330px;padding:clamp(28px,3vw,40px);background:#fff}
         .sim-solution-card h3{margin:0 0 18px;font-size:clamp(1.25rem,1.7vw,1.55rem);line-height:1.3;text-transform:none;letter-spacing:-.015em}
         .sim-solution-card p{margin:0 0 28px;color:var(--mute-cream);font-size:1rem;line-height:1.6}
-        .sim-product-select{position:relative;margin-top:auto}.sim-product-select>button{display:flex;width:100%;min-height:46px;align-items:center;justify-content:space-between;padding:0 13px;border:1px solid #777;background:#fff;color:var(--ink);font:inherit;cursor:pointer;transition:border-color .2s ease,color .2s ease,box-shadow .2s ease}.sim-product-select>button:hover:not(:disabled),.sim-product-select.is-open>button{border-color:#087bd8;color:#087bd8;box-shadow:0 0 0 1px #087bd8}.sim-product-select>button svg{transition:transform .25s ease}.sim-product-select.is-open>button svg{transform:rotate(180deg)}.sim-product-select>button:disabled{cursor:not-allowed;color:#666;background:#fafafa}.sim-product-select__menu{position:absolute;z-index:5;top:calc(100% + 8px);left:0;width:100%;border:1px solid #87bce7;background:#fff;box-shadow:0 10px 28px rgba(0,0,0,.1)}.sim-product-select__menu button{display:flex;width:100%;align-items:center;justify-content:space-between;padding:13px;border:0;background:#fff;color:#087bd8;font:inherit;cursor:pointer;transition:background .2s ease,padding .2s ease}.sim-product-select__menu button:hover{padding-left:18px;background:#f0f7fd}
+        .sim-product-select{position:relative;margin-top:auto}.sim-product-select>button{display:flex;width:100%;min-height:46px;align-items:center;justify-content:space-between;padding:0 13px;border:1px solid #777;background:#fff;color:var(--ink);font:inherit;cursor:pointer;transition:border-color .2s ease,color .2s ease,box-shadow .2s ease}.sim-product-select>button:hover:not(:disabled),.sim-product-select.is-open>button{border-color:#087bd8;color:#087bd8;box-shadow:0 0 0 1px #087bd8}.sim-product-select>button svg{transition:transform .25s ease}.sim-product-select.is-open>button svg{transform:rotate(180deg)}.sim-product-select>button:disabled{cursor:not-allowed;color:#666;background:#fafafa}.sim-product-select__menu{position:absolute;z-index:5;top:calc(100% + 8px);left:0;width:100%;border:1px solid #87bce7;background:#fff;box-shadow:0 10px 28px rgba(0,0,0,.1)}.sim-product-select__menu button{display:flex;width:100%;align-items:center;justify-content:space-between;padding:13px;border:0;background:#fff;color:#087bd8;font:inherit;cursor:pointer;transition:background .2s ease,padding .2s ease}.sim-product-select__menu button svg{opacity:0;transform:translateX(-6px);transition:opacity .2s ease,transform .2s ease}.sim-product-select__menu button:hover{padding-left:18px;background:#f0f7fd}.sim-product-select__menu button:hover svg{opacity:1;transform:translateX(0)}
         @media(max-width:900px){.sim-solutions__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
         @media(max-width:600px){.sim-solutions__grid{grid-template-columns:1fr;gap:18px}.sim-solution-card{min-height:290px}.sim-solutions__head{margin-bottom:48px}}
       `}</style>

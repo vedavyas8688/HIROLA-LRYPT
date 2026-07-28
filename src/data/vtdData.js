@@ -1,6 +1,6 @@
 export const meta = {
   title: "Virtual Test Drive (VTD) | ADAS Simulation | LRYPT",
-  description: "Create, configure, and evaluate ADAS and autonomous vehicle functionality in accurate virtual environments with Virtual Test Drive.",
+  description: "Build, configure, and test ADAS and autonomous vehicle functions in realistic virtual environments with Virtual Test Drive.",
 };
 
 export const product = {
@@ -15,30 +15,30 @@ export const product = {
   overview: {
     kicker: "Overview",
     heading: "Create, Configure and Evaluate ADAS Functionalities in a Virtual Environment",
-    body: "VTD is a 3D environment simulation platform for creating, configuring, and evaluating ADAS and autonomous vehicle functionalities. It is ideal for software-in-the-loop (SIL), hardware-in-the-loop (HIL), and vehicle-in-the-loop (VIL) applications.",
-    more: "Build repeatable road, traffic, sensor, weather, and vehicle scenarios for scalable virtual testing across the complete development lifecycle.",
+    body: "VTD is a 3D environment simulation platform for building, configuring, and testing ADAS and autonomous vehicle functionality. It fits software-in-the-loop (SIL), hardware-in-the-loop (HIL), and vehicle-in-the-loop (VIL) applications equally well.",
+    more: "Construct repeatable road, traffic, sensor, weather, and vehicle scenarios to run scalable virtual testing across the full development lifecycle.",
     image: "/assets/img/VirtualTestDrive2.webp",
     imageAlt: "Virtual Test Drive engineering simulation workflow",
   },
   benefits: {
     kicker: "Key benefits",
     heading: "Accurate Virtual Scenarios from Any Platform",
-    subheading: "Build open, standards-based scenarios with configurable sensing for comprehensive ADAS validation.",
+    subheading: "Build open, standards-based scenarios with configurable sensing for thorough ADAS validation.",
     items: [
-      { icon: "ecosystem", title: "Open Ecosystem", desc: "VTD seamlessly integrates with third-party test platforms, including SIL, HIL, and VIL environments." },
-      { icon: "standards", title: "OpenX Standard Support", desc: "Native OpenDRIVE, OpenSCENARIO, and OpenCRG support ensures scenarios and environments are represented accurately." },
-      { icon: "sensing", title: "Advanced Sensing", desc: "Use accurate camera, lidar, and radar sensor models that can be customized through an SDK for specific requirements." },
+      { icon: "Network", title: "Open Ecosystem", desc: "VTD connects smoothly with third-party test platforms, including SIL, HIL, and VIL environments." },
+      { icon: "ClipboardCheck", title: "OpenX Standard Support", desc: "Native OpenDRIVE, OpenSCENARIO, and OpenCRG support keeps scenarios and environments represented accurately." },
+      { icon: "Radar", title: "Advanced Sensing", desc: "Work with accurate camera, lidar, and radar sensor models, customizable through an SDK for specific needs." },
     ],
   },
   features: {
     kicker: "Features",
     heading: "Complex, Accurate Simulation Design",
-    intro: "Simulate and design complex, country-specific road networks and the dynamic contents that interact with them.",
+    intro: "Design complex, country-specific road networks along with the dynamic content that interacts with them.",
     items: [
-      { name: "Road Designs", desc: "Design road networks with unlimited lanes, complex intersections, comprehensive signs, and signals with RoadDesigner (ROD)." },
-      { name: "Define Obstacles", desc: "Define dynamic content such as pedestrians, traffic, and objects with an interactive scenario editor." },
-      { name: "Local Road Conditions", desc: "Use country-specific road tiles available as add-ons." },
-      { name: "Simulate in High Fidelity", desc: "Create realistic scenes with Unreal Engine 5-powered rendering." },
+      { name: "Road Designs", desc: "Build road networks with unlimited lanes, complex intersections, and full signage and signals using RoadDesigner (ROD)." },
+      { name: "Define Obstacles", desc: "Add dynamic content like pedestrians, traffic, and objects through an interactive scenario editor." },
+      { name: "Local Road Conditions", desc: "Bring in country-specific road tiles available as add-ons." },
+      { name: "Simulate in High Fidelity", desc: "Render realistic scenes powered by Unreal Engine 5." },
     ],
   },
   nextSteps: {
@@ -52,9 +52,9 @@ export const product = {
     kicker: "Resources",
     heading: "Need help?",
     items: [
-      { icon: "support", title: "Software Support and Training", desc: "Get trusted technical support and training for productive virtual vehicle development.", href: "/contact" },
-      { icon: "services", title: "Professional Services", desc: "Work with simulation experts to configure workflows and accelerate validation.", href: "/services" },
-      { icon: "blog", title: "Blogs", desc: "Explore our latest engineering simulation and technology insights.", href: "/blog" },
+      { icon: "LifeBuoy", title: "Software Support and Training", desc: "Get reliable technical support and training for productive virtual vehicle development.", href: "/contact" },
+      { icon: "Briefcase", title: "Professional Services", desc: "Work with simulation experts to configure workflows and speed up validation.", href: "/services" },
+      { icon: "Newspaper", title: "Blogs", desc: "Browse our latest engineering simulation and technology insights.", href: "/blog" },
     ],
   },
 };
