@@ -164,6 +164,6 @@ export const cta = {
     "LRYPT Technologies delivers reliable utility network planning, mapping, design, and documentation across FTTx, electric, water, oil and gas, and smart infrastructure projects. Connect with our experts to discuss a solution tailored to your requirements.",
   btnText: "Contact Our Experts",
   btnHref: "/contact",
-  image: "/assets/img/image19.jpeg",
+  image: "/assets/img/utilitygetaquote.webp",
   wide: true,
 };
