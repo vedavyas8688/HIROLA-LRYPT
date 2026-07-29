@@ -3,7 +3,7 @@
 
 export const meta = {
   "title": "About LRYPT Technologies | Your Engineering Solutions Partner",
-  "description": "Engineering-first specialists pairing leading software with expert services. Discover LRYPT's mission, vision, and why teams choose us."
+  "description": "LRYPT Technologies delivers engineering services, software, digital engineering, GIS, advanced manufacturing, and HRMS consulting solutions."
 };
 
 export const pageHead = {
@@ -13,8 +13,8 @@ export const pageHead = {
   "imageAlt": "About Us — LRYPT Technologies",
   "crumb": "About Us",
   "lines": [
-    "Let's resolve your",
-    "problem together"
+    "Engineering Expertise.",
+    "Technology Solutions."
   ],
   "lead": null
 };
@@ -22,12 +22,12 @@ export const pageHead = {
  export const intro = {
   bg: "cream",
   label: "About Us",
-  lede: null,
+  lede: "Engineering Expertise. Technology Solutions.",
   lead: [
-    "LRYPT Technologies is a trusted engineering and digital transformation company dedicated to helping businesses innovate, optimize, and grow through advanced technology solutions. We specialize in digital engineering, geospatial intelligence (GIS), product design, engineering simulation, network planning, additive manufacturing, and specialized consulting services.",
-    "By combining industry expertise with cutting-edge engineering software and digital technologies, we enable organizations to accelerate product development, improve operational efficiency, enhance project accuracy, and deliver complex projects with confidence. Our customer-centric approach, technical excellence, and commitment to innovation ensure scalable, reliable, and high-quality solutions that drive sustainable business success.",
+    "LRYPT Technologies is an engineering and technology solutions company delivering engineering services, engineering software, digital engineering, GIS, advanced manufacturing solutions, and HRMS consulting services. From engineering design and utility network planning to simulation software, 3D printers, 3D scanners, and HRMS solutions, we help organisations design, build, analyse, optimise, and manage their operations more efficiently.",
+    "Driven by technical excellence and a commitment to long-term partnerships, we deliver reliable, scalable solutions that improve productivity, accelerate innovation, and support successful project delivery.",
   ],
-  tagline: "LRYPT Technologies – Your trusted partner for Engineering Excellence, Digital Innovation, and Business Transformation"
+  tagline: null
 };
 
  export const whyChoose = {
@@ -35,7 +35,7 @@ export const pageHead = {
   kicker: null,
   heading: "Why Choose LRYPT Technologies?",
   subheading:
-    "Delivering innovative engineering, technology, and workforce solutions with precision, reliability, and industry expertise.",
+    "Delivering engineering, technology, and business solutions with technical excellence, reliability, and a commitment to your success.",
   columns: 3,
   items: [
     {
@@ -66,7 +66,7 @@ export const pageHead = {
       },
       title: "Industry Expertise",
       desc:
-        "Our experienced team brings deep expertise in engineering, GIS, utility networks, product design, and simulation, delivering practical and innovative solutions for complex business challenges."
+        "Our multidisciplinary team brings expertise in engineering design, GIS, utility networks, product development, engineering simulation, digital engineering, and business consulting, delivering practical solutions to complex engineering and operational challenges."
     },
     {
       icon: {
@@ -100,7 +100,7 @@ export const pageHead = {
       },
       title: "Innovative Technology Solutions",
       desc:
-        "We leverage advanced engineering software, geospatial technologies, simulation tools, and digital workflows to improve efficiency, enhance accuracy, and accelerate project delivery."
+        "We provide advanced engineering software, geospatial technologies, simulation tools, 3D printing and scanning solutions, and digital engineering technologies that improve efficiency, enhance accuracy, and accelerate innovation across industries."
     },
     {
       icon: {
@@ -130,9 +130,9 @@ export const pageHead = {
           }
         ]
       },
-      title: "Client-Focused Partnership",
+      title: "Trusted Partnership",
       desc:
-        "We work closely with every client to understand their goals and deliver tailored, reliable, and scalable solutions backed by responsive support and a commitment to long-term success."
+        "We work as an extension of your team, understanding your goals and delivering tailored engineering, technology, HRMS, and workforce solutions with responsive support, transparent communication, and a commitment to long-term success."
     }
   ],
   extraTags: []
@@ -142,16 +142,16 @@ export const pageHead = {
   heading: "Our Mission & Vision",
   columns: [
     {
-      label: "Mission",
+      label: " ",
       title: "Our Mission",
       text:
-        "At LRYPT, our mission is to empower businesses and individuals by providing cutting-edge solutions and exceptional services that drive growth, efficiency, and success. We are dedicated to delivering tailored, innovative solutions that solve complex challenges and enhance productivity. We focus on leveraging technology, expertise, and creativity to offer a wide range of solutions and services that meet the evolving needs of our clients. Our solutions are designed to enable our clients to thrive in today's dynamic and competitive landscape while enhancing the well-being of people everywhere."
+        "At LRYPT, our mission is to empower organisations through engineering excellence, innovative technology, and trusted partnerships. We are committed to delivering high-quality engineering services, advanced software and hardware solutions, and business consulting that help our clients solve complex challenges, improve efficiency, and achieve sustainable growth. By combining technical expertise with customer-focused innovation, we enable businesses to design, build, optimise, and succeed in an ever-evolving world."
     },
     {
-      label: "Vision",
+      label: " ",
       title: "Our Vision",
       text:
-        "At LRYPT, our vision is to be the leading solutions and service provider, empowering organizations worldwide to thrive in an ever-evolving digital landscape. We envision a future where technology enriches lives, enhances efficiency, and enables sustainable progress for all. We are committed to continuous improvement and growth. Our vision guides us to expand our capabilities, deepen our expertise, and broaden our global reach. Together with our clients and partners, we will shape a future where technology empowers businesses, drives innovation, and enhances the well-being of people everywhere."
+        "To become a globally recognised engineering and technology solutions company, delivering innovative services, advanced technologies, and trusted partnerships that enable businesses to design, build, innovate, and grow with confidence."
     }
   ]
 };
@@ -159,7 +159,7 @@ export const pageHead = {
   export const cta = {
   heading: "Ready to Transform Your Ideas Into Impact?",
   subheading: "Let's build the future together.",
-  sub: "Partner with LRYPT Technologies for engineering excellence, digital innovation, and business transformation. Our experts combine advanced technology, industry knowledge, and creative problem-solving to help you improve efficiency, accelerate innovation, and achieve sustainable growth.",
+  sub: "Partner with LRYPT Technologies to turn engineering challenges into successful outcomes. Our experts combine technical expertise, innovation, and industry experience to help you deliver projects with greater efficiency and confidence.",
   btnText: "Contact Our Experts",
   btnHref: "/contact",
   image: "/assets/img/bannergetaquoteimage.webp"

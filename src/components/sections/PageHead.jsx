@@ -31,7 +31,7 @@ function PageHeadStyles() {
       .phead-scope h1{
         font-family:"Roboto",system-ui,sans-serif;
         font-weight:700;
-        text-transform:uppercase;
+        text-transform:none;
         color:inherit;
         letter-spacing:-.015em;
         line-height:1.06;

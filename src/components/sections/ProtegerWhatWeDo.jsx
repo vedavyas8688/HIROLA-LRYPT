@@ -54,7 +54,7 @@ export default function ProtegerWhatWeDo() {
         .proteger-what__figure>img{display:block;width:100%;height:auto}
         .proteger-what__callout{position:absolute;z-index:1;width:240px;text-align:center;opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
         .proteger-what__callout.is-active{opacity:1;transform:none}
-        .proteger-what__callout h3{margin:0 0 8px;color:var(--on-cream);font-size:1rem;text-transform:uppercase}
+        .proteger-what__callout h3{margin:0 0 8px;color:var(--on-cream);font-size:1rem;text-transform:none}
         .proteger-what__callout p{margin:0;color:var(--mute-cream);font-size:.9rem;line-height:1.5}
         .proteger-what__callout::after{content:"";position:absolute;border-left:1px dashed var(--mute-cream);height:42px}
         .proteger-what__callout.digitization{left:3%;top:0}.proteger-what__callout.digitization::after{left:72%;top:calc(100% + 8px)}

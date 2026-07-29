@@ -53,16 +53,17 @@ function FooterStyles() {
       .foot__top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;
         padding-bottom:40px;border-bottom:1px solid var(--line-dark)}
       .foot__top h2{max-width:none}
+      .foot__top-copy{max-width:760px;margin:14px 0 0;color:var(--mute-dark);font-size:1.05rem;line-height:1.55}
       .foot__grid{display:grid;grid-template-columns:1.45fr .8fr 1fr 1fr 1.2fr;gap:34px;padding-block:40px}
       @media(max-width:1080px){.foot__grid{grid-template-columns:1.2fr 1fr 1fr}}
       @media(max-width:760px){.foot__grid{grid-template-columns:1fr 1fr;gap:30px 24px}.foot__about,.foot__grid>div:last-child{grid-column:1/-1}}
       @media(max-width:540px){.foot__grid{grid-template-columns:1fr}}
-      .foot__grid h5{font-weight:700;text-transform:uppercase;font-size:.74rem;letter-spacing:.06em;color:var(--mute-dark);margin-bottom:20px}
+      .foot__grid h5{font-weight:700;text-transform:none;font-size:.74rem;letter-spacing:.06em;color:var(--mute-dark);margin-bottom:20px}
       .foot__grid .foot__links a{display:block;padding:8px 0;color:var(--on-dark);text-transform:uppercase;font-size:.82rem;letter-spacing:.02em;transition:.25s}
       .foot__grid .foot__links a:hover{opacity:.6;padding-left:6px}
       .foot__about p{color:var(--mute-dark);max-width:34ch;margin:20px 0 26px;text-transform:none;font-size:.95rem}
       .foot__logo{display:inline-flex;align-items:center;gap:10px}
-      .foot__logo .logo__img{height:58px;width:auto}
+      .foot__logo .logo__img{height:68px;width:auto}
       .foot__bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:28px;
         border-top:1px solid var(--line-dark);color:var(--mute-dark);font-size:.82rem;text-transform:uppercase;letter-spacing:.03em}
       .foot__bot a:hover{color:var(--on-dark)}
@@ -92,6 +93,7 @@ function FooterStyles() {
         .foot__top{align-items:flex-start;padding-bottom:30px}
         .foot__top h2{font-size:clamp(2rem,11vw,3.2rem);line-height:1.08}
         .foot__top h2 span{white-space:normal!important}
+        .foot__top-copy{font-size:.98rem}
         .foot__grid{gap:30px;padding-block:34px}
         .foot__grid h5{margin-bottom:12px}
         .foot__grid .foot__links a{padding:6px 0;font-size:.78rem}
@@ -115,21 +117,21 @@ export default function Footer() {
       <div className="wrap">
         <div className="foot__top">
           <div>
-            <span className="label" style={{ color: "var(--mute-dark)" }}>
-              Let&rsquo;s build
-            </span>
-            <h2 data-reveal style={{ marginTop: 16 }}>
+            <h2 data-reveal>
               <span style={{ display: "inline-block", whiteSpace: "nowrap" }}>
-                Let&rsquo;s build something
+                Let&rsquo;s Engineer the Future
               </span>
-              <span style={{ display: "block" }}>great together</span>
+              <span style={{ display: "block" }}>Together</span>
             </h2>
+            <p className="foot__top-copy">
+              Engineering Excellence. Technology Innovation. Trusted Partnerships.
+            </p>
           </div>
           <Link className="btn btn--invert" to="/contact">
             <span className="btn__ico">
               <ArrowRight size={18} />
             </span>
-            <span className="btn__t">Get a free quote</span>
+            <span className="btn__t">Request a Quote</span>
           </Link>
         </div>
 
@@ -142,10 +144,7 @@ export default function Footer() {
                 alt="LRYPT Technologies"
               />
             </Link>
-            <p>
-              Empowering the future through cutting-edge technology solutions
-              and services.
-            </p>
+            <p>Engineering the Future with Innovation and Precision.</p>
             <div className="foot__social">
               {socials.map(({ icon: Icon, label, href }) => (
                 <a key={label} href={href} aria-label={label}>

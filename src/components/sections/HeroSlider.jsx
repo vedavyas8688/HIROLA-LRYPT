@@ -32,7 +32,7 @@ export default function HeroSlider({ slides }) {
         .hero-slider-scope .hero__title{
           font-family:"Roboto", system-ui, sans-serif;
           font-weight:700;
-          text-transform:uppercase;
+          text-transform:none;
           color:#fff;
           letter-spacing:-.015em;
           line-height:1.08;

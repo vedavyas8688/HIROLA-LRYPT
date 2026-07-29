@@ -47,7 +47,7 @@ export default function ProtegerEdge() {
         .proteger-edge__icon-art.icon-cost{display:grid;place-items:center;border:1.4px solid var(--on-cream);border-right-color:transparent;border-radius:50%}
         .proteger-edge__icon-art.icon-cost>svg:first-child{width:25px;height:25px}
         .proteger-edge__icon-art.icon-cost .icon-badge{right:-5px;top:-5px;bottom:auto;border-radius:0}
-        .proteger-edge__item h3{margin:0 0 12px;font-size:clamp(1.05rem,1.3vw,1.28rem);line-height:1.25;text-transform:uppercase;letter-spacing:-.01em}
+        .proteger-edge__item h3{margin:0 0 12px;font-size:clamp(1.05rem,1.3vw,1.28rem);line-height:1.25;text-transform:none;letter-spacing:-.01em}
         .proteger-edge__item p{max-width:48ch;margin:0;color:var(--mute-cream);font-size:1rem;line-height:1.72}
         @media(max-width:900px){.proteger-edge__wrap{width:calc(100% - 48px)}.proteger-edge__grid{margin-inline:0;gap:48px 38px}.proteger-edge__item{grid-template-columns:48px 1fr;gap:18px}.proteger-edge__icon{width:48px;height:48px}}
         @media(max-width:680px){.proteger-edge{padding:72px 0}.proteger-edge__wrap{width:calc(100% - 36px)}.proteger-edge__grid{grid-template-columns:1fr;margin-top:52px}.proteger-edge__item{grid-template-columns:46px 1fr}}

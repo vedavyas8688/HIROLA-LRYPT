@@ -134,7 +134,7 @@ export default function TabbedProductGrid({ bg = "cream", heading, center = true
   function buildFallbackDetail(product) {
     return {
       variant: "simple",
-      title: (product.label || "PRODUCT").toUpperCase(),
+      title: product.label || "Product",
       heading: product.label || "Product details",
       paragraphs: [
         product.alt

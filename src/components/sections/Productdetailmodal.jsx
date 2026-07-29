@@ -31,7 +31,7 @@ function PDMStyles() {
         border:1px solid var(--line-cream)}
       .pdm__head{display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1;
         padding:18px 26px;border-bottom:1px solid var(--line-cream);background:#fff}
-      .pdm__title{font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.95rem;color:#000}
+      .pdm__title{font-weight:700;text-transform:none;letter-spacing:.04em;font-size:.95rem;color:#000}
       .pdm__close{background:none;border:0;font-size:1.3rem;line-height:1;cursor:pointer;color:#000;padding:4px}
 
       .pdm__body{padding:28px 30px 34px}
