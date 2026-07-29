@@ -109,6 +109,7 @@ function LegalStyles() {
         display:grid;
         grid-template-columns:200px 1fr;
         gap:clamp(32px,5vw,64px);
+        min-width:0;
       }
       @media(max-width:860px){
         .lg-body{ grid-template-columns:1fr; }
@@ -154,6 +155,7 @@ function LegalStyles() {
       /* mobile index: horizontal pill strip */
       .lg-index-mobile{
         display:flex; gap:8px; overflow-x:auto;
+        width:100%; max-width:100%; min-width:0;
         padding:16px 0 20px;
         border-bottom:1px solid var(--line);
         margin-bottom:8px;
@@ -177,7 +179,7 @@ function LegalStyles() {
         background:var(--accent-soft);
       }
 
-      .lg-content{ padding:clamp(40px,6vw,64px) 0 96px; }
+      .lg-content{ min-width:0; max-width:100%; overflow:hidden; padding:clamp(40px,6vw,64px) 0 96px; }
 
       .lg-section{
         padding-top:44px; margin-top:-20px;

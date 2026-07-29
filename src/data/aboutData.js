@@ -8,7 +8,8 @@ export const meta = {
 
 export const pageHead = {
   "variant": "img",
-  "image": "/assets/img/image6.jpeg",
+  "image": "/assets/img/aboutbanner.webp",
+  "minHeight": "76vh",
   "imageAlt": "About Us — LRYPT Technologies",
   "crumb": "About Us",
   "lines": [
@@ -161,5 +162,5 @@ export const pageHead = {
   sub: "Partner with LRYPT Technologies for engineering excellence, digital innovation, and business transformation. Our experts combine advanced technology, industry knowledge, and creative problem-solving to help you improve efficiency, accelerate innovation, and achieve sustainable growth.",
   btnText: "Contact Our Experts",
   btnHref: "/contact",
-  image: "/assets/img/image22.jpeg"
+  image: "/assets/img/bannergetaquoteimage.webp"
 };

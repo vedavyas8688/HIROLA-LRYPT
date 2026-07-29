@@ -36,7 +36,7 @@ export const servicesGrid = {
       meta: "",
       title: "Engineering Design",
       desc:
-        "Move ideas from concept to production with CAD modeling, drafting, product development, prototyping, simulation support, and practical engineering guidance.",
+        "Move ideas from concept to production with engineering modeling, drafting, product development, prototyping, simulation support, and practical design guidance.",
     },
   ],
 };
@@ -79,7 +79,7 @@ export const whyChooseUs = {
       },
       title: "Domain Expertise",
       desc:
-        "Experienced professionals supporting utility network planning, documentation, CAD, drafting, and engineering design workflows.",
+        "Experienced professionals supporting utility network planning, documentation, drafting, and engineering design workflows.",
     },
     {
       icon: {
@@ -167,7 +167,7 @@ export const faq = {
     },
     {
       q: "What does Engineering Design cover?",
-      a: "Engineering Design covers CAD modeling, technical drafting, product development, prototyping, simulation support, and practical design guidance.",
+      a: "Engineering Design covers engineering modeling, technical drafting, product development, prototyping, simulation support, and practical design guidance.",
     },
     {
       q: "Can LRYPT provide customized support?",

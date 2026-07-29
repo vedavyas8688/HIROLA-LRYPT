@@ -9,6 +9,18 @@ import { Phone, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
 
 const linkGroups = [
   {
+    title: "Pages",
+    links: [
+      { label: "Home", to: "/" },
+      { label: "About", to: "/about" },
+      { label: "Solutions", to: "/solutions" },
+      { label: "Services", to: "/services" },
+      { label: "Blog", to: "/blog" },
+      { label: "FAQ", to: "/faq" },
+      { label: "Contact", to: "/contact" },
+    ],
+  },
+  {
     title: "Solutions",
     links: [
       { label: "Formlabs 3D Printing", to: "/formlabs" },
@@ -41,15 +53,16 @@ function FooterStyles() {
       .foot__top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;
         padding-bottom:40px;border-bottom:1px solid var(--line-dark)}
       .foot__top h2{max-width:none}
-      .foot__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px;padding-block:40px}
-      @media(max-width:880px){.foot__grid{grid-template-columns:1fr 1fr}}
+      .foot__grid{display:grid;grid-template-columns:1.45fr .8fr 1fr 1fr 1.2fr;gap:34px;padding-block:40px}
+      @media(max-width:1080px){.foot__grid{grid-template-columns:1.2fr 1fr 1fr}}
+      @media(max-width:760px){.foot__grid{grid-template-columns:1fr 1fr;gap:30px 24px}.foot__about,.foot__grid>div:last-child{grid-column:1/-1}}
       @media(max-width:540px){.foot__grid{grid-template-columns:1fr}}
       .foot__grid h5{font-weight:700;text-transform:uppercase;font-size:.74rem;letter-spacing:.06em;color:var(--mute-dark);margin-bottom:20px}
       .foot__grid .foot__links a{display:block;padding:8px 0;color:var(--on-dark);text-transform:uppercase;font-size:.82rem;letter-spacing:.02em;transition:.25s}
       .foot__grid .foot__links a:hover{opacity:.6;padding-left:6px}
       .foot__about p{color:var(--mute-dark);max-width:34ch;margin:20px 0 26px;text-transform:none;font-size:.95rem}
       .foot__logo{display:inline-flex;align-items:center;gap:10px}
-      .foot__logo .logo__img{height:42px;width:auto}
+      .foot__logo .logo__img{height:58px;width:auto}
       .foot__bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:28px;
         border-top:1px solid var(--line-dark);color:var(--mute-dark);font-size:.82rem;text-transform:uppercase;letter-spacing:.03em}
       .foot__bot a:hover{color:var(--on-dark)}
@@ -74,6 +87,21 @@ function FooterStyles() {
       .foot__hours-row .d{font-size:.86rem;color:var(--on-dark);flex:1;min-width:0}
       .foot__hours-row .t{font-size:.86rem;font-weight:600;color:var(--mute-dark);white-space:nowrap;flex-shrink:0}
       .foot__hours-row .t.closed{color:var(--on-dark);opacity:.55}
+      @media(max-width:540px){
+        .foot{padding-top:38px}
+        .foot__top{align-items:flex-start;padding-bottom:30px}
+        .foot__top h2{font-size:clamp(2rem,11vw,3.2rem);line-height:1.08}
+        .foot__top h2 span{white-space:normal!important}
+        .foot__grid{gap:30px;padding-block:34px}
+        .foot__grid h5{margin-bottom:12px}
+        .foot__grid .foot__links a{padding:6px 0;font-size:.78rem}
+        .foot__about p{max-width:none;margin:16px 0 20px}
+        .foot__contact a,.foot__contact .foot__c-item{gap:10px;padding:8px 0;font-size:.9rem}
+        .foot__hours{margin-top:18px;padding:14px}
+        .foot__hours-row{align-items:flex-start;flex-direction:column;gap:2px;white-space:normal}
+        .foot__bot{align-items:flex-start;flex-direction:column;padding-block:22px;line-height:1.6}
+        .foot__bot span:last-child{gap:18px!important;flex-wrap:wrap}
+      }
     `}</style>
   );
 }
@@ -110,7 +138,7 @@ export default function Footer() {
             <Link className="logo foot__logo" to="/">
               <img
                 className="logo__img"
-                src="/assets/img/logo.png"
+                src="/assets/img/logo.svg"
                 alt="LRYPT Technologies"
               />
             </Link>

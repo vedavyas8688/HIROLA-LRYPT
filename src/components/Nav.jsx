@@ -56,7 +56,7 @@ export default function Nav() {
           max-width:var(--maxw);margin:0 auto;padding:16px var(--pad)}
 
         .nav-scope .logo{display:inline-flex;align-items:center;flex:none}
-        .nav-scope .logo__img{height:52px;width:auto;display:block}
+        .nav-scope .logo__img{height:68px;width:auto;display:block}
 
         .nav-scope .nav__menu{display:flex;align-items:center;gap:34px}
         .nav-scope .nav__item{position:relative}
@@ -92,7 +92,7 @@ export default function Nav() {
         .nav-scope .nav__item:hover .nav__link .chev{transform:rotate(180deg)}
 
         @media(max-width:560px){
-          .nav-scope .logo__img{height:42px}
+          .nav-scope .logo__img{height:54px}
         }
 
         /* ---------- burger button ---------- */
@@ -142,7 +142,7 @@ export default function Nav() {
           display:flex;align-items:center;justify-content:space-between;
           padding-block:14px 8px;flex:none;
         }
-        .nav-scope .drawer__logo .logo__img{height:38px;width:auto;display:block}
+        .nav-scope .drawer__logo .logo__img{height:52px;width:auto;display:block}
         .nav-scope .drawer__close{
           width:44px;height:44px;
           border:1px solid var(--line-dark, #ffffff1f);
@@ -229,7 +229,7 @@ export default function Nav() {
       <header id="nav" className={`nav${stuck ? " is-stuck" : ""}`}>
         <div className="nav__bar">
           <Link className="logo" to="/">
-            <img className="logo__img" src="/assets/img/logo.png" alt="LRYPT Technologies" />
+            <img className="logo__img" src="/assets/img/logo.svg" alt="LRYPT Technologies" />
           </Link>
 
           <ul className="nav__menu">
@@ -280,7 +280,7 @@ export default function Nav() {
       <div className="drawer" id="mobile-drawer" aria-hidden={!menuOpen}>
         <div className="drawer__head">
           <Link className="drawer__logo" to="/" onClick={closeAll}>
-            <img className="logo__img" src="/assets/img/logo.png" alt="LRYPT Technologies" />
+            <img className="logo__img" src="/assets/img/logo.svg" alt="LRYPT Technologies" />
           </Link>
           <button className="drawer__close" aria-label="Close menu" onClick={closeAll}>
             <X size={18} />

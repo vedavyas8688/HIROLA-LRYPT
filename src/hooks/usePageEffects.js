@@ -132,6 +132,7 @@ function initSlider() {
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const slider = $(".slider");
   if (!slider) return () => {};
+  if (slider.classList.contains("hero-slider-scope")) return () => {};
   const slides = $$(".slide", slider),
     dots = $$(".slider__dot", slider);
   if (!slides.length) return () => {};

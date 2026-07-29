@@ -33,6 +33,8 @@ export const capabilities = {
     {
       "label": null,
       "title": "Product Development",
+      "image": "/assets/img/engservice1.webp",
+      "imageAlt": "Product development engineering workflow",
       "desc": "We turn ideas into market-ready products. From early concept development through detailed 3D modelling and optimization, our engineers shape robust, manufacturable products and can reverse-engineer existing parts to modernise or improve them.",
       "bullets": [
         "Concept Development",
@@ -47,6 +49,8 @@ export const capabilities = {
     {
       "label": null,
       "title": "Mechanical, Aerospace & Civil Engineering",
+      "image": "/assets/img/engservice2.webp",
+      "imageAlt": "Mechanical aerospace and civil engineering design",
       "desc": "Our multidisciplinary engineers design systems and structures across mechanical, aerospace, and civil domains. Whether it is a precision component, an aerospace structure, or infrastructure at scale, we deliver rigorous design and analysis built to perform and to pass approval.",
       "bullets": [
         "Mechanical System & Component Design",
@@ -61,6 +65,8 @@ export const capabilities = {
     {
       "label": null,
       "title": "Simulation & Digital Engineering",
+      "image": "/assets/img/engservice3.webp",
+      "imageAlt": "Simulation and digital engineering analysis",
       "desc": "We validate designs virtually before committing to metal. Using FEA and CFD, motion and acoustics analysis, and digital-twin technology, we predict real-world behaviour, optimise performance, and de-risk decisions early — saving time, cost, and physical prototypes.",
       "bullets": [
         "Structural, Thermal & Flow Simulation (FEA & CFD)",
@@ -74,6 +80,8 @@ export const capabilities = {
     {
       "label": null,
       "title": "Prototype & Manufacturing Support",
+      "image": "/assets/img/engservice4.webp",
+      "imageAlt": "Prototype and manufacturing support",
       "desc": "We bridge the gap between design and production. From rapid prototyping and 3D printing to design-for-manufacturing reviews and validation, we make sure your product is ready to build — reliably, repeatably, and at scale.",
       "bullets": [
         "Rapid Prototyping & 3D Printing",
@@ -293,5 +301,5 @@ export const cta = {
   "sub": "Tell us about your design requirements, technical challenges, and delivery timeline. Our engineering team will help you move forward with accuracy and confidence.",
   "btnText": "Contact Our Experts",
   "btnHref": "/contact",
-  "image": "/assets/img/image10.jpeg"
+  "image": "/assets/img/engineeringdesignquote.png"
 };

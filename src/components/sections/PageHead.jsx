@@ -67,6 +67,7 @@ export default function PageHead({
   image,
   imageAlt,
   tone = "dark",
+  minHeight,
   headingWidth = 44, // in "ch" units — controls how the heading wraps
 }) {
   const sectionRef = useRef(null);
@@ -92,6 +93,7 @@ export default function PageHead({
     <section
       ref={sectionRef}
       className={`phead phead--${variant === "img" ? "img" : "cream"}${variant === "img" && tone === "light" ? " phead--light" : ""} phead-scope${inView ? " in-view" : ""}`}
+      style={minHeight ? { minHeight } : undefined}
     >
       <PageHeadStyles />
       {variant === "img" && image && (

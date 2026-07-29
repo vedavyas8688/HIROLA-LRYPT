@@ -42,6 +42,31 @@ export const hero = {
       btnText: "Explore Proteger",
       btnHref: "/proteger",
     },
+     {
+  image: "/assets/img/utilitybanner.webp",
+  imageAlt: "Modern utility network planning and digital infrastructure",
+  label: "Utility Network Services",
+  lines: [
+    "Building resilient",
+    "utility networks " ,
+    "for the future"
+  ],
+  sub: "Delivering intelligent planning, precise network design, GIS mapping, and engineering documentation for reliable, scalable infrastructure.",
+  btnText: "Explore Utility Network",
+  btnHref: "/utility-network",
+},
+{
+  image: "/assets/img/image28.jpeg",
+  imageAlt: "Advanced engineering design and product development",
+  label: "Engineering Design",
+  lines: [
+    "Transforming ideas",
+    "into engineered reality"
+  ],
+  sub: "Accelerate product development through innovative design, simulation, validation, prototyping, and manufacturing-ready engineering solutions.",
+  btnText: "Explore Engineering Design",
+  btnHref: "/engineering-design",
+},
   ],
 };
 
@@ -117,7 +142,7 @@ export const servicesGrid = {
       alt: "Engineering Design",
       meta: "",
       title: "Engineering Design",
-      desc: "Move ideas from concept to production with CAD modeling, drafting, product development, prototyping, simulation support, and practical engineering guidance.",
+      desc: "Move ideas from concept to production with engineering modeling, drafting, product development, prototyping, simulation support, and practical design guidance.",
     },
   ],
 };

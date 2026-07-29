@@ -127,6 +127,31 @@ export default function HeroSlider({ slides }) {
             font-size:1.2rem;
           }
         }
+        .hero-slider-scope .slider__dot::after{
+          content:none;
+        }
+        .hero-slider-scope .slider__dot{
+          background:#ffffff42;
+        }
+        .hero-slider-scope .slider__dot-fill{
+          display:block;
+          width:0;
+          height:100%;
+          background:#fff;
+        }
+        .hero-slider-scope .slider__dot.is-active .slider__dot-fill{
+          animation:heroDotProgress 6s linear forwards;
+        }
+        @keyframes heroDotProgress{
+          from{width:0}
+          to{width:100%}
+        }
+        @media (prefers-reduced-motion: reduce){
+          .hero-slider-scope .slider__dot.is-active .slider__dot-fill{
+            animation:none;
+            width:100%;
+          }
+        }
       `}</style>
 
       {slides.map((s, idx) => (
@@ -168,7 +193,9 @@ export default function HeroSlider({ slides }) {
             className={`slider__dot${idx === i ? " is-active" : ""}`}
             aria-label="Slide"
             onClick={() => go(idx)}
-          />
+          >
+            <span className="slider__dot-fill" />
+          </button>
         ))}
       </div>
       <div className="slider__nav">
