@@ -13,8 +13,8 @@ export const pageHead = {
   "imageAlt": "About Us — LRYPT Technologies",
   "crumb": "About Us",
   "lines": [
-    "Engineering Expertise.",
-    "Technology Solutions."
+    "Let's resolve your",
+    "problem together"
   ],
   "lead": null
 };

@@ -9,19 +9,21 @@ export const meta = {
 
 export const pageHead = {
   variant: "img",
-  image: "/assets/img/utilitybanner.webp",
+  image: "/assets/img/utilitybannerimage.webp",
+  minHeight: "86vh",
+  imagePosition: "center 38%",
   imageAlt: "Utility Network Services - LRYPT Technologies",
   crumb: "Utility Network Services",
   lines: ["Designing & supporting", "critical utility infrastructure"],
   lead: null,
 };
 
-export const intro = {
+ export const intro = {
   bg: "cream",
   label: null,
-  lede: "Reliable, efficient, sustainable infrastructure - across every sector.",
+  lede: "Engineering Reliable, Efficient & Sustainable Utility Infrastructure",
   lead:
-    "We provide engineering and design solutions for dependable infrastructure across FTTx, power, water, and energy. From fiber routes to pipelines and smart grids, our teams plan, map, and document networks that perform today and scale for tomorrow.",
+    "From FTTx and electric utilities to water, oil & gas and smart infrastructure, LRYPT delivers engineering design, GIS, documentation and digital engineering services that help infrastructure owners plan, build and maintain reliable utility networks.",
 };
 
 export const whyLrypt = {
@@ -42,8 +44,8 @@ export const whyLrypt = {
 
 export const capabilities2 = {
   bg: "cream",
-  kicker: "Utility sectors",
-  heading: "Beyond fiber - full utility network coverage",
+  kicker: "What we do",
+  heading: " Supporting the planning, design and documentation of critical utility networks.",
   items: [
     {
       label: null,
@@ -51,12 +53,12 @@ export const capabilities2 = {
       image: "/assets/img/FTTximage.webp",
       imageAlt: "FTTx fiber network planning",
       desc:
-        "We plan and document fiber networks from early architecture through deployment-ready detail and final as-built records. Our teams support scalable, accurate network infrastructure designed around coverage, capacity, constructability, and client standards.",
+        "We provide end-to-end engineering services for fibre networks, from high-level planning and detailed design to as-built documentation. Our teams deliver accurate, scalable network designs that support efficient deployment and long-term operations.",
       bullets: [
         "High-Level Design (HLD)",
         "Low-Level Design (LLD)",
         "Fiber Route & Cable Layout",
-        "Address Validation",
+        "Survey Validation",
         "As-Built Documentation",
       ],
       bulletStyle: "check",
@@ -68,11 +70,11 @@ export const capabilities2 = {
       image: "/assets/img/ElectricUtilities.webp",
       imageAlt: "Electric utility network engineering",
       desc:
-        "We design and document electric utility networks that keep power flowing safely and efficiently. From transmission and distribution planning to smart-grid support, our teams deliver accurate, standards-aligned designs and asset records for both underground and overhead systems.",
+        "We deliver engineering and documentation services for electric utility infrastructure, supporting transmission and distribution networks, smart grid initiatives and utility asset management. Our teams produce accurate, standards-compliant designs, mapping and documentation for both underground and overhead electrical networks.",
       bullets: [
-        "Transmission & Distribution Network Design",
-        "Underground & Overhead Distribution Design",
-        "Smart Grid Engineering Support",
+        "Transmission & Distribution Design",
+        "Underground & Overhead Network Design",
+        "Smart Grid Engineering",
         "Electrical Utility Mapping",
         "Asset Documentation",
       ],
@@ -85,13 +87,14 @@ export const capabilities2 = {
       image: "/assets/img/Wastewater.webp",
       imageAlt: "Water and wastewater utility network mapping",
       desc:
-        "We help water utilities plan resilient distribution and drainage networks. Our engineers route pipelines, support hydraulic performance, and map assets in GIS - enabling reliable supply, effective wastewater management, and confident long-term planning.",
+        "We deliver engineering, hydraulic modelling, GIS and design services for water and wastewater infrastructure. From water distribution and sewer network planning to hydraulic support and utility mapping, our teams help utilities build reliable, efficient and future-ready networks.",
       bullets: [
         "Water Distribution Network Design",
-        "Sewer & Drainage Network Planning",
+        "Sewer & Drainage Network Design",
         "Pipeline Routing",
-        "Hydraulic Network Support",
-        "GIS-Based Utility Mapping",
+        "Hydraulic Modelling",
+        "GIS Utility Mapping",
+        "Asset Management Support",
       ],
       bulletStyle: "check",
       cols: 2,
@@ -102,13 +105,13 @@ export const capabilities2 = {
       image: "/assets/img/Oil&Gas.webp",
       imageAlt: "Oil and gas pipeline infrastructure",
       desc:
-        "We provide engineering and mapping support for oil and gas distribution networks. From pipeline routing and corridor planning to infrastructure mapping and asset documentation, we deliver the spatial accuracy and detail these high-stakes networks demand.",
+        "We provide engineering, GIS and documentation services for oil & gas infrastructure. From pipeline routing and utility corridor planning to infrastructure mapping and asset documentation, our teams deliver accurate, standards-compliant engineering support across the network lifecycle.",
       bullets: [
         "Pipeline Engineering Support",
-        "Distribution Network Planning",
-        "Utility Corridor Planning",
+        "Pipeline Route & Corridor Planning",
         "Infrastructure Mapping",
         "Asset Documentation",
+        "GIS Asset Mapping",
       ],
       bulletStyle: "check",
       cols: 2,
@@ -119,12 +122,12 @@ export const capabilities2 = {
       image: "/assets/img/SmartInfrastructure.webp",
       imageAlt: "Smart infrastructure and digital utility mapping",
       desc:
-        "We bring utilities into the digital age with GIS-driven mapping and asset information management. Our digital engineering turns scattered records into a single, reliable source of truth - ready for analytics, planning, and smarter operations.",
+        "Our engineering and GIS solutions transform scattered infrastructure data into a single, reliable source of truth - enabling better planning, analytics and smarter operations.",
       bullets: [
-        "Utility Mapping",
-        "GIS & Digital Engineering",
+        "GIS Utility Mapping",
+        "Digital Asset Management",
         "Infrastructure Documentation",
-        "Asset Information Management",
+        "GIS & Digital Engineering",
       ],
       bulletStyle: "check",
       cols: 2,
@@ -135,35 +138,39 @@ export const capabilities2 = {
 export const faq = {
   items: [
     {
-      q: "What are LRYPT's utility network services?",
-      a: "Engineering and design solutions for utility networks across FTTx, electric utilities, water and wastewater, oil and gas, and smart infrastructure.",
+      q: "What utility network services does LRYPT provide?",
+      a: "LRYPT provides engineering design, GIS, documentation, hydraulic modelling, asset mapping, and digital engineering services for FTTx, electric utilities, water and wastewater, oil and gas, and smart infrastructure networks.",
     },
     {
-      q: "Do you provide FTTH / FTTx network design?",
-      a: "Yes. We deliver FTTH/FTTx network design, fiber route planning, network capacity planning, GIS mapping, utility coordination, as-built documentation, and network optimization.",
+      q: "Do you support FTTx and fibre network design?",
+      a: "Yes. We support high-level design, low-level design, fibre route and cable layout, survey validation, and as-built documentation for scalable fibre network deployment and long-term operations.",
     },
     {
-      q: "Which utility sectors do you support?",
-      a: "FTTx, electric transmission and distribution, water and wastewater, oil and gas pipelines, and smart infrastructure.",
+      q: "Can you help with electric utility infrastructure?",
+      a: "Yes. Our teams support transmission and distribution design, underground and overhead network design, smart grid engineering, electrical utility mapping, and asset documentation for standards-compliant electric utility projects.",
     },
     {
-      q: "Do you provide GIS mapping and as-built documentation?",
-      a: "Yes. GIS-based utility mapping, asset documentation, and accurate as-built records are core to our utility network services.",
+      q: "What services do you provide for water and wastewater networks?",
+      a: "We provide water distribution network design, sewer and drainage network design, pipeline routing, hydraulic modelling, GIS utility mapping, and asset management support for reliable and future-ready water infrastructure.",
     },
     {
-      q: "Why outsource utility network design to LRYPT?",
-      a: "You get the right engineering expertise, scalable delivery capacity, structured quality reviews, and efficient offshore support without building a large in-house team.",
+      q: "Do you work on oil and gas infrastructure documentation?",
+      a: "Yes. We deliver pipeline engineering support, pipeline route and corridor planning, infrastructure mapping, asset documentation, and GIS asset mapping across the oil and gas network lifecycle.",
+    },
+    {
+      q: "How does LRYPT support smart infrastructure programs?",
+      a: "We transform scattered infrastructure records into reliable GIS and digital asset information, helping teams improve utility mapping, digital asset management, infrastructure documentation, planning, analytics, and smarter operations.",
     },
   ],
 };
 
 export const cta = {
-  heading: "Need Expert Engineering & Technology Solutions?",
-  subheading: "We're here to help you succeed.",
+  heading: "Ready to Build Your Next Engineering Project?",
+  subheading: "We are here to support you succeed.",
   sub:
-    "LRYPT Technologies delivers reliable utility network planning, mapping, design, and documentation across FTTx, electric, water, oil and gas, and smart infrastructure projects. Connect with our experts to discuss a solution tailored to your requirements.",
-  btnText: "Contact Our Experts",
+    "LRYPT provides engineering, GIS and digital design services across FTTx, electric utilities, water & wastewater, oil & gas and smart infrastructure. Whether you need dedicated engineering support or complete project delivery, our experts are ready to help.",
+  btnText: "Request a Quote",
   btnHref: "/contact",
-  image: "/assets/img/utilitygetaquote.webp",
+  image: "/assets/img/utilitygetaquoteimage.webp",
   wide: true,
 };

@@ -9,6 +9,7 @@ export const meta = {
 export const pageHead = {
   "variant": "img",
   "image": "/assets/img/image28.jpeg",
+  "minHeight": "86vh",
   "imageAlt": "Engineering Design Services — LRYPT Technologies",
   "crumb": "Engineering Design Services",
   "lines": [

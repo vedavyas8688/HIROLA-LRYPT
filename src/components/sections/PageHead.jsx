@@ -66,6 +66,8 @@ export default function PageHead({
   variant = "cream",
   image,
   imageAlt,
+  imageFit = "cover",
+  imagePosition = "center",
   tone = "dark",
   minHeight,
   headingWidth = 44, // in "ch" units — controls how the heading wraps
@@ -103,6 +105,7 @@ export default function PageHead({
             data-parallax="0.1"
             src={image}
             alt={imageAlt || ""}
+            style={{ objectFit: imageFit, objectPosition: imagePosition }}
             fetchPriority="high"
             loading="eager"
             decoding="async"
