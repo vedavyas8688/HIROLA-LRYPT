@@ -119,9 +119,9 @@ export default function Footer() {
           <div>
             <h2 data-reveal>
               <span style={{ display: "inline-block", whiteSpace: "nowrap" }}>
-                Let&rsquo;s Engineer the Future
+                Let&rsquo;s Engineer the  
               </span>
-              <span style={{ display: "block" }}>Together</span>
+              <span style={{ display: "block" }}> Future Together</span>
             </h2>
             <p className="foot__top-copy">
               Engineering Excellence. Technology Innovation. Trusted Partnerships.

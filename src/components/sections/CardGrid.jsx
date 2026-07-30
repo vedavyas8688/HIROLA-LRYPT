@@ -1,18 +1,48 @@
 import { Link } from "react-router-dom";
 
-export default function CardGrid({ bg = "cream", heading, subheading, items }) {
+export default function CardGrid({ bg = "cream", heading, eyebrow, subheading, items, headLayout = "split" }) {
   const twoCardLayout = items.length === 2;
+  const stackedHead = headLayout === "stacked";
+  const splitEyebrowHead = headLayout === "split-eyebrow";
 
   return (
     <section className={`sec sec--${bg}`}>
       <style>{`
         .posts.posts--two{grid-template-columns:repeat(2,minmax(0,1fr));max-width:900px;margin-inline:auto}
+        .proj-head.proj-head--stacked{display:block}
+        .proj-head.proj-head--stacked h2{max-width:none}
+        .proj-head.proj-head--split-eyebrow{align-items:flex-start}
+        .proj-head.proj-head--split-eyebrow .lead{margin-left:auto}
+        .proj-head.proj-head--split-eyebrow .proj-head__left{flex:1 1 420px;max-width:560px}
+        .proj-head.proj-head--split-eyebrow .lead{flex:0 1 560px;margin-top:0}
+        .proj-head__left{min-width:0}
+        .proj-head__eyebrow{display:block;margin-top:16px;color:var(--on-cream);font-size:clamp(1.05rem,1.35vw,1.22rem);font-weight:700;line-height:1.45}
+        .sec--dark .proj-head__eyebrow{color:var(--on-dark)}
+        .proj-head.proj-head--stacked .lead{margin-top:10px;max-width:66ch}
         @media(max-width:600px){.posts.posts--two{grid-template-columns:1fr}}
       `}</style>
       <div className="wrap">
-        {(heading || subheading) && (
-          <div className="proj-head">
-            {heading && <h2 data-reveal="">{heading}</h2>}
+        {(heading || eyebrow || subheading) && (
+          <div className={`proj-head${stackedHead ? " proj-head--stacked" : ""}${splitEyebrowHead ? " proj-head--split-eyebrow" : ""}`}>
+            {splitEyebrowHead ? (
+              <div className="proj-head__left">
+                {heading && <h2 data-reveal="">{heading}</h2>}
+                {eyebrow && (
+                  <span className="proj-head__eyebrow" data-reveal="">
+                    {eyebrow}
+                  </span>
+                )}
+              </div>
+            ) : (
+              <>
+                {heading && <h2 data-reveal="">{heading}</h2>}
+                {eyebrow && (
+                  <span className="proj-head__eyebrow" data-reveal="">
+                    {eyebrow}
+                  </span>
+                )}
+              </>
+            )}
             {subheading && (
               <p className="lead" data-reveal="">
                 {subheading}
