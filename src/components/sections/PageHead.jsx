@@ -12,6 +12,9 @@ function PageHeadStyles() {
       .phead-scope .wrap{position:relative;z-index:1}
 
       .phead-scope .phead__content{display:flex;flex-direction:column;align-items:flex-start;text-align:left}
+      .phead-scope .phead__brand-logo{display:inline-flex;align-items:center;justify-content:center;max-width:min(220px,60vw);min-height:52px;margin-bottom:24px;padding:10px 14px;border-radius:8px;background:rgba(255,255,255,.92);box-shadow:0 14px 34px rgba(0,0,0,.2)}
+      .phead-scope .phead__brand-logo--corner{position:absolute;z-index:2;top:110px;left:clamp(24px,5vw,76px);margin:0}
+      .phead-scope .phead__brand-logo img{display:block;max-width:190px;max-height:42px;width:auto;height:auto;object-fit:contain}
       .phead-scope .crumb{font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.78rem;opacity:.9;margin-bottom:18px}
       .phead-scope h1{margin:0}
       .phead-scope .lead{margin-top:24px;max-width:52ch}
@@ -24,6 +27,9 @@ function PageHeadStyles() {
       }
       @media(max-width:560px){
         .phead-scope{padding:clamp(110px,20vh,170px) 0 56px}
+        .phead-scope .phead__brand-logo{min-height:44px;margin-bottom:18px;padding:8px 12px}
+        .phead-scope .phead__brand-logo--corner{top:86px;left:18px;margin:0}
+        .phead-scope .phead__brand-logo img{max-width:150px;max-height:34px}
         .phead-scope .crumb{font-size:.7rem;margin-bottom:10px}
         .phead-scope .lead{margin-top:14px;font-size:.95rem}
       }
@@ -66,6 +72,10 @@ export default function PageHead({
   variant = "cream",
   image,
   imageAlt,
+  logo,
+  logoAlt,
+  logoBg,
+  logoPosition = "content",
   imageFit = "cover",
   imagePosition = "center",
   tone = "dark",
@@ -114,6 +124,11 @@ export default function PageHead({
       )}
       <div className="wrap">
         <div className="phead__content">
+          {logo && logoPosition !== "top-left" && (
+            <span className="phead__brand-logo" data-reveal="" style={logoBg ? { background: logoBg } : undefined}>
+              <img src={logo} alt={logoAlt || ""} decoding="async" />
+            </span>
+          )}
           {/* <div className="crumb">
             <b>LRYPT</b> / {crumb}
           </div> */}
@@ -127,6 +142,11 @@ export default function PageHead({
           {lead && <p className="lead">{lead}</p>}
         </div>
       </div>
+      {logo && logoPosition === "top-left" && (
+        <span className="phead__brand-logo phead__brand-logo--corner" data-reveal="" style={logoBg ? { background: logoBg } : undefined}>
+          <img src={logo} alt={logoAlt || ""} decoding="async" />
+        </span>
+      )}
     </section>
   );
 }

@@ -13,8 +13,8 @@ export const pageHead = {
   "imageAlt": "Engineering Design Services — LRYPT Technologies",
   "crumb": "Engineering Design Services",
   "lines": [
-    "Engineering innovation  ",
-    " from concept to production"
+    "Engineering Excellence",
+    "  from Concept to Production"
   ],
   "lead": null
 };
@@ -22,25 +22,26 @@ export const pageHead = {
 export const intro = {
   "bg": "cream",
   "label": null,
-  "lede": "From first concept to production-ready.",
-  "lead": "We provide end-to-end engineering services that support the complete New Product Development (NPD) lifecycle — from concept and design to simulation, validation, prototyping, and production readiness. One team carries your idea all the way to a manufacturable product."
+  "lede": "Engineering Services That Extend Your Team.",
+  "lead": "Whether you need additional engineering capacity or specialized expertise, LRYPT provides design, simulation, documentation, validation, and manufacturing engineering support to help accelerate development, improve product quality, and reduce time-to-market."
 };
 
 export const capabilities = {
   "bg": "cream",
-  "kicker": "Capabilities",
-  "heading": "Our engineering capabilities",
+  "kicker": "Engineering Expertise",
+  "heading": "Supporting Engineering Projects with Specialized Design & Analysis Services",
   "items": [
     {
       "label": null,
       "title": "Product Development",
       "image": "/assets/img/engservice1.webp",
-      "imageAlt": "Product development engineering workflow",
-      "desc": "We turn ideas into market-ready products. From early concept development through detailed 3D modelling and optimization, our engineers shape robust, manufacturable products and can reverse-engineer existing parts to modernise or improve them.",
+      "imageAlt": "Product Design & Development Support",
+      "desc": " We support engineering teams throughout the product development process by delivering concept design, CAD modelling, engineering documentation, reverse engineering, and design optimization. Whether developing new products or enhancing existing designs, we provide practical engineering solutions that improve quality, manufacturability, and performance.",
       "bullets": [
         "Concept Development",
         "Product Design & Engineering",
-        "3D Modeling & Technical Documentation",
+        "3D CAD Modeling ",
+        "Engineering Drawings & Technical Documentation ",
         "Reverse Engineering",
         "Design Optimization"
       ],
@@ -52,7 +53,7 @@ export const capabilities = {
       "title": "Mechanical, Aerospace & Civil Engineering",
       "image": "/assets/img/engservice2.webp",
       "imageAlt": "Mechanical aerospace and civil engineering design",
-      "desc": "Our multidisciplinary engineers design systems and structures across mechanical, aerospace, and civil domains. Whether it is a precision component, an aerospace structure, or infrastructure at scale, we deliver rigorous design and analysis built to perform and to pass approval.",
+      "desc": "Our engineers provide design and engineering support across mechanical, aerospace, and civil engineering projects. From precision components and aerospace structures to industrial equipment and infrastructure, we deliver reliable engineering solutions that meet technical, manufacturing, and industry requirements.",
       "bullets": [
         "Mechanical System & Component Design",
         "Aerospace Structures & Engineering",
@@ -68,7 +69,7 @@ export const capabilities = {
       "title": "Simulation & Digital Engineering",
       "image": "/assets/img/engservice3.webp",
       "imageAlt": "Simulation and digital engineering analysis",
-      "desc": "We validate designs virtually before committing to metal. Using FEA and CFD, motion and acoustics analysis, and digital-twin technology, we predict real-world behaviour, optimise performance, and de-risk decisions early — saving time, cost, and physical prototypes.",
+      "desc": "We help engineering teams evaluate and optimize designs using advanced simulation technologies. Through structural, thermal, fluid flow, motion, and vibration analysis, we identify potential issues early, reduce development risk, and improve product performance before physical prototyping",
       "bullets": [
         "Structural, Thermal & Flow Simulation (FEA & CFD)",
         "Motion, Vibration & Acoustics Analysis",
@@ -83,12 +84,13 @@ export const capabilities = {
       "title": "Prototype & Manufacturing Support",
       "image": "/assets/img/engservice4.webp",
       "imageAlt": "Prototype and manufacturing support",
-      "desc": "We bridge the gap between design and production. From rapid prototyping and 3D printing to design-for-manufacturing reviews and validation, we make sure your product is ready to build — reliably, repeatably, and at scale.",
+      "desc": "We support the transition from engineering design to manufacturing through rapid prototyping, engineering validation, Design for Manufacturing (DFM), and production support. Our services help ensure designs are practical, manufacturable, and ready for efficient production.",
       "bullets": [
         "Rapid Prototyping & 3D Printing",
         "Design for Manufacturing (DFM)",
         "Engineering Validation",
-        "Production Readiness Support"
+        "Production Readiness Support",
+        "Manufacturing Documentation",
       ],
       "bulletStyle": "check",
       "cols": 2
@@ -99,174 +101,39 @@ export const capabilities = {
 export const npdLifecycle = {
   "bg": "dark",
   "kicker": null,
-  "heading": "The NPD lifecycle, end to end",
+  "heading": "How We Deliver Engineering Excellence",
   "subheading": null,
   "columns": 5,
   "items": [
     {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
-          {
-            "tag": "circle",
-            "props": {
-              "cx": "20",
-              "cy": "20",
-              "r": "18",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2"
-            },
-            "text": null
-          },
-          {
-            "tag": "text",
-            "props": {
-              "x": "20",
-              "y": "27",
-              "fontSize": "20",
-              "fontWeight": "700",
-              "textAnchor": "middle",
-              "fill": "currentColor"
-            },
-            "text": "1"
-          }
-        ]
-      },
-      "title": "Concept",
-      "desc": "Ideas shaped into feasible, fundable designs."
+      "icon": "consult",
+      "step": "01",
+      "title": "Consult",
+      "desc": "Understanding your engineering challenges."
     },
     {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
-          {
-            "tag": "circle",
-            "props": {
-              "cx": "20",
-              "cy": "20",
-              "r": "18",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2"
-            },
-            "text": null
-          },
-          {
-            "tag": "text",
-            "props": {
-              "x": "20",
-              "y": "27",
-              "fontSize": "20",
-              "fontWeight": "700",
-              "textAnchor": "middle",
-              "fill": "currentColor"
-            },
-            "text": "2"
-          }
-        ]
-      },
+      "icon": "design",
+      "step": "02",
       "title": "Design",
-      "desc": "3D modelling and detailed engineering."
+      "desc": "CAD modelling and detailed engineering."
     },
     {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
-          {
-            "tag": "circle",
-            "props": {
-              "cx": "20",
-              "cy": "20",
-              "r": "18",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2"
-            },
-            "text": null
-          },
-          {
-            "tag": "text",
-            "props": {
-              "x": "20",
-              "y": "27",
-              "fontSize": "20",
-              "fontWeight": "700",
-              "textAnchor": "middle",
-              "fill": "currentColor"
-            },
-            "text": "3"
-          }
-        ]
-      },
-      "title": "Simulate",
-      "desc": "FEA & CFD validation before you build."
+      "icon": "analyze",
+      "step": "03",
+      "title": "Analyze",
+      "desc": "Simulation, validation, and optimization."
     },
     {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
-          {
-            "tag": "circle",
-            "props": {
-              "cx": "20",
-              "cy": "20",
-              "r": "18",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2"
-            },
-            "text": null
-          },
-          {
-            "tag": "text",
-            "props": {
-              "x": "20",
-              "y": "27",
-              "fontSize": "20",
-              "fontWeight": "700",
-              "textAnchor": "middle",
-              "fill": "currentColor"
-            },
-            "text": "4"
-          }
-        ]
-      },
-      "title": "Prototype",
-      "desc": "Rapid prototyping and DFM refinement."
+      "icon": "document",
+      "step": "04",
+      "title": "Document",
+      "desc": "Manufacturing drawings and technical documentation."
     },
     {
-      "icon": {
-        "viewBox": "0 0 40 40",
-        "shapes": [
-          {
-            "tag": "circle",
-            "props": {
-              "cx": "20",
-              "cy": "20",
-              "r": "18",
-              "fill": "none",
-              "stroke": "currentColor",
-              "strokeWidth": "2"
-            },
-            "text": null
-          },
-          {
-            "tag": "text",
-            "props": {
-              "x": "20",
-              "y": "27",
-              "fontSize": "20",
-              "fontWeight": "700",
-              "textAnchor": "middle",
-              "fill": "currentColor"
-            },
-            "text": "5"
-          }
-        ]
-      },
-      "title": "Produce",
-      "desc": "Validation and production readiness."
+      "icon": "support",
+      "step": "05",
+      "title": "Support",
+      "desc": "Prototyping, DFM, and production engineering."
     }
   ],
   "extraTags": []

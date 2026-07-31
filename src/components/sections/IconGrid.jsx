@@ -1,4 +1,22 @@
 import Icon from "../Icon";
+import { ClipboardList, FileText, Handshake, PenTool, Settings2 } from "lucide-react";
+
+const lucideIcons = {
+  consult: Handshake,
+  design: PenTool,
+  analyze: Settings2,
+  document: FileText,
+  support: ClipboardList,
+};
+
+function GridIcon({ icon }) {
+  if (typeof icon === "string" && lucideIcons[icon]) {
+    const LucideIcon = lucideIcons[icon];
+    return <LucideIcon className="ic" aria-hidden="true" />;
+  }
+
+  return <Icon icon={icon} />;
+}
 
 export default function IconGrid({
   bg = "cream",
@@ -13,6 +31,9 @@ export default function IconGrid({
 }) {
   return (
     <section className={`sec sec--${bg}`}>
+      <style>{`
+        .svc__step{display:block;margin-bottom:14px;color:currentColor;font-size:.78rem;font-weight:800;letter-spacing:.14em;opacity:.72}
+      `}</style>
       <div className="wrap">
         {headingStyle === "headc" && (heading || kicker) && (
           <div className="headc">
@@ -47,7 +68,8 @@ export default function IconGrid({
         >
           {items.map((it, i) => (
             <div className="svc__item" data-reveal="" key={i}>
-              <Icon icon={it.icon} />
+              {it.step && <span className="svc__step">{it.step}</span>}
+              <GridIcon icon={it.icon} />
               <h3>{it.title}</h3>
               <p>{it.desc}</p>
             </div>

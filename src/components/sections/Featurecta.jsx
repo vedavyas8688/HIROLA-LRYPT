@@ -30,6 +30,9 @@ function FeatureCTAStyles() {
       .feacta__img{overflow:hidden;background:#fff;border:1px solid var(--line-cream)}
       .sec--dark .feacta__img{border-color:var(--line-dark)}
       .feacta__img img{width:100%;height:100%;object-fit:contain;min-height:340px;padding:26px}
+      .feacta__label-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+      .feacta__label-logo{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:6px 10px;border-radius:6px;background:#000}
+      .feacta__label-logo img{display:block;width:auto;height:auto;max-width:118px;max-height:24px;object-fit:contain}
       .feacta__r h2{font-size:var(--fs-h2);max-width:20ch}
       .feacta__r .lead{margin-top:20px}
       .feacta__r .lead + .lead{margin-top:14px}
@@ -49,6 +52,8 @@ export default function FeatureCTA({
   image,
   imageAlt = "",
   label,
+  labelLogo,
+  labelLogoAlt,
   heading,
   paragraphs = [],
   btnText,
@@ -65,9 +70,16 @@ export default function FeatureCTA({
   const copy = (
     <div className="feacta__r">
       {label && (
-        <span className="label" data-reveal="">
-          {label}
-        </span>
+        <div className="feacta__label-row" data-reveal="">
+          <span className="label">
+            {label}
+          </span>
+          {labelLogo && (
+            <span className="feacta__label-logo">
+              <img src={labelLogo} alt={labelLogoAlt || ""} decoding="async" loading="lazy" />
+            </span>
+          )}
+        </div>
       )}
       {heading && (
         <h2 data-reveal="" style={{ marginTop: label ? 14 : 0 }}>

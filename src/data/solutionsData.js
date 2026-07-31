@@ -12,9 +12,9 @@ export const pageHead = {
   image: "/assets/img/cadencesolutions.webp",
   imageAlt: "Cadence engineering simulation software",
   crumb: "Solutions",
-  lines: ["Technology solutions", "for modern engineering"],
+  lines: ["Advanced Engineering  ", " Technologies for", "Digital Innovation"],
   lead:
-    "From product development and virtual validation to additive manufacturing and connected operations, LRYPT helps teams choose and implement the right technology for faster, more confident execution.",
+    " From simulation and product development to additive manufacturing and connected operations, LRYPT helps Teams choose the right technologies that help engineering teams innovate faster, reduce risk, and improve productivity.",
 };
 
 export const solutionsGrid = {

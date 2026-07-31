@@ -24,6 +24,9 @@ export const meta = {
 export const pageHead = {
   variant: "img",
   image: "/assets/img/cadencesolutions.webp",
+  logo: "/assets/img/cadence-logo.png",
+  logoAlt: "Cadence",
+  logoPosition: "top-left",
   imageAlt: "Cadence engineering simulation visualization",
   crumb: "Solutions / Cadence Simulation",
   lines: ["Cadence Simulation", "for confident engineering"],
@@ -34,10 +37,11 @@ export const pageHead = {
 export const intro = {
   label: "Overview",
   lede:
-    "High-Fidelity CAE Simulation Powering Faster, Smarter, Lower-Risk Innovation",
+    "Empowering Engineering Innovation with High-Fidelity CAE Simulation",
   lead: [
-    "Our industry-leading computer-aided engineering (CAE) simulation technologies help engineers design, validate, and optimize products with precision and speed. Multidisciplinary solutions spanning materials, structural behavior, acoustics, fluid dynamics, and multiphysics replace costly physical prototypes with high-fidelity digital twins.",
-    "From space exploration to next-generation automotive systems, these simulation solutions enable innovators to solve complex engineering challenges, accelerate time-to-market, reduce development risk, and elevate product performance through deep simulation insight.",
+    "MSC Software, part of Cadence, is a global leader in Computer-Aided Engineering (CAE) simulation, empowering engineers to design, validate, and optimize products with greater accuracy, efficiency, and confidence.",
+    "Its comprehensive portfolio of physics-based simulation solutions covers structural analysis, materials, acoustics, fluid dynamics, multibody dynamics, and multiphysics, enabling organizations to replace costly physical prototypes with highly accurate virtual simulations and digital engineering workflows.",
+    "From aerospace and automotive to industrial equipment, electronics, and advanced manufacturing, MSC Software helps engineering teams solve complex design challenges, accelerate product development, reduce engineering risk, optimize performance, and bring innovative products to market faster through advanced simulation-driven design."
   ],
 };
 

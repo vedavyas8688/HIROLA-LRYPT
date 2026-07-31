@@ -6,8 +6,8 @@ export const NAV = [
     href: "/solutions",
     drop: [
       ["Formlabs 3D Printing", "/formlabs"],
-      ["Cadence Simulation", "/cadence-simulation"],
-      ["Proteger", "/proteger"],
+      ["MSC Simulation", "/cadence-simulation"],
+      ["Digital Transformation", "/proteger"],
        
       
     ],
@@ -16,7 +16,7 @@ export const NAV = [
     label: "Services",
     href: "/services",
     drop: [
-      ["Utility Network", "/utility-network"],
+      ["Utility Engineering ", "/utility-network"],
       ["Engineering Design", "/engineering-design"],
     ],
   },

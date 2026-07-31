@@ -9,6 +9,10 @@ export const meta = {
 export const pageHead = {
   "variant": "img",
   "image": "/assets/img/image29.jpg",
+  "logo": "/assets/img/formlab-logo.png",
+  "logoAlt": "Formlabs",
+  "logoBg": "#000",
+  "logoPosition": "top-left",
   "imageAlt": "Formlabs — LRYPT Technologies",
   "crumb": "Formlabs",
   "lines": [
@@ -33,6 +37,8 @@ export const featureCta = {
   image: "/assets/img/formlabs/form-cure-scene.webp",
   imageAlt: "Formlabs SLA and SLS 3D printers in a professional workflow",
   label: "Formlabs",
+  labelLogo: "/assets/img/formlab-logo.png",
+  labelLogoAlt: "Formlabs",
   heading: "Precise and Versatile 3D Printing for Professionals Across Industries",
    paragraphs: [
   "Formlabs 3D printers combine advanced SLA (Stereolithography) and SLS (Selective Laser Sintering) technology to deliver precise, production-quality parts with exceptional speed, reliability, and cost efficiency for prototyping and manufacturing.",

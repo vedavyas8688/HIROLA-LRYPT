@@ -8,6 +8,9 @@ export const meta = {
 
 export const hero = {
   image: "/assets/img/protegerbanner.webp",
+  video: "/assets/img/protegerhomevideo.mp4",
+  logo: "/assets/img/proteger-logo.svg",
+  logoAlt: "Proteger",
   imageAlt: "Engineer working with smart manufacturing technology",
   lines: ["Powering the Future", "Smart Manufacturing"],
 };

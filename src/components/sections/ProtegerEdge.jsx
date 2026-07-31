@@ -36,7 +36,10 @@ export default function ProtegerEdge() {
       <style>{`
         .proteger-edge{position:relative;isolation:isolate;overflow:hidden;background:var(--cream);padding:clamp(80px,9vw,138px) 0}
         .proteger-edge__wrap{width:min(1440px,calc(100% - 90px));margin-inline:auto}
-        .proteger-edge__eyebrow{display:block;margin-bottom:22px;color:var(--on-cream);font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+        .proteger-edge__label-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+        .proteger-edge__brand-logo{display:inline-flex;align-items:center;justify-content:center;flex:none;min-height:34px;padding:6px 10px;border-radius:6px;background:rgba(3,15,24,.88);box-shadow:0 10px 24px rgba(0,0,0,.12)}
+        .proteger-edge__brand-logo img{display:block;max-width:118px;max-height:24px;width:auto;height:auto;object-fit:contain}
+        .proteger-edge__eyebrow{display:block;color:var(--on-cream);font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
         .proteger-edge h2{max-width:720px;margin:0;font-size:clamp(2.15rem,3.45vw,4rem);line-height:1.12;letter-spacing:-.035em;text-transform:none}
         .proteger-edge__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(52px,6vw,82px) clamp(60px,10vw,160px);margin:clamp(64px,8vw,108px) 7% 0}
         .proteger-edge__item{display:grid;grid-template-columns:56px minmax(0,1fr);gap:24px;align-items:start}
@@ -53,8 +56,15 @@ export default function ProtegerEdge() {
         @media(max-width:680px){.proteger-edge{padding:72px 0}.proteger-edge__wrap{width:calc(100% - 36px)}.proteger-edge__grid{grid-template-columns:1fr;margin-top:52px}.proteger-edge__item{grid-template-columns:46px 1fr}}
       `}</style>
       <div className="proteger-edge__wrap">
-        <span className="proteger-edge__eyebrow">The Proteger Edge</span>
-        <h2>Where Others Offer Visibility,<br />We Promise Reliability</h2>
+        <div>
+          <div className="proteger-edge__label-row">
+            <span className="proteger-edge__eyebrow">The Proteger Edge</span>
+          <span className="proteger-edge__brand-logo">
+            <img src="/assets/img/proteger-logo.svg" alt="Proteger" decoding="async" />
+          </span>
+          </div>
+          <h2>Where Others Offer Visibility,<br />We Promise Reliability</h2>
+        </div>
         <div className="proteger-edge__grid">
           {benefits.map(({ icon, title, text }) => (
             <article className="proteger-edge__item" key={title}>

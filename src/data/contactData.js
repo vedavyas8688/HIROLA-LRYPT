@@ -20,8 +20,8 @@ export const pageHead = {
 
  export const contactPanel = {
   "label": "Get a quote",
-   "heading": "Tell us about your project\nand we'll respond within\none business day." ,
-  "intro": "Engineering software, utility networks, engineering design, and complete HR management — creative, dependable, efficient solutions tailored to you.",
+   "heading": "Tell us about your requirements,\n and our experts will respond \n within one business day." ,
+  "intro": "From engineering services and utility networks to engineering software, 3D printing, GIS, and HRMS consulting, LRYPT delivers practical solutions that help organizations innovate, optimize, and grow.",
   "info": [
     {
       "k": "Call / WhatsApp",
