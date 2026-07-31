@@ -33,7 +33,7 @@ function ProductSelector({ products, onOpen }) {
   );
 }
 
-export default function SimulationSolutionsGrid({ kicker, heading, subheading, items }) {
+export default function SimulationSolutionsGrid({ kicker, kickerLogo, kickerLogoAlt, heading, subheading, items }) {
   const navigate = useNavigate();
 
   const openProduct = (href) => navigate(href);
@@ -42,7 +42,10 @@ export default function SimulationSolutionsGrid({ kicker, heading, subheading, i
     <section className="sim-solutions sec sec--cream">
       <style>{`
         .sim-solutions__head{text-align:center;max-width:800px;margin:0 auto clamp(56px,8vw,110px)}
-        .sim-solutions__kicker{display:block;margin-bottom:22px;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--mute-cream)}
+        .sim-solutions__kicker-row{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+        .sim-solutions__kicker{display:block;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--mute-cream)}
+        .sim-solutions__kicker-logo{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:6px 10px;border-radius:6px;background:rgba(255,255,255,.95);box-shadow:0 10px 24px rgba(0,0,0,.1)}
+        .sim-solutions__kicker-logo img{display:block;max-width:118px;max-height:24px;width:auto;height:auto;object-fit:contain}
         .sim-solutions__head h2{margin:0 auto;font-size:clamp(2rem,3.4vw,3.15rem);line-height:1.12;letter-spacing:-.025em;text-transform:none;max-width:24ch}
         .sim-solutions__head p{margin:28px auto 0;max-width:58ch;font-size:clamp(1rem,1.4vw,1.18rem);line-height:1.65;color:var(--mute-cream)}
         .sim-solutions__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
@@ -51,11 +54,20 @@ export default function SimulationSolutionsGrid({ kicker, heading, subheading, i
         .sim-solution-card p{margin:0 0 28px;color:var(--mute-cream);font-size:1rem;line-height:1.6}
         .sim-product-select{position:relative;margin-top:auto}.sim-product-select>button{display:flex;width:100%;min-height:46px;align-items:center;justify-content:space-between;padding:0 13px;border:1px solid #777;background:#fff;color:var(--ink);font:inherit;cursor:pointer;transition:border-color .2s ease,color .2s ease,box-shadow .2s ease}.sim-product-select>button:hover:not(:disabled),.sim-product-select.is-open>button{border-color:#087bd8;color:#087bd8;box-shadow:0 0 0 1px #087bd8}.sim-product-select>button svg{transition:transform .25s ease}.sim-product-select.is-open>button svg{transform:rotate(180deg)}.sim-product-select>button:disabled{cursor:not-allowed;color:#666;background:#fafafa}.sim-product-select__menu{position:absolute;z-index:20;top:100%;left:0;width:100%;border:1px solid #87bce7;background:#fff;box-shadow:0 10px 28px rgba(0,0,0,.1)}.sim-product-select__menu button{display:flex;width:100%;align-items:center;justify-content:space-between;padding:13px;border:0;background:#fff;color:#087bd8;font:inherit;cursor:pointer;transition:background .2s ease,padding .2s ease}.sim-product-select__menu button svg{opacity:0;transform:translateX(-6px);transition:opacity .2s ease,transform .2s ease}.sim-product-select__menu button:hover{padding-left:18px;background:#f0f7fd}.sim-product-select__menu button:hover svg{opacity:1;transform:translateX(0)}
         @media(max-width:900px){.sim-solutions__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-        @media(max-width:600px){.sim-solutions__grid{grid-template-columns:1fr;gap:18px}.sim-solution-card{min-height:290px}.sim-solutions__head{margin-bottom:48px}}
+        @media(max-width:600px){.sim-solutions__grid{grid-template-columns:1fr;gap:18px}.sim-solution-card{min-height:290px}.sim-solutions__head{margin-bottom:48px}.sim-solutions__kicker-logo img{max-width:104px}}
       `}</style>
       <div className="wrap">
         <header className="sim-solutions__head">
-          {kicker && <span className="sim-solutions__kicker" data-reveal="">{kicker}</span>}
+          {(kicker || kickerLogo) && (
+            <div className="sim-solutions__kicker-row" data-reveal="">
+              {kicker && <span className="sim-solutions__kicker">{kicker}</span>}
+              {kickerLogo && (
+                <span className="sim-solutions__kicker-logo">
+                  <img src={kickerLogo} alt={kickerLogoAlt || ""} decoding="async" loading="lazy" />
+                </span>
+              )}
+            </div>
+          )}
           <h2 data-reveal="">{heading}</h2>
           {subheading && <p data-reveal="">{subheading}</p>}
         </header>

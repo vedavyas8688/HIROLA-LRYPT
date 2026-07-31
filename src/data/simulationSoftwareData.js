@@ -47,6 +47,8 @@ export const intro = {
 
 export const solutions = {
   kicker: "Solutions",
+  kickerLogo: "/assets/img/cadence-logo.png",
+  kickerLogoAlt: "Cadence",
   heading: "Engineering Simulation Solutions Driving Breakthrough Performance",
   subheading:
     "Discover solutions that unlock and unify physical systems simulation, empowering smarter, faster decision making.",

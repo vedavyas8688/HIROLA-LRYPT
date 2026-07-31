@@ -52,7 +52,7 @@ export const hero = {
      
   ],
   sub: "Delivering intelligent planning, precise network design, GIS mapping, and engineering documentation for reliable, scalable infrastructure.",
-  btnText: "Explore Utility Network",
+  btnText: "Explore Utility Engineering",
   btnHref: "/utility-network",
 },
 {
