@@ -22,11 +22,43 @@ function PageHeadStyles() {
       .phead-scope.phead--img .lead{color:#fff;font-weight:700}
 
       @media(max-width:900px){
+        .phead-scope.phead--img{
+          display:block;
+          min-height:0!important;
+          padding:0 0 54px;
+          background:var(--black);
+        }
+        .phead-scope.phead--img .phead__media{
+          position:relative;
+          inset:auto;
+          height:auto;
+          aspect-ratio:16/9;
+          margin:0;
+          background:#050505;
+          overflow:hidden;
+        }
+        .phead-scope.phead--img .phead__media img{
+          display:block;
+          width:100%;
+          height:100%;
+          object-fit:contain!important;
+          object-position:center!important;
+          transform:none!important;
+        }
+        .phead-scope.phead--img .phead__media::after{
+          background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.18));
+        }
+        .phead-scope.phead--img .wrap{
+          padding-top:34px;
+        }
         .phead-scope .crumb{margin-bottom:12px}
         .phead-scope .lead{margin-top:18px}
       }
       @media(max-width:560px){
         .phead-scope{padding:clamp(110px,20vh,170px) 0 56px}
+        .phead-scope.phead--img{padding:0 0 46px}
+        .phead-scope.phead--img .phead__media{aspect-ratio:4/3}
+        .phead-scope.phead--img .wrap{padding-top:28px}
         .phead-scope .phead__brand-logo{min-height:44px;margin-bottom:18px;padding:8px 12px}
         .phead-scope .phead__brand-logo--corner{top:86px;left:18px;margin:0}
         .phead-scope .phead__brand-logo img{max-width:150px;max-height:34px}

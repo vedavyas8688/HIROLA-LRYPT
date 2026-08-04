@@ -48,17 +48,82 @@ export default function HeroSlider({ slides }) {
         }
 
         @media(max-width:900px){
+          .hero-slider-scope{
+            min-height:0;
+            display:block;
+            background:var(--black);
+            padding-bottom:86px;
+          }
+          .hero-slider-scope .slide{
+            position:relative;
+            inset:auto;
+            display:none;
+            opacity:1;
+            visibility:visible;
+          }
+          .hero-slider-scope .slide.is-active{
+            display:grid;
+            grid-template-rows:auto 1fr;
+            min-height:0;
+          }
+          .hero-slider-scope .hero__media{
+            position:relative;
+            inset:auto;
+            min-height:0;
+            aspect-ratio:16/9;
+            background:#050505;
+            overflow:hidden;
+          }
+          .hero-slider-scope .hero__media img{
+            display:block;
+            width:100%;
+            height:100%;
+            object-fit:contain;
+            object-position:center;
+            transform:none!important;
+          }
+          .hero-slider-scope .hero__media::after{
+            background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.34));
+          }
+          .hero-slider-scope .slide__in{
+            display:flex;
+            flex-direction:column;
+            justify-content:flex-start;
+            padding:34px var(--pad) 22px;
+            min-height:300px;
+          }
           .hero-slider-scope .hero__title{
             font-size:clamp(1.7rem, 5vw, 2.4rem);
-            max-width:26ch;
+            max-width:28ch;
+          }
+          .hero-slider-scope .hero__sub{
+            max-width:34rem;
           }
         }
 
         @media(max-width:560px){
+          .hero-slider-scope{
+            padding-bottom:78px;
+          }
+          .hero-slider-scope .hero__media{
+            aspect-ratio:4/3;
+          }
+          .hero-slider-scope .slide__in{
+            padding:28px var(--pad) 20px;
+            min-height:330px;
+          }
           .hero-slider-scope .hero__title{
             font-size:clamp(1.5rem, 6.5vw, 2rem);
             line-height:1.12;
-            max-width:22ch;
+            max-width:100%;
+          }
+          .hero-slider-scope .hero__sub{
+            margin-top:18px;
+            font-size:.98rem;
+            line-height:1.55;
+          }
+          .hero-slider-scope .hero__btn{
+            margin-top:24px;
           }
         }
 
