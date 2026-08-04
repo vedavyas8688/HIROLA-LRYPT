@@ -6,28 +6,28 @@ export const meta = {
 
 export const pageHead = {
   variant: "img",
-  image: "/assets/img/image30.jpeg",
+  image: "/assets/img/servicebanner1.webp",
   imageAlt: "Services - LRYPT Technologies",
   crumb: "Services",
-  lines: ["Professional services", "for modern industries"],
+  lines: ["Expertise That  ", "Delivers Results"],
   lead:
-    "LRYPT supports infrastructure and engineering teams with clear planning, reliable documentation, practical design support, and delivery-focused technical expertise.",
+    " A comprehensive portfolio of professional services designed to help businesses innovate, optimize operations, and achieve sustainable growth.",
 };
 
 export const servicesGrid = {
   bg: "cream",
   heading: "Our Services",
   subheading:
-    "Focused service capabilities for organizations that need accurate infrastructure planning and dependable engineering design support.",
+    " Specialized services designed to help organizations improve efficiency, accelerate innovation, and achieve sustainable business growth.",
   items: [
     {
       href: "/utility-network",
       img: "/assets/img/utilitynetwork.webp",
       alt: "Utility Network",
       meta: "",
-      title: "Utility Network",
+      title: "Utility Engineering",
       desc:
-        "Create accurate, scalable network plans with clear mapping, reliable documentation, and data-driven workflows for smarter infrastructure management.",
+        " Deliver accurate utility network planning, GIS mapping, engineering design, and documentation to build reliable, scalable, and future-ready infrastructure.",
     },
     {
       href: "/engineering-design",
@@ -36,7 +36,7 @@ export const servicesGrid = {
       meta: "",
       title: "Engineering Design",
       desc:
-        "Move ideas from concept to production with engineering modeling, drafting, product development, prototyping, simulation support, and practical design guidance.",
+        "Extend your engineering team with expert design, CAD modelling, drafting, simulation, validation, and manufacturing engineering support.",
     },
   ],
 };
