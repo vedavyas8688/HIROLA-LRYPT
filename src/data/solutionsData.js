@@ -2,9 +2,9 @@
 // Edit copy, images, and items here - no component code needed.
 
 export const meta = {
-  title: "Solutions | Formlabs, MSC Software & Proteger | LRYPT",
+  title: "Engineering Solutions Company | Smart Manufacturing | LRYPT Technologies",
   description:
-    "Explore LRYPT solutions for Formlabs SLA and SLS 3D printing, Cadence CAE simulation, and Proteger smart manufacturing technology.",
+    "LRYPT Technologies is an engineering solutions company offering smart manufacturing, engineering simulation, Formlabs 3D printing, and digital engineering solutions.",
 };
 
 export const pageHead = {

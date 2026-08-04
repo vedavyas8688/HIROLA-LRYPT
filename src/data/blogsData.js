@@ -1,7 +1,7 @@
 export const meta = {
-  title: "Engineering Technology Blog | LRYPT Technologies",
+  title: "Engineering Insights & Technology Blog | LRYPT Technologies",
   description:
-    "Read practical engineering technology insights on Cadence simulation, Formlabs 3D printing, Proteger, utility network design, and engineering design services.",
+    "Explore engineering insights, technology trends, smart manufacturing, digital engineering, simulation, and 3D printing blogs from LRYPT Technologies.",
 };
 
 export const pageHead = {

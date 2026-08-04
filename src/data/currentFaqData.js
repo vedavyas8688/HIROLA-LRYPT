@@ -1,6 +1,6 @@
 export const meta = {
-  title: "FAQ | LRYPT Technologies",
-  description: "Answers about Proteger, MSC Software, Formlabs, utility networks, and engineering design services from LRYPT Technologies.",
+  title: "Engineering Services FAQ | LRYPT Technologies",
+  description: "Find answers to common questions about engineering services, smart manufacturing, digital engineering, simulation, and technology solutions at LRYPT Technologies.",
 };
 
 export const pageHead = {

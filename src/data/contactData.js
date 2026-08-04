@@ -2,8 +2,8 @@
 // Edit copy, images, and items here — no component code needed.
 
 export const meta = {
-  "title": "Contact LRYPT Technologies | Get a Free Quote",
-  "description": "Talk to LRYPT Technologies in Bangalore. Call 9036354564 or request a free quote for solutions and services tailored to you."
+  "title": "Contact LRYPT Technologies | Engineering Services Company",
+  "description": "Contact LRYPT Technologies for engineering services, digital engineering, smart manufacturing, utility engineering, and expert consulting. Request a free quote today."
 };
 
 export const pageHead = {

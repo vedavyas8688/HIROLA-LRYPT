@@ -2,8 +2,8 @@
 // Edit copy, images, and items here — no component code needed.
 
 export const meta = {
-  "title": "About LRYPT Technologies | Your Engineering Solutions Partner",
-  "description": "LRYPT Technologies delivers engineering services, software, digital engineering, GIS, advanced manufacturing, and HRMS consulting solutions."
+  "title": "Engineering Consulting Company | About LRYPT Technologies",
+  "description": "Learn about LRYPT Technologies, an engineering consulting company delivering digital engineering, smart manufacturing, utility engineering, and engineering solutions."
 };
 
 export const pageHead = {

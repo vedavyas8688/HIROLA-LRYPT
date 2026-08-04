@@ -2,9 +2,9 @@
 // Edit copy, images, and items here — no component code needed.
 
 export const meta = {
-  title: "LRYPT Technologies | Engineering Software, Simulation & Services",
+  title: "Engineering Services Company | Digital Engineering | LRYPT Technologies",
   description:
-    "Proteger, MSC Software, Formlabs 3D printing, utility network design, and engineering design solutions from LRYPT Technologies.",
+    "LRYPT Technologies is an engineering services company delivering digital engineering, smart manufacturing, engineering design, utility engineering, and simulation solutions.",
 };
 
 export const hero = {

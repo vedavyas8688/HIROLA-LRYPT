@@ -2,9 +2,9 @@
 // Edit copy, images, and items here - no component code needed.
 
 export const meta = {
-  title: "Utility Network Services | FTTH, Electric, Water & Oil/Gas | LRYPT",
+  title: "Utility Engineering Services | GIS & Network Design | LRYPT Technologies",
   description:
-    "Engineering and design for utility networks - FTTH/FTTx, electric transmission and distribution, water and wastewater, oil and gas, and smart infrastructure.",
+    "LRYPT Technologies provides utility engineering services, GIS mapping, network design, asset management, and infrastructure engineering for utility industries.",
 };
 
 export const pageHead = {

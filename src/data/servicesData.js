@@ -1,7 +1,7 @@
 export const meta = {
-  title: "Services | Utility Network & Engineering Design | LRYPT Technologies",
+  title: "Engineering Design & Utility Engineering Services | LRYPT Technologies",
   description:
-    "Explore LRYPT Technologies' utility network and engineering design services for accurate planning, documentation, product development, and project delivery.",
+    "Explore engineering design and utility engineering services from LRYPT Technologies, delivering CAD design, GIS, product development, and engineering solutions.",
 };
 
 export const pageHead = {

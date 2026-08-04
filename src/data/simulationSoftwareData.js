@@ -16,9 +16,9 @@ const letterIcon = (label) => ({
 });
 
 export const meta = {
-  title: "MSC Software | Engineering Analysis Solutions | LRYPT",
+  title: "Cadence Simulation Software | Engineering Simulation | LRYPT Technologies",
   description:
-    "Explore engineering simulation software for structural, fluid, thermal, electromagnetic, optical, and multiphysics analysis with LRYPT Technologies.",
+    "Explore Cadence Simulation Software from LRYPT Technologies for engineering simulation, CFD, FEA, electromagnetic analysis, and advanced product development.",
 };
 
 export const pageHead = {

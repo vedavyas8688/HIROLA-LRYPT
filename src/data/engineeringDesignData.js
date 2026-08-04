@@ -2,8 +2,8 @@
 // Edit copy, images, and items here — no component code needed.
 
 export const meta = {
-  "title": "Engineering Design Services | Concept to Production (NPD) | LRYPT",
-  "description": "End-to-end engineering across the NPD lifecycle — product development, mechanical/aerospace/civil design, FEA & CFD simulation, prototyping and production readiness."
+  "title": "Engineering Design Services | Product Development | LRYPT Technologies",
+  "description": "LRYPT Technologies provides engineering design services, product development, CAD modeling, simulation, reverse engineering, prototyping, and manufacturing support."
 };
 
 export const pageHead = {

@@ -2,8 +2,8 @@
 // Edit copy, images, and items here — no component code needed.
 
 export const meta = {
-  "title": "Formlabs 3D Printers & Ecosystem | SLA & SLS | LRYPT",
-  "description": "Form 4, 4L and Fuse SLS printers with the complete Formlabs ecosystem — Form Wash, Form Cure, Fuse Sift and Fuse Blast — for professional additive manufacturing."
+  "title": "Formlabs 3D Printers | Industrial SLA & SLS Solutions | LRYPT Technologies",
+  "description": "Explore Formlabs 3D printers with industrial SLA & SLS solutions from LRYPT Technologies for rapid prototyping, functional parts, and production-ready manufacturing."
 };
 
 export const pageHead = {

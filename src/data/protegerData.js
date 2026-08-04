@@ -2,8 +2,8 @@
 // Additional sections will be added when product content is supplied.
 
 export const meta = {
-  title: "Proteger Solutions | LRYPT Technologies",
-  description: "Explore Proteger engineering technology solutions from LRYPT Technologies.",
+  title: "Smart Manufacturing Software | Proteger | LRYPT Technologies",
+  description: "Discover Proteger smart manufacturing software from LRYPT Technologies for production monitoring, quality management, traceability, and factory operations.",
 };
 
 export const hero = {
