@@ -25,7 +25,7 @@ const linkGroups = [
     links: [
       { label: "Formlabs 3D Printing", to: "/formlabs" },
       { label: "MSC Software", subLabel: "(Part of Cadence)", to: "/cadence-simulation" },
-      { label: "Proteger", to: "/proteger" },
+      { label: "Digital Transformation", to: "/proteger" },
     ],
   },
   {
