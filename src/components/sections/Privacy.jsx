@@ -8,7 +8,7 @@ const SECTIONS = [
     id: "introduction",
     heading: "Introduction",
     body: [
-      `LRYPT Technologies ("we", "our", "us") provides Proteger, Cadence Simulation, Formlabs 3D printing, utility network, and engineering design solutions and services (the "Services"). This Privacy Policy explains what information we collect through our website and Services, how we use it, and the choices you have.`,
+      `LRYPT Technologies ("we", "our", "us") provides Proteger, MSC Software, Formlabs 3D printing, utility network, and engineering design solutions and services (the "Services"). This Privacy Policy explains what information we collect through our website and Services, how we use it, and the choices you have.`,
       `By using our website or Services, you agree to the collection and use of information as described in this policy. If you do not agree, please do not use our website or Services.`,
     ],
   },

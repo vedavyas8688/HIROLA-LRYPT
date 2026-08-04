@@ -19,6 +19,7 @@ export default function CardGrid({ bg = "cream", heading, eyebrow, subheading, i
         .proj-head__eyebrow{display:block;margin-top:16px;color:var(--on-cream);font-size:clamp(1.05rem,1.35vw,1.22rem);font-weight:700;line-height:1.45}
         .sec--dark .proj-head__eyebrow{color:var(--on-dark)}
         .proj-head.proj-head--stacked .lead{margin-top:10px;max-width:66ch}
+        .post__subtitle{display:block;margin-top:4px;color:#111;font-size:.86rem;font-weight:800;line-height:1.35}
         @media(max-width:600px){.posts.posts--two{grid-template-columns:1fr}}
       `}</style>
       <div className="wrap">
@@ -59,6 +60,7 @@ export default function CardGrid({ bg = "cream", heading, eyebrow, subheading, i
               <div className="post__b">
                 {item.meta && <div className="post__meta">{item.meta}</div>}
                 <h3 style={{ color: "#000" }}>{item.title}</h3>
+                {item.subTitle && <span className="post__subtitle">{item.subTitle}</span>}
                 <p className="mute" style={{ fontSize: ".95rem" }}>
                   {item.desc}
                 </p>

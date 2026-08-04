@@ -1,6 +1,6 @@
 export const meta = {
   title: "FAQ | LRYPT Technologies",
-  description: "Answers about Proteger, Cadence Simulation, Formlabs, utility networks, and engineering design services from LRYPT Technologies.",
+  description: "Answers about Proteger, MSC Software, Formlabs, utility networks, and engineering design services from LRYPT Technologies.",
 };
 
 export const pageHead = {
@@ -17,7 +17,7 @@ export const faqCategories = {
     {
       category: "About LRYPT",
       items: [
-        { q: "What does LRYPT Technologies do?", a: "LRYPT Technologies provides Proteger smart manufacturing technology, Cadence Simulation, Formlabs 3D printing, utility network services, and engineering design expertise." },
+        { q: "What does LRYPT Technologies do?", a: "LRYPT Technologies provides Proteger smart manufacturing technology, MSC Software, Formlabs 3D printing, utility network services, and engineering design expertise." },
         { q: "Which industries does LRYPT serve?", a: "We support manufacturing, aerospace, automotive, defence, energy, healthcare, utilities, water, oil and gas, infrastructure, construction, and other engineering-driven industries." },
         { q: "Do you offer both technology and services?", a: "Yes. We combine advanced engineering technology with hands-on delivery expertise, giving clients one accountable partner from solution selection through implementation." },
         { q: "Where is LRYPT Technologies located?", a: "Our office is on the 4th Floor, Symphony Managed Office Space, Hormavu Agara Road, Vadarpalya, Hennur, Bangalore 560043. We serve clients across India and worldwide." },
@@ -29,7 +29,7 @@ export const faqCategories = {
         { q: "What technology solutions does LRYPT provide?", a: "Our active portfolio includes Proteger for connected manufacturing operations, Cadence for high-fidelity engineering simulation, and Formlabs SLA and SLS additive manufacturing systems." },
         { q: "Can you help us choose the right solution?", a: "Yes. We assess your goals, engineering requirements, operational constraints, and existing workflows before recommending a suitable solution." },
         { q: "Do you provide onboarding and support?", a: "Yes. We support evaluation, implementation, onboarding, training, and ongoing adoption." },
-        { q: "What can Cadence Simulation analyse?", a: "Cadence solutions support structural, acoustic, fluid, thermal, dynamic, material, and multiphysics analysis across complex engineering applications." },
+        { q: "What can MSC Software analyse?", a: "MSC Software solutions support structural, acoustic, fluid, thermal, dynamic, material, and multiphysics analysis across complex engineering applications." },
         { q: "What 3D printing technologies does Formlabs provide?", a: "Formlabs offers advanced stereolithography and selective laser sintering systems for prototyping, validation, tooling, medical applications, and production parts." },
       ],
     },

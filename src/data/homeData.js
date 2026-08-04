@@ -4,7 +4,7 @@
 export const meta = {
   title: "LRYPT Technologies | Engineering Software, Simulation & Services",
   description:
-    "Proteger, Cadence Simulation, Formlabs 3D printing, utility network design, and engineering design solutions from LRYPT Technologies.",
+    "Proteger, MSC Software, Formlabs 3D printing, utility network design, and engineering design solutions from LRYPT Technologies.",
 };
 
 export const hero = {
@@ -27,9 +27,9 @@ export const hero = {
       image: "/assets/img/cadencesolutions.webp",
       imageAlt: "Cadence engineering simulation software",
       label: "Welcome to LRYPT Technologies",
-      lines: ["Design with Confidence ", " Using Cadence Simulation"],
+      lines: ["Design with Confidence ", " Using MSC Software", "Part of Cadence"],
       sub: "Predict performance, reduce risk, and accelerate product development with high-fidelity CAE simulation.",
-      btnText: "Explore Cadence",
+      btnText: "Explore MSC Software",
       btnHref: "/cadence-simulation",
     },
 
@@ -106,7 +106,8 @@ export const solutionsGrid = {
       img: "/assets/img/cadencesolutions.webp",
       alt: "Cadence engineering simulation",
       meta: "Simulation",
-      title: "Cadence Simulation",
+      title: "MSC Software",
+      subTitle: "Part of Cadence",
       desc: "High-fidelity CAE simulation solutions that help engineers predict product performance, reduce development risk, and accelerate innovation.",
     },
 
@@ -364,7 +365,7 @@ export const faq = {
   items: [
     {
       q: "What solutions does LRYPT Technologies provide?",
-      a: "LRYPT provides technology platforms and products that enable innovation, including Formlabs 3D printers, Cadence Simulation solutions, and Proteger smart manufacturing solutions.",
+      a: "LRYPT provides technology platforms and products that enable innovation, including Formlabs 3D printers, MSC Software solutions, and Proteger smart manufacturing solutions.",
     },
     {
       q: "What professional services does LRYPT offer?",

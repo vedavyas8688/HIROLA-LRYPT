@@ -2,14 +2,14 @@
 // Edit copy, images, and items here - no component code needed.
 
 export const meta = {
-  title: "Solutions | Formlabs, Cadence Simulation & Proteger | LRYPT",
+  title: "Solutions | Formlabs, MSC Software & Proteger | LRYPT",
   description:
     "Explore LRYPT solutions for Formlabs SLA and SLS 3D printing, Cadence CAE simulation, and Proteger smart manufacturing technology.",
 };
 
 export const pageHead = {
   variant: "img",
-  image: "/assets/img/cadencesolutions.webp",
+  image: "/assets/img/SOLUTIONS BANNER1.webp",
   imageAlt: "Cadence engineering simulation software",
   crumb: "Solutions",
   lines: ["Advanced Engineering  ", " Technologies for", "Digital Innovation"],
@@ -38,7 +38,8 @@ export const solutionsGrid = {
       img: "/assets/img/cadencesolutions.webp",
       alt: "Cadence engineering simulation",
       meta: "CAE Simulation",
-      title: "Cadence Simulation",
+      title: "MSC Software",
+      subTitle: "Part of Cadence",
       desc:
         "High-fidelity simulation software for structural, fluid, thermal, acoustic, material, multiphysics, ADAS, cloud, and AI-enabled engineering workflows that reduce prototype risk and speed up design decisions.",
     },
@@ -65,7 +66,7 @@ export const faq = {
       a: "Formlabs SLA and SLS printers help teams create accurate prototypes, functional parts, production tools, and low-volume components. The ecosystem also includes washing, curing, powder recovery, and finishing systems for complete additive manufacturing workflows.",
     },
     {
-      q: "What can Cadence Simulation be used for?",
+      q: "What can MSC Software be used for?",
       a: "Cadence simulation solutions help engineers predict real-world product performance across structural, acoustic, fluid, thermal, material, motion, ADAS, multiphysics, cloud, and AI-driven workflows before committing to physical prototypes.",
     },
     {

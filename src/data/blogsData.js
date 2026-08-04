@@ -19,11 +19,11 @@ export const postList = [
     slug: "cadence-simulation-for-faster-product-validation",
     img: "/assets/img/cadencesolutions.webp",
     alt: "Cadence simulation platform for product validation",
-    meta: "Cadence Simulation · 8 min",
-    title: "How Cadence Simulation Helps Teams Validate Products Faster",
+    meta: "MSC Software · 8 min",
+    title: "How MSC Software Helps Teams Validate Products Faster",
     desc:
       "A practical look at how simulation reduces prototype dependency, improves confidence, and brings engineering learning earlier in development.",
-    metaTitle: "Cadence Simulation for Product Validation | LRYPT Technologies",
+    metaTitle: "MSC Software for Product Validation | LRYPT Technologies",
     metaDescription:
       "Learn how Cadence simulation software helps engineering teams validate products faster, reduce prototype cycles, and improve design confidence.",
     body: [

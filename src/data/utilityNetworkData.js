@@ -14,7 +14,7 @@ export const pageHead = {
   imagePosition: "center 38%",
   imageAlt: "Utility Network Services - LRYPT Technologies",
   crumb: "Utility Network Services",
-  lines: ["Engineering Utility Networks ", "That Keep the World Connected”"],
+  lines: ["Engineering Utility Networks ", "That Keep the World Connected"],
   lead: null,
 };
 

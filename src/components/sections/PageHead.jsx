@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 function PageHeadStyles() {
   return (
@@ -20,6 +21,33 @@ function PageHeadStyles() {
       .phead-scope .lead{margin-top:24px;max-width:52ch}
       .phead-scope.phead--img h1,.phead-scope.phead--img .lead{text-shadow:0 2px 18px rgba(0,0,0,.38)}
       .phead-scope.phead--img .lead{color:#fff;font-weight:700}
+      .phead-scope.phead--msc{min-height:62vh;padding:0;align-items:flex-end}
+      .phead-scope.phead--msc .phead__media::after{background:linear-gradient(90deg,rgba(3,13,34,.9) 0%,rgba(3,13,34,.58) 38%,rgba(3,13,34,.16) 78%)}
+      .phead-scope.phead--msc .wrap{padding-bottom:clamp(56px,8vh,86px)}
+      .phead-scope.phead--msc .phead__content{max-width:620px}
+      .phead-scope.phead--msc .phead__brand-logo{
+        min-height:48px;
+        margin-bottom:24px;
+        padding:9px 14px;
+        background:rgba(255,255,255,.94);
+      }
+      .phead-scope.phead--msc .phead__brand-logo img{max-width:174px;max-height:38px}
+      .phead-scope.phead--msc h1{font-size:clamp(2.2rem,3vw,3rem);line-height:1.08}
+      .phead-scope .phead__tagline{margin-top:10px;font-size:clamp(1rem,1.4vw,1.25rem);font-weight:700;letter-spacing:.02em;color:#fff}
+      .phead-scope.phead--msc .lead{max-width:60ch;margin-top:18px;font-size:.98rem;line-height:1.55;font-weight:600}
+      .phead-scope.phead--msc .phead__brand-logo--corner{
+        top:auto;
+        left:50%;
+        bottom:calc(clamp(56px,8vh,86px) + 190px);
+        transform:translateX(-50%);
+        width:auto;
+        min-height:48px;
+        padding:9px 14px;
+      }
+      .phead-scope .phead__btn{display:inline-flex;align-items:center;justify-content:center;margin-top:14px;min-height:46px;padding:0 28px;background:var(--black);color:#fff;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+      .phead-scope.phead--msc .phead__btn{background:#f2072f}
+      .phead-scope .phead__btn:hover{background:var(--ink-2)}
+      .phead-scope.phead--msc .phead__btn:hover{background:#c90528}
 
       @media(max-width:900px){
         .phead-scope.phead--img{
@@ -50,6 +78,14 @@ function PageHeadStyles() {
         }
         .phead-scope.phead--img .wrap{
           padding-top:34px;
+        }
+        .phead-scope.phead--msc .wrap{padding-bottom:0}
+        .phead-scope.phead--msc .phead__brand-logo--corner{
+          position:relative;
+          left:auto;
+          bottom:auto;
+          transform:none;
+          margin:0 0 18px;
         }
         .phead-scope .crumb{margin-bottom:12px}
         .phead-scope .lead{margin-top:18px}
@@ -112,6 +148,10 @@ export default function PageHead({
   imagePosition = "center",
   tone = "dark",
   minHeight,
+  layout,
+  btnText,
+  btnHref,
+  tagline,
   headingWidth = 44, // in "ch" units — controls how the heading wraps
 }) {
   const sectionRef = useRef(null);
@@ -136,7 +176,7 @@ export default function PageHead({
   return (
     <section
       ref={sectionRef}
-      className={`phead phead--${variant === "img" ? "img" : "cream"}${variant === "img" && tone === "light" ? " phead--light" : ""} phead-scope${inView ? " in-view" : ""}`}
+      className={`phead phead--${variant === "img" ? "img" : "cream"}${layout ? ` phead--${layout}` : ""}${variant === "img" && tone === "light" ? " phead--light" : ""} phead-scope${inView ? " in-view" : ""}`}
       style={minHeight ? { minHeight } : undefined}
     >
       <PageHeadStyles />
@@ -171,7 +211,13 @@ export default function PageHead({
               </span>
             ))}
           </h1>
+          {tagline && <div className="phead__tagline">{tagline}</div>}
           {lead && <p className="lead">{lead}</p>}
+          {btnText && btnHref && (
+            <Link className="phead__btn" to={btnHref}>
+              {btnText}
+            </Link>
+          )}
         </div>
       </div>
       {logo && logoPosition === "top-left" && (

@@ -10,7 +10,7 @@ const SECTIONS = [
     id: "acceptance",
     heading: "Acceptance of Terms",
     body: [
-      `These Terms & Conditions ("Terms") govern your access to and use of the website and services provided by LRYPT Technologies ("we", "our", "us"), including Proteger, Cadence Simulation, Formlabs 3D printing, utility network, and engineering design solutions (the "Services"). By accessing our website or engaging our Services, you agree to be bound by these Terms.`,
+      `These Terms & Conditions ("Terms") govern your access to and use of the website and services provided by LRYPT Technologies ("we", "our", "us"), including Proteger, MSC Software, Formlabs 3D printing, utility network, and engineering design solutions (the "Services"). By accessing our website or engaging our Services, you agree to be bound by these Terms.`,
     ],
   },
   {

@@ -16,7 +16,7 @@ const letterIcon = (label) => ({
 });
 
 export const meta = {
-  title: "Cadence Simulation | Engineering Analysis Solutions | LRYPT",
+  title: "MSC Software | Engineering Analysis Solutions | LRYPT",
   description:
     "Explore engineering simulation software for structural, fluid, thermal, electromagnetic, optical, and multiphysics analysis with LRYPT Technologies.",
 };
@@ -26,12 +26,16 @@ export const pageHead = {
   image: "/assets/img/cadencesolutions.webp",
   logo: "/assets/img/cadence-logo.png",
   logoAlt: "Cadence",
-  logoPosition: "top-left",
+  logoPosition: "content",
+  layout: "msc",
   imageAlt: "Cadence engineering simulation visualization",
-  crumb: "Solutions / Cadence Simulation",
-  lines: ["Cadence Simulation", "for confident engineering"],
+  crumb: "Solutions / MSC Software",
+  lines: ["MSC Software"],
+  tagline: "Part of Cadence",
   lead:
-    "Predict real-world product performance, explore design alternatives, and make better engineering decisions before physical testing.",
+    "Advanced physics-based simulation that accelerates better product design.",
+  btnText: "Talk to an expert",
+  btnHref: "/contact",
 };
 
 export const intro = {

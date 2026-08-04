@@ -24,14 +24,14 @@ const linkGroups = [
     title: "Solutions",
     links: [
       { label: "Formlabs 3D Printing", to: "/formlabs" },
-      { label: "Cadence Simulation", to: "/cadence-simulation" },
+      { label: "MSC Software", subLabel: "(Part of Cadence)", to: "/cadence-simulation" },
       { label: "Proteger", to: "/proteger" },
     ],
   },
   {
     title: "Services",
     links: [
-      { label: "Utility Network", to: "/utility-network" },
+      { label: "Utility Engineering", to: "/utility-network" },
       { label: "Engineering Design", to: "/engineering-design" },
     ],
   },
@@ -60,6 +60,7 @@ function FooterStyles() {
       @media(max-width:540px){.foot__grid{grid-template-columns:1fr}}
       .foot__grid h5{font-weight:700;text-transform:none;font-size:.74rem;letter-spacing:.06em;color:var(--mute-dark);margin-bottom:20px}
       .foot__grid .foot__links a{display:block;padding:8px 0;color:var(--on-dark);text-transform:uppercase;font-size:.82rem;letter-spacing:.02em;transition:.25s}
+      .foot__grid .foot__links a .foot__sub{display:block;margin-top:2px;color:var(--mute-dark);font-size:.72rem;text-transform:none;letter-spacing:0}
       .foot__grid .foot__links a:hover{opacity:.6;padding-left:6px}
       .foot__about p{color:var(--mute-dark);max-width:34ch;margin:20px 0 26px;text-transform:none;font-size:.95rem}
       .foot__logo{display:inline-flex;align-items:center;gap:10px}
@@ -161,6 +162,7 @@ export default function Footer() {
                 {group.links.map((link) => (
                   <Link key={link.label} to={link.to}>
                     {link.label}
+                    {link.subLabel && <span className="foot__sub">{link.subLabel}</span>}
                   </Link>
                 ))}
               </div>
