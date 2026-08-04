@@ -107,31 +107,26 @@ export const npdLifecycle = {
   "items": [
     {
       "icon": "consult",
-      "step": "01",
       "title": "Consult",
       "desc": "Understanding your engineering challenges."
     },
     {
       "icon": "design",
-      "step": "02",
       "title": "Design",
       "desc": "CAD modelling and detailed engineering."
     },
     {
       "icon": "analyze",
-      "step": "03",
       "title": "Analyze",
       "desc": "Simulation, validation, and optimization."
     },
     {
       "icon": "document",
-      "step": "04",
       "title": "Document",
       "desc": "Manufacturing drawings and technical documentation."
     },
     {
       "icon": "support",
-      "step": "05",
       "title": "Support",
       "desc": "Prototyping, DFM, and production engineering."
     }
