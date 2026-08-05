@@ -141,7 +141,7 @@ export default function Footer() {
             <Link className="logo foot__logo" to="/">
               <img
                 className="logo__img"
-                src="/assets/img/logo.svg"
+                src="/assets/img/Backup_of_Lrypt Logo Final 01.png"
                 alt="LRYPT Technologies"
               />
             </Link>

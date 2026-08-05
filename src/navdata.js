@@ -8,8 +8,6 @@ export const NAV = [
       ["Formlabs 3D Printing", "/formlabs"],
       ["MSC Software", "/cadence-simulation"],
       ["Digital Transformation", "/proteger"],
-       
-      
     ],
   },
   {

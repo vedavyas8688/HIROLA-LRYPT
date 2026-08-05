@@ -229,7 +229,7 @@ export default function Nav() {
       <header id="nav" className={`nav${stuck ? " is-stuck" : ""}`}>
         <div className="nav__bar">
           <Link className="logo" to="/">
-            <img className="logo__img" src="/assets/img/logo.svg" alt="LRYPT Technologies" />
+            <img className="logo__img" src="/assets/img/Backup_of_Lrypt Logo Final 01.png" alt="LRYPT Technologies" />
           </Link>
 
           <ul className="nav__menu">
@@ -280,7 +280,7 @@ export default function Nav() {
       <div className="drawer" id="mobile-drawer" aria-hidden={!menuOpen}>
         <div className="drawer__head">
           <Link className="drawer__logo" to="/" onClick={closeAll}>
-            <img className="logo__img" src="/assets/img/logo.svg" alt="LRYPT Technologies" />
+            <img className="logo__img" src="/assets/img/Backup_of_Lrypt Logo Final 01.png" alt="LRYPT Technologies" />
           </Link>
           <button className="drawer__close" aria-label="Close menu" onClick={closeAll}>
             <X size={18} />

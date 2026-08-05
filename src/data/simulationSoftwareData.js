@@ -28,6 +28,7 @@ export const pageHead = {
   logoAlt: "Cadence",
   logoPosition: "content",
   layout: "msc",
+  minHeight: "70vh",
   imageAlt: "Cadence engineering simulation visualization",
   crumb: "Solutions / MSC Software",
   lines: ["MSC Software"],

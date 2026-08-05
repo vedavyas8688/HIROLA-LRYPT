@@ -9,6 +9,7 @@ export const meta = {
 export const pageHead = {
   "variant": "img",
   "image": "/assets/img/image29.jpg",
+  "minHeight": "70vh",
   "logo": "/assets/img/formlab-logo.png",
   "logoAlt": "Formlabs",
   "logoBg": "#000",

@@ -1,8 +1,8 @@
-# LRYPT Technologies — robots.txt
+# LRYPT Technologies robots.txt
 User-agent: *
 Allow: /
 
-# Answer & generative engines (AEO / GEO) — explicitly welcomed
+# Answer and generative engines are explicitly welcomed.
 User-agent: GPTBot
 Allow: /
 User-agent: OAI-SearchBot

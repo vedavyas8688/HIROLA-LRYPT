@@ -9,7 +9,7 @@ export const meta = {
 
 export const pageHead = {
   variant: "img",
-  image: "/assets/img/SOLUTIONS BANNER1.webp",
+  image: "/assets/img/SOLBANNER2.webp",
   imageAlt: "Cadence engineering simulation software",
   crumb: "Solutions",
   lines: ["Advanced Engineering  ", " Technologies for", "Digital Innovation"],
