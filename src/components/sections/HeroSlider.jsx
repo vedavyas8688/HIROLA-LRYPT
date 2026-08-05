@@ -40,6 +40,11 @@ export default function HeroSlider({ slides }) {
           font-size:clamp(1.9rem, 3.6vw, 3.4rem);
           max-width:34ch;
         }
+        .hero-slider-scope .hero__media picture{
+          display:block;
+          width:100%;
+          height:100%;
+        }
 
         @media(min-width:1200px){
           .hero-slider-scope .hero__title{
@@ -74,16 +79,11 @@ export default function HeroSlider({ slides }) {
             background:#050505;
             overflow:hidden;
           }
-          .hero-slider-scope .hero__media picture{
-            display:block;
-            width:100%;
-            height:100%;
-          }
           .hero-slider-scope .hero__media img{
             display:block;
             width:100%;
             height:100%;
-            object-fit:contain;
+            object-fit:cover;
             object-position:center;
             transform:none!important;
           }
@@ -94,8 +94,8 @@ export default function HeroSlider({ slides }) {
             display:flex;
             flex-direction:column;
             justify-content:flex-start;
-            padding:34px var(--pad) 22px;
-            min-height:300px;
+            padding:24px var(--pad) 18px;
+            min-height:260px;
           }
           .hero-slider-scope .hero__title{
             font-size:clamp(1.7rem, 5vw, 2.4rem);
@@ -114,8 +114,8 @@ export default function HeroSlider({ slides }) {
             aspect-ratio:4/3;
           }
           .hero-slider-scope .slide__in{
-            padding:28px var(--pad) 20px;
-            min-height:330px;
+            padding:22px var(--pad) 18px;
+            min-height:250px;
           }
           .hero-slider-scope .hero__title{
             font-size:clamp(1.5rem, 6.5vw, 2rem);
@@ -123,12 +123,16 @@ export default function HeroSlider({ slides }) {
             max-width:100%;
           }
           .hero-slider-scope .hero__sub{
-            margin-top:18px;
+            margin-top:12px;
             font-size:.98rem;
-            line-height:1.55;
+            line-height:1.45;
           }
           .hero-slider-scope .hero__btn{
-            margin-top:24px;
+            margin-top:18px;
+          }
+          .hero-slider-scope .label{
+            margin-bottom:12px;
+            font-size:.68rem;
           }
         }
 
@@ -228,7 +232,7 @@ export default function HeroSlider({ slides }) {
         <div className={`slide${idx === i ? " is-active" : ""}`} key={idx}>
           <div className="hero__media">
             <picture>
-              {s.mobileImage && <source media="(max-width: 700px)" srcSet={s.mobileImage} />}
+              {s.mobileImage && <source media="(max-width: 900px)" srcSet={s.mobileImage} />}
               <img
                 className="parallax"
                 data-parallax="0.1"

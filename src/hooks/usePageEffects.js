@@ -74,6 +74,8 @@ function initReveal() {
 
 function initParallax() {
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const mobile = matchMedia("(max-width: 900px)").matches;
+  if (mobile) return () => {};
   if (reduce) return () => {};
   const els = $$("[data-parallax]");
   if (!els.length) return () => {};
