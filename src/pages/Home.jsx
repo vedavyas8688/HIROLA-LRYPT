@@ -4,6 +4,7 @@ import CardGrid from "../components/sections/CardGrid";
 import IconGrid from "../components/sections/IconGrid";
 import FAQSection from "../components/sections/FAQSection";
 import CTABand from "../components/sections/CTABand";
+import FormFillingSection from "../components/sections/FormFillingSection";
 import usePageMeta from "../hooks/usePageMeta";
 import { meta, hero, intro, solutionsGrid, servicesGrid, whyChoose, faq, cta } from "../data/homeData";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <CardGrid {...solutionsGrid} />
       <CardGrid {...servicesGrid} />
       <IconGrid {...whyChoose} />
+      {/* <FormFillingSection /> */}
       <FAQSection {...faq} />
       <CTABand {...cta} />
     </>
