@@ -48,7 +48,7 @@ export const solutionsGrid = {
       img: "/assets/img/protegerbanner.webp",
       alt: "Proteger smart manufacturing technology",
       meta: "Smart Manufacturing",
-      title: "Proteger",
+      title: "Digital Transformation",
       desc:
         "Smart manufacturing technology for connected operations, live monitoring, traceability, maintenance, quality workflows, analytics, and digital transformation across production environments.",
     },
@@ -59,7 +59,7 @@ export const faq = {
   items: [
     {
       q: "Which solutions does LRYPT Technologies offer?",
-      a: "LRYPT offers Formlabs 3D printing systems, Cadence engineering simulation software, and Proteger smart manufacturing technology, supported by expert consultation, implementation, training, and technical guidance.",
+      a: "LRYPT offers Formlabs 3D printing systems, MSC Software, and Digital Transformation solutions, supported by expert consultation, implementation, training, and technical guidance.",
     },
     {
       q: "How does Formlabs help product development teams?",
@@ -67,11 +67,11 @@ export const faq = {
     },
     {
       q: "What can MSC Software be used for?",
-      a: "Cadence simulation solutions help engineers predict real-world product performance across structural, acoustic, fluid, thermal, material, motion, ADAS, multiphysics, cloud, and AI-driven workflows before committing to physical prototypes.",
+      a: "MSC Software solutions help engineers predict real-world product performance across structural, acoustic, fluid, thermal, material, motion, ADAS, multiphysics, cloud, and AI-driven workflows before committing to physical prototypes.",
     },
     {
-      q: "What does Proteger support?",
-      a: "Proteger supports smart manufacturing and connected operations through digitized workflows, live monitoring, traceability, maintenance management, quality control, analytics, and practical Industry 4.0 adoption.",
+      q: "What does Digital Transformation support?",
+      a: "Digital Transformation supports smart manufacturing and connected operations through digitized workflows, live monitoring, traceability, maintenance management, quality control, analytics, and practical Industry 4.0 adoption.",
     },
     {
       q: "Can LRYPT help choose the right solution?",
@@ -87,7 +87,7 @@ export const faq = {
 export const cta = {
   heading: "Find the Right Technology for Your Next Project",
   sub:
-    "Talk to LRYPT about your design, manufacturing, simulation, or digital operations goals. We will help you identify the right Formlabs, Cadence, or Proteger solution for your workflow.",
+    "Talk to LRYPT about your design, manufacturing, simulation, or digital operations goals. We will help you identify the right Formlabs 3D Printing, MSC Software, or Digital Transformation solution for your workflow.",
   btnText: "Contact Our Experts",
   btnHref: "/contact",
   image: "/assets/img/image26.jpeg",

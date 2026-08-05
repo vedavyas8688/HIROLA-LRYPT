@@ -159,11 +159,11 @@ export const faq = {
   items: [
     {
       q: "What services does LRYPT Technologies provide?",
-      a: "LRYPT provides Utility Network and Engineering Design services for infrastructure, manufacturing, and engineering-driven organizations.",
+      a: "LRYPT provides Utility Engineering and Engineering Design services for infrastructure, manufacturing, and engineering-driven organizations.",
     },
     {
-      q: "What does Utility Network support include?",
-      a: "Utility Network support includes network planning, mapping, documentation, asset records, and data-driven workflows for dependable infrastructure management.",
+      q: "What does Utility Engineering support include?",
+      a: "Utility Engineering support includes network planning, mapping, documentation, asset records, and data-driven workflows for dependable infrastructure management.",
     },
     {
       q: "What does Engineering Design cover?",

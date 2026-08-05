@@ -147,7 +147,7 @@ export const faqCategories = {
       "items": [
         {
           "q": "What services does LRYPT offer?",
-          "a": "Three service lines: Utility Network Services (FTTx/telecom, electric, water & wastewater, oil & gas, smart infrastructure), Engineering Design Services (concept-to-production NPD), and HR Management Services (HRMS)."
+          "a": "Three service lines: Utility Engineering (FTTx/telecom, electric, water & wastewater, oil & gas, smart infrastructure), Engineering Design (concept-to-production NPD), and HR Management Services (HRMS)."
         },
         {
           "q": "Can you act as an outsourced delivery team?",

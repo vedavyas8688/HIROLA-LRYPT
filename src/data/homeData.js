@@ -37,15 +37,15 @@ export const hero = {
       image: "/assets/img/protegerbanner.webp",
       imageAlt: "Proteger technology solutions",
       label: "Welcome to LRYPT Technologies",
-      lines: ["Transform Manufacturing", "with Proteger"],
+      lines: ["Transform Manufacturing", "with Digital Transformation"],
       sub: "Digital solutions for smarter operations, predictive maintenance, quality management",
-      btnText: "Explore Proteger",
+      btnText: "Explore Digital Transformation",
       btnHref: "/proteger",
     },
      {
   image: "/assets/img/utilitybanner.webp",
   imageAlt: "Modern utility network planning and digital infrastructure",
-  label: "Utility Network Services",
+  label: "Utility Engineering",
   lines: [
     "Building Resilient",
     "Utility Networks" ,
@@ -97,7 +97,7 @@ export const solutionsGrid = {
       img: "/assets/img/image17.jpeg",
       alt: "Formlabs 3D Printing",
       meta: "Additive Manufacturing",
-      title: "Formlabs 3D Printer",
+      title: "Formlabs 3D Printing",
       desc: "Industrial-grade SLA and SLS 3D printing solutions for rapid prototyping, functional testing, product validation, and low-volume production.",
     },
 
@@ -117,7 +117,7 @@ export const solutionsGrid = {
       img: "/assets/img/protegerbanner.webp",
       alt: "Proteger engineering technology solutions",
       meta: "Smart Manufacturing",
-      title: "Proteger",
+      title: "Digital Transformation",
       desc: "Smart manufacturing solutions that streamline operations, improve productivity, and provide greater visibility across manufacturing processes.",
     },
      
@@ -365,7 +365,7 @@ export const faq = {
   items: [
     {
       q: "What solutions does LRYPT Technologies provide?",
-      a: "LRYPT provides technology platforms and products that enable innovation, including Formlabs 3D printers, MSC Software solutions, and Proteger smart manufacturing solutions.",
+      a: "LRYPT provides technology platforms and products that enable innovation, including Formlabs 3D printers, MSC Software solutions, and Digital Transformation solutions.",
     },
     {
       q: "What professional services does LRYPT offer?",

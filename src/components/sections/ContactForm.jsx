@@ -140,17 +140,17 @@ export default function ContactForm() {
           <label>Solution of interest</label>
           <select value={form.solution} onChange={set("solution")}>
             <option value="">Select a solution&hellip;</option>
-            <option>Proteger</option>
-            <option>MSC Software</option>
             <option>Formlabs 3D Printing</option>
+            <option>MSC Software</option>
+            <option>Digital Transformation</option>
           </select>
         </div>
         <div className="f2">
           <label>Service of interest</label>
           <select value={form.service} onChange={set("service")}>
             <option value="">Select a service&hellip;</option>
-            <option>Utility Network Services</option>
-            <option>Engineering Design Services</option>
+            <option>Utility Engineering</option>
+            <option>Engineering Design</option>
           </select>
         </div>
       </div>
