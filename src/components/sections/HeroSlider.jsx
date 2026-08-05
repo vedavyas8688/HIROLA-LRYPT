@@ -74,6 +74,11 @@ export default function HeroSlider({ slides }) {
             background:#050505;
             overflow:hidden;
           }
+          .hero-slider-scope .hero__media picture{
+            display:block;
+            width:100%;
+            height:100%;
+          }
           .hero-slider-scope .hero__media img{
             display:block;
             width:100%;
@@ -222,15 +227,18 @@ export default function HeroSlider({ slides }) {
       {slides.map((s, idx) => (
         <div className={`slide${idx === i ? " is-active" : ""}`} key={idx}>
           <div className="hero__media">
-            <img
-              className="parallax"
-              data-parallax="0.1"
-              src={s.image}
-              alt={s.imageAlt}
-              fetchpriority={idx === 0 ? "high" : undefined}
-              loading={idx === 0 ? "eager" : "lazy"}
-              decoding="async"
-            />
+            <picture>
+              {s.mobileImage && <source media="(max-width: 700px)" srcSet={s.mobileImage} />}
+              <img
+                className="parallax"
+                data-parallax="0.1"
+                src={s.image}
+                alt={s.imageAlt}
+                fetchPriority={idx === 0 ? "high" : undefined}
+                loading={idx === 0 ? "eager" : "lazy"}
+                decoding="async"
+              />
+            </picture>
           </div>
           <div className="slide__in">
             <span className="label">{s.label}</span>

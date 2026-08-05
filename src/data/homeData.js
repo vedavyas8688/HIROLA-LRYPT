@@ -11,6 +11,7 @@ export const hero = {
   slides: [
     {
       image: "/assets/img/banner4.png",
+      mobileImage: "/assets/img/mobilebanner4.webp",
       imageAlt:
         "Driving the future of additive manufacturing with Formlabs 3D printers",
       label: "Welcome to LRYPT Technologies",
