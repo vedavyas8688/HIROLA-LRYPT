@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { ArrowRight, Check } from "lucide-react";
-import { toast } from "react-toastify";
 
 export function ContactPanel({ label, heading, intro, info }) {
   return (
@@ -94,6 +93,8 @@ export function ContactPanel({ label, heading, intro, info }) {
 export default function ContactForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [errors, setErrors] = useState({});
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -108,6 +109,8 @@ export default function ContactForm() {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    setSuccessMessage("");
+    setErrorMessage("");
   };
 
   const validateForm = () => {
@@ -169,30 +172,29 @@ export default function ContactForm() {
               serviceOfInterest: "",
               message: "",
             });
-            toast.success("Successfully we got your info.", {
-              autoClose: 5000,
-            });
+            setSuccessMessage(
+              "Thank you! Your enquiry has been submitted successfully.",
+            );
+            setErrorMessage("");
           } else {
             console.error("Error:", data.message);
-            toast.error(data.message);
+            setErrorMessage(data.message);
+            setSuccessMessage("");
           }
         } else {
           console.error("Error:", response.statusText);
-          toast.error("An error occurred. Please try again.", {
-            autoClose: 5000,
-          });
+          setErrorMessage("An error occurred. Please try again.");
+          setSuccessMessage("");
         }
       } catch (error) {
         console.error("Error submitting form:", error);
-        toast.error("An error occurred. Please try again later.", {
-          autoClose: 5000,
-        });
+        setErrorMessage("An error occurred. Please try again later.");
+        setSuccessMessage("");
       }
     } else {
       setErrors(formErrors);
-      Object.values(formErrors).forEach((error) => {
-        toast.error(error, { autoClose: 5000 });
-      });
+      setErrorMessage(Object.values(formErrors)[0]);
+      setSuccessMessage("");
     }
 
     setIsLoading(false);
@@ -327,14 +329,28 @@ export default function ContactForm() {
         <span className="cform__note" style={{ fontSize: 13, lineHeight: 1.4 }}>
           Your details are used only to respond to your enquiry.
         </span>
-        <button className="btn" type="submit" disabled={isLoading}>
-          <span className="btn__ico">
-            {isLoading ? <Check size={18} /> : <ArrowRight size={18} />}
-          </span>
-          <span className="btn__t">
-            {isLoading ? "Sending..." : "Send message"}
-          </span>
-        </button>
+        <div>
+          <button className="btn" type="submit" disabled={isLoading}>
+            <span className="btn__ico">
+              {isLoading ? <Check size={18} /> : <ArrowRight size={18} />}
+            </span>
+            <span className="btn__t">
+              {isLoading ? "Sending..." : "Send message"}
+            </span>
+          </button>
+          {successMessage && (
+            <p
+              style={{
+                color: "#16a34a",
+                marginTop: "12px",
+                fontSize: "14px",
+                fontWeight: 500,
+              }}
+            >
+              {successMessage}
+            </p>
+          )}
+        </div>
       </div>
     </form>
   );
