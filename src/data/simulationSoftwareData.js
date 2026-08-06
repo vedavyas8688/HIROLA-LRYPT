@@ -4,7 +4,7 @@ import { getCadenceProductsByCategory } from "./cadenceProductsData";
 
 const productsFor = (category) => getCadenceProductsByCategory(category).map((entry) => ({
   label: entry.label,
-  href: `/cadence-simulation/${entry.slug}`,
+  href: `/msc-software/${entry.slug}`,
 }));
 
 const letterIcon = (label) => ({

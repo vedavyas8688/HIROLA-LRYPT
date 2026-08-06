@@ -25,7 +25,7 @@ export const solutionsGrid = {
 
   items: [
     {
-      href: "/formlabs",
+      href: "/formlabs-3d-printing",
       img: "/assets/img/image17.jpeg",
       alt: "Formlabs 3D Printing",
       meta: "Additive Manufacturing",
@@ -34,7 +34,7 @@ export const solutionsGrid = {
         "Professional SLA and SLS 3D printing systems for rapid prototyping, functional testing, tooling, end-use parts, and production-ready workflows with Form Wash, Form Cure, Fuse Sift, and Fuse Blast.",
     },
     {
-      href: "/cadence-simulation",
+      href: "/msc-software",
       img: "/assets/img/cadencesolutions.webp",
       alt: "Cadence engineering simulation",
       meta: "CAE Simulation",
@@ -44,7 +44,7 @@ export const solutionsGrid = {
         "High-fidelity simulation software for structural, fluid, thermal, acoustic, material, multiphysics, ADAS, cloud, and AI-enabled engineering workflows that reduce prototype risk and speed up design decisions.",
     },
     {
-      href: "/proteger",
+      href: "/digital-transformation",
       img: "/assets/img/protegerbanner.webp",
       alt: "Proteger smart manufacturing technology",
       meta: "Smart Manufacturing",

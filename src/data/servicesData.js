@@ -21,7 +21,7 @@ export const servicesGrid = {
     " Specialized services designed to help organizations improve efficiency, accelerate innovation, and achieve sustainable business growth.",
   items: [
     {
-      href: "/utility-network",
+      href: "/utility-engineering",
       img: "/assets/img/utilitynetwork.webp",
       alt: "Utility Network",
       meta: "",

@@ -22,7 +22,7 @@ export const hero = {
       ],
       sub: "Production-grade precision, speed, and reliability.",
       btnText: "Explore Formlabs",
-      btnHref: "/formlabs",
+      btnHref: "/formlabs-3d-printing",
     },
     {
       image: "/assets/img/cadencesolutions.webp",
@@ -31,7 +31,7 @@ export const hero = {
       lines: ["Design with Confidence ", " Using MSC Software", "Part of Cadence"],
       sub: "Predict performance, reduce risk, and accelerate product development with high-fidelity CAE simulation.",
       btnText: "Explore MSC Software",
-      btnHref: "/cadence-simulation",
+      btnHref: "/msc-software",
     },
 
     {
@@ -41,7 +41,7 @@ export const hero = {
       lines: ["Transform Manufacturing", "with Digital Transformation"],
       sub: "Digital solutions for smarter operations, predictive maintenance, quality management",
       btnText: "Explore Digital Transformation",
-      btnHref: "/proteger",
+      btnHref: "/digital-transformation",
     },
      {
   image: "/assets/img/utilitybanner.webp",
@@ -54,7 +54,7 @@ export const hero = {
   ],
   sub: "Delivering intelligent planning, precise network design, GIS mapping, and engineering documentation for reliable, scalable infrastructure.",
   btnText: "Explore Utility Engineering",
-  btnHref: "/utility-network",
+  btnHref: "/utility-engineering",
 },
 {
   image: "/assets/img/image28.jpeg",
@@ -94,7 +94,7 @@ export const solutionsGrid = {
   items: [
 
      {
-      href: "/formlabs",
+      href: "/formlabs-3d-printing",
       img: "/assets/img/image17.jpeg",
       alt: "Formlabs 3D Printing",
       meta: "Additive Manufacturing",
@@ -103,7 +103,7 @@ export const solutionsGrid = {
     },
 
     {
-      href: "/cadence-simulation",
+      href: "/msc-software",
       img: "/assets/img/cadencesolutions.webp",
       alt: "Cadence engineering simulation",
       meta: "Simulation",
@@ -114,7 +114,7 @@ export const solutionsGrid = {
 
 
     {
-      href: "/proteger",
+      href: "/digital-transformation",
       img: "/assets/img/protegerbanner.webp",
       alt: "Proteger engineering technology solutions",
       meta: "Smart Manufacturing",
@@ -135,7 +135,7 @@ export const servicesGrid = {
 
   items: [
     {
-      href: "/utility-network",
+      href: "/utility-engineering",
       img: "/assets/img/utilitynetwork.webp",
       alt: "Utility Network",
       meta: "",

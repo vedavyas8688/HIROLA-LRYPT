@@ -60,36 +60,36 @@ function App() {
             <Route path="/solutions" element={<Solutions />} />
             <Route path="/cad-design" element={<CadDesign />} />
             <Route path="/ansys-simulation" element={<AnsysSimulation />} />
-            <Route path="/cadence-simulation" element={<SimulationSoftware />} />
-            <Route path="/cadence-simulation/actran" element={<Actran />} />
-            <Route path="/cadence-simulation/virtual-test-drive" element={<VirtualTestDrive />} />
-            <Route path="/cadence-simulation/virtual-test-drive-x" element={<VirtualTestDriveX />} />
-            <Route path="/cadence-simulation/cradle-cfd" element={<CradleCFD />} />
-            <Route path="/cadence-simulation/digimat" element={<Digimat />} />
-            <Route path="/cadence-simulation/materialcenter" element={<MaterialCenter />} />
-            <Route path="/cadence-simulation/msc-nastran" element={<MscNastran />} />
-            <Route path="/cadence-simulation/msc-cosim" element={<MscCoSim />} />
-            <Route path="/cadence-simulation/patran" element={<Patran />} />
-            <Route path="/cadence-simulation/marc" element={<Marc />} />
-            <Route path="/cadence-simulation/dytran" element={<Dytran />} />
-            <Route path="/cadence-simulation/caefatigue" element={<CAEfatigue />} />
-            <Route path="/cadence-simulation/msc-apex" element={<MscApex />} />
-            <Route path="/cadence-simulation/msc-apex-gd" element={<MscApexGD />} />
-            <Route path="/cadence-simulation/romax" element={<Romax />} />
-            <Route path="/cadence-simulation/simufact-additive" element={<SimufactAdditive />} />
-            <Route path="/cadence-simulation/simufact-forming" element={<SimufactForming />} />
-            <Route path="/cadence-simulation/simufact-welding" element={<SimufactWelding />} />
-            <Route path="/cadence-simulation/virtual-fixture" element={<VirtualFixture />} />
-            <Route path="/cadence-simulation/fti-formingsuite" element={<FtiFormingSuite />} />
-            <Route path="/cadence-simulation/odyssee" element={<Odyssee />} />
-            <Route path="/cadence-simulation/adams" element={<Adams />} />
-            <Route path="/cadence-simulation/cloud-simulation-solutions" element={<CloudSimulationSolutions />} />
-            <Route path="/cadence-simulation/simmanager" element={<SimManager />} />
-            <Route path="/cadence-simulation/mscone" element={<MscOne />} />
-            <Route path="/proteger" element={<Proteger />} />
-            <Route path="/formlabs" element={<Formlabs />} />
+            <Route path="/msc-software" element={<SimulationSoftware />} />
+            <Route path="/msc-software/actran" element={<Actran />} />
+            <Route path="/msc-software/virtual-test-drive" element={<VirtualTestDrive />} />
+            <Route path="/msc-software/virtual-test-drive-x" element={<VirtualTestDriveX />} />
+            <Route path="/msc-software/cradle-cfd" element={<CradleCFD />} />
+            <Route path="/msc-software/digimat" element={<Digimat />} />
+            <Route path="/msc-software/materialcenter" element={<MaterialCenter />} />
+            <Route path="/msc-software/msc-nastran" element={<MscNastran />} />
+            <Route path="/msc-software/msc-cosim" element={<MscCoSim />} />
+            <Route path="/msc-software/patran" element={<Patran />} />
+            <Route path="/msc-software/marc" element={<Marc />} />
+            <Route path="/msc-software/dytran" element={<Dytran />} />
+            <Route path="/msc-software/caefatigue" element={<CAEfatigue />} />
+            <Route path="/msc-software/msc-apex" element={<MscApex />} />
+            <Route path="/msc-software/msc-apex-gd" element={<MscApexGD />} />
+            <Route path="/msc-software/romax" element={<Romax />} />
+            <Route path="/msc-software/simufact-additive" element={<SimufactAdditive />} />
+            <Route path="/msc-software/simufact-forming" element={<SimufactForming />} />
+            <Route path="/msc-software/simufact-welding" element={<SimufactWelding />} />
+            <Route path="/msc-software/virtual-fixture" element={<VirtualFixture />} />
+            <Route path="/msc-software/fti-formingsuite" element={<FtiFormingSuite />} />
+            <Route path="/msc-software/odyssee" element={<Odyssee />} />
+            <Route path="/msc-software/adams" element={<Adams />} />
+            <Route path="/msc-software/cloud-simulation-solutions" element={<CloudSimulationSolutions />} />
+            <Route path="/msc-software/simmanager" element={<SimManager />} />
+            <Route path="/msc-software/mscone" element={<MscOne />} />
+            <Route path="/digital-transformation" element={<Proteger />} />
+            <Route path="/formlabs-3d-printing" element={<Formlabs />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/utility-network" element={<UtilityNetwork />} />
+            <Route path="/utility-engineering" element={<UtilityNetwork />} />
             <Route path="/engineering-design" element={<EngineeringDesign />} />
             <Route path="/hrms" element={<Hrms />} />
             <Route path="/blog" element={<Blog />} />

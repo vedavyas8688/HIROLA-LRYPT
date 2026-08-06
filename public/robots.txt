@@ -30,4 +30,5 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+Host: https://lrypt.com/
 Sitemap: https://lrypt.com/sitemap.xml

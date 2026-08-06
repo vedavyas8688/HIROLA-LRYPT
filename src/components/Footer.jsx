@@ -23,15 +23,15 @@ const linkGroups = [
   {
     title: "Solutions",
     links: [
-      { label: "Formlabs 3D Printing", to: "/formlabs" },
-      { label: "MSC Software", subLabel: "(Part of Cadence)", to: "/cadence-simulation" },
-      { label: "Digital Transformation", to: "/proteger" },
+      { label: "Formlabs 3D Printing", to: "/formlabs-3d-printing" },
+      { label: "MSC Software", subLabel: "(Part of Cadence)", to: "/msc-software" },
+      { label: "Digital Transformation", to: "/digital-transformation" },
     ],
   },
   {
     title: "Services",
     links: [
-      { label: "Utility Engineering", to: "/utility-network" },
+      { label: "Utility Engineering", to: "/utility-engineering" },
       { label: "Engineering Design", to: "/engineering-design" },
     ],
   },
