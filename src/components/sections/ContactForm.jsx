@@ -149,7 +149,7 @@ export default function ContactForm() {
 
     if (Object.keys(formErrors).length === 0) {
       try {
-        const response = await fetch("http://localhost/lrypt/contact.php", {
+        const response = await fetch("https://lrypt.com/forms/contact.php", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
