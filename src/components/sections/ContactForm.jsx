@@ -1,16 +1,6 @@
 import { useState } from "react";
 import { ArrowRight, Check } from "lucide-react";
-
-const initialForm = {
-  firstName: "",
-  lastName: "",
-  email: "",
-  mobile: "",
-  company: "",
-  solution: "",
-  service: "",
-  message: "",
-};
+import { toast } from "react-toastify";
 
 export function ContactPanel({ label, heading, intro, info }) {
   return (
@@ -25,7 +15,10 @@ export function ContactPanel({ label, heading, intro, info }) {
         }}
       >
         {/* Left column: label, heading, intro, info — all share one vertical rhythm */}
-        <div data-stagger="" style={{ display: "flex", flexDirection: "column" }}>
+        <div
+          data-stagger=""
+          style={{ display: "flex", flexDirection: "column" }}
+        >
           {label && (
             <span
               className="label"
@@ -54,14 +47,30 @@ export function ContactPanel({ label, heading, intro, info }) {
             </h2>
           )}
           {intro && (
-            <p className="mute" data-reveal="" style={{ margin: 0, marginBottom: 24, lineHeight: 1.5, maxWidth: "48ch" }}>
+            <p
+              className="mute"
+              data-reveal=""
+              style={{
+                margin: 0,
+                marginBottom: 24,
+                lineHeight: 1.5,
+                maxWidth: "48ch",
+              }}
+            >
               {intro}
             </p>
           )}
           <ul
             className="cinfo"
             data-stagger=""
-            style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: 20 }}
+            style={{
+              listStyle: "none",
+              margin: 0,
+              padding: 0,
+              display: "flex",
+              flexDirection: "column",
+              gap: 20,
+            }}
           >
             {info.map((it, i) => (
               <li data-reveal="" key={i} style={{ margin: 0 }}>
@@ -83,62 +92,199 @@ export function ContactPanel({ label, heading, intro, info }) {
 }
 
 export default function ContactForm() {
-  const [form, setForm] = useState(initialForm);
-  const [sent, setSent] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [errors, setErrors] = useState({});
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    company: "",
+    solutionOfInterest: "",
+    serviceOfInterest: "",
+    message: "",
+  });
 
-  const set = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }));
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
-  const handleSend = (event) => {
-    event.preventDefault();
-    const subject = `Website enquiry from ${form.firstName} ${form.lastName}`;
-    const body = [
-      `Name: ${form.firstName} ${form.lastName}`,
-      `Email: ${form.email}`,
-      `Mobile: ${form.mobile}`,
-      `Company: ${form.company || "Not provided"}`,
-      `Solution: ${form.solution || "Not selected"}`,
-      `Service: ${form.service || "Not selected"}`,
-      "",
-      "Project details:",
-      form.message,
-    ].join("\n");
+  const validateForm = () => {
+    const errors = {};
 
-    setSent(true);
-    window.location.href = `mailto:enquiry@lrypt.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    if (!formData.firstName.trim()) {
+      errors.firstName = "First name is required";
+    }
+
+    if (!formData.lastName.trim()) {
+      errors.lastName = "Last name is required";
+    }
+
+    if (!formData.email.trim()) {
+      errors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      errors.email = "Email is invalid";
+    }
+
+    const cleanedPhone = formData.phone.replace(/\D/g, "");
+
+    if (!cleanedPhone) {
+      errors.phone = "Phone number is required";
+    } else if (!/^(91)?[6-9]\d{9}$/.test(cleanedPhone)) {
+      errors.phone = "Phone number is invalid";
+    }
+
+    return errors;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    const formErrors = validateForm();
+
+    if (Object.keys(formErrors).length === 0) {
+      try {
+        const response = await fetch("http://localhost/lrypt/contact.php", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+        console.log("response", response);
+
+        if (response.ok) {
+          const data = await response.json();
+
+          if (data.status === "success") {
+            setFormData({
+              firstName: "",
+              lastName: "",
+              email: "",
+              phone: "",
+              company: "",
+              solutionOfInterest: "",
+              serviceOfInterest: "",
+              message: "",
+            });
+            toast.success("Successfully we got your info.", {
+              autoClose: 5000,
+            });
+          } else {
+            console.error("Error:", data.message);
+            toast.error(data.message);
+          }
+        } else {
+          console.error("Error:", response.statusText);
+          toast.error("An error occurred. Please try again.", {
+            autoClose: 5000,
+          });
+        }
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        toast.error("An error occurred. Please try again later.", {
+          autoClose: 5000,
+        });
+      }
+    } else {
+      setErrors(formErrors);
+      Object.values(formErrors).forEach((error) => {
+        toast.error(error, { autoClose: 5000 });
+      });
+    }
+
+    setIsLoading(false);
   };
 
   return (
-    <form className="cform" data-reveal="" onSubmit={handleSend} style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-      <div className="row2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+    <form
+      className="cform"
+      data-reveal=""
+      onSubmit={handleSubmit}
+      style={{ display: "flex", flexDirection: "column", gap: 16 }}
+    >
+      <div
+        className="row2"
+        style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}
+      >
         <div className="f2">
           <label>First name</label>
-          <input type="text" placeholder="Jane" value={form.firstName} onChange={set("firstName")} required />
+          <input
+            name="firstName"
+            type="text"
+            placeholder="Jane"
+            value={formData.firstName}
+            onChange={handleInputChange}
+            required
+          />
         </div>
         <div className="f2">
           <label>Last name</label>
-          <input type="text" placeholder="Cooper" value={form.lastName} onChange={set("lastName")} required />
+          <input
+            name="lastName"
+            type="text"
+            placeholder="Cooper"
+            value={formData.lastName}
+            onChange={handleInputChange}
+            required
+          />
         </div>
       </div>
-      <div className="row2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+      <div
+        className="row2"
+        style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}
+      >
         <div className="f2">
           <label>Email</label>
-          <input type="email" placeholder="jane@company.com" value={form.email} onChange={set("email")} required />
+          <input
+            name="email"
+            type="email"
+            placeholder="jane@company.com"
+            value={formData.email}
+            onChange={handleInputChange}
+            required
+          />
         </div>
         <div className="f2">
           <label>Mobile</label>
-          <input type="tel" placeholder="+91 98765 43210" value={form.mobile} onChange={set("mobile")} required />
+          <input
+            name="phone"
+            type="tel"
+            placeholder="+91 98765 43210"
+            value={formData.phone}
+            onChange={handleInputChange}
+            required
+          />
         </div>
       </div>
       <div className="f2">
         <label>
-          Company <span style={{ color: "var(--mute-cream)", fontWeight: 400 }}>(optional)</span>
+          Company{" "}
+          <span style={{ color: "var(--mute-cream)", fontWeight: 400 }}>
+            (optional)
+          </span>
         </label>
-        <input type="text" placeholder="Company name" value={form.company} onChange={set("company")} />
+        <input
+          name="company"
+          type="text"
+          placeholder="Company name"
+          value={formData.company}
+          onChange={handleInputChange}
+        />
       </div>
-      <div className="row2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+      <div
+        className="row2"
+        style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}
+      >
         <div className="f2">
           <label>Solution of interest</label>
-          <select value={form.solution} onChange={set("solution")}>
+          <select
+            name="solutionOfInterest"
+            value={formData.solutionOfInterest}
+            onChange={handleInputChange}
+          >
             <option value="">Select a solution&hellip;</option>
             <option>Formlabs 3D Printing</option>
             <option>MSC Software</option>
@@ -147,7 +293,11 @@ export default function ContactForm() {
         </div>
         <div className="f2">
           <label>Service of interest</label>
-          <select value={form.service} onChange={set("service")}>
+          <select
+            name="serviceOfInterest"
+            value={formData.serviceOfInterest}
+            onChange={handleInputChange}
+          >
             <option value="">Select a service&hellip;</option>
             <option>Utility Engineering</option>
             <option>Engineering Design</option>
@@ -157,22 +307,33 @@ export default function ContactForm() {
       <div className="f2">
         <label>How can we help?</label>
         <textarea
+          name="message"
           placeholder="Tell us about your project, timeline, and goals..."
-          value={form.message}
-          onChange={set("message")}
+          value={formData.message}
+          onChange={handleInputChange}
           required
         />
       </div>
       <div
         className="cform__foot"
-        style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16, marginTop: 8 }}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: 16,
+          marginTop: 8,
+        }}
       >
         <span className="cform__note" style={{ fontSize: 13, lineHeight: 1.4 }}>
           Your details are used only to respond to your enquiry.
         </span>
-        <button className="btn" type="submit">
-          <span className="btn__ico">{sent ? <Check size={18} /> : <ArrowRight size={18} />}</span>
-          <span className="btn__t">{sent ? "Complete sending in your email app" : "Send message"}</span>
+        <button className="btn" type="submit" disabled={isLoading}>
+          <span className="btn__ico">
+            {isLoading ? <Check size={18} /> : <ArrowRight size={18} />}
+          </span>
+          <span className="btn__t">
+            {isLoading ? "Sending..." : "Send message"}
+          </span>
         </button>
       </div>
     </form>
